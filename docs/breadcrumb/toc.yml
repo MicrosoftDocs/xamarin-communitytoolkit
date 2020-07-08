@@ -5,3 +5,6 @@
   - name: Xamarin
     tocHref: /xamarin/
     topicHref: /xamarin
+    - name: Xamarin Community Toolkit
+      tocHref: /xamarin/communitytoolkit/
+      topicHref: /xamarin/communitytoolkit
