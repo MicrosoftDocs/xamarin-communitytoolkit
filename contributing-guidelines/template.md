@@ -2,9 +2,9 @@
 title: "This Article's Title"
 description: "A good, solid description of this article. The content kept here is what the Microsoft Docs system returns with search results, so this had better be a complete description of the purpose and content for this document file"
 keywords: keyword, list, for, internal, search
-author: conceptdev
-ms.author: crdun
-ms.date: 02/26/2018
+author: davidbritch
+ms.author: dabritch
+ms.date: 07/08/2020
 ms.topic: conceptual
 ms.assetid: 11111111-2222-3333-4444-555555555555
 ms.prod: xamarin
