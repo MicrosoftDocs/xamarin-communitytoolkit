@@ -51,8 +51,8 @@
       "ms.prod": "xamarin",
       "searchScope": ["Xamarin"],
       "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/xamarin-docs",
-      "feedback_product_url": "https://developercommunity.visualstudio.com/"    
+      "feedback_github_repo": "MicrosoftDocs/xamarin-communitytoolkit",
+      "feedback_product_url": "https://developercommunity.visualstudio.com/"
     },
     "fileMetadata": {},
     "template": [],
