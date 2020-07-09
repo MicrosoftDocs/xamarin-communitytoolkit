@@ -9,3 +9,5 @@ _repo.*/
 .DS_Store
 /.vs
 .vscode/settings.json
+
+docs/xamarin-communitytoolkit
