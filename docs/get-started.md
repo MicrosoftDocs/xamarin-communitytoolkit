@@ -12,7 +12,7 @@ Xamarin.CommunityToolkit provides a single cross-platform API that works with an
 
 Xamarin.CommunityToolkit is available as a NuGet package and is included in every new project in Visual Studio. It can also be added to any existing using Visual Studio with the follow steps.
 
-1. Download and install [Visual Studio](https://visualstudio.microsoft.com/) with the [Visual Studio tools for Xamarin](~/get-started/installation/index.md).
+1. Download and install [Visual Studio](https://visualstudio.microsoft.com/) with the [Visual Studio tools for Xamarin](https://docs.microsoft.com/xamarin/get-started/installation/).
 
 2. Open an existing project, or create a new project using the Blank App template under **Visual Studio C#** (Android, iPhone & iPad, or Cross-Platform).
 
@@ -58,7 +58,7 @@ Xamarin.CommunityToolkit is available as a NuGet package and is included in ever
 
 ## Other Resources
 
-We recommend developers new to Xamarin visit [getting started with Xamarin development](https://docs.microsoft.com/en-gb/xamarin/get-started/).
+We recommend developers new to Xamarin visit [getting started with Xamarin development](https://docs.microsoft.com/xamarin/get-started/).
 
 Visit the [Xamarin.CommunityToolkit GitHub Repository](https://github.com/xamarin/XamarinCommunityToolkit) to see the current source code, what is coming next, run samples, and clone the repository. Community contributions are welcome!
 
