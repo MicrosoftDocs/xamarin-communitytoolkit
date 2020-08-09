@@ -11,7 +11,11 @@ description: .
 ## Syntax
 
 ```xaml
-
+<Entry.Behaviors>
+    <behaviors:NumericValidationBehavior InvalidStyle="{StaticResource InvalidEntryStyle}"
+                                         MinimumValue="1.0"
+                                         MaximumValue="100.0"/>
+</Entry.Behaviors>
 ```
 
 ```csharp
@@ -47,16 +51,9 @@ description: .
 
 ## Sample project
 
-<!-- Link to the sample page in the Xamarin community toolkit sample app -->
-[control/helper name sample page Source](sample-page-link). You can see this element in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit/tree/main/XamarinCommunityToolkitSample).
+[NumericValidationBehaviorPage](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkitSample/Pages/Behaviors/NumericValidationBehaviorPage.xaml). You can see this element in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit/tree/main/XamarinCommunityToolkitSample).
 
 ## API
 
 - [NumericValidationBehavior](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkit/Behaviors/NumericValidationBehavior.shared.cs)
 
-## Related links
-
-<!-- Optional -->
-
-- [Topic 1](link)
-- [Topic 2](link)
