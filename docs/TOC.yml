@@ -3,7 +3,7 @@
 - name: Get Started
   href: get-started.md
 - name: Behaviors
-  href: behaviors.md
+  href: behaviors/toc.yml #behaviors.md
 - name: Converters
   href: converters.md
 - name: Effects
