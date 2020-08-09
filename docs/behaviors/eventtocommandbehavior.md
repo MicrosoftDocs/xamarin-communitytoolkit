@@ -9,7 +9,27 @@ description: .
 ## Syntax
 
 ```xaml
+<Button.Behaviors>
+    <behaviors:EventToCommandBehavior
+        EventName="Clicked"
+        Command="{Binding IncrementCommand}" />
+</Button.Behaviors>
+```
 
+```xaml
+<ListView.Behaviors>
+    <behaviors:EventToCommandBehavior EventName="ItemSelected"
+                                      Command="{Binding ItemSelectedCommand}"
+                                      EventArgsConverter="{StaticResource ItemSelectedEventArgsConverter}" />
+</ListView.Behaviors>
+```
+
+```xaml
+<ListView.Behaviors>
+    <behaviors:EventToCommandBehavior EventName="ItemTapped"
+                                      Command="{Binding ItemTappedCommand}"
+                                      EventArgsConverter="{StaticResource ItemTappedEventArgsConverter}" />
+</ListView.Behaviors>
 ```
 
 ```csharp
@@ -56,16 +76,12 @@ description: .
 
 ## Sample project
 
-<!-- Link to the sample page in the Xamarin community toolkit sample app -->
-[control/helper name sample page Source](sample-page-link). You can see this element in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit/tree/main/XamarinCommunityToolkitSample).
+- [EventToCommandBehaviorPage](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkitSample/Pages/Behaviors/EventToCommandBehaviorPage.xaml)
+- [ItemSelectedEventArgsPage](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkitSample/Pages/Converters/ItemSelectedEventArgsPage.xaml)
+- [ItemTappedEventArgsPage](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkitSample/Pages/Converters/ItemTappedEventArgsPage.xaml)
+
+You can see this element in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit/tree/main/XamarinCommunityToolkitSample).
 
 ## API
 
 - [EventToCommandBehavior]([source-code-link](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkit/Behaviors/EventToCommandBehavior.shared.cs))
-
-## Related links
-
-<!-- Optional -->
-
-- [Topic 1](link)
-- [Topic 2](link)
