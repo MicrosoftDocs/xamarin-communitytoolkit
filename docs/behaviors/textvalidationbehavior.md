@@ -71,7 +71,7 @@ description: .
 
 ## API
 
-- [control/helper name source code](source-code-link)
+- [TextValidationBehavior](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkit/Behaviors/TextValidationBehavior.shared.cs)
 
 ## Related links
 
