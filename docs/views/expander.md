@@ -251,11 +251,11 @@ The content of an `Expander` can be set to another `Expander` control, to enable
 
 In this example, tapping the root `Expander` header reveals the header for the child `Expander`:
 
-![Screenshot of an embedded Expander, on iOS and Android](expander-images/embedded-expander1.png "Embedded Expander on iOS and Android (collapsed)")
+![Screenshot of an embedded Expander, on iOS and Android (collapsed)](expander-images/embedded-expander1.png "Embedded Expander on iOS and Android (collapsed)")
 
 Tapping the child `Expander` header results in its content being inflated and displayed:
 
-![Screenshot of an embedded Expander, on iOS and Android](expander-images/embedded-expander2.png "Embedded Expander on iOS and Android (expanded)")
+![Screenshot of an embedded Expander, on iOS and Android (expanded)](expander-images/embedded-expander2.png "Embedded Expander on iOS and Android (expanded)")
 
 ## Define the expand and collapse animation
 
