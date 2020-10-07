@@ -11,7 +11,7 @@
 - name: "Effects"
   items:
     - name: "SafeAreaEffect"
-      href: effects/safearea.md
+      href: effects/safeareaeffect.md
 - name: "Extensions"
   href: extensions.md
 - name: "Helpers"
