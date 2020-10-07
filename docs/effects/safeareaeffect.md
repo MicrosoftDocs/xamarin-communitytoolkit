@@ -1,6 +1,7 @@
 ---
 title: SafeAreaEffect
 author: sthewissen
+ms.author: joverslu
 description: "The SafeAreaEffect allows users to offset elements on-screen based on the current active safe area."
 ---
 
