@@ -1,6 +1,6 @@
 ---
 title: "Getting Started with the Xamarin Community Toolkit"
-author: AlexHedley, sthewissen
+author: AlexHedley
 description: "Overview of how to get started with the Xamarin Community Toolkit to build amazing Xamarin.Forms apps."
 ---
 
