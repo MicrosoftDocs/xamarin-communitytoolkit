@@ -30,14 +30,14 @@ The `Expander` control defines the following properties:
 - `ForceUpdateSizeCommand`, of type `ICommand`, which defines the command that's executed when the size of the `Expander` is force updated. This property uses the `OneWayToSource` binding mode.
 - `Header`, of type [`View`](xref:Xamarin.Forms.View), which defines the header content.
 - `IsExpanded`, of type `bool`, which determines if the `Expander` is expanded . This property uses the `TwoWay` binding mode, and has a default value of `false`.
-- `State`, of type `ExpanderState`, which represents the state of the `Expander`. This property uses the `OneWayToSource` binding mode.
+- `State`, of type `ExpandState`, which represents the state of the `Expander`. This property uses the `OneWayToSource` binding mode.
 
 These properties are backed by [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) objects, which means that they can be targets of data bindings, and styled.
 
 > [!NOTE]
 > The `Content` property is the content property of the `Expander` class, and therefore does not need to be explicitly set from XAML.
 
-The `ExpanderState` enumeration defines the following members:
+The `ExpandState` enumeration defines the following members:
 
 - `Expanding` indicates that the `Expander` is expanding.
 - `Expanded` indicates that the `Expander` is expanded.
@@ -45,6 +45,9 @@ The `ExpanderState` enumeration defines the following members:
 - `Collapsed` indicates that the `Expander` is collapsed.
 
 The `Expander` control also defines a `Tapped` event that's fired when the `Expander` header is tapped. In addition, `Expander` includes a `ForceUpdateSize` method that can be called to programmatically resize the `Expander` at runtime.
+
+> [!IMPORTANT]
+> The Expander has been part of Xamarin.Forms and has been moved to the Xamarin.CommunityToolkit. As part of that move, the `ExpanderState` enum has been renamed to `ExpandState`
 
 ## Create an Expander
 
