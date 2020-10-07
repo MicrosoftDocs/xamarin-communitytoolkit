@@ -2,6 +2,7 @@
 title: "Xamarin.CommunityToolkit Expander"
 description: "The Xamarin.CommunityToolkit Expander control provides an expandable container to host any content. The content is shown or hidden by tapping the Expander header."
 author: jfversluis
+ms.author: joverslu
 ---
 
 # Xamarin.CommunityToolkit Expander
@@ -209,7 +210,7 @@ The `IsExpanded` property becomes `true` when the `Expander` header is tapped, w
 
 ![Screenshot of an Expander icon in expand state, on iOS and Android](expander-images/icon-collapse.png "Expandd icon on iOS and Android")
 
-For more information about triggers, see [Xamarin.Forms Triggers](~/xamarin-forms/app-fundamentals/triggers.md).
+For more information about triggers, see [Xamarin.Forms Triggers](/xamarin/xamarin-forms/app-fundamentals/triggers.md).
 
 ## Embed an Expander in an Expander
 
@@ -294,7 +295,7 @@ The following XAML shows an example of defining the animation that occurs when t
 
 In this example, the `CubicIn` easing function slowly accelerates the expand animation over 500ms, and the `CubicOut` easing function quickly decelerates the collapse animation over 500ms.
 
-For more information about easing functions, see [Xamarin.Forms Easing Functions](~/xamarin-forms/user-interface/animation/easing.md).
+For more information about easing functions, see [Xamarin.Forms Easing Functions](/xamarin/xamarin-forms/user-interface/animation/easing.md).
 
 ## Resize an Expander at runtime
 
@@ -329,6 +330,6 @@ An application may enter a state where expanding an `Expander` is not a valid op
 ## Related links
 
 - [Expander Demos (sample)](/samples/xamarin/xamarin-forms-samples/userinterface-expanderdemos/)
-- [Xamarin.Forms Easing Functions](~/xamarin-forms/user-interface/animation/easing.md)
-- [Xamarin.Forms Triggers](~/xamarin-forms/app-fundamentals/triggers.md)
-- [Xamarin.Forms Bindable Layouts](~/xamarin-forms/user-interface/layouts/bindable-layouts.md)
+- [Xamarin.Forms Easing Functions](/xamarin/xamarin-forms/user-interface/animation/easing.md)
+- [Xamarin.Forms Triggers](/xamarin/xamarin-forms/app-fundamentals/triggers.md)
+- [Xamarin.Forms Bindable Layouts](/xamarin/xamarin-forms/user-interface/layouts/bindable-layouts.md)
