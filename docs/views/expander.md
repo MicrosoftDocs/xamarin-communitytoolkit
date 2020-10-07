@@ -204,11 +204,11 @@ An [`Image`](xref:Xamarin.Forms.Image) can be added to an `Expander` header, to 
 
 In this example, the [`Image`](xref:Xamarin.Forms.Image) displays the `expand` icon by default:
 
-![Screenshot of an Expander icon in collapsed state, on iOS and Android](expander-images/icon-expand.png "Expandd icon on iOS and Android")
+![Screenshot of an Expander icon in collapsed state, on iOS and Android](expander-images/icon-expand.png "Expand icon on iOS and Android")
 
 The `IsExpanded` property becomes `true` when the `Expander` header is tapped, which results in the `collapse` icon being displayed:
 
-![Screenshot of an Expander icon in expand state, on iOS and Android](expander-images/icon-collapse.png "Expandd icon on iOS and Android")
+![Screenshot of an Expander icon in expand state, on iOS and Android](expander-images/icon-collapse.png "Expand icon on iOS and Android")
 
 For more information about triggers, see [Xamarin.Forms Triggers](/xamarin/xamarin-forms/app-fundamentals/triggers.md).
 
@@ -251,11 +251,11 @@ The content of an `Expander` can be set to another `Expander` control, to enable
 
 In this example, tapping the root `Expander` header reveals the header for the child `Expander`:
 
-![Screenshot of an embedded Expander, on iOS and Android](expander-images/embedded-expander1.png "Embedded Expander on iOS and Android")
+![Screenshot of an embedded Expander, on iOS and Android](expander-images/embedded-expander1.png "Embedded Expander on iOS and Android (collapsed)")
 
 Tapping the child `Expander` header results in its content being inflated and displayed:
 
-![Screenshot of an embedded Expander, on iOS and Android](expander-images/embedded-expander2.png "Embedded Expander on iOS and Android")
+![Screenshot of an embedded Expander, on iOS and Android](expander-images/embedded-expander2.png "Embedded Expander on iOS and Android (expanded)")
 
 ## Define the expand and collapse animation
 
