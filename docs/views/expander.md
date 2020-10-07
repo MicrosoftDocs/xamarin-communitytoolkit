@@ -294,7 +294,7 @@ The following XAML shows an example of defining the animation that occurs when t
 
 In this example, the `CubicIn` easing function slowly accelerates the expand animation over 500ms, and the `CubicOut` easing function quickly decelerates the collapse animation over 500ms.
 
-For more information about easing functions, see [Xamarin.Forms Easing Functions](~/xamarin-forms/user-interface/animation/easing.md).
+For more information about easing functions, see [Xamarin.Forms Easing Functions](/xamarin-forms/user-interface/animation/easing.md).
 
 ## Resize an Expander at runtime
 

@@ -56,7 +56,7 @@
       href: extensions/translateextension.md
 - name: "Helpers"
   href: helpers.md
-- name: "Views"
+- name: Views
   items:
     - name: Expander
       href: views/expander.md
