@@ -57,6 +57,8 @@
 - name: "Helpers"
   href: helpers.md
 - name: "Views"
-  href: views.md
-- name: "Troubleshooting"
+  items:
+    - name: Expander
+      href: views/expander.md
+- name: Troubleshooting
   href: troubleshooting.md
