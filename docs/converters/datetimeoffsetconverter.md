@@ -2,14 +2,35 @@
 title: DateTimeOffsetConverter
 author: sthewissen
 ms.author: joverslu
-description: "The SafeAreaEffect allows users to offset elements on-screen based on the current active safe area."
+description: "The DateTimeOffsetConverter allows users to convert a DateTimeOffset to a DateTime."
 ---
 
 # DateTimeOffsetConverter
 
+The DateTimeOffsetConverter is a converter that allows users to convert a `DateTimeOffset` to a `DateTime`. Often times a datetime value is stored with the offset on a backend to allow for storing the timezone in which a `DateTime` originated from. Controls like the `DatePicker` in Xamarin.Forms will only work with `DateTime`. This converter can be used in those scenarios.
+
 ## Syntax
 
-## Properties
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="clr-namespace:Xamarin.CommunityToolkit.Converters;assembly=Xamarin.CommunityToolkit"
+             x:Class="MyLittleApp.MainPage">
+    
+    <ContentPage.Resources>
+         <ResourceDictionary>
+             <xct:DateTimeOffsetConverter x:Key="DateTimeOffsetConverter" />
+         </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+
+        <Label Text="{Binding MyDateTimeOffset, Converter={StaticResource DateTimeOffsetConverter}}" />
+
+    </StackLayout>
+</ContentPage>
+```
 
 ## Sample
 

@@ -2,14 +2,35 @@
 title: ByteArrayToImageSourceConverter
 author: sthewissen
 ms.author: joverslu
-description: "The SafeAreaEffect allows users to offset elements on-screen based on the current active safe area."
+description: "The ByteArrayToImageSourceConverter allows users to show an image based on a byte array."
 ---
 
 # ByteArrayToImageSourceConverter
 
+The ByteArrayToImageSourceConverter is a converter that allows the user to convert an incoming value from byte array and returns an object of type `ImageSource`. This object can then be used as the `Source` of an `Image` control.
+
 ## Syntax
 
-## Properties
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="clr-namespace:Xamarin.CommunityToolkit.Converters;assembly=Xamarin.CommunityToolkit"
+             x:Class="MyLittleApp.MainPage">
+    
+    <ContentPage.Resources>
+         <ResourceDictionary>
+             <xct:ByteArrayToImageSourceConverter x:Key="ByteArrayToImageSourceConverter" />
+         </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+
+        <Image Source="{Binding MyByteArray, Converter={StaticResource ByteArrayToImageSourceConverter}}" />
+
+    </StackLayout>
+</ContentPage>
+```
 
 ## Sample
 

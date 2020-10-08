@@ -12,11 +12,24 @@ The BoolToObjectConverter is a converter that allows users to convert a `boolean
 ## Syntax
 
 ```xml
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="clr-namespace:Xamarin.CommunityToolkit.Converters;assembly=Xamarin.CommunityToolkit"
+             x:Class="MyLittleApp.MainPage">
+
+    <ContentPage.Resources>
+         <ResourceDictionary>
+             <xct:BoolToObjectConverter x:Key="BoolToObjectConverter" TrueObject="16" FalseObject="10" />
+         </ResourceDictionary>
+    </ContentPage.Resources>
+
     <StackLayout>
 
-        <Label Text="Hi there from the Docs!" FontSize="{Binding MyBoolean, Converter={xct:BoolToObjectConverter TrueObject=16, FalseObject=10}}" />
+        <Label Text="Hi there from the Docs!" FontSize="{Binding MyBoolean, Converter={StaticResource BoolToObjectConverter}}" />
 
     </StackLayout>
+</ContentPage>
 ```
 
 ## Properties
