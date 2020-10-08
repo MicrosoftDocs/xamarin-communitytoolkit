@@ -2,14 +2,38 @@
 title: ItemTappedEventArgsConverter
 author: sthewissen
 ms.author: joverslu
-description: "The SafeAreaEffect allows users to offset elements on-screen based on the current active safe area."
+description: "The ItemTappedEventArgsConverter allows users to convert ItemSelectedEventArgs to the item that was actually selected."
 ---
 
 # ItemTappedEventArgsConverter
+The ItemTappedEventArgsConverter is a converter that allows users to extract the `Item` value from an [ItemTappedEventArgs](/dotnet/api/xamarin.forms.itemtappedeventargs) object. It can subsequently be used in combination with `EventToCommandBehavior`.
 
 ## Syntax
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:Xamarin.CommunityToolkit.Converters;assembly=Xamarin.CommunityToolkit"
+             xmlns:behaviors="clr-namespace:Xamarin.CommunityToolkit.Behaviors;assembly=Xamarin.CommunityToolkit"
+             x:Class="MyLittleApp.MainPage">
 
-## Properties
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ItemTappedEventArgsConverter x:Key="ItemTappedEventArgsConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ListView ItemsSource="{Binding Items}" HasUnevenRows="True">
+
+        <ListView.Behaviors>
+            <behaviors:EventToCommandBehavior EventName="ItemTapped"
+                                              Command="{Binding ItemTappedCommand}"
+                                              EventArgsConverter="{StaticResource ItemTappedEventArgsConverter}" />
+        </ListView.Behaviors>
+
+    </ListView>
+</ContentPage>
+```
 
 ## Sample
 

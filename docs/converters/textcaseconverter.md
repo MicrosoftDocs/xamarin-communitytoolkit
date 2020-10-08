@@ -2,14 +2,45 @@
 title: TextCaseConverter
 author: sthewissen
 ms.author: joverslu
-description: "The SafeAreaEffect allows users to offset elements on-screen based on the current active safe area."
+description: "The TextCaseConverter allows users to change the casing of a string value."
 ---
 
 # TextCaseConverter
+The TextCaseConverter is a converter that allows users to convert the casing of an incoming `string` type binding. The `Type` property is used to define what kind of casing will be applied to the `string`.
 
 ## Syntax
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="clr-namespace:Xamarin.CommunityToolkit.Converters;assembly=Xamarin.CommunityToolkit"
+             x:Class="MyLittleApp.MainPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <xct:TextCaseConverter x:Key="TextCaseConverter" Type="Upper" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+
+        <Label IsVisible="{Binding MyString, Converter={StaticResource TextCaseConverter}}" />
+
+    </StackLayout>
+</ContentPage>
+```
 
 ## Properties
+|Property  |Type  |Description  |
+|---------|---------|---------|
+| Type | TextCaseType | The type of casing to apply to the `string` value. |
+
+## TextCaseType
+The following options are available for `TextCaseType`:
+
+- `None` - Applies no specific formatting to the string.
+- `Upper` - Applies upper case formatting to the string.
+- `Lower` - Applies lower case formatting to the string.
 
 ## Sample
 
@@ -23,3 +54,4 @@ You can see this in action in the [Xamarin Community Toolkit Sample App](https:/
 ## API
 
 * [TextCaseConverter source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkit/Converters/TextCaseConverter.shared.cs)
+* [TextCaseType source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkit/Converters/TextCaseType.shared.cs)

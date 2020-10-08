@@ -2,14 +2,42 @@
 title: IndexToArrayItemConverter
 author: sthewissen
 ms.author: joverslu
-description: "The SafeAreaEffect allows users to offset elements on-screen based on the current active safe area."
+description: "The IndexToArrayItemConverter allows users to retrieve an item from an array based on the binding of an indexer."
 ---
 
 # IndexToArrayItemConverter
 
+The IndexToArrayItemConverter is a converter that allows users to convert a `int` value binding to an item in an array. The `int` value being data bound represents the indexer used to access the array. The array is passed in through the `ConverterParameter`.
+
 ## Syntax
 
-## Properties
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="clr-namespace:Xamarin.CommunityToolkit.Converters;assembly=Xamarin.CommunityToolkit"
+             x:Class="MyLittleApp.MainPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <xct:IndexToArrayItemConverter x:Key="IndexToArrayItemConverter" />
+            <x:Array x:Key="MyArray" Type="x:String">
+                <x:String>Value 1</x:String>
+                <x:String>Value 2</x:String>
+                <x:String>Value 3</x:String>
+                <x:String>Value 4</x:String>
+                <x:String>Value 5</x:String>
+            </x:Array>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+
+        <Label IsVisible="{Binding MyIntegerValue, Converter={StaticResource IndexToArrayItemConverter}, ConverterParameter={StaticResource MyArray}}" />
+
+    </StackLayout>
+</ContentPage>
+```
 
 ## Sample
 

@@ -2,12 +2,12 @@
 title: DoubleToIntConverter
 author: sthewissen
 ms.author: joverslu
-description: "The DoubleToIntConverter allows users to convert an incoming double value to an integer."
+description: "The DoubleToIntConverter allows users to convert an incoming double value to an int."
 ---
 
 # DoubleToIntConverter
 
-The DoubleToIntConverter is a converter that allows users to convert an incoming `double` value to an `integer`. Optionally the user can provide a multiplier to the conversion through the `Ratio` property.
+The DoubleToIntConverter is a converter that allows users to convert an incoming `double` value to an `int`. Optionally the user can provide a multiplier to the conversion through the `Ratio` property.
 
 ## Syntax
 

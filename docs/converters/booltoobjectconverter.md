@@ -7,7 +7,7 @@ description: "The BoolToObjectConverter allows users to convert a boolean into a
 
 # BoolToObjectConverter
 
-The BoolToObjectConverter is a converter that allows users to convert a `boolean` value binding to a specific object. By providing both a `TrueObject` and a `FalseObject` in the converter the appropriate object will be used depending on the value of the binding.
+The BoolToObjectConverter is a converter that allows users to convert a `bool` value binding to a specific object. By providing both a `TrueObject` and a `FalseObject` in the converter the appropriate object will be used depending on the value of the binding.
 
 ## Syntax
 

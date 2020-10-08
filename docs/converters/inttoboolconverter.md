@@ -2,14 +2,35 @@
 title: IntToBoolConverter
 author: sthewissen
 ms.author: joverslu
-description: "The SafeAreaEffect allows users to offset elements on-screen based on the current active safe area."
+description: "The IntToBoolConverter allows users to convert an incoming integer value to a boolean."
 ---
 
 # IntToBoolConverter
 
+The IntToBoolConverter is a converter that allows users to convert an incoming `int` value to a `bool`. If the incoming `int` value is 0, it will be converted to `false`. Any other incoming value will be converted to `true`.
+
 ## Syntax
 
-## Properties
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="clr-namespace:Xamarin.CommunityToolkit.Converters;assembly=Xamarin.CommunityToolkit"
+             x:Class="MyLittleApp.MainPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <xct:IntToBoolConverter x:Key="IntToBoolConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+
+        <Label IsVisible="{Binding MyIntegerValue, Converter={StaticResource IntToBoolConverter}}" />
+
+    </StackLayout>
+</ContentPage>
+```
 
 ## Sample
 

@@ -7,7 +7,7 @@ description: "The EqualConverter allows users to check whether or not a binding 
 
 # EqualConverter
 
-The EqualConverter is a converter that allows users to convert any value binding to a `boolean` depending on whether or not it is equal to a different value. The initial binding contains the object that will be compared and the `ConverterParameter` contains the object to compare it to.
+The EqualConverter is a converter that allows users to convert any value binding to a `bool` depending on whether or not it is equal to a different value. The initial binding contains the object that will be compared and the `ConverterParameter` contains the object to compare it to.
 
 ## Syntax
 

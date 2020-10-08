@@ -2,14 +2,33 @@
 title: IsNullOrEmptyConverter
 author: sthewissen
 ms.author: joverslu
-description: "The SafeAreaEffect allows users to offset elements on-screen based on the current active safe area."
+description: "The IsNullOrEmptyConverter allows users to convert a binding value to a boolean indicating whether or not the binding value is null or empty."
 ---
 
 # IsNullOrEmptyConverter
+The IsNullOrEmptyConverter is a converter that allows users to convert an incoming binding to a `bool` value. This value represents if the incoming binding value is `null` or empty.
 
 ## Syntax
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="clr-namespace:Xamarin.CommunityToolkit.Converters;assembly=Xamarin.CommunityToolkit"
+             x:Class="MyLittleApp.MainPage">
 
-## Properties
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <xct:IsNullOrEmptyConverter x:Key="IsNullOrEmptyConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+
+        <Label IsVisible="{Binding MyStringValue, Converter={StaticResource IsNullOrEmptyConverter}}" />
+
+    </StackLayout>
+</ContentPage>
+```
 
 ## Sample
 
