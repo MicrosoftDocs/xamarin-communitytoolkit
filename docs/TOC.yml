@@ -4,8 +4,44 @@
   href: get-started.md
 - name: Behaviors
   href: behaviors.md
-- name: Converters
-  href: converters.md
+- name: "Converters"
+  items:
+    - name: BoolToObjectConverter
+      href: converters/booltoobjectconverter.md
+    - name: ByteArrayToImageSourceConverter
+      href: converters/bytearraytoimagesourceconverter.md
+    - name: DateTimeOffsetConverter
+      href: converters/datetimeoffsetconverter.md
+    - name: DoubleToIntConverter
+      href: converters/doubletointconverter.md
+    - name: EqualConverter
+      href: converters/equalconverter.md
+    - name: IndexToArrayItemConverter
+      href: converters/indextoarrayitemconverter.md
+    - name: IntToBoolConverter
+      href: converters/inttoboolconverter.md
+    - name: InvertedBoolConverter
+      href: converters/invertedboolconverter.md
+    - name: IsNotNullOrEmptyConverter
+      href: converters/isnotnulloremptyconverter.md
+    - name: IsNullOrEmptyConverter
+      href: converters/isnulloremptyconverter.md
+    - name: ItemSelectedEventArgsConverter
+      href: converters/itemselectedeventargsconverter.md
+    - name: ItemTappedEventArgsConverter
+      href: converters/itemtappedeventargsconverter.md
+    - name: ListIsNotNullOrEmptyConverter
+      href: converters/listisnotnulloremptyconverter.md
+    - name: ListIsNullOrEmptyConverter
+      href: converters/listisnulloremptyconverter.md
+    - name: ListToStringConverter
+      href: converters/listtostringconverter.md
+    - name: MultiConverter
+      href: converters/multiconverter.md
+    - name: NotEqualConverter
+      href: converters/notequalconverter.md
+    - name: TextCaseConverter
+      href: converters/textcaseconverter.md
 - name: Effects
   href: effects.md
 - name: Extensions
