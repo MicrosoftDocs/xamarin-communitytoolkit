@@ -2,15 +2,30 @@
 title: BoolToObjectConverter
 author: sthewissen
 ms.author: joverslu
-description: "The SafeAreaEffect allows users to offset elements on-screen based on the current active safe area."
+description: "The BoolToObjectConverter allows users to convert a boolean into a specific object."
 ---
 
 # BoolToObjectConverter
 
+The BoolToObjectConverter is a converter that allows users to convert a `boolean` value binding to a specific object. By providing both a `TrueObject` and a `FalseObject` in the converter the appropriate object will be used depending on the value of the binding.
+
 ## Syntax
 
+```xml
+    <StackLayout>
+
+        <Label Text="Hi there from the Docs!" FontSize="{Binding MyBoolean, Converter={xct:BoolToObjectConverter TrueObject=16, FalseObject=10}}" />
+
+    </StackLayout>
+```
 
 ## Properties
+
+|Property  |Type  |Description  |
+|---------|---------|---------|
+| TrueObject | object | The object that will be used when the binding value is `true`. |
+| FalseObject | object | The object that will be used when the binding value is `false`. |
+
 
 ## Sample
 
