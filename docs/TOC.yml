@@ -44,9 +44,11 @@
       href: converters/notequalconverter.md
     - name: TextCaseConverter
       href: converters/textcaseconverter.md
-- name: Effects
-  href: effects.md
-- name: Extensions
+- name: "Effects"
+  items:
+    - name: "SafeAreaEffect"
+      href: effects/safeareaeffect.md
+- name: "Extensions"
   href: extensions.md
 - name: "Helpers"
   href: helpers.md
