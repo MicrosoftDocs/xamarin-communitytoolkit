@@ -1,8 +1,10 @@
-- name: Xamarin.CommunityToolkit
+- name: "Xamarin Community Toolkit Documentation"
   href: index.md
-- name: Get Started
-  href: get-started.md
-- name: Behaviors
+- name: "Setup"
+  items:
+    - name: "Getting Started with the Xamarin Community Toolkit"
+      href: get-started.md
+- name: "Behaviors"
   href: behaviors.md
 - name: "Converters"
   items:
@@ -46,9 +48,9 @@
   href: effects.md
 - name: Extensions
   href: extensions.md
-- name: Helpers
+- name: "Helpers"
   href: helpers.md
-- name: Views
+- name: "Views"
   href: views.md
-- name: Troubleshooting
+- name: "Troubleshooting"
   href: troubleshooting.md

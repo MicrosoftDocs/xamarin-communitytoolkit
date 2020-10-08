@@ -1,6 +1,6 @@
 ---
 title: "Xamarin Community Toolkit Documentation"
-description: "The Xamarin community toolkit is a collection of reusable elements for mobile development with Xamarin.Forms, including animations, behaviors, converters, effects, and helpers."
+description: "The Xamarin Community Toolkit is a collection of reusable elements for mobile development with Xamarin.Forms, including animations, behaviors, converters, effects, and helpers."
 ms.prod: xamarin
 ms.technology: xamarin-forms
 author: davidbritch
@@ -8,16 +8,23 @@ ms.author: dabritch
 ms.date: 07/08/2020
 ---
 
-# Xamarin community toolkit
+# Xamarin Community Toolkit
 
-The Xamarin community toolkit is a collection of reusable elements for mobile development with Xamarin.Forms, including animations, behaviors, converters, effects, and helpers. It simplifies and demonstrates common developer tasks when building iOS, Android, and Universal Windows Platform (UWP) apps using Xamarin.Forms.
+The Xamarin Community Toolkit is a collection of reusable elements for mobile development with Xamarin.Forms, including animations, behaviors, converters, effects, and helpers. It simplifies and demonstrates common developer tasks when building iOS, Android, macOS, WPF and Universal Windows Platform (UWP) apps using Xamarin.Forms.
 
-The Xamarin community toolkit is available as a Visual Studio NuGet package for new or existing Xamarin.Forms projects.
+The Xamarin Community Toolkit is available as a Visual Studio NuGet package for new or existing Xamarin.Forms projects.
 
-## Open source
+You can also preview the capabilities of the toolkit by running the sample app available in the [Xamarin Community Toolkit repo](https://github.com/xamarin/XamarinCommunityToolkit).
 
-The Xamarin community toolkit is built as an open source project hosted on GitHub by the community. Its source code can be in the [Xamarin community toolkit repo](https://github.com/xamarin/XamarinCommunityToolkit).
+Feel free to browse the documentation using the table of contents on the left side of this page.
 
+## Open Source
+
+[Xamarin Community Toolkit Source Code](https://github.com/xamarin/XamarinCommunityToolkit) 
+
+The Xamarin Community Toolkit is built as an open source project hosted on GitHub by the community.
+
+<!--
 ## [Get started with Xamarin.CommunityToolkit](get-started.md)
 
 Follow the [Getting started guide](get-started.md) to install the **Xamarin.CommunityToolkit** NuGet package into your existing or new Xamarin.Forms, Android, iOS, or UWP projects.
@@ -36,6 +43,7 @@ Follow the guides to integrate these Xamarin.CommunityToolkit features into your
 ## [Troubleshooting](troubleshooting.md)
 
 Find help if you are running into issues.
+-->
 
 <!--
 ## [Release Notes](/xamarin/communitytoolkit/release-notes/)
