@@ -49,7 +49,11 @@
     - name: "SafeAreaEffect"
       href: effects/safeareaeffect.md
 - name: "Extensions"
-  href: extensions.md
+  items:
+    - name: "ImageResourceExtension"
+      href: extensions/imageresourceextension.md
+    - name: "TranslateExtension"
+      href: extensions/translateextension.md
 - name: "Helpers"
   href: helpers.md
 - name: "Views"
