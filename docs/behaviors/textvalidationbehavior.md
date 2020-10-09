@@ -4,7 +4,7 @@ author: AlexHedley
 description: .
 ---
 
-# Title
+# TextValidationBehavior
 
 <!-- Describe your control -->
 
@@ -58,7 +58,6 @@ description: .
 | OnAttachedTo(View) | *Description* |
 | OnRegexPropertyChanged(BindableObject, object, object) | *Description* |
 <!--| OnRegexPropertyChanged() | *Description* |-->
-
 
 ## Examples
 
