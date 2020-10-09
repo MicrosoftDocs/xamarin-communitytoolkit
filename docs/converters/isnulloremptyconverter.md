@@ -1,14 +1,17 @@
 ---
-title: IsNullOrEmptyConverter
+title: "Xamarin Community Toolkit IsNullOrEmptyConverter"
 author: sthewissen
 ms.author: joverslu
 description: "The IsNullOrEmptyConverter allows users to convert a binding value to a boolean indicating whether or not the binding value is null or empty."
+ms.date: 10/09/2020
 ---
 
-# IsNullOrEmptyConverter
+# Xamarin Community Toolkit IsNullOrEmptyConverter
+
 The IsNullOrEmptyConverter is a converter that allows users to convert an incoming binding to a `bool` value. This value represents if the incoming binding value is `null` or empty.
 
 ## Syntax
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -33,7 +36,7 @@ The IsNullOrEmptyConverter is a converter that allows users to convert an incomi
 ## Sample
 
 > [!NOTE]
->  Currently there's no sample available for this feature yet. Want to add one? We are open to [community contributions](https://github.com/xamarin/XamarinCommunityToolkit).
+> Currently there's no sample available for this feature yet. Want to add one? We are open to [community contributions](https://github.com/xamarin/XamarinCommunityToolkit).
 
 <!-- [IsNullOrEmptyConverter sample page Source](https://github.com/xamarin/XamarinCommunityToolkit)
 

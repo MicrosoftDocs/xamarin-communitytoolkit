@@ -1,14 +1,17 @@
 ---
-title: ItemSelectedEventArgsConverter
+title: "Xamarin Community Toolkit ItemSelectedEventArgsConverter"
 author: sthewissen
 ms.author: joverslu
 description: "The ItemSelectedEventArgsConverter allows users to offset elements on-screen based on the current active safe area."
+ms.date: 10/09/2020
 ---
 
-# ItemSelectedEventArgsConverter
+# Xamarin Community Toolkit ItemSelectedEventArgsConverter
+
 The ItemSelectedEventArgsConverter is a converter that allows users to extract the `SelectedItem` value from an [SelectedItemChangedEventArgs](/dotnet/api/xamarin.forms.selecteditemchangedeventargs) object. It can subsequently be used in combination with `EventToCommandBehavior`.
 
 ## Syntax
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"

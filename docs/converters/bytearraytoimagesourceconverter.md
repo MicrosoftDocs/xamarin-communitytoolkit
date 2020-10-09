@@ -1,11 +1,12 @@
 ---
-title: ByteArrayToImageSourceConverter
+title: "Xamarin Community Toolkit ByteArrayToImageSourceConverter"
 author: sthewissen
 ms.author: joverslu
 description: "The ByteArrayToImageSourceConverter allows users to show an image based on a byte array."
+ms.date: 10/09/2020
 ---
 
-# ByteArrayToImageSourceConverter
+# Xamarin Community Toolkit ByteArrayToImageSourceConverter
 
 The ByteArrayToImageSourceConverter is a converter that allows the user to convert an incoming value from byte array and returns an object of type `ImageSource`. This object can then be used as the `Source` of an `Image` control.
 
@@ -17,7 +18,6 @@ The ByteArrayToImageSourceConverter is a converter that allows the user to conve
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:xct="clr-namespace:Xamarin.CommunityToolkit.Converters;assembly=Xamarin.CommunityToolkit"
              x:Class="MyLittleApp.MainPage">
-    
     <ContentPage.Resources>
          <ResourceDictionary>
              <xct:ByteArrayToImageSourceConverter x:Key="ByteArrayToImageSourceConverter" />

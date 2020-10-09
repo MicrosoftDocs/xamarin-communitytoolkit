@@ -1,11 +1,12 @@
 ---
-title: IntToBoolConverter
+title: "Xamarin Community Toolkit IntToBoolConverter"
 author: sthewissen
 ms.author: joverslu
 description: "The IntToBoolConverter allows users to convert an incoming integer value to a boolean."
+ms.date: 10/09/2020
 ---
 
-# IntToBoolConverter
+# Xamarin Community Toolkit IntToBoolConverter
 
 The IntToBoolConverter is a converter that allows users to convert an incoming `int` value to a `bool`. If the incoming `int` value is 0, it will be converted to `false`. Any other incoming value will be converted to `true`.
 
@@ -35,7 +36,7 @@ The IntToBoolConverter is a converter that allows users to convert an incoming `
 ## Sample
 
 > [!NOTE]
->  Currently there's no sample available for this feature yet. Want to add one? We are open to [community contributions](https://github.com/xamarin/XamarinCommunityToolkit).
+> Currently there's no sample available for this feature yet. Want to add one? We are open to [community contributions](https://github.com/xamarin/XamarinCommunityToolkit).
 
 <!-- [IntToBoolConverter sample page Source](https://github.com/xamarin/XamarinCommunityToolkit)
 

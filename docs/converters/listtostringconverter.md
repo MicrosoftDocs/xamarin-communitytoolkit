@@ -1,14 +1,17 @@
 ---
-title: ListToStringConverter
+title: "Xamarin Community Toolkit ListToStringConverter"
 author: sthewissen
 ms.author: joverslu
 description: "The ListToStringConverter allows users to convert a list of values to a single string value."
+ms.date: 10/09/2020
 ---
 
-# ListToStringConverter
+# Xamarin Community Toolkit ListToStringConverter
+
 The ListToStringConverter is a converter that allows users to convert an incoming binding that implements `IEnumerable` to a single `string` value. The `Separator` property is used to join the items in the `IEnumerable`.
 
 ## Syntax
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"

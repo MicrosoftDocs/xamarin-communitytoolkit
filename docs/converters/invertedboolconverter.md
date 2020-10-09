@@ -1,11 +1,13 @@
 ---
-title: InvertedBoolConverter
+title: "Xamarin Community Toolkit InvertedBoolConverter"
 author: sthewissen
 ms.author: joverslu
 description: "The InvertedBoolConverter allows users to invert a boolean value binding."
+ms.date: 10/09/2020
 ---
 
-# InvertedBoolConverter
+# Xamarin Community Toolkit InvertedBoolConverter
+
 The InvertedBoolConverter is a converter that allows users to convert a `bool` value binding to its inverted value.
 
 ## Syntax
@@ -34,7 +36,7 @@ The InvertedBoolConverter is a converter that allows users to convert a `bool` v
 ## Sample
 
 > [!NOTE]
->  Currently there's no sample available for this feature yet. Want to add one? We are open to [community contributions](https://github.com/xamarin/XamarinCommunityToolkit).
+> Currently there's no sample available for this feature yet. Want to add one? We are open to [community contributions](https://github.com/xamarin/XamarinCommunityToolkit).
 
 <!-- [InvertedBoolConverter sample page Source](https://github.com/xamarin/XamarinCommunityToolkit)
 
