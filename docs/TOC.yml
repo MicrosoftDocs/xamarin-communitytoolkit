@@ -6,7 +6,7 @@
       href: get-started.md
 - name: "Behaviors"
   items:
-    - name: Email Validation Behavior
+    - name: EmailValidationBehavior
       href: behaviors/emailvalidationbehavior.md
     - name: EventToCommandBehavior
       href: behaviors/eventtocommandbehavior.md
