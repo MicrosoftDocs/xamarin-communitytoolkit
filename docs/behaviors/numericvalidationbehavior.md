@@ -1,12 +1,12 @@
 ---
 title: "Xamarin Community Toolkit NumericValidationBehavior"
 author: AlexHedley
-description: "."
+description: "The NumericValidationBehavior allows the user to determine if a given text is a valid numeric value."
 ms.author: joverslu
 ms.date: 10/09/2020
 ---
 
-# Xamarin Community Toolkit Numeric Validation Behavior
+# Xamarin Community Toolkit NumericValidationBehavior
 
 <!-- Describe your control -->
 

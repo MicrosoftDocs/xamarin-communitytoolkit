@@ -1,7 +1,7 @@
 ---
 title: "Xamarin Community Toolkit TextValidationBehavior"
 author: AlexHedley
-description: "."
+description: "The TextValidationBehavior allows the user to validate a given text depending on specified parameters."
 ms.author: joverslu
 ms.date: 10/09/2020
 ---
@@ -72,7 +72,7 @@ ms.date: 10/09/2020
 
 ## API
 
-- [TextValidationBehavior](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkit/Behaviors/TextValidationBehavior.shared.cs)
+- [TextValidationBehavior](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkit/Behaviors/Validators/TextValidationBehavior.shared.cs)
 
 ## Related links
 

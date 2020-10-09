@@ -1,7 +1,7 @@
 ---
 title: "Xamarin Community Toolkit EventToCommandBehavior"
 author: AlexHedley
-description: "."
+description: "The EventToCommandBehavior allows the user to invoke a Commmand through an event."
 ms.author: joverslu
 ms.date: 10/09/2020
 ---

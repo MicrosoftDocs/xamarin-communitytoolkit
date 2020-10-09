@@ -1,7 +1,7 @@
 ---
 title: "Xamarin Community Toolkit EmailValidationBehavior"
 author: AlexHedley
-description: "."
+description: "The EmailValidationBehavior allows users to determine whether or not a given text is a valid e-mail address."
 ms.author: joverslu
 ms.date: 10/09/2020
 ---
