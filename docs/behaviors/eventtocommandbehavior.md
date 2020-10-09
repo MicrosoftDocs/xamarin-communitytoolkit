@@ -3,9 +3,10 @@ title: "Xamarin Community Toolkit EventToCommandBehavior"
 author: AlexHedley
 description: "."
 ms.author: joverslu
+ms.date: 10/09/2020
 ---
 
-# Event To Command Behavior
+# Xamarin Community Toolkit EventToCommandBehavior
 
 ## Syntax
 

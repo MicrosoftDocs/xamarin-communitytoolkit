@@ -3,9 +3,10 @@ title: "Xamarin Community Toolkit EmailValidationBehavior"
 author: AlexHedley
 description: "."
 ms.author: joverslu
+ms.date: 10/09/2020
 ---
 
-# Email Validation Behavior
+# Xamarin Community Toolkit EmailValidationBehavior
 
 <!-- Describe your control -->
 

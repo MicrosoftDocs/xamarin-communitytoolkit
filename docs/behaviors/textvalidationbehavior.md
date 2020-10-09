@@ -3,9 +3,10 @@ title: "Xamarin Community Toolkit TextValidationBehavior"
 author: AlexHedley
 description: "."
 ms.author: joverslu
+ms.date: 10/09/2020
 ---
 
-# Text Validation Behavior
+# Xamarin Community Toolkit TextValidationBehavior
 
 <!-- Describe your control -->
 

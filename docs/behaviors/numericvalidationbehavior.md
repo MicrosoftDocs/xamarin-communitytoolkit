@@ -3,9 +3,10 @@ title: "Xamarin Community Toolkit NumericValidationBehavior"
 author: AlexHedley
 description: "."
 ms.author: joverslu
+ms.date: 10/09/2020
 ---
 
-# Numeric Validation Behavior
+# Xamarin Community Toolkit Numeric Validation Behavior
 
 <!-- Describe your control -->
 
