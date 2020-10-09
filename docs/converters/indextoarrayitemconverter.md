@@ -1,11 +1,12 @@
 ---
-title: IndexToArrayItemConverter
+title: "Xamarin Community Toolkit IndexToArrayItemConverter"
 author: sthewissen
 ms.author: joverslu
 description: "The IndexToArrayItemConverter allows users to retrieve an item from an array based on the binding of an indexer."
+ms.date: 10/09/2020
 ---
 
-# IndexToArrayItemConverter
+# Xamarin Community Toolkit IndexToArrayItemConverter
 
 The IndexToArrayItemConverter is a converter that allows users to convert a `int` value binding to an item in an array. The `int` value being data bound represents the indexer used to access the array. The array is passed in through the `ConverterParameter`.
 
@@ -42,7 +43,7 @@ The IndexToArrayItemConverter is a converter that allows users to convert a `int
 ## Sample
 
 > [!NOTE]
->  Currently there's no sample available for this feature yet. Want to add one? We are open to [community contributions](https://github.com/xamarin/XamarinCommunityToolkit).
+> Currently there's no sample available for this feature yet. Want to add one? We are open to [community contributions](https://github.com/xamarin/XamarinCommunityToolkit).
 
 <!-- [IndexToArrayItemConverter sample page Source](https://github.com/xamarin/XamarinCommunityToolkit)
 

@@ -1,7 +1,8 @@
 ---
-title: Views
+title: "Xamarin Community Toolkit Views"
 author: AlexHedley
 description: Views
+ms.author: joverslu
 ---
 
-# Views
+# Xamarin Community Toolkit Views
