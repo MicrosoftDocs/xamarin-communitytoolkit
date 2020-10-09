@@ -26,7 +26,7 @@ The toolkit is available as a NuGet package that can be added to any existing or
 
 4. Check out the rest of the documentation to learn more about implementing specific features.
 
-## Other Resources
+## Other resources
 
 Download the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit) from the repository to see the controls in an actual app.
 

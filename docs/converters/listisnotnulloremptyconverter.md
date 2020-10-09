@@ -7,6 +7,7 @@ ms.date: 10/09/2020
 ---
 
 # Xamarin Community Toolkit ListIsNotNullOrEmptyConverter
+
 The ListIsNotNullOrEmptyConverter is a converter that allows users to convert an incoming binding that implements `IEnumerable` to a `bool` value. This value represents if the incoming binding value is **not** `null` or an empty list.
 
 ## Syntax
