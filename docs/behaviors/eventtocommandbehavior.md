@@ -85,4 +85,4 @@ You can see this element in action in the [Xamarin community toolkit sample app]
 
 ## API
 
-- [EventToCommandBehavior]([source-code-link](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkit/Behaviors/EventToCommandBehavior.shared.cs))
+- [EventToCommandBehavior](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkit/Behaviors/EventToCommandBehavior.shared.cs)

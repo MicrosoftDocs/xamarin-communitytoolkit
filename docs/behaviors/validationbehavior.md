@@ -1,10 +1,11 @@
 ---
-title: ValidationBehavior
+title: "Xamarin Community Toolkit ValidationBehavior"
 author: AlexHedley
-description: .
+description: "."
+ms.author: joverslu
 ---
 
-# Title
+# Validation Behavior
 
 <!-- Describe your control -->
 
