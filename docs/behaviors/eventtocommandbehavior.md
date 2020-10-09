@@ -1,10 +1,11 @@
 ---
-title: EventToCommandBehavior
+title: "Xamarin Community Toolkit EventToCommandBehavior"
 author: AlexHedley
-description: .
+description: "."
+ms.author: joverslu
 ---
 
-# EventToCommandBehavior
+# Event To Command Behavior
 
 ## Syntax
 

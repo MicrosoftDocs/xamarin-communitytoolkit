@@ -1,10 +1,11 @@
 ---
-title: EmailValidationBehavior
+title: "Xamarin Community Toolkit EmailValidationBehavior"
 author: AlexHedley
-description: .
+description: "."
+ms.author: joverslu
 ---
 
-# EmailValidationBehavior
+# Email Validation Behavior
 
 <!-- Describe your control -->
 

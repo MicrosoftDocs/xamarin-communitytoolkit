@@ -1,10 +1,11 @@
 ---
-title: NumericValidationBehavior
+title: "Xamarin Community Toolkit NumericValidationBehavior"
 author: AlexHedley
-description: .
+description: "."
+ms.author: joverslu
 ---
 
-# NumericValidationBehavior
+# Numeric Validation Behavior
 
 <!-- Describe your control -->
 
@@ -56,4 +57,3 @@ description: .
 ## API
 
 - [NumericValidationBehavior](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkit/Behaviors/NumericValidationBehavior.shared.cs)
-

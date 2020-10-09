@@ -78,7 +78,7 @@ description: .
 ## Sample project
 
 <!-- Link to the sample page in the Xamarin community toolkit sample app -->
-[control/helper name sample page Source](sample-page-link). You can see this element in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit/tree/main/XamarinCommunityToolkitSample).
+<!-- [control/helper name sample page Source](sample-page-link). You can see this element in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit/tree/main/XamarinCommunityToolkitSample). -->
 
 ## API
 
@@ -88,5 +88,5 @@ description: .
 
 <!-- Optional -->
 
-- [Topic 1](link)
-- [Topic 2](link)
+<!-- - [Topic 1](link) -->
+<!-- - [Topic 2](link) -->
