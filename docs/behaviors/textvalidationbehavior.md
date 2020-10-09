@@ -35,7 +35,6 @@ ms.date: 10/09/2020
 | DecorationFlagsProperty | BindableProperty | *Description* |
 | RegexPatternProperty | BindableProperty | *Description* |
 | RegexOptionsProperty | BindableProperty | *Description* |
-<!--| Regex | regex | *Description* |-->
 | MinimumLength | int | *Description* |
 | MaximumLength | int | *Description* |
 | RegexPattern | string | *Description* |

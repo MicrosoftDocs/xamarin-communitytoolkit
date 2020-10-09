@@ -14,8 +14,6 @@
       href: behaviors/numericvalidationbehavior.md
     - name: TextValidationBehavior
       href: behaviors/textvalidationbehavior.md
-    - name: ValidationBehavior
-      href: behaviors/validationbehavior.md
 - name: "Converters"
   items:
     - name: BoolToObjectConverter
