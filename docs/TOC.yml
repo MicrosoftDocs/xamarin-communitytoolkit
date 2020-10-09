@@ -5,7 +5,7 @@
     - name: "Getting Started with the Xamarin Community Toolkit"
       href: get-started.md
 - name: "Behaviors"
-  href: behaviors.md
+  href: behaviors/toc.yml #behaviors.md
 - name: "Converters"
   items:
     - name: BoolToObjectConverter
