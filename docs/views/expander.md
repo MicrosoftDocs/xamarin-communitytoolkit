@@ -1,11 +1,11 @@
 ---
-title: "Xamarin.CommunityToolkit Expander"
-description: "The Xamarin.CommunityToolkit Expander control provides an expandable container to host any content. The content is shown or hidden by tapping the Expander header."
+title: "Expander"
+description: "The Xamarin Community Toolkit Expander control provides an expandable container to host any content. The content is shown or hidden by tapping the Expander header."
 author: jfversluis
 ms.author: joverslu
 ---
 
-# Xamarin.CommunityToolkit Expander
+# Expander
 
 [![Download Sample](~/media/shared/download.png) Download the sample](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-expanderdemos/)
 
