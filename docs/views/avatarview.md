@@ -30,16 +30,16 @@ The AvatarView control allows the user to display an avatar or the user's initia
 
 |Property  |Type  |Description  |
 |---------|---------|---------|
-| BorderColor | [Color](/dotnet/api/xamarin.forms.color) | Gets or sets the border color for the AvatarView. |
-| Color | [Color](/dotnet/api/xamarin.forms.color) | Gets or sets the color which will fill the background of a AvatarView. |
+| BorderColor | [`Color`](xref:Xamarin.Forms.Color)| Gets or sets the border color for the AvatarView. |
+| Color | [`Color`](xref:Xamarin.Forms.Color) | Gets or sets the color which will fill the background of a AvatarView. |
 | CornerRadius | double | Gets or sets the corner radius of the AvatarView. |
-| FontAttributes | [FontAttributes](/dotnet/api/xamarin.forms.fontattributes) | Gets a value that indicates whether the font for the label is bold, italic, or neither. |
+| FontAttributes | [`FontAttributes`](xref:Xamarin.Forms.FontAttributes) | Gets a value that indicates whether the font for the label is bold, italic, or neither. |
 | FontFamily | string | Gets the font family to which the font for the label belongs. |
 | FontSize | double | Gets the size of the font for the label. |
 | Size | double | Gets or sets the desired height and width of the AvatarView. |
-| Source | [ImageSource](/dotnet/api/xamarin.forms.imagesource) | Gets or sets the source of the image. This is a bindable property. |
+| Source | [`ImageSource`](xref:Xamarin.Forms.ImageSource) | Gets or sets the source of the image. This is a bindable property. |
 | Text | string | Gets or sets the text for the label. This is a bindable property. |
-| TextColor | [Color](/dotnet/api/xamarin.forms.color) | Gets or sets the Color for the text of the label. This is a bindable property. |
+| TextColor | [`Color`](xref:Xamarin.Forms.Color)| Gets or sets the Color for the text of the label. This is a bindable property. |
 
 ## Sample
 
