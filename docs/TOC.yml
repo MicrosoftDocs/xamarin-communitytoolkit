@@ -65,6 +65,8 @@
 - name: "Helpers"
   href: helpers.md
 - name: "Views"
-  href: views.md
+  items:
+    - name: "AvatarView"
+      href: views/avatarview.md
 - name: "Troubleshooting"
   href: troubleshooting.md
