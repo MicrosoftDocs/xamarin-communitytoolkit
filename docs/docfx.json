@@ -47,12 +47,9 @@
       "extendBreadcrumb": true,
       "audience": "developer",
       "ms.topic": "conceptual",
-      "ms.technology": "xamarin-crossplatform",
+      "ms.technology": "xamarin-community-toolkit",
       "ms.prod": "xamarin",
-      "searchScope": ["Xamarin"],
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/xamarin-communitytoolkit",
-      "feedback_product_url": "https://developercommunity.visualstudio.com/"
+      "searchScope": ["Xamarin"]
     },
     "fileMetadata": {},
     "template": [],
