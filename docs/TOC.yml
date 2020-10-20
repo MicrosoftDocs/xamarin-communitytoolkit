@@ -65,6 +65,8 @@
 - name: "Helpers"
   href: helpers.md
 - name: "Views"
-  href: views.md
+  items:
+    - name: "MediaElement"
+      href: views/mediaelement.md
 - name: "Troubleshooting"
   href: troubleshooting.md
