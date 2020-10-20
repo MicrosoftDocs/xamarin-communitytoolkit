@@ -66,6 +66,8 @@
   href: helpers.md
 - name: "Views"
   items:
+    - name: "AvatarView"
+      href: views/avatarview.md
     - name: "MediaElement"
       href: views/mediaelement.md
 - name: "Troubleshooting"
