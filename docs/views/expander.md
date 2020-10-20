@@ -264,9 +264,9 @@ The animation that occurs when an `Expander` expands or collapses can be defined
 The following XAML shows an example of defining the animation that occurs when the `Expander` is expanded or collapsed by the user:
 
 ```xaml
-<Expander ExpandAnimationEasing="{x:Static Easing.CubicIn}"
+<Expander ExpandAnimationEasing="{CubicIn}"
           ExpandAnimationLength="500"
-          CollapseAnimationEasing="{x:Static Easing.CubicOut}"
+          CollapseAnimationEasing="{CubicOut}"
           CollapseAnimationLength="500">
     <Expander.Header>
         <Label Text="{Binding Name}"
