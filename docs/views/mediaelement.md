@@ -2,7 +2,7 @@
 title: "Xamarin.CommunityToolkit MediaElement"
 description: "This article explains how to use MediaElement to play video and audio in a Xamarin.Forms application."
 author: jfversluis
-ms.author: joversluis
+ms.author: joverslu
 ms.date: 10/20/2020
 ---
 
