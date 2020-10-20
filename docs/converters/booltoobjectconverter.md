@@ -1,11 +1,12 @@
 ---
-title: BoolToObjectConverter
+title: "Xamarin Community Toolkit BoolToObjectConverter"
 author: sthewissen
 ms.author: joverslu
 description: "The BoolToObjectConverter allows users to convert a boolean into a specific object."
+ms.date: 10/09/2020
 ---
 
-# BoolToObjectConverter
+# Xamarin Community Toolkit BoolToObjectConverter
 
 The BoolToObjectConverter is a converter that allows users to convert a `bool` value binding to a specific object. By providing both a `TrueObject` and a `FalseObject` in the converter the appropriate object will be used depending on the value of the binding.
 
@@ -43,7 +44,7 @@ The BoolToObjectConverter is a converter that allows users to convert a `bool` v
 ## Sample
 
 > [!NOTE]
->  Currently there's no sample available for this feature yet. Want to add one? We are open to [community contributions](https://github.com/xamarin/XamarinCommunityToolkit).
+> Currently there's no sample available for this feature yet. Want to add one? We are open to [community contributions](https://github.com/xamarin/XamarinCommunityToolkit).
 
 <!-- [BoolToObjectConverter sample page Source](https://github.com/xamarin/XamarinCommunityToolkit)
 

@@ -1,11 +1,12 @@
 ---
-title: DoubleToIntConverter
+title: "Xamarin Community Toolkit DoubleToIntConverter"
 author: sthewissen
 ms.author: joverslu
 description: "The DoubleToIntConverter allows users to convert an incoming double value to an int."
+ms.date: 10/09/2020
 ---
 
-# DoubleToIntConverter
+# Xamarin Community Toolkit DoubleToIntConverter
 
 The DoubleToIntConverter is a converter that allows users to convert an incoming `double` value to an `int`. Optionally the user can provide a multiplier to the conversion through the `Ratio` property.
 
@@ -41,7 +42,7 @@ The DoubleToIntConverter is a converter that allows users to convert an incoming
 ## Sample
 
 > [!NOTE]
->  Currently there's no sample available for this feature yet. Want to add one? We are open to [community contributions](https://github.com/xamarin/XamarinCommunityToolkit).
+> Currently there's no sample available for this feature yet. Want to add one? We are open to [community contributions](https://github.com/xamarin/XamarinCommunityToolkit).
 
 <!-- [DoubleToIntConverter sample page Source](https://github.com/xamarin/XamarinCommunityToolkit)
 

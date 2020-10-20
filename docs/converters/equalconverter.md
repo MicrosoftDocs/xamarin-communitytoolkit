@@ -1,11 +1,12 @@
 ---
-title: EqualConverter
+title: "Xamarin Community Toolkit EqualConverter"
 author: sthewissen
 ms.author: joverslu
 description: "The EqualConverter allows users to check whether or not a binding value equals another value."
+ms.date: 10/09/2020
 ---
 
-# EqualConverter
+# Xamarin Community Toolkit EqualConverter
 
 The EqualConverter is a converter that allows users to convert any value binding to a `bool` depending on whether or not it is equal to a different value. The initial binding contains the object that will be compared and the `ConverterParameter` contains the object to compare it to.
 
@@ -35,7 +36,7 @@ The EqualConverter is a converter that allows users to convert any value binding
 ## Sample
 
 > [!NOTE]
->  Currently there's no sample available for this feature yet. Want to add one? We are open to [community contributions](https://github.com/xamarin/XamarinCommunityToolkit).
+> Currently there's no sample available for this feature yet. Want to add one? We are open to [community contributions](https://github.com/xamarin/XamarinCommunityToolkit).
 
 <!-- [EqualConverter sample page Source](https://github.com/xamarin/XamarinCommunityToolkit)
 

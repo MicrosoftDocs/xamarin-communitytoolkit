@@ -5,7 +5,15 @@
     - name: "Getting Started with the Xamarin Community Toolkit"
       href: get-started.md
 - name: "Behaviors"
-  href: behaviors.md
+  items:
+    - name: EmailValidationBehavior
+      href: behaviors/emailvalidationbehavior.md
+    - name: EventToCommandBehavior
+      href: behaviors/eventtocommandbehavior.md
+    - name: NumericValidationBehavior
+      href: behaviors/numericvalidationbehavior.md
+    - name: TextValidationBehavior
+      href: behaviors/textvalidationbehavior.md
 - name: "Converters"
   items:
     - name: BoolToObjectConverter
@@ -56,9 +64,11 @@
       href: extensions/translateextension.md
 - name: "Helpers"
   href: helpers.md
-- name: Views
+- name: "Views"
   items:
+    - name: "AvatarView"
+      href: views/avatarview.md
     - name: Expander
       href: views/expander.md
-- name: Troubleshooting
+- name: "Troubleshooting"
   href: troubleshooting.md

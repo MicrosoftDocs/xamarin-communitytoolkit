@@ -18,9 +18,9 @@ You can also preview the capabilities of the toolkit by running the sample app a
 
 Feel free to browse the documentation using the table of contents on the left side of this page.
 
-## Open Source
+## Open source
 
-[Xamarin Community Toolkit Source Code](https://github.com/xamarin/XamarinCommunityToolkit) 
+[Xamarin Community Toolkit Source Code](https://github.com/xamarin/XamarinCommunityToolkit)
 
 The Xamarin Community Toolkit is built as an open source project hosted on GitHub by the community.
 

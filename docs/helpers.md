@@ -1,7 +1,8 @@
 ---
-title: Helpers
+title: "Xamarin Community Toolkit Helpers"
 author: AlexHedley
 description: Helpers
+ms.author: joverslu
 ---
 
-# Helpers
+# Xamarin Community Toolkit Helpers
