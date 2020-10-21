@@ -226,7 +226,7 @@ if (!string.IsNullOrWhiteSpace(filename))
 }
 ```
 
-The video picking dependency service is invoked by calling the `DependencyService.Get` method to obtain the implementation of an `IVideoPicker` interface in the platform project. The `GetVideoFileAsync` method is then called on that instance, and the returned filename is used to create a [`FileMediaSource`](xref:Xamarin.CommunityToolkit.Core.FileMediaSource) object and to set it to the `Source` property of the `MediaElement`.
+The video picking dependency service is invoked by calling the `DependencyService.Get` method to obtain the implementation of an `IVideoPicker` interface in the platform project. The `GetVideoFileAsync` method is then called on that instance, and the returned filename is used to create a `FileMediaSource` object and to set it to the `Source` property of the `MediaElement`.
 
 ## Change video aspect ratio
 
