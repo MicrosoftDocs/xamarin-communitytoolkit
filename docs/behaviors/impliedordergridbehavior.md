@@ -4,6 +4,7 @@ description: "A behavior for a grid that assigns grid column and row assignments
 author: bmacombe
 ms.date: 10/22/2020
 ms.topic: conceptual
+ms.author: joverslu
 ms.assetid: 3e9dced9-2d71-4092-be1f-8a3bf8172725
 ms.prod: xamarin
 ---
