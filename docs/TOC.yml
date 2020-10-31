@@ -50,6 +50,10 @@
       href: converters/multiconverter.md
     - name: NotEqualConverter
       href: converters/notequalconverter.md
+    - name: StringToDoubleConverter
+      href: converters/stringtodoubleconverter.md
+    - name: StringToIntConverter
+      href: converters/stringtointconverter.md
     - name: TextCaseConverter
       href: converters/textcaseconverter.md
 - name: "Effects"
