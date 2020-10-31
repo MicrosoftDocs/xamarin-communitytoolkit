@@ -63,7 +63,6 @@
     - name: "TranslateExtension"
       href: extensions/translateextension.md
 - name: "Helpers"
-  href: helpers.md
 - name: "Views"
   items:
     - name: "AvatarView"
