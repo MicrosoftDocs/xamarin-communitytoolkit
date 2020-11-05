@@ -1,27 +1,29 @@
 ---
 title: "Xamarin Community Toolkit C# Markup"
 author: VincentH-Net
-description: "C# markup is an opt-in set of fluent helper methods and classes to simplify the process of building declarative Xamarin.Forms user interfaces in C#."
+description: "C# Markup is a set of fluent helper methods and classes to simplify the process of building declarative Xamarin.Forms user interfaces in C#."
 ---
 
-# Xamarin.Forms C# markup
+# Xamarin Community Toolkit C# Markup
 
-![Pre-release API](~/media/shared/preview.png)
+[![Download Sample](media/shared/download.png) Download Xamarin.CommunityToolkit.MarkupSample](https://github.com/xamarin/XamarinCommunityToolkit)
 
-[![Download Sample](~/media/shared/download.png) Download the sample](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-csharpmarkupdemos/)
+C# Markup is a set of fluent helper methods and classes to simplify the process of building declarative Xamarin.Forms user interfaces in C#. The fluent API provided by C# Markup is available in the `Xamarin.CommunityToolkit.Markup` namespace.
 
-C# markup is an opt-in set of fluent helper methods and classes to simplify the process of building declarative Xamarin.Forms user interfaces in C#. The fluent API provided by C# markup is available in the `Xamarin.Forms.Markup` namespace.
+Just as with XAML, C# Markup enables a clean separation between UI markup and UI logic. This can be achieved by separating UI markup and UI logic into distinct partial class files. For example, for a login page the UI markup would be in a file named *LoginPage.cs*, while the UI logic would be in a file named *LoginPage.logic.cs*.
 
-Just as with XAML, C# markup enables a clean separation between UI markup and UI logic. This can be achieved by separating UI markup and UI logic into distinct partial class files. For example, for a login page the UI markup would be in a file named *LoginPage.cs*, while the UI logic would be in a file named *LoginPage.logic.cs*.
+The latest version of C# Markup requires **Xamarin.Forms 5** and is available in the [Xamarin.CommunityToolkit.Markup NuGet package](https://www.nuget.org/packages/Xamarin.CommunityToolkit.Markup).
 
-C# markup is available from Xamarin.Forms 4.6. However, it's currently experimental and can only be used by adding the following line of code to your *App.cs* file:
-
-```csharp
-Device.SetFlags(new string[]{ "Markup_Experimental" });
-```
+C# Markup is available on all platforms supported by Xamarin.Forms.
 
 > [!NOTE]
-> C# markup is available on all the platforms supported by Xamarin.Forms.
+> [The preview version of C# Markup](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/csharp-markup) is available in Xamarin.Forms 4.6 through 4.8 as an experimental feature.
+>
+> To migrate from the C# Markup preview version to XCT C# Markup:
+> 1) Update to Forms 5
+> 2) Install the Xamarin.CommunityToolkit.Markup NuGet package
+> 3) Change all references to the `Xamarin.Forms.Markup` namespace to `Xamarin.CommunityToolkit.Markup`
+> 4) Update `Font` helper calls where needed.<br />`Font` now has `family` as it's first parameter instead of `size`. E.g. replace `.Font(15)` with .Font(size: 15) or `.FontSize(15)`
 
 ## Basic example
 
@@ -52,11 +54,12 @@ Content = grid;
 
 This example creates a [`Grid`](xref:Xamarin.Forms.Grid) object, with child [`Label`](xref:Xamarin.Forms.Label) and [`Entry`](xref:Xamarin.Forms.Entry) objects. The `Label` displays text, and the `Entry` data binds to the `RegistrationCode` property of the viewmodel. Each child view is set to appear in a specific row in the `Grid`, and the `Entry` spans all the columns in the `Grid`. In addition, the height of the `Entry` is set, along with its keyboard, colors, the font size of its text, and its `Margin`. Finally, the `Page.Content` property is set to the `Grid` object.
 
-C# markup enables this code to be re-written using its fluent API:
+C# Markup enables this code to be re-written using its fluent API:
 
 ```csharp
-using Xamarin.Forms.Markup;
-using static Xamarin.Forms.Markup.GridRowsColumns;
+using Xamarin.Forms;
+using Xamarin.CommunityToolkit.Markup;
+using static Xamarin.CommunityToolkit.Markup.GridRowsColumns;
 
 Content = new Grid
 {
@@ -72,26 +75,31 @@ Content = new Grid
 }};
 ```
 
-This example is identical to the previous example, but the C# markup fluent API simplifies the process of building the UI in C#.
+This example is identical to the previous example, but the C# Markup fluent API simplifies the process of building the UI in C#.
 
 > [!NOTE]
-> C# markup includes extension methods that set specific view properties. These extension methods are not meant to replace all property setters. Instead, they are designed to improve code readability, and can be used in combination with property setters. It's recommended to always use an extension method when one exists for a property, but you can choose your preferred balance.
+> C# Markup includes extension methods that set specific view properties. These extension methods are not meant to replace all property setters. Instead, they are designed to improve code readability, and can be used in combination with property setters. It's recommended to always use an extension method when one exists for a property, but you can choose your preferred balance.
 
 ## Data binding
 
-C# markup includes a `Bind` extension method, along with overloads, that creates a data binding between a view bindable property and a specified property. The `Bind` method knows the default bindable property for the majority of the controls that are included in Xamarin.Forms. Therefore, it's typically not necessary to specify the target property when using this method. However, you can also register the default bindable property for additional controls:
+C# Markup includes a `Bind` extension method, along with overloads, that creates a data binding between a view bindable property and a specified property. The `Bind` method knows the default bindable property for the majority of the controls that are included in Xamarin.Forms. Therefore, it's typically not necessary to specify the target property when using this method. However, you can also register the default bindable property for additional controls:
 
 ```csharp
-using Xamarin.Forms.Markup;
+using Xamarin.Forms;
+using Xamarin.CommunityToolkit.Markup;
 //...
 
-DefaultBindableProperties.Register(HoverButton.CommandProperty, RadialGauge.ValueProperty);
+DefaultBindableProperties.Register(
+  HoverButton.CommandProperty, 
+  RadialGauge.ValueProperty
+);
 ```
 
 The `Bind` method can be used to bind to any bindable property:
 
 ```csharp
-using Xamarin.Forms.Markup;
+using Xamarin.Forms;
+using Xamarin.CommunityToolkit.Markup;
 // ...
 
 new Label { Text = "No data available" }
@@ -101,7 +109,8 @@ new Label { Text = "No data available" }
 In addition, the `BindCommand` extension method can bind to a control's default `Command` and `CommandParameter` properties in a single method call:
 
 ```csharp
-using Xamarin.Forms.Markup;
+using Xamarin.Forms;
+using Xamarin.CommunityToolkit.Markup;
 // ...
 
 new TextCell { Text = "Tap me" }
@@ -111,7 +120,8 @@ new TextCell { Text = "Tap me" }
 By default, the `CommandParameter` is bound to the binding context. You can also specify the binding path and source for the `Command` and the `CommandParameter` bindings:
 
 ```csharp
-using Xamarin.Forms.Markup;
+using Xamarin.Forms;
+using Xamarin.CommunityToolkit.Markup;
 // ...
 
 new TextCell { Text = "Tap Me" }
@@ -125,7 +135,8 @@ If you only need to bind to `Command`, you can pass `null` to the `parameterPath
 You can also register the default `Command` and `CommandParameter` properties for additional controls:
 
 ```csharp
-using Xamarin.Forms.Markup;
+using Xamarin.Forms;
+using Xamarin.CommunityToolkit.Markup;
 //...
 
 DefaultBindableProperties.RegisterCommand(
@@ -137,7 +148,8 @@ DefaultBindableProperties.RegisterCommand(
 Inline converter code can be passed into the `Bind` method with the `convert` and `convertBack` parameters:
 
 ```csharp
-using Xamarin.Forms.Markup;
+using Xamarin.Forms;
+using Xamarin.CommunityToolkit.Markup;
 //...
 
 new Label { Text = "Tree" }
@@ -148,7 +160,8 @@ new Label { Text = "Tree" }
 Type safe converter parameters are also supported:
 
 ```csharp
-using Xamarin.Forms.Markup;
+using Xamarin.Forms;
+using Xamarin.CommunityToolkit.Markup;
 //...
 
 new Label { }
@@ -159,7 +172,8 @@ new Label { }
 In addition, converter code and instances can be re-used with the `FuncConverter` class:
 
 ```csharp
-using Xamarin.Forms.Markup;
+using Xamarin.Forms;
+using Xamarin.CommunityToolkit.Markup;
 //...
 
 FuncConverter<int, Thickness> treeMarginConverter = new FuncConverter<int, Thickness>(depth => new Thickness(depth * 20, 0, 0, 0));
@@ -170,7 +184,8 @@ new Label { Text = "Tree" }
 The `FuncConverter` class also supports `CultureInfo` objects:
 
 ```csharp
-using Xamarin.Forms.Markup;
+using Xamarin.Forms;
+using Xamarin.CommunityToolkit.Markup;
 //...
 
 cultureAwareConverter = new FuncConverter<DateTimeOffset, string, int>(
@@ -181,7 +196,8 @@ cultureAwareConverter = new FuncConverter<DateTimeOffset, string, int>(
 It's also possible to data bind to `Span` objects that are specified with the `FormattedText` property:
 
 ```csharp
-using Xamarin.Forms.Markup;
+using Xamarin.Forms;
+using Xamarin.CommunityToolkit.Markup;
 //...
 
 new Label { } .FormattedText (
@@ -197,7 +213,8 @@ new Label { } .FormattedText (
 `Command` and `CommandParameter` properties can be data bound to `GestureElement` and `View` types using the `BindClickGesture`, `BindSwipeGesture`, and `BindTapGesture` extension methods:
 
 ```csharp
-using Xamarin.Forms.Markup;
+using Xamarin.Forms;
+using Xamarin.CommunityToolkit.Markup;
 //...
 
 new Label { Text = "Tap Me" }
@@ -209,7 +226,8 @@ This example creates a gesture recognizer of the specified type, and adds it to 
 To initialize a gesture recognizer with parameters, use the `ClickGesture`, `PanGesture`, `PinchGesture`, `SwipeGesture`, and `TapGesture` extension methods:
 
 ```csharp
-using Xamarin.Forms.Markup;
+using Xamarin.Forms;
+using Xamarin.CommunityToolkit.Markup;
 //...
 
 new Label { Text = "Tap Me" }
@@ -220,25 +238,25 @@ Since a gesture recognizer is a `BindableObject`, you can use the `Bind` and `Bi
 
 ## Layout
 
-C# markup includes a series of layout extension methods that support positioning views in layouts, and content in views:
+C# Markup includes a series of layout extension methods that support positioning views in layouts, and content in views:
 
 | Type | Extension methods |
 |---|---|
 | `FlexLayout` | `AlignSelf`, `Basis`, `Grow`, `Menu`, `Order`, `Shrink` |
 | `Grid` | `Row`, `Column`, `RowSpan`, `ColumnSpan` |
 | `Label` | `TextLeft`, `TextCenterHorizontal`, `TextRight` <br/> `TextTop`, `TextCenterVertical`, `TextBottom` <br/> `TextCenter` |
-| `Layout` | `Padding`, `Paddings` |
+| `IPaddingElement` (e.g. `Layout`) | `Padding`, `Paddings` |
 | `LayoutOptions` | `Left`, `CenterHorizontal`, `FillHorizontal`, `Right` <br/> `LeftExpand`, `CenterExpandHorizontal`, `FillExpandHorizontal`, `RightExpand` <br /> `Top`, `Bottom`, `CenterVertical`, `FillVertical` <br /> `TopExpand`, `BottomExpand`, `CenterExpandVertical`, `FillExpandVertical` <br /> `Center`, `Fill`, `CenterExpand`, `FillExpand` |
 | `View` | `Margin`, `Margins` |
 | `VisualElement` | `Height`, `Width`, `MinHeight`, `MinWidth`, `Size`, `MinSize` |
 
 ### Left-to-right and right-to-left support
 
-For C# markup that is designed to support either left-to-right (LTR) or right-to-left (RTL) flow direction, the extension methods listed above offer the most intuitive set of names: `Left`, `Right`, `Top` and `Bottom`.
+For C# Markup that is designed to support either left-to-right (LTR) or right-to-left (RTL) flow direction, the extension methods listed above offer the most intuitive set of names: `Left`, `Right`, `Top` and `Bottom`.
 
-To make the correct set of left and right extension methods available, and in the process make explicit which flow direction the markup is designed for, include one of the following two `using` directives: `using Xamarin.Forms.Markup.LeftToRight;`, or `using Xamarin.Forms.Markup.RightToLeft;`.
+To make the correct set of left and right extension methods available, and in the process make explicit which flow direction the markup is designed for, include one of the following two `using` directives: `using Xamarin.CommunityToolkit.Markup.LeftToRight;`, or `using Xamarin.CommunityToolkit.Markup.RightToLeft;`.
 
-For C# markup that is designed to support both left-to-right and right-to-left flow direction, it's recommended to use the extension methods in the following table rather than either of the above namespaces:
+For C# Markup that is designed to support both left-to-right and right-to-left flow direction, it's recommended to use the extension methods in the following table rather than either of the above namespaces:
 
 | Type | Extension methods |
 |---|---|
@@ -263,21 +281,22 @@ new Label { }
            .Row (BodyRow.Prompt) .ColumnSpan (All<BodyCol>()) .FillExpandHorizontal () .CenterVertical () .Margin (fieldNameMargin) .TextCenterHorizontal () // Layout line
 ```
 
-Consistently following the convention enables you to quickly read C# markup and build a mental map of where the view content is located in the UI.
+Consistently following the convention enables you to quickly read C# Markup and build a mental map of where the view content is located in the UI.
 
 ## Grid rows and columns
 
 Enumerations can be used to define [`Grid`](xref:Xamarin.Forms.Grid) rows and columns, instead of using numbers. This offers the advantage that renumbering is not required when adding or removing rows or columns.
 
 > [!IMPORTANT]
-> Defining [`Grid`](xref:Xamarin.Forms.Grid) rows and columns using enumerations requires the following `using` directive: `using static Xamarin.Forms.Markup.GridRowsColumns;`
+> Defining [`Grid`](xref:Xamarin.Forms.Grid) rows and columns using enumerations requires the following `using` directive: `using static Xamarin.CommunityToolkit.Markup.GridRowsColumns;`
 
 The following code shows an example of how to define and consume [`Grid`](xref:Xamarin.Forms.Grid) rows and columns using enumerations:
 
 ```csharp
-using Xamarin.Forms.Markup;
-using Xamarin.Forms.Markup.LeftToRight;
-using static Xamarin.Forms.Markup.GridRowsColumns;
+using Xamarin.Forms;
+using Xamarin.CommunityToolkit.Markup;
+using Xamarin.CommunityToolkit.Markup.LeftToRight;
+using static Xamarin.CommunityToolkit.Markup.GridRowsColumns;
 // ...
 
 enum BodyRow
@@ -304,13 +323,13 @@ View Build() => new Grid
     ),
 
     ColumnDefinitions = Columns.Define(
-        (BodyCol.FieldLabel     , 160 ),
+        (BodyCol.FieldLabel     , Stars(0.5)),
         (BodyCol.FieldValidation, Star)
     ),
 
     Children =
     {
-        new Label { LineBreakMode = LineBreakMode.WordWrap } .Font (15) .Bold ()
+        new Label { LineBreakMode = LineBreakMode.WordWrap } .FontSize (15) .Bold ()
                    .Row (BodyRow.Prompt) .ColumnSpan (All<BodyCol>()) .FillExpandHorizontal () .CenterVertical () .Margin (fieldNameMargin) .TextCenterHorizontal ()
                    .Bind (nameof(vm.RegistrationPrompt)),
 
@@ -321,7 +340,7 @@ View Build() => new Grid
                    .Row (BodyRow.CodeHeader) .Column (BodyCol.FieldValidation) .Right () .Bottom () .Margin (fieldNameMargin)
                    .Bind (nameof(vm.RegistrationCodeValidationMessage)),
 
-        new Entry { Placeholder = "E.g. 123456", Keyboard = Keyboard.Numeric, BackgroundColor = Color.AliceBlue, TextColor = Color.Black } .Font (15)
+        new Entry { Placeholder = "E.g. 123456", Keyboard = Keyboard.Numeric, BackgroundColor = Color.AliceBlue, TextColor = Color.Black } .FontSize (15)
                    .Row (BodyRow.CodeEntry) .ColumnSpan (All<BodyCol>()) .Margin (fieldMargin) .Height (44)
                    .Bind (nameof(vm.RegistrationCode), BindingMode.TwoWay),
 
@@ -346,7 +365,7 @@ new Grid
 
 ## Fonts
 
-The controls in the following list can call the `FontSize`, `Bold`, `Italic`, and `Font` extension methods to set the appearance of the text displayed by the control:
+Controls that implement `IFontElement` can call the `FontSize`, `Bold`, `Italic`, and `Font` extension methods to set the appearance of the text displayed by the control, e.g.:
 
 - `Button`
 - `DatePicker`
@@ -363,7 +382,8 @@ The controls in the following list can call the `FontSize`, `Bold`, `Italic`, an
 Effects can be attached to controls with the `Effect` extension method:
 
 ```csharp
-using Xamarin.Forms.Markup;
+using Xamarin.Forms;
+using Xamarin.CommunityToolkit.Markup;
 // ...
 
 new Button { Text = "Tap Me" }
@@ -372,10 +392,11 @@ new Button { Text = "Tap Me" }
 
 ## Logic integration
 
-The `Invoke` extension method can be used to execute code inline in your C# markup:
+The `Invoke` extension method can be used to execute code inline in your C# Markup:
 
 ```csharp
-using Xamarin.Forms.Markup;
+using Xamarin.Forms;
+using Xamarin.CommunityToolkit.Markup;
 // ...
 
 new ListView { } .Invoke (l => l.ItemTapped += OnListViewItemTapped)
@@ -384,7 +405,8 @@ new ListView { } .Invoke (l => l.ItemTapped += OnListViewItemTapped)
 In addition, you can use the `Assign` extension method to access a control from outside the UI markup (in the UI logic file):
 
 ```csharp
-using Xamarin.Forms.Markup;
+using Xamarin.Forms;
+using Xamarin.CommunityToolkit.Markup;
 // ...
 
 new ListView { } .Assign (out MyListView)
@@ -392,11 +414,11 @@ new ListView { } .Assign (out MyListView)
 
 ## Styles
 
-The following example shows how to create implicit and explicit styles using C# markup:
+The following example shows how to create implicit and explicit styles using C# Markup:
 
 ```csharp
-using Xamarin.Forms.Markup;
 using Xamarin.Forms;
+using Xamarin.CommunityToolkit.Markup;
 
 namespace CSharpForMarkupDemos
 {
@@ -487,7 +509,8 @@ new Button { Text = "Tap Me" } .Filled ()
 The `Invoke` extension method can be used to apply platform-specifics. However, to avoid ambiguity errors, don't include `using` directives for the `Xamarin.Forms.PlatformConfiguration.*Specific` namespaces directly. Instead, create a namespace alias and consume the platform-specific via the alias:
 
 ```csharp
-using Xamarin.Forms.Markup;
+using Xamarin.Forms;
+using Xamarin.CommunityToolkit.Markup;
 using PciOS = Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 // ...
 
@@ -536,11 +559,9 @@ new Label { }
            .Bind (nameof(vm.Message)), // bind default
 ```
 
-Consistently applying this convention enables you to quickly scan your C# markup and build a mental image of the UI layout.
+Consistently applying this convention enables you to quickly scan your C# Markup and build a mental image of the UI layout.
 
 ## Related links
 
-- [CSharpForMarkupDemos (sample)](/samples/xamarin/xamarin-forms-samples/userinterface-csharpmarkupdemos/)
-- [Android platform features](~/xamarin-forms/platform/android/index.md)
-- [iOS platform features](~/xamarin-forms/platform/ios/index.md)
-- [Windows platform features](~/xamarin-forms/platform/windows/index.md)
+- [Xamarin Community Toolkit](https://github.com/xamarin/XamarinCommunityToolkit)
+- [C# Markup for Forms 4.6 - 4.8](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/csharp-markup)
