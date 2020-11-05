@@ -2,6 +2,7 @@
 title: "Xamarin Community Toolkit C# Markup"
 author: VincentH-Net
 description: "C# Markup is a set of fluent helper methods and classes to simplify the process of building declarative Xamarin.Forms user interfaces in C#."
+ms.author: joverslu
 ---
 
 # Xamarin Community Toolkit C# Markup
@@ -16,7 +17,7 @@ The latest version of C# Markup requires **Xamarin.Forms 5** and is available in
 C# Markup is available on all platforms supported by Xamarin.Forms.
 
 > [!NOTE]
-> [The preview version of C# Markup](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/csharp-markup) is available in Xamarin.Forms 4.6 through 4.8 as an experimental feature.
+> [The preview version of C# Markup](https://docs.microsoft.com/xamarin/xamarin-forms/user-interface/csharp-markup) is available in Xamarin.Forms 4.6 through 4.8 as an experimental feature.
 >
 > To migrate from the C# Markup preview version to XCT C# Markup:
 > 1) Update to Forms 5
@@ -24,7 +25,7 @@ C# Markup is available on all platforms supported by Xamarin.Forms.
 > 3) Change all references to the `Xamarin.Forms.Markup` namespace to `Xamarin.CommunityToolkit.Markup`,<br />and make sure to also include `using Xamarin.Forms;` in your markup files
 > 4) Update `Font` helper calls where needed.<br />`Font` now has `family` as it's first parameter instead of `size`. E.g. replace `.Font(15)` with .Font(size: 15) or `.FontSize(15)`
 
-If you are already familiar with [The preview version of C# Markup](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/csharp-markup), you can skip to [Additional Functionality In Xamarin Community Toolkit](#additional-functionality-in-xamarin-community-toolkit) below.
+If you are already familiar with [The preview version of C# Markup](https://docs.microsoft.com/xamarin/xamarin-forms/user-interface/csharp-markup), you can skip to [Additional Functionality In Xamarin Community Toolkit](#additional-functionality-in-xamarin-community-toolkit) below.
 
 ## Basic example
 
@@ -474,7 +475,7 @@ The extension method can then be consumed as follows:
 new ListView { } .iOSGroupHeaderStyle(PciOS.GroupHeaderStyle.Grouped)
 ```
 
-For more information about platform-specifics, see [Android platform features](~/xamarin-forms/platform/android/index.md), [iOS platform features](~/xamarin-forms/platform/ios/index.md), and [Windows platform features](~/xamarin-forms/platform/windows/index.md).
+For more information about platform-specifics, see [Android platform features](https://docs.microsoft.com/xamarin/xamarin-forms/platform/android/), [iOS platform features](https://docs.microsoft.com/xamarin/xamarin-forms/platform/ios/), and [Windows platform features](https://docs.microsoft.com/xamarin/xamarin-forms/platform/windows/).
 
 ## Recommended convention
 
@@ -502,7 +503,7 @@ new Label { }
 
 Consistently applying this convention enables you to quickly scan your C# Markup and build a mental image of the UI layout.
 
-# Additional Functionality in Xamarin Community Toolkit
+## Additional Functionality in Xamarin Community Toolkit
 
 In the Xamarin Community Toolkit, C# Markup adds support for:
 
@@ -513,7 +514,7 @@ In the Xamarin Community Toolkit, C# Markup adds support for:
 - `DynamicResource`
 
 ## Multi-Binding Helpers
-New overloads of the `Bind` helper offer support for  [multi-binding](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/data-binding/multibinding).
+New overloads of the `Bind` helper offer support for  [multi-binding](https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/data-binding/multibinding).
 
 There are overloads that support 2, 3 or 4 bindings with a type-safe inline convertor. E.g:
 
@@ -571,7 +572,7 @@ The `FuncMultiConverter` classes implement `IMultiValueConverter`. The class use
 There are also type-safe generic overloads for `FuncMultiConverter` that take 2, 3 or 4 values (and optionally a convertor parameter). These classes pass the binding values in a type-safe `ValueTuple`.
 
 ## Bindable Layout Helpers
-The `EmptyView`,  `EmptyViewTemplate`, `ItemsSource`, `ItemTemplate` and `ItemTemplateSelector` helpers offer support for [bindable layouts](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/layouts/bindable-layouts) on all `Layout<View>` types. E.g.:
+The `EmptyView`,  `EmptyViewTemplate`, `ItemsSource`, `ItemTemplate` and `ItemTemplateSelector` helpers offer support for [bindable layouts](https://docs.microsoft.com/xamarin/xamarin-forms/user-interface/layouts/bindable-layouts) on all `Layout<View>` types. E.g.:
 
 ```CSharp
 new StackLayout { } 
@@ -638,4 +639,7 @@ new Label { }
 ## Related links
 
 - [Xamarin Community Toolkit](https://github.com/xamarin/XamarinCommunityToolkit)
-- [C# Markup for Forms 4.6 - 4.8](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/csharp-markup)
+- [C# Markup for Forms 4.6 - 4.8](https://docs.microsoft.com/xamarin/xamarin-forms/user-interface/csharp-markup)
+- [Xamarin Forms Android platform features](https://docs.microsoft.com/xamarin/xamarin-forms/platform/android/)
+- [Xamarin Forms iOS platform features](https://docs.microsoft.com/xamarin/xamarin-forms/platform/ios/)
+- [Xamarin Forms Windows platform features](https://docs.microsoft.com/xamarin/xamarin-forms/platform/windows/)
