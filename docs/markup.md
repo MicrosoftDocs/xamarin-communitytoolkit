@@ -23,7 +23,7 @@ C# Markup is available on all platforms supported by Xamarin.Forms.
 > 1) Update to Forms 5
 > 2) Install the Xamarin.CommunityToolkit.Markup NuGet package
 > 3) Change all references to the `Xamarin.Forms.Markup` namespace to `Xamarin.CommunityToolkit.Markup`,<br />and make sure to also include `using Xamarin.Forms;` in your markup files
-> 4) Update `Font` helper calls where needed.<br />`Font` now has `family` as it's first parameter instead of `size`. E.g. replace `.Font(15)` with .Font(size: 15) or `.FontSize(15)`
+> 4) Update `Font` helper calls where needed.<br />`Font` now has `family` as it's first parameter instead of `size`. E.g. replace `.Font(15)` with `.Font(size: 15)` or `.FontSize(15)`
 
 If you are already familiar with [The preview version of C# Markup](https://docs.microsoft.com/xamarin/xamarin-forms/user-interface/csharp-markup), you can skip to [Additional Functionality In Xamarin Community Toolkit](#additional-functionality-in-xamarin-community-toolkit) below.
 
@@ -61,8 +61,7 @@ Content = new Grid { Children = {
     new Entry { Placeholder = "Enter number", Keyboard = Keyboard.Numeric, BackgroundColor = Color.AliceBlue, TextColor = Color.Black } .FontSize (15)
                .Row (BodyRow.CodeEntry) .ColumnSpan (All<BodyCol>()) .Margin (fieldMargin) .Height (44)
                .Bind (nameof(vm.RegistrationCode))
-  }
-}};
+}}};
 ```
 
 This example is identical to the previous example, but the C# Markup fluent API simplifies the process of building the UI in C#.
@@ -78,13 +77,16 @@ using Xamarin.Forms;
 using Xamarin.CommunityToolkit.Markup;
 ```
 
-If you design your markup for either LTR or RTL but not for both directions, also include either<br />`using Xamarin.CommunityToolkit.Markup.LeftToRight;` or <br />`using Xamarin.CommunityToolkit.Markup.RightToLeft;`
+If you design your markup for:
+- LTR only: also include `using Xamarin.CommunityToolkit.Markup.LeftToRight;`
+- RTL only: also include `using Xamarin.CommunityToolkit.Markup.RightToLeft;`
+- Both LTR and RTL: do not include `LeftToRight` or `RightToLeft` namespaces
 
 To work with `Grid` rows and columns, also include<br />`using static Xamarin.CommunityToolkit.Markup.GridRowsColumns;`
 
 ## Data binding
 
-C# Markup includes a `Bind` extension method, along with overloads, that creates a data binding between a view bindable property and a specified property. The `Bind` method knows the default bindable property for the majority of the controls that are included in Xamarin.Forms. Therefore, it's typically not necessary to specify the target property when using this method. However, you can also register the default bindable property for additional controls:
+C# Markup includes a `Bind` extension method, along with overloads, that creates a data binding between a view bindable property and a specified property. The `Bind` method knows the default bindable property for the majority of the controls that are included in Xamarin.Forms. Therefore, it's typically not necessary to specify the target property when using this method. You can also register the default bindable property for additional controls:
 
 ```csharp
 DefaultBindableProperties.Register(
@@ -242,7 +244,7 @@ Consistently following the convention enables you to quickly read C# Markup and 
 Enumerations can be used to define [`Grid`](xref:Xamarin.Forms.Grid) rows and columns, instead of using numbers. This offers the advantage that renumbering is not required when adding or removing rows or columns.
 
 > [!IMPORTANT]
-> Defining [`Grid`](xref:Xamarin.Forms.Grid) rows and columns using enumerations requires the following `using` directive: `using static Xamarin.CommunityToolkit.Markup.GridRowsColumns;`
+> Defining [`Grid`](xref:Xamarin.Forms.Grid) rows and columns using enumerations requires the following `using` directive:<br />`using static Xamarin.CommunityToolkit.Markup.GridRowsColumns;`
 
 The following code shows an example of how to define and consume [`Grid`](xref:Xamarin.Forms.Grid) rows and columns using enumerations:
 
@@ -253,19 +255,8 @@ using Xamarin.CommunityToolkit.Markup.LeftToRight;
 using static Xamarin.CommunityToolkit.Markup.GridRowsColumns;
 // ...
 
-enum BodyRow
-{
-    Prompt,
-    CodeHeader,
-    CodeEntry,
-    Button
-}
-
-enum BodyCol
-{
-    FieldLabel,
-    FieldValidation
-}
+enum BodyRow { Prompt, CodeHeader, CodeEntry, Button }
+enum BodyCol { FieldLabel, FieldValidation }
 
 View Build() => new Grid
 {
@@ -333,7 +324,7 @@ Controls that implement `IFontElement` can call the `FontSize`, `Bold`, `Italic`
 
 ## Effects
 
-Effects can be attached to controls with the `Effect` extension method:
+Effects can be attached to controls with the `Effects` extension method:
 
 ```csharp
 new Button { Text = "Tap Me" }
