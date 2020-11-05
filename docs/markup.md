@@ -13,7 +13,6 @@ C# Markup is a set of fluent helper methods and classes to simplify the process 
 Just as with XAML, C# Markup enables a clean separation between UI markup and UI logic. This can be achieved by separating UI markup and UI logic into distinct partial class files. For example, for a login page the UI markup would be in a file named *LoginPage.cs*, while the UI logic would be in a file named *LoginPage.logic.cs*.
 
 The latest version of C# Markup requires **Xamarin.Forms 5** and is available in the [Xamarin.CommunityToolkit.Markup NuGet package](https://www.nuget.org/packages/Xamarin.CommunityToolkit.Markup).
-
 C# Markup is available on all platforms supported by Xamarin.Forms.
 
 > [!NOTE]
@@ -22,8 +21,10 @@ C# Markup is available on all platforms supported by Xamarin.Forms.
 > To migrate from the C# Markup preview version to XCT C# Markup:
 > 1) Update to Forms 5
 > 2) Install the Xamarin.CommunityToolkit.Markup NuGet package
-> 3) Change all references to the `Xamarin.Forms.Markup` namespace to `Xamarin.CommunityToolkit.Markup`
+> 3) Change all references to the `Xamarin.Forms.Markup` namespace to `Xamarin.CommunityToolkit.Markup`,<br />and make sure to also include `using Xamarin.Forms;` in your markup files
 > 4) Update `Font` helper calls where needed.<br />`Font` now has `family` as it's first parameter instead of `size`. E.g. replace `.Font(15)` with .Font(size: 15) or `.FontSize(15)`
+
+If you are already familiar with [The preview version of C# Markup](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/csharp-markup), you can skip to [Additional Functionality In Xamarin Community Toolkit](#additional-functionality-in-xamarin-community-toolkit) below.
 
 ## Basic example
 
@@ -37,13 +38,8 @@ grid.Children.Add(label, 0, 1);
 
 Entry entry = new Entry
 {
-    Placeholder = "Enter number",
-    Keyboard = Keyboard.Numeric,
-    BackgroundColor = Color.AliceBlue,
-    TextColor = Color.Black,
-    FontSize = 15,
-    HeightRequest = 44,
-    Margin = fieldMargin
+    Placeholder = "Enter number", Keyboard = Keyboard.Numeric, BackgroundColor = Color.AliceBlue, TextColor = Color.Black, FontSize = 15,
+    HeightRequest = 44, Margin = fieldMargin
 };
 grid.Children.Add(entry, 0, 2);
 Grid.SetColumnSpan(entry, 2);
@@ -57,18 +53,11 @@ This example creates a [`Grid`](xref:Xamarin.Forms.Grid) object, with child [`La
 C# Markup enables this code to be re-written using its fluent API:
 
 ```csharp
-using Xamarin.Forms;
-using Xamarin.CommunityToolkit.Markup;
-using static Xamarin.CommunityToolkit.Markup.GridRowsColumns;
-
-Content = new Grid
-{
-  Children =
-  {
+Content = new Grid { Children = {
     new Label { Text = "Code:" }
                .Row (BodyRow.CodeHeader) .Column (BodyCol.Header),
 
-    new Entry { Placeholder = "Enter number", Keyboard = Keyboard.Numeric, BackgroundColor = Color.AliceBlue, TextColor = Color.Black } .Font (15)
+    new Entry { Placeholder = "Enter number", Keyboard = Keyboard.Numeric, BackgroundColor = Color.AliceBlue, TextColor = Color.Black } .FontSize (15)
                .Row (BodyRow.CodeEntry) .ColumnSpan (All<BodyCol>()) .Margin (fieldMargin) .Height (44)
                .Bind (nameof(vm.RegistrationCode))
   }
@@ -77,18 +66,26 @@ Content = new Grid
 
 This example is identical to the previous example, but the C# Markup fluent API simplifies the process of building the UI in C#.
 
+
 > [!NOTE]
 > C# Markup includes extension methods that set specific view properties. These extension methods are not meant to replace all property setters. Instead, they are designed to improve code readability, and can be used in combination with property setters. It's recommended to always use an extension method when one exists for a property, but you can choose your preferred balance.
+
+## Namespace usings
+To use C# Markup, include these usings in your markup files:
+```csharp
+using Xamarin.Forms;
+using Xamarin.CommunityToolkit.Markup;
+```
+
+If you design your markup for either LTR or RTL but not for both directions, also include either<br />`using Xamarin.CommunityToolkit.Markup.LeftToRight;` or <br />`using Xamarin.CommunityToolkit.Markup.RightToLeft;`
+
+To work with `Grid` rows and columns, also include<br />`using static Xamarin.CommunityToolkit.Markup.GridRowsColumns;`
 
 ## Data binding
 
 C# Markup includes a `Bind` extension method, along with overloads, that creates a data binding between a view bindable property and a specified property. The `Bind` method knows the default bindable property for the majority of the controls that are included in Xamarin.Forms. Therefore, it's typically not necessary to specify the target property when using this method. However, you can also register the default bindable property for additional controls:
 
 ```csharp
-using Xamarin.Forms;
-using Xamarin.CommunityToolkit.Markup;
-//...
-
 DefaultBindableProperties.Register(
   HoverButton.CommandProperty, 
   RadialGauge.ValueProperty
@@ -98,10 +95,6 @@ DefaultBindableProperties.Register(
 The `Bind` method can be used to bind to any bindable property:
 
 ```csharp
-using Xamarin.Forms;
-using Xamarin.CommunityToolkit.Markup;
-// ...
-
 new Label { Text = "No data available" }
            .Bind (Label.IsVisibleProperty, nameof(vm.Empty))
 ```
@@ -109,10 +102,6 @@ new Label { Text = "No data available" }
 In addition, the `BindCommand` extension method can bind to a control's default `Command` and `CommandParameter` properties in a single method call:
 
 ```csharp
-using Xamarin.Forms;
-using Xamarin.CommunityToolkit.Markup;
-// ...
-
 new TextCell { Text = "Tap me" }
               .BindCommand (nameof(vm.TapCommand))
 ```
@@ -120,10 +109,6 @@ new TextCell { Text = "Tap me" }
 By default, the `CommandParameter` is bound to the binding context. You can also specify the binding path and source for the `Command` and the `CommandParameter` bindings:
 
 ```csharp
-using Xamarin.Forms;
-using Xamarin.CommunityToolkit.Markup;
-// ...
-
 new TextCell { Text = "Tap Me" }
               .BindCommand (nameof(vm.TapCommand), vm, nameof(Item.Id))
 ```
@@ -135,10 +120,6 @@ If you only need to bind to `Command`, you can pass `null` to the `parameterPath
 You can also register the default `Command` and `CommandParameter` properties for additional controls:
 
 ```csharp
-using Xamarin.Forms;
-using Xamarin.CommunityToolkit.Markup;
-//...
-
 DefaultBindableProperties.RegisterCommand(
     (CustomViewA.CommandProperty, CustomViewA.CommandParameterProperty),
     (CustomViewB.CommandProperty, CustomViewB.CommandParameterProperty)
@@ -148,10 +129,6 @@ DefaultBindableProperties.RegisterCommand(
 Inline converter code can be passed into the `Bind` method with the `convert` and `convertBack` parameters:
 
 ```csharp
-using Xamarin.Forms;
-using Xamarin.CommunityToolkit.Markup;
-//...
-
 new Label { Text = "Tree" }
            .Bind (Label.MarginProperty, nameof(TreeNode.TreeDepth),
                   convert: (int depth) => new Thickness(depth * 20, 0, 0, 0))
@@ -160,10 +137,6 @@ new Label { Text = "Tree" }
 Type safe converter parameters are also supported:
 
 ```csharp
-using Xamarin.Forms;
-using Xamarin.CommunityToolkit.Markup;
-//...
-
 new Label { }
            .Bind (nameof(viewModel.Text),
                   convert: (string text, int repeat) => string.Concat(Enumerable.Repeat(text, repeat)))
@@ -172,10 +145,6 @@ new Label { }
 In addition, converter code and instances can be re-used with the `FuncConverter` class:
 
 ```csharp
-using Xamarin.Forms;
-using Xamarin.CommunityToolkit.Markup;
-//...
-
 FuncConverter<int, Thickness> treeMarginConverter = new FuncConverter<int, Thickness>(depth => new Thickness(depth * 20, 0, 0, 0));
 new Label { Text = "Tree" }
            .Bind (Label.MarginProperty, nameof(TreeNode.TreeDepth), converter: treeMarginConverter),
@@ -184,10 +153,6 @@ new Label { Text = "Tree" }
 The `FuncConverter` class also supports `CultureInfo` objects:
 
 ```csharp
-using Xamarin.Forms;
-using Xamarin.CommunityToolkit.Markup;
-//...
-
 cultureAwareConverter = new FuncConverter<DateTimeOffset, string, int>(
     (date, daysToAdd, culture) => date.AddDays(daysToAdd).ToString(culture)
 );
@@ -196,10 +161,6 @@ cultureAwareConverter = new FuncConverter<DateTimeOffset, string, int>(
 It's also possible to data bind to `Span` objects that are specified with the `FormattedText` property:
 
 ```csharp
-using Xamarin.Forms;
-using Xamarin.CommunityToolkit.Markup;
-//...
-
 new Label { } .FormattedText (
     new Span { Text = "Built with " },
     new Span { TextColor = Color.Blue, TextDecorations = TextDecorations.Underline }
@@ -213,10 +174,6 @@ new Label { } .FormattedText (
 `Command` and `CommandParameter` properties can be data bound to `GestureElement` and `View` types using the `BindClickGesture`, `BindSwipeGesture`, and `BindTapGesture` extension methods:
 
 ```csharp
-using Xamarin.Forms;
-using Xamarin.CommunityToolkit.Markup;
-//...
-
 new Label { Text = "Tap Me" }
            .BindTapGesture (nameof(vm.TapCommand))
 ```
@@ -226,10 +183,6 @@ This example creates a gesture recognizer of the specified type, and adds it to 
 To initialize a gesture recognizer with parameters, use the `ClickGesture`, `PanGesture`, `PinchGesture`, `SwipeGesture`, and `TapGesture` extension methods:
 
 ```csharp
-using Xamarin.Forms;
-using Xamarin.CommunityToolkit.Markup;
-//...
-
 new Label { Text = "Tap Me" }
            .TapGesture (g => g.Bind(nameof(vm.DoubleTapCommand)).NumberOfTapsRequired = 2)
 ```
@@ -382,10 +335,6 @@ Controls that implement `IFontElement` can call the `FontSize`, `Bold`, `Italic`
 Effects can be attached to controls with the `Effect` extension method:
 
 ```csharp
-using Xamarin.Forms;
-using Xamarin.CommunityToolkit.Markup;
-// ...
-
 new Button { Text = "Tap Me" }
             .Effects (new ButtonMixedCaps())
 ```
@@ -395,20 +344,12 @@ new Button { Text = "Tap Me" }
 The `Invoke` extension method can be used to execute code inline in your C# Markup:
 
 ```csharp
-using Xamarin.Forms;
-using Xamarin.CommunityToolkit.Markup;
-// ...
-
 new ListView { } .Invoke (l => l.ItemTapped += OnListViewItemTapped)
 ```
 
 In addition, you can use the `Assign` extension method to access a control from outside the UI markup (in the UI logic file):
 
 ```csharp
-using Xamarin.Forms;
-using Xamarin.CommunityToolkit.Markup;
-// ...
-
 new ListView { } .Assign (out MyListView)
 ```
 
@@ -560,6 +501,139 @@ new Label { }
 ```
 
 Consistently applying this convention enables you to quickly scan your C# Markup and build a mental image of the UI layout.
+
+# Additional Functionality in Xamarin Community Toolkit
+
+In the Xamarin Community Toolkit, C# Markup adds support for:
+
+- `MultiBinding`
+- `MultiConverter`
+- `BindableLayout`
+- `RelativeLayout`
+- `DynamicResource`
+
+## Multi-Binding Helpers
+New overloads of the `Bind` helper offer support for  [multi-binding](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/data-binding/multibinding).
+
+There are overloads that support 2, 3 or 4 bindings with a type-safe inline convertor. E.g:
+
+```CSharp
+new Label { }
+    .Bind (Label.TextProperty,
+        new Binding (nameof(vm.Name)),
+        new Binding (nameof(vm.Score)),
+        ((string name, bool score) v) => $"{v.name} Score: { v.score }"
+    )
+```
+The value for all bindings are passed in as a `ValueTuple` with type-safe members.
+
+You can also pass in a type-safe converter parameter:
+```CSharp
+new Label { }
+    .Bind (Label.TextProperty,
+        new Binding (nameof(vm.Name)),
+        new Binding (nameof(vm.Score)),
+        ((string name, int Score) v, bool winner) => $"{v.name} Score: { v.Score } Winner: { winner }",
+        converterParameter: true
+    )
+```
+Here `bool winner` gets the value from the `converterParameter`.
+
+You can specify two-way conversion inline:
+```CSharp
+new Entry { }
+    .Bind(Entry.TextProperty,
+        new Binding (nameof(vm.Emoticon)),
+        new Binding (nameof(vm.Repeat)),
+        ((char emoticon, int repeat) v) => new string(v.emoticon, v.repeat),
+        (string emoticons) => (emoticons[0], emoticons.Length)
+    );
+```
+In the `convertBack` function you return the same `ValueTuple` that you receive in the `convert` function.
+ 
+You can specify more than 4 bindings by passing in a multi-value converter, e.g. a `FuncMultiConverter`:
+```CSharp
+new Label { }
+    .Bind(Label.TextProperty,
+        new List<BindingBase> {
+            new Binding(nameof(vm.Name)),
+            new Binding(nameof(vm.Score))
+        },
+        new FuncMultiConverter<string, bool>(
+            (object[] values, bool winner) => $"{values[0]} Score: { values[1] } Winner: { winner }"
+        )
+    )
+```
+This is not type-safe; you will need to cast the values to their type in the `convert` function.
+
+The `FuncMultiConverter` classes implement `IMultiValueConverter`. The class used for any number of bindings is `FuncMultiConverter<TDest, TParam>`, which only specifies the destination type and the parameter type of the convertor. The binding values are passed as an `object[]`.
+
+There are also type-safe generic overloads for `FuncMultiConverter` that take 2, 3 or 4 values (and optionally a convertor parameter). These classes pass the binding values in a type-safe `ValueTuple`.
+
+## Bindable Layout Helpers
+The `EmptyView`,  `EmptyViewTemplate`, `ItemsSource`, `ItemTemplate` and `ItemTemplateSelector` helpers offer support for [bindable layouts](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/layouts/bindable-layouts) on all `Layout<View>` types. E.g.:
+
+```CSharp
+new StackLayout { } 
+    .ItemTemplate (() =>
+        new Label { }
+            .Bind (nameof(Item.Name))
+        )
+    .ItemsSource (vm.Items)
+```
+
+## RelativeLayout Helpers
+The `Children` helper lets you to add constrained child views to a `RelativeLayout`.
+
+To create constrained views from normal views, four helpers have been added: `Unconstrained`, `Constraints` and two `Constrain` overloads. Each overload returns a corresponding `*ConstrainedView` class, which offers a fluent API for setting constraints on `RelativeLayout` child views.
+
+Constraints on a child view can be set with:
+- A single Bounds expression
+- Separate expressions for X, Y, Width and Height
+- Separate `Constraint` instances for X, Y, Width and Height. Each of these Constraint instances has overloads for:
+  - Constant
+  - Relative to parent
+  - Relative to view
+
+Some examples:
+```CSharp
+new RelativeLayout { } .Children (
+    new Label { } // Bounds constrained
+        .Assign (out Label child0)
+        .Constrain(() => new Rectangle(30, 20, layout.Height / 2, layout.Height / 4)),
+
+    new Label { } // Expressions constrained
+        .Constrain() .X      (() => 30)
+                     .Y      (() => 20)
+                     .Width  (() => layout.Height / 2)
+                     .Height (() => layout.Height / 4),
+
+    new Label { } // Constraints constrained - parent relative
+        .Constraints() .X      (30)
+                       .Y      (20)
+                       .Width  (parent => parent.Height / 5)
+                       .Height (parent => parent.Height / 10),
+
+    new Label { } // Constraints constrained - view relative
+        .Constraints() .X      (child0, (layout, view) => view.Bounds.Right + 10)
+                       .Y      (child0, (layout, view) => view.Y)
+                       .Width  (child0, (layout, view) => view.Width)
+                       .Height (child0, (layout, view) => view.Height),
+) .Assign (out layout)
+```
+
+## Dynamic Resource Helpers
+The `DynamicResource`, `DynamicResources` and `RemoveDynamicResources` helpers add support for setting dynamic resources on an `Element`.
+
+E.g.:
+```CSharp
+new Label { }
+    .DynamicResource (Label.TextProperty, "TextKey")
+
+new Label { }
+    .DynamicResources((Label.TextProperty     , "TextKey"),
+                      (Label.TextColorProperty, "ColorKey"));
+```
 
 ## Related links
 
