@@ -86,4 +86,4 @@ You can see this element in action in the [Xamarin community toolkit sample app]
 
 ## Related Links
 
-- [WeakEventManager<T>](../weakeventmanagert.md)
+- [WeakEventManager<T>](./weakeventmanagert.md)
