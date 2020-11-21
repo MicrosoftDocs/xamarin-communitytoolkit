@@ -159,4 +159,4 @@ You can see this element in action in the [Xamarin community toolkit sample app]
 
 ## Related links
 
-- [AsyncCommand](../asynccommand.md)
+- [AsyncCommand](./asynccommand.md)

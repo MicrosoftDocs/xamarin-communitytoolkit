@@ -42,5 +42,5 @@ You can see this element in action in the [Xamarin community toolkit sample app]
 
 ## Related Links
 
-- [DelegateWeakEventManager](../delegateweakeventmanager.md)
-- [WeakEventManager<T>](../weakeventmanagert.md)
+- [DelegateWeakEventManager](./delegateweakeventmanager.md)
+- [WeakEventManager<T>](./weakeventmanagert.md)

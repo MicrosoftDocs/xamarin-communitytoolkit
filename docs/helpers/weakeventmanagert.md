@@ -72,4 +72,4 @@ You can see this element in action in the [Xamarin community toolkit sample app]
 
 ## Related Links
 
-- [DelegateWeakEventManager](../delegateweakeventmanager.md)
+- [DelegateWeakEventManager](./delegateweakeventmanager.md)
