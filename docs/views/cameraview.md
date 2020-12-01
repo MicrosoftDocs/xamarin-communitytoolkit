@@ -40,18 +40,18 @@ The CameraView control allows the user to display a preview window of the camera
 
 |Property  |Type  |Description  |
 |---------|---------|---------|
+| CameraOptions | CameraOptions | Gets or sets which camera device should be used for the CameraView. |
+| CaptureMode | CameraCaptureMode | Gets or sets the capture mode for the CameraView. Either default, video or photo. |
+| FlashMode | CameraFlashMode | Gets or sets the flash mode of the CameraView. |
+| IsAvailable | bool | Gets or sets if the camera device is currently available for use. |
+| IsBusy | bool | Gets or sets if the camera is currently busy capturing media. |
+| MaxZoom | double | Gets or sets the maximum zoom level of the AvatarView. |
 | MediaCaptured | EventHandler&lt;MediaCapturedEventArgs&gt; | Event handler that is triggered whenever media is captured successfully. |
 | MediaCaptureFailed | EventHandler&lt;string&gt; | Event handler that is triggered whenever media capture failed. |
 | OnAvailable | EventHandler&lt;bool&gt; | Event handler that is triggered whenever the selected camera device availability changes. |
-| ShutterCommand | [`ICommand`](xref:Xamarin.Forms.ICommand) | Gets or sets a `Command` that is invoked when the shutter is triggered. |
-| IsBusy | bool | Gets or sets if the camera is currently busy capturing media. |
-| IsAvailable | bool | Gets or sets if the camera device is currently available for use. |
-| CameraOptions | CameraOptions | Gets or sets which camera device should be used for the CameraView. |
-| CaptureMode | CameraCaptureMode | Gets or sets the capture mode for the CameraView. Either default, video or photo. |
+| ShutterCommand | [`ICommand`](xref:System.Windows.Input.ICommand) | Gets or sets a `Command` that is invoked when the shutter is triggered. |
 | VideoStabilization | bool | Gets or sets the video stabilization on the camera of the CameraView. |
-| FlashMode | CameraFlashMode | Gets or sets the flash mode of the CameraView. |
 | Zoom | double | Gets or sets the current zoom level of the CameraView. |
-| MaxZoom | double | Gets or sets the maximum zoom level of the AvatarView. |
 
 ## Sample
 
