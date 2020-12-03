@@ -52,6 +52,8 @@
       href: converters/notequalconverter.md
     - name: TextCaseConverter
       href: converters/textcaseconverter.md
+    - name: VariableMultiValueConverter
+      href: converters/variablemultivalueconverter.md
 - name: "Effects"
   items:
     - name: "SafeAreaEffect"
