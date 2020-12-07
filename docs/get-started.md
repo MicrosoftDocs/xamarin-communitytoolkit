@@ -14,7 +14,7 @@ The toolkit is available as a NuGet package that can be added to any existing or
 
 2. In the Solution Explorer panel, right click on your project name and select **Manage NuGet Packages**. Search for **Xamarin.CommunityToolkit**, and choose the desired NuGet Package from the list.
 
-    ![NuGet Package](resources/images/managenuget.png "Manage NuGet Package Image")
+    ![NuGet Package](~/images/managenuget.png "Manage NuGet Package Image")
 
 3. There's no need to reference the toolkit in your XAML pages as we're sharing the namespace definition with Xamarin.Forms.
 
