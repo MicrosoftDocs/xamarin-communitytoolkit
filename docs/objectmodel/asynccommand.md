@@ -2,13 +2,13 @@
 title: "Xamarin Community Toolkit AsyncCommand"
 author: brminnick
 ms.author: bramin
-description: "Allows for `Task` to safely be used asynchronously with `ICommand`"
+description: "Enables the Task type to safely be used asynchronously with an ICommand."
 ms.date: 11/20/2020
 ---
 
 # Xamarin Community Toolkit AsyncCommand
 
-Allows for `Task` to safely be used asynchronously with `ICommand`.
+Enables the `Task` type to safely be used asynchronously with an `ICommand`.
 
 ## Syntax
 
@@ -53,9 +53,9 @@ interface IAsyncCommand : ICommand
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
-| ExecuteAsync(TExecute) | Task | Executes the Command as a Task |
-| ExecuteAsync(T) | Task | Executes the Command as a Task |
-| ExecuteAsync() | Task | Executes the Command as a Task |
+| ExecuteAsync(TExecute) | Task | Executes the Command as a Task. |
+| ExecuteAsync(T) | Task | Executes the Command as a Task. |
+| ExecuteAsync() | Task | Executes the Command as a Task. |
 
 ## Examples
 
@@ -155,4 +155,4 @@ You can see this element in action in the [Xamarin community toolkit sample app]
 
 ## Related links
 
-- [AsyncValueCommand](./asyncvaluecommand.md)
+- [AsyncValueCommand](asyncvaluecommand.md)
