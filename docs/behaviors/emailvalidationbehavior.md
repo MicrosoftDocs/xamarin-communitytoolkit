@@ -8,7 +8,7 @@ ms.date: 12/07/2020
 
 # Xamarin Community Toolkit EmailValidationBehavior
 
-The EmailValidationBehavior is a behavior that allows users to determine whether or not a given text value is a valid e-mail address. By adding this behavior to an `Entry` control it can be styled differently when an invalid e-mail address is provided. The validation is done through a regular expression which is used to verify whether or not the given value is a valid e-mail address. It can be overridden by the user to customize the validation through the properties it inherits from [ValidationBehavior]().
+The EmailValidationBehavior is a behavior that allows users to determine whether or not a given text value is a valid e-mail address. By adding this behavior to an `Entry` control it can be styled differently depending on whether a valid or an invalid e-mail address is provided. The validation is done through a regular expression which is used to verify whether or not the given value is a valid e-mail address. It can be overridden by the user to customize the validation through the properties it inherits from [ValidationBehavior](/xamarin-communitytoolkit/behaviors/validationbehavior).
 
 ## Syntax
 
