@@ -7,11 +7,11 @@ ms.date: 10/09/2020
 ---
 
 # StateLayout
-Displaying a specific view when your app is in a specific state is a common pattern throughout any mobile app. Examples range from creating loading views to overlay on an entire screen to an individual loader on a subsection of the screen. When there's no data to display it's advised create empty state views or when something goes wrong an error state view can be shown.
+Displaying a specific view when your app is in a specific state is a common pattern throughout any mobile app. Examples range from creating loading views to overlay on the screen, or on a subsection of the screen. Empty state views can be created for when there's no data to display, and error state views can be displayed when an error occurs.
 
 ## Getting started
 
-The StateLayout control allows the user to turn any layout element like a `Grid` or `StackLayout` into an individual state-aware element. Each layout that you make state-aware using the StateLayout attached properties contains a collection of `StateView` objects. These can be used as templates for the different states supported by StateLayout. Whenever the `CurrentState` property is set to a value that matches the `State` property of one of the StateViews its contents will be displayed instead of the main content.
+The StateLayout control enables the user to turn any layout element like a `Grid` or `StackLayout` into an individual state-aware element. Each layout that you make state-aware, using the StateLayout attached properties, contains a collection of `StateView` objects. These objects can be used as templates for the different states supported by StateLayout. Whenever the `CurrentState` property is set to a value that matches the `State` property of one of the StateViews its contents will be displayed instead of the main content.
 
 ### LayoutState enumeration
 
@@ -26,7 +26,8 @@ The `LayoutState` enumeration supports one of the following values:
 - `Custom`
 
 ### Syntax
-```xml
+
+```xaml
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -54,10 +55,11 @@ The `LayoutState` enumeration supports one of the following values:
 
 ## Using custom states
 
-Besides the built-in states StateLayout also supports a `Custom` state. By setting `State` to `Custom` and adding a `CustomStateKey` you can create custom states beyond the built-in ones. You can use the `CurrentCustomStateKey` on your root StateLayout element to bind a variable that indicates when to show one of your custom states.
+Besides the built-in states StateLayout also supports a `Custom` state. By setting `State` to `Custom` and adding a `CustomStateKey` you can create custom states beyond the built-in states. You can use the `CurrentCustomStateKey` on your root StateLayout element to bind a variable that indicates when to show one of your custom states.
 
 ### Syntax
-```xml
+
+```xaml
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -80,9 +82,11 @@ Besides the built-in states StateLayout also supports a `Custom` state. By setti
 </ContentPage>
 ```
 ## Using repeating states
-When loading multiple items of the same type it could be beneficial to repeat a piece of XAML without having to copy paste it multiple times. This is where `RepeatCount` comes into play. By defining a `RepeatTemplate` it's possible to repeat the same piece of XAML while only defining it once.
+
+When loading multiple items of the same type it could be beneficial to repeat a piece of XAML without having to copy paste it multiple times. This is where the `RepeatCount` property should be used. By defining a `RepeatTemplate` it's possible to repeat the same piece of XAML while only defining it once.
 
 ### Syntax
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -111,7 +115,8 @@ When loading multiple items of the same type it could be beneficial to repeat a 
 ```
 
 ## Properties
-The following properties are available on the `StateLayout` object.
+
+The following properties are available on the `StateLayout` object:
 
 |Property  |Type  |Description  |
 |---------|---------|---------|
@@ -119,7 +124,7 @@ The following properties are available on the `StateLayout` object.
 | CurrentCustomStateKey | string | Pair this with `State="Custom"` on a StateView to add custom states. |
 | StateViews | `IList<StateView>` | A list of StateView objects that contains a template per State. |
 
-The following properties are available on the `StateView` object.
+The following properties are available on the `StateView` object:
 
 |Property  |Type  |Description  |
 |---------|---------|---------|
