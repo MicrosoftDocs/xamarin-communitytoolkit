@@ -15,18 +15,19 @@ C# Markup is a set of fluent helper methods and classes to simplify the process 
 Just as with XAML, C# Markup enables a clean separation between UI markup and UI logic. This can be achieved by separating UI markup and UI logic into distinct partial class files. For example, for a login page the UI markup would be in a file named *LoginPage.cs*, while the UI logic would be in a file named *LoginPage.logic.cs*.
 
 The latest version of C# Markup requires **Xamarin.Forms 5** and is available in the [Xamarin.CommunityToolkit.Markup NuGet package](https://www.nuget.org/packages/Xamarin.CommunityToolkit.Markup).
+
 C# Markup is available on all platforms supported by Xamarin.Forms.
 
 > [!NOTE]
-> [The preview version of C# Markup](https://docs.microsoft.com/xamarin/xamarin-forms/user-interface/csharp-markup) is available in Xamarin.Forms 4.6 through 4.8 as an experimental feature.
+> The preview version of C# Markup is available in Xamarin.Forms 4.6 through 4.8 as an experimental feature.
 >
 > To migrate from the C# Markup preview version to XCT C# Markup:
-> 1) Update to Forms 5
-> 2) Install the Xamarin.CommunityToolkit.Markup NuGet package
-> 3) Change all references to the `Xamarin.Forms.Markup` namespace to `Xamarin.CommunityToolkit.Markup`,<br />and make sure to also include `using Xamarin.Forms;` in your markup files
-> 4) Update `Font` helper calls where needed.<br />`Font` now has `family` as it's first parameter instead of `size`. E.g. replace `.Font(15)` with `.Font(size: 15)` or `.FontSize(15)`
+> 1. Update to Xamarin.Forms Forms 5.
+> 1. Install the Xamarin.CommunityToolkit.Markup NuGet package.
+> 1. Change all references to the `Xamarin.Forms.Markup` namespace to `Xamarin.CommunityToolkit.Markup`, and ensure you include `using Xamarin.Forms;` in your markup files.
+> 1. Update `Font` helper calls where needed. `Font` now has `family` as it's first parameter instead of `size`. For example, replace `.Font(15)` with `.Font(size: 15)` or `.FontSize(15)`.
 
-If you are already familiar with [The preview version of C# Markup](https://docs.microsoft.com/xamarin/xamarin-forms/user-interface/csharp-markup), you can skip to [Additional Functionality In Xamarin Community Toolkit](#additional-functionality-in-xamarin-community-toolkit) below.
+If you are already familiar with the preview version of C# Markup, see [Additional Functionality In Xamarin Community Toolkit](#additional-functionality-in-xamarin-community-toolkit) below.
 
 ## Basic example
 
@@ -55,7 +56,8 @@ This example creates a [`Grid`](xref:Xamarin.Forms.Grid) object, with child [`La
 C# Markup enables this code to be re-written using its fluent API:
 
 ```csharp
-Content = new Grid { Children = {
+Content = new Grid { Children = 
+{
     new Label { Text = "Code:" }
                .Row (BodyRow.CodeHeader) .Column (BodyCol.Header),
 
@@ -72,18 +74,21 @@ This example is identical to the previous example, but the C# Markup fluent API 
 > C# Markup includes extension methods that set specific view properties. These extension methods are not meant to replace all property setters. Instead, they are designed to improve code readability, and can be used in combination with property setters. It's recommended to always use an extension method when one exists for a property, but you can choose your preferred balance.
 
 ## Namespace usings
-To use C# Markup, include these usings in your markup files:
+
+To use C# Markup, include the following `using` statements in your markup files:
+
 ```csharp
 using Xamarin.Forms;
 using Xamarin.CommunityToolkit.Markup;
 ```
 
 If you design your markup for:
+
 - LTR only: also include `using Xamarin.CommunityToolkit.Markup.LeftToRight;`
 - RTL only: also include `using Xamarin.CommunityToolkit.Markup.RightToLeft;`
 - Both LTR and RTL: do not include `LeftToRight` or `RightToLeft` namespaces
 
-To work with `Grid` rows and columns, also include<br />`using static Xamarin.CommunityToolkit.Markup.GridRowsColumns;`
+To work with `Grid` rows and columns, also include `using static Xamarin.CommunityToolkit.Markup.GridRowsColumns;`.
 
 ## Data binding
 
@@ -138,7 +143,7 @@ new Label { Text = "Tree" }
                   convert: (int depth) => new Thickness(depth * 20, 0, 0, 0))
 ```
 
-Type safe converter parameters are also supported:
+Type-safe converter parameters are also supported:
 
 ```csharp
 new Label { }
@@ -245,7 +250,7 @@ Consistently following the convention enables you to quickly read C# Markup and 
 Enumerations can be used to define [`Grid`](xref:Xamarin.Forms.Grid) rows and columns, instead of using numbers. This offers the advantage that renumbering is not required when adding or removing rows or columns.
 
 > [!IMPORTANT]
-> Defining [`Grid`](xref:Xamarin.Forms.Grid) rows and columns using enumerations requires the following `using` directive:<br />`using static Xamarin.CommunityToolkit.Markup.GridRowsColumns;`
+> Defining [`Grid`](xref:Xamarin.Forms.Grid) rows and columns using enumerations requires the following `using` directive: `using static Xamarin.CommunityToolkit.Markup.GridRowsColumns;`
 
 The following code shows an example of how to define and consume [`Grid`](xref:Xamarin.Forms.Grid) rows and columns using enumerations:
 
@@ -467,7 +472,7 @@ The extension method can then be consumed as follows:
 new ListView { } .iOSGroupHeaderStyle(PciOS.GroupHeaderStyle.Grouped)
 ```
 
-For more information about platform-specifics, see [Android platform features](https://docs.microsoft.com/xamarin/xamarin-forms/platform/android/), [iOS platform features](https://docs.microsoft.com/xamarin/xamarin-forms/platform/ios/), and [Windows platform features](https://docs.microsoft.com/xamarin/xamarin-forms/platform/windows/).
+For more information about platform-specifics, see [Android platform features](/xamarin/xamarin-forms/platform/android/), [iOS platform features](/xamarin/xamarin-forms/platform/ios/), and [Windows platform features](/xamarin/xamarin-forms/platform/windows/).
 
 ## Recommended convention
 
@@ -495,7 +500,7 @@ new Label { }
 
 Consistently applying this convention enables you to quickly scan your C# Markup and build a mental image of the UI layout.
 
-## Additional Functionality in Xamarin Community Toolkit
+## Additional functionality in Xamarin Community Toolkit
 
 In the Xamarin Community Toolkit, C# Markup adds support for:
 
@@ -505,10 +510,11 @@ In the Xamarin Community Toolkit, C# Markup adds support for:
 - `RelativeLayout`
 - `DynamicResource`
 
-## Multi-Binding Helpers
-New overloads of the `Bind` helper offer support for  [multi-binding](https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/data-binding/multibinding).
+## Multi-Binding helpers
 
-There are overloads that support 2, 3 or 4 bindings with a type-safe inline convertor. E.g:
+New overloads of the `Bind` helper offer support for [multi-binding](/xamarin/xamarin-forms/app-fundamentals/data-binding/multibinding).
+
+There are overloads that support 2, 3 or 4 bindings with a type-safe inline converter:
 
 ```CSharp
 new Label { }
@@ -518,9 +524,11 @@ new Label { }
         ((string name, bool score) v) => $"{v.name} Score: { v.score }"
     )
 ```
+
 The value for all bindings are passed in as a `ValueTuple` with type-safe members.
 
 You can also pass in a type-safe converter parameter:
+
 ```CSharp
 new Label { }
     .Bind (Label.TextProperty,
@@ -530,9 +538,11 @@ new Label { }
         converterParameter: true
     )
 ```
+
 Here `bool winner` gets the value from the `converterParameter`.
 
 You can specify two-way conversion inline:
+
 ```CSharp
 new Entry { }
     .Bind(Entry.TextProperty,
@@ -542,9 +552,11 @@ new Entry { }
         (string emoticons) => (emoticons[0], emoticons.Length)
     );
 ```
+
 In the `convertBack` function you return the same `ValueTuple` that you receive in the `convert` function.
  
-You can specify more than 4 bindings by passing in a multi-value converter, e.g. a `FuncMultiConverter`:
+You can specify more than 4 bindings by passing in a multi-value converter:
+
 ```CSharp
 new Label { }
     .Bind(Label.TextProperty,
@@ -557,14 +569,16 @@ new Label { }
         )
     )
 ```
-This is not type-safe; you will need to cast the values to their type in the `convert` function.
+
+This is not type-safe: you will need to cast the values to their type in the `convert` function.
 
 The `FuncMultiConverter` classes implement `IMultiValueConverter`. The class used for any number of bindings is `FuncMultiConverter<TDest, TParam>`, which only specifies the destination type and the parameter type of the convertor. The binding values are passed as an `object[]`.
 
 There are also type-safe generic overloads for `FuncMultiConverter` that take 2, 3 or 4 values (and optionally a convertor parameter). These classes pass the binding values in a type-safe `ValueTuple`.
 
-## Bindable Layout Helpers
-The `EmptyView`,  `EmptyViewTemplate`, `ItemsSource`, `ItemTemplate` and `ItemTemplateSelector` helpers offer support for [bindable layouts](https://docs.microsoft.com/xamarin/xamarin-forms/user-interface/layouts/bindable-layouts) on all `Layout<View>` types. E.g.:
+## Bindable layout helpers
+
+The `EmptyView`, `EmptyViewTemplate`, `ItemsSource`, `ItemTemplate` and `ItemTemplateSelector` helpers offer support for [bindable layouts](/xamarin/xamarin-forms/user-interface/layouts/bindable-layouts) on all `Layout<View>` types:
 
 ```CSharp
 new StackLayout { } 
@@ -575,20 +589,23 @@ new StackLayout { }
     .ItemsSource (vm.Items)
 ```
 
-## RelativeLayout Helpers
-The `Children` helper lets you to add constrained child views to a `RelativeLayout`.
+## RelativeLayout helpers
+
+The `Children` helpers lets you add constrained child views to a `RelativeLayout`.
 
 To create constrained views from normal views, four helpers have been added: `Unconstrained`, `Constraints` and two `Constrain` overloads. Each overload returns a corresponding `*ConstrainedView` class, which offers a fluent API for setting constraints on `RelativeLayout` child views.
 
 Constraints on a child view can be set with:
-- A single Bounds expression
-- Separate expressions for X, Y, Width and Height
-- Separate `Constraint` instances for X, Y, Width and Height. Each of these Constraint instances has overloads for:
-  - Constant
-  - Relative to parent
-  - Relative to view
 
-Some examples:
+- A single Bounds expression.
+- Separate expressions for X, Y, Width and Height.
+- Separate `Constraint` instances for X, Y, Width and Height. Each of these Constraint instances has overloads for:
+  - Constant.
+  - Relative to parent.
+  - Relative to view.
+
+The following code shows examples of using these helpers:
+
 ```CSharp
 new RelativeLayout { } .Children (
     new Label { } // Bounds constrained
@@ -615,10 +632,10 @@ new RelativeLayout { } .Children (
 ) .Assign (out layout)
 ```
 
-## Dynamic Resource Helpers
-The `DynamicResource`, `DynamicResources` and `RemoveDynamicResources` helpers add support for setting dynamic resources on an `Element`.
+## Dynamic resource helpers
 
-E.g.:
+The `DynamicResource`, `DynamicResources` and `RemoveDynamicResources` helpers add support for setting dynamic resources on an `Element`:
+
 ```CSharp
 new Label { }
     .DynamicResource (Label.TextProperty, "TextKey")
@@ -631,7 +648,6 @@ new Label { }
 ## Related links
 
 - [Xamarin Community Toolkit](https://github.com/xamarin/XamarinCommunityToolkit)
-- [C# Markup for Forms 4.6 - 4.8](https://docs.microsoft.com/xamarin/xamarin-forms/user-interface/csharp-markup)
-- [Xamarin Forms Android platform features](https://docs.microsoft.com/xamarin/xamarin-forms/platform/android/)
-- [Xamarin Forms iOS platform features](https://docs.microsoft.com/xamarin/xamarin-forms/platform/ios/)
-- [Xamarin Forms Windows platform features](https://docs.microsoft.com/xamarin/xamarin-forms/platform/windows/)
+- [Xamarin Forms Android platform features](/xamarin/xamarin-forms/platform/android/)
+- [Xamarin Forms iOS platform features](/xamarin/xamarin-forms/platform/ios/)
+- [Xamarin Forms Windows platform features](/xamarin/xamarin-forms/platform/windows/)
