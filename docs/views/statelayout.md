@@ -1,12 +1,13 @@
 ---
-title: "StateLayout"
+title: "Xamarin Community Toolkit StateLayout"
 description: "The StateLayout control allows the user to turn any layout element into an individual state-aware element."
 author: sthewissen
 ms.author: joverslu
 ms.date: 10/09/2020
 ---
 
-# StateLayout
+# Xamarin Community Toolkit StateLayout
+
 Displaying a specific view when your app is in a specific state is a common pattern throughout any mobile app. Examples range from creating loading views to overlay on the screen, or on a subsection of the screen. Empty state views can be created for when there's no data to display, and error state views can be displayed when an error occurs.
 
 ## Getting started
@@ -45,15 +46,15 @@ The `LayoutState` enumeration supports one of the following values:
             </Grid>
          </xct:StateView>
       </xct:StateLayout.StateViews>      
-  
+
      ...
-     
+
   </Grid>
 
 </ContentPage>
 ```
 
-## Using custom states
+## Use custom states
 
 Besides the built-in states StateLayout also supports a `Custom` state. By setting `State` to `Custom` and adding a `CustomStateKey` you can create custom states beyond the built-in states. You can use the `CurrentCustomStateKey` on your root StateLayout element to bind a variable that indicates when to show one of your custom states.
 
@@ -75,13 +76,14 @@ Besides the built-in states StateLayout also supports a `Custom` state. By setti
                 <Label Text="Hi, I'm a custom state too!" />
             </xct:StateView>
         </xct:StateLayout.StateViews>
-       
+
         <Label Text="This is the normal state." />
     </StackLayout>
 
 </ContentPage>
 ```
-## Using repeating states
+
+## Use repeating states
 
 When loading multiple items of the same type it could be beneficial to repeat a piece of XAML without having to copy paste it multiple times. This is where the `RepeatCount` property should be used. By defining a `RepeatTemplate` it's possible to repeat the same piece of XAML while only defining it once.
 

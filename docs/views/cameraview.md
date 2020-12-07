@@ -1,12 +1,12 @@
 ---
-title: "CameraView"
+title: "Xamarin Community Toolkit CameraView"
 description: "The CameraView control enables the user to display a camera preview, take photos and record videos."
 author: jfversluis
 ms.author: joverslu
 ms.date: 12/01/2020
 ---
 
-# CameraView
+# Xamarin Community Toolkit CameraView
 
 The CameraView control enables the user to display a preview of the camera output. In addition, it can take photos or record videos. The CameraView also offers the options you would expect to support taking photos and recording videos such as turning the flash on or off, saving the captured media to a file, and offering different hooks for events.
 
