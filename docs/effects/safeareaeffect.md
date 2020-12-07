@@ -12,7 +12,7 @@ The `SafeAreaEffect` is an effect that can be added to any element through an at
 
 ## Syntax
 
-```xml
+```xaml
 <StackLayout VerticalAlignment="Center" SafeAreaEffect.SafeArea="true" HorizontalAlignment="Center" Width="400" Height="400">
   ...
 </StackLayout>

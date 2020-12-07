@@ -12,7 +12,7 @@ The VariableMultiValueConverter is a converter that allows users to convert mult
 
 ## Syntax
 
-```xml
+```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
