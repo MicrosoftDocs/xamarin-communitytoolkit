@@ -1,6 +1,6 @@
 ---
 title: "CameraView"
-description: "The CameraView control allows the user to display camera preview, take pictures and record videos."
+description: "The CameraView control enables the user to display a camera preview, take photos and record videos."
 author: jfversluis
 ms.author: joverslu
 ms.date: 12/01/2020
@@ -8,7 +8,7 @@ ms.date: 12/01/2020
 
 # CameraView
 
-The CameraView control allows the user to display a preview window of the camera output. In addition, it can take pictures or record videos. The CameraView also offers the options you would expect to support taking photos and recording videos such as: turning the flash on or off, save the captured media to a file and offer different hooks for events.
+The CameraView control enables the user to display a preview of the camera output. In addition, it can take photos or record videos. The CameraView also offers the options you would expect to support taking photos and recording videos such as turning the flash on or off, saving the captured media to a file, and offering different hooks for events.
 
 ## Syntax
 
@@ -45,13 +45,18 @@ The CameraView control allows the user to display a preview window of the camera
 | FlashMode | CameraFlashMode | Gets or sets the flash mode of the CameraView. |
 | IsAvailable | bool | Gets or sets if the camera device is currently available for use. |
 | IsBusy | bool | Gets or sets if the camera is currently busy capturing media. |
-| MaxZoom | double | Gets or sets the maximum zoom level of the AvatarView. |
-| MediaCaptured | EventHandler&lt;MediaCapturedEventArgs&gt; | Event handler that is triggered whenever media is captured successfully. |
-| MediaCaptureFailed | EventHandler&lt;string&gt; | Event handler that is triggered whenever media capture failed. |
-| OnAvailable | EventHandler&lt;bool&gt; | Event handler that is triggered whenever the selected camera device availability changes. |
+| MaxZoom | double | Gets or sets the maximum zoom level of the CameraView. |
 | ShutterCommand | [`ICommand`](xref:System.Windows.Input.ICommand) | Gets or sets a `Command` that is invoked when the shutter is triggered. |
 | VideoStabilization | bool | Gets or sets the video stabilization on the camera of the CameraView. |
 | Zoom | double | Gets or sets the current zoom level of the CameraView. |
+
+## Events
+
+| Event  |Type  |Description  |
+|---------|---------|---------|
+| MediaCaptured | EventHandler&lt;MediaCapturedEventArgs&gt; | Event that is triggered whenever media is captured successfully. |
+| MediaCaptureFailed | EventHandler&lt;string&gt; | Event that is triggered whenever media capture failed. |
+| OnAvailable | EventHandler&lt;bool&gt; | Event that is triggered whenever the selected camera device availability changes. |
 
 ## Sample
 
