@@ -65,6 +65,19 @@
     - name: "TranslateExtension"
       href: extensions/translateextension.md
 - name: "Helpers"
+  items:
+    - name: "DelegateWeakEventManager"
+      href: helpers/delegateweakeventmanager.md
+    - name: "WeakEventManager<T>"
+      href: helpers/weakeventmanagert.md
+    - name: "WeakEventManagerExtensions"
+      href: helpers/weakeventmanagerextensions.md
+- name: "ObjectModel"
+  items:
+    - name: "AsyncCommand"
+      href: objectmodel/asynccommand.md
+    - name: "AsyncValueCommand"
+      href: objectmodel/asyncvaluecommand.md
 - name: "Views"
   items:
     - name: "AvatarView"
