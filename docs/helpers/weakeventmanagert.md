@@ -22,18 +22,20 @@ public WeakEventManager<TEventArgs>()
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
-| AddEventHandler(EventHandler<TEventArgs>, string eventName) | void | Adds the event handler |
-| AddEventHandler(Action<TEventArgs>, string eventName) | void | Adds the event handler |
-| RemoveEventHandler(EventHandler<TEventArgs>, string eventName) | void | Removes the event handler |
-| RemoveEventHandler(Action<TEventArgs>, string eventName) | void | Removes the event handler |
-| HandleEvent(object, TEventArgs, string | void | Invokes the event EventHandler |
-| HandleEvent(TEventArgs, string | void | Invokes the event Action |
-| RaiseEvent(object, TEventArgs, string | void | Invokes the event EventHandler |
-| RaiseEvent(TEventArgs, string | void | Invokes the event Action |
+| AddEventHandler(EventHandler<TEventArgs>, string eventName) | void | Adds the event handler. |
+| AddEventHandler(Action<TEventArgs>, string eventName) | void | Adds the event handler. |
+| RemoveEventHandler(EventHandler<TEventArgs>, string eventName) | void | Removes the event handler. |
+| RemoveEventHandler(Action<TEventArgs>, string eventName) | void | Removes the event handler. |
+| HandleEvent(object, TEventArgs, string | void | Invokes the event EventHandler. |
+| HandleEvent(TEventArgs, string | void | Invokes the event Action. |
+| RaiseEvent(object, TEventArgs, string | void | Invokes the event EventHandler. |
+| RaiseEvent(TEventArgs, string | void | Invokes the event Action. |
 
 ## Examples
 
-### Using `EventHandler<T>`
+This section shows how to use this type.
+
+### Using EventHandler<T>
 
 ```csharp
 readonly WeakEventManager<string> _errorOcurredEventManager = new WeakEventManager<string>();
@@ -47,7 +49,7 @@ public event EventHandler<string> ErrorOcurred
 void OnErrorOcurred(string message) => _errorOcurredEventManager.RaiseEvent(this, message, nameof(ErrorOcurred));
 ```
 
-#### Using `Action<T>`
+### Using Action<T>
 
 ```csharp
 readonly WeakEventManager<string> _weakActionEventManager = new WeakEventManager<string>();
@@ -60,6 +62,7 @@ public event Action<string> ActionEvent
 
 void OnActionEvent(string message) => _weakActionEventManager.RaiseEvent(message, nameof(ActionEvent));
 ```
+
 ## Sample project
 
 [MaxLengthReachedBehavior](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit.Sample/Behaviors/MaxLengthReachedBehavior.shared.cs). 
@@ -70,6 +73,6 @@ You can see this element in action in the [Xamarin community toolkit sample app]
 
 - [WeakEventManager<T>](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Helpers/WeakEventManager.shared.cs)
 
-## Related Links
+## Related links
 
-- [DelegateWeakEventManager](./delegateweakeventmanager.md)
+- [DelegateWeakEventManager](delegateweakeventmanager.md)
