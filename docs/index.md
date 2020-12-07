@@ -38,6 +38,7 @@ Follow the guides to integrate these Xamarin.CommunityToolkit features into your
 * [Effects](effects.md) - *Add description*.
 * [Extensions](extensions.md) - *Add description*.
 * [Helpers](helpers.md) - *Add description*.
+* [Markup](markup.md) - A set of fluent helper methods and classes to simplify the process of building declarative Xamarin.Forms user interfaces in C#.
 * [Views](views.md) - *Add description*.
 
 ## [Troubleshooting](troubleshooting.md)

@@ -78,6 +78,8 @@
       href: objectmodel/asynccommand.md
     - name: "AsyncValueCommand"
       href: objectmodel/asyncvaluecommand.md
+- name: "Markup"
+  href: markup.md
 - name: "Views"
   items:
     - name: "AvatarView"
