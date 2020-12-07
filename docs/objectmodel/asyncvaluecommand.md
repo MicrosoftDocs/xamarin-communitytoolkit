@@ -2,15 +2,15 @@
 title: "Xamarin Community Toolkit AsyncValueCommand"
 author: brminnick
 ms.author: bramin
-description: "Allows for `ValueTask` to safely be used asynchronously with `ICommand`"
+description: "Enables the ValueTask type to safely be used asynchronously with an ICommand."
 ms.date: 11/20/2020
 ---
 
 # Xamarin Community Toolkit AsyncValueCommand
 
-Allows for `ValueTask` to safely be used asynchronously with `ICommand`. 
+Enables the `ValueTask` type to safely be used asynchronously with an `ICommand`. 
 
-If you're new to `ValueTask`, check out this great write-up: [Understanding the Whys, Whats, and Whens of ValueTask
+For more information about the `ValueTask` type, see [Understanding the Whys, Whats, and Whens of ValueTask
 ](https://blogs.msdn.microsoft.com/dotnet/2018/11/07/understanding-the-whys-whats-and-whens-of-valuetask?WT.mc_id=mobile-0000-bramin).
 
 ## Syntax
@@ -52,9 +52,9 @@ interface IAsyncValueCommand : ICommand`
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
-| ExecuteAsync(TExecute) | ValueTask | Executes the Command as a ValueTask |
-| ExecuteAsync(T) | ValueTask | Executes the Command as a ValueTask |
-| ExecuteAsync() | ValueTask | Executes the Command as a ValueTask |
+| ExecuteAsync(TExecute) | ValueTask | Executes the Command as a ValueTask. |
+| ExecuteAsync(T) | ValueTask | Executes the Command as a ValueTask. |
+| ExecuteAsync() | ValueTask | Executes the Command as a ValueTask. |
 
 ## Examples
 
@@ -159,4 +159,4 @@ You can see this element in action in the [Xamarin community toolkit sample app]
 
 ## Related links
 
-- [AsyncCommand](./asynccommand.md)
+- [AsyncCommand](asynccommand.md)
