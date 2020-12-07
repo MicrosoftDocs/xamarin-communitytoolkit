@@ -70,7 +70,7 @@ By default the behavior will log warnings for the following conditions:
 </Grid >
 ```
 
-![Example layout image](impliedgridorderbehavior-images/ImpliedOrderGridBehavior.png)
+![Example layout image](impliedordergridbehavior-images/ImpliedOrderGridBehavior.png)
 
 ## Properties
 
