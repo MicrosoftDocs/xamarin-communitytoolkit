@@ -15,7 +15,7 @@ The TextValidationBehavior is a behavior that allows the user to validate a give
 ```xml
 <Entry>
     <Entry.Behaviors>
-        <behaviors:TextValidationBehavior 
+        <xct:TextValidationBehavior 
             InvalidStyle="{StaticResource InvalidEntryStyle}"
             MinimumLength="1"
             MaximumLength="10"

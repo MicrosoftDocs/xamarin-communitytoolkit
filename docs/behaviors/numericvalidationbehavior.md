@@ -15,7 +15,7 @@ The NumericValidationBehavior is a behavior that allows the user to determine if
 ```xml
 <Entry>
     <Entry.Behaviors>
-        <behaviors:NumericValidationBehavior 
+        <xct:NumericValidationBehavior 
             InvalidStyle="{StaticResource InvalidEntryStyle}"
             MinimumValue="1.0"
             MaximumValue="100.0"

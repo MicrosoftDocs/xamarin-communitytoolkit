@@ -29,17 +29,21 @@ When using this behavior with selection or tap events exposed by `ListView` an a
 
 ```xml
 <ListView.Behaviors>
-    <behaviors:EventToCommandBehavior EventName="ItemSelected"
-                                      Command="{Binding ItemSelectedCommand}"
-                                      EventArgsConverter="{StaticResource ItemSelectedEventArgsConverter}" />
+    <behaviors:EventToCommandBehavior 
+        EventName="ItemSelected"
+        Command="{Binding ItemSelectedCommand}"
+        EventArgsConverter="{StaticResource ItemSelectedEventArgsConverter}"
+    />
 </ListView.Behaviors>
 ```
 
 ```xml
 <ListView.Behaviors>
-    <behaviors:EventToCommandBehavior EventName="ItemTapped"
-                                      Command="{Binding ItemTappedCommand}"
-                                      EventArgsConverter="{StaticResource ItemTappedEventArgsConverter}" />
+    <behaviors:EventToCommandBehavior 
+        EventName="ItemTapped"
+        Command="{Binding ItemTappedCommand}"
+        EventArgsConverter="{StaticResource ItemTappedEventArgsConverter}"
+     />
 </ListView.Behaviors>
 ```
 

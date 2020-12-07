@@ -15,7 +15,10 @@ The EmailValidationBehavior is a behavior that allows users to determine whether
 ```xml
 <Entry Placeholder="Email">
     <Entry.Behaviors>
-        <xct:EmailValidationBehavior DecorationFlags="Trim" InvalidStyle="{StaticResource InvalidEntryStyle}"/>
+        <xct:EmailValidationBehavior 
+            DecorationFlags="Trim" 
+            InvalidStyle="{StaticResource InvalidEntryStyle}"
+        />
     </Entry.Behaviors>
 </Entry>
 ```

@@ -6,6 +6,8 @@
       href: get-started.md
 - name: "Behaviors"
   items:
+    - name: CharactersValidationBehavior
+      href: behaviors/charactersvalidationbehavior.md
     - name: EmailValidationBehavior
       href: behaviors/emailvalidationbehavior.md
     - name: EventToCommandBehavior
@@ -16,6 +18,10 @@
       href: behaviors/textvalidationbehavior.md
     - name: ImpliedOrderGridBehavior
       href: behaviors/ImpliedOrderGridBehavior.md
+    - name: UriValidationBehavior
+      href: behaviors/urivalidationbehavior.md
+    - name: ValidationBehavior
+      href: behaviors/validationbehavior.md
 - name: "Converters"
   items:
     - name: BoolToObjectConverter
