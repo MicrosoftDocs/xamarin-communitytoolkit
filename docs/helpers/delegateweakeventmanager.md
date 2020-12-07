@@ -2,7 +2,7 @@
 title: "Xamarin Community Toolkit DelegateWeakEventManager"
 author: brminnick
 ms.author: bramin
-description: "A Delegate event implementation that enables the garbage collector to collect an object without needing to unsubscribe event handlers"
+description: "A Delegate event implementation that enables the garbage collector to collect an object without needing to unsubscribe event handlers."
 ms.date: 11/20/2020
 ---
 
@@ -33,7 +33,7 @@ public DelegateWeakEventManager()
 
 This section shows how to use this type.
 
-### Using EventHandler
+### Use EventHandler
 
 ```csharp
 readonly WeakEventManager _canExecuteChangedEventManager = new WeakEventManager();
@@ -47,7 +47,7 @@ public event EventHandler CanExecuteChanged
 void OnCanExecuteChanged() => _canExecuteChangedEventManager.RaiseEvent(this, EventArgs.Empty, nameof(CanExecuteChanged));
 ```
 
-### Using Delegate
+### Use Delegate
 
 ```csharp
 readonly WeakEventManager _propertyChangedEventManager = new WeakEventManager();
@@ -61,7 +61,7 @@ public event PropertyChangedEventHandler? PropertyChanged
 void OnPropertyChanged([CallerMemberName]string propertyName = "") => _propertyChangedEventManager.RaiseEvent(this, new PropertyChangedEventArgs(propertyName), nameof(PropertyChanged));
 ```
 
-### Using Action
+### Use Action
 
 ```csharp
 readonly WeakEventManager _weakActionEventManager = new WeakEventManager();
@@ -77,11 +77,11 @@ void OnActionEvent(string message) => _weakActionEventManager.RaiseEvent(message
 
 ## Sample project
 
-[ObservableObject](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit.Sample/ObjectModel/ObservableObject.shared.cs). 
+[ObservableObject](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit.Sample/ObjectModel/ObservableObject.shared.cs).
 
 You can see this element in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit/tree/main/XamarinCommunityToolkitSample).
 
-## API 
+## API
 
 - [DelegateWeakEventManager](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Helpers/DelegateWeakEventManager.shared.cs)
 

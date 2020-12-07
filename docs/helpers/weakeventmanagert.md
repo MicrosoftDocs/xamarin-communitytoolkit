@@ -2,7 +2,7 @@
 title: "Xamarin Community Toolkit WeakEventManager<T>"
 author: brminnick
 ms.author: bramin
-description: "An event implementation that enables the garbage collector to collect an object without needing to unsubscribe event handlers"
+description: "An event implementation that enables the garbage collector to collect an object without needing to unsubscribe event handlers."
 ms.date: 11/20/2020
 ---
 
@@ -35,7 +35,7 @@ public WeakEventManager<TEventArgs>()
 
 This section shows how to use this type.
 
-### Using EventHandler<T>
+### Use EventHandler<T>
 
 ```csharp
 readonly WeakEventManager<string> _errorOcurredEventManager = new WeakEventManager<string>();
@@ -49,7 +49,7 @@ public event EventHandler<string> ErrorOcurred
 void OnErrorOcurred(string message) => _errorOcurredEventManager.RaiseEvent(this, message, nameof(ErrorOcurred));
 ```
 
-### Using Action<T>
+### Use Action<T>
 
 ```csharp
 readonly WeakEventManager<string> _weakActionEventManager = new WeakEventManager<string>();
@@ -65,11 +65,11 @@ void OnActionEvent(string message) => _weakActionEventManager.RaiseEvent(message
 
 ## Sample project
 
-[MaxLengthReachedBehavior](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit.Sample/Behaviors/MaxLengthReachedBehavior.shared.cs). 
+[MaxLengthReachedBehavior](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit.Sample/Behaviors/MaxLengthReachedBehavior.shared.cs).
 
 You can see this element in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit/tree/main/XamarinCommunityToolkitSample).
 
-## API 
+## API
 
 - [WeakEventManager<T>](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Helpers/WeakEventManager.shared.cs)
 
