@@ -8,13 +8,13 @@ ms.date: 11/20/2020
 
 # Xamarin Community Toolkit WeakEventManagerExtensions
 
-Extension methods for Xamarin.Forms.WeakEventManager
+Extension methods for the Xamarin.Forms.WeakEventManager type.
 
 ## Methods
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
-| RaiseEvent(this Xamarin.Forms.WeakEventManager, object, object, string | void | Invokes the event EventHandler |
+| RaiseEvent(this Xamarin.Forms.WeakEventManager, object, object, string | void | Invokes the event EventHandler. |
 
 ## Examples
 
@@ -40,7 +40,7 @@ You can see this element in action in the [Xamarin community toolkit sample app]
 
 - [WeakEventManagerExtensions](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Helpers/WeakEventManager.shared.cs)
 
-## Related Links
+## Related links
 
-- [DelegateWeakEventManager](./delegateweakeventmanager.md)
-- [WeakEventManager<T>](./weakeventmanagert.md)
+- [DelegateWeakEventManager](delegateweakeventmanager.md)
+- [WeakEventManager<T>](weakeventmanagert.md)
