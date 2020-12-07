@@ -8,7 +8,7 @@ ms.date: 10/09/2020
 
 # Xamarin Community Toolkit NumericValidationBehavior
 
-<!-- Describe your control -->
+The `NumericValidationBehavior` enables the user to determine if a given text is a valid numeric value.
 
 ## Syntax
 
@@ -19,14 +19,6 @@ ms.date: 10/09/2020
                                          MaximumValue="100.0"/>
 </Entry.Behaviors>
 ```
-
-```csharp
-
-```
-
-## Sample output
-
-<!-- Image/Text can show the output of the control/helper -->
 
 ## Properties
 
@@ -42,14 +34,6 @@ ms.date: 10/09/2020
 | Validate(object) | bool | *Description* |
 | B(float, string) | int | Description |
 
-## Events
-
-| Events | Description |
-| -- | -- |
-
-## Examples
-
-<!-- All control/helper must at least have an example to show the use of Properties and Methods in your control/helper with the output -->
 
 ## Sample project
 

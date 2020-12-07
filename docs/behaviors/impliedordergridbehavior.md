@@ -1,5 +1,5 @@
 ---
-title: "ImpliedOrderGridBehavior"
+title: "Xamarin Community Toolkit ImpliedOrderGridBehavior"
 description: "A behavior for a grid that assigns grid column and row assignments based on the order children are added to the grid."
 author: bmacombe
 ms.date: 10/22/2020
@@ -9,11 +9,11 @@ ms.assetid: 3e9dced9-2d71-4092-be1f-8a3bf8172725
 ms.prod: xamarin
 ---
 
-# ImpliedOrderGridBehavior
+# Xamarin Community Toolkit ImpliedOrderGridBehavior
 
 The ImpliedOrderGridBehavior enables you to automatically assign a `Grid` row and column to a view based on the order the view is added to the `Grid`. You only need to setup the row and column definitions and then add children to the Grid. You may still assign `RowSpan` and `ColumnSpan` to views and their values will be taken into account when assigning a row and column to a view. If a view has a user defined row or column value it will be honored.
 
-## Logging and Exceptions
+## Logging and exceptions
 
 By default the behavior will log warnings for the following conditions:
 
@@ -69,7 +69,8 @@ By default the behavior will log warnings for the following conditions:
 
 </Grid >
 ```
-![Example layout image](ImpliedOrderGridBehavior.png)
+
+![Example layout image](impliedgridorderbehavior-images/ImpliedOrderGridBehavior.png)
 
 ## Properties
 
