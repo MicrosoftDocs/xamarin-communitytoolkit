@@ -85,9 +85,11 @@
 - name: "Views"
   items:
     - name: "AvatarView"
-      href: views/avatarview.md      
+      href: views/avatarview.md 
     - name: "CameraView"
       href: views/cameraview.md
+    - name: "MediaElement"
+      href: views/mediaelement.md      
     - name: "StateLayout"
       href: views/statelayout.md
 - name: "Troubleshooting"
