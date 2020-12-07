@@ -8,7 +8,7 @@ ms.date: 10/09/2020
 
 # Xamarin Community Toolkit TranslateExtension
 
-The TranslateExtension allows users to handle multi-language support at runtime. It uses the built-in [LocalizationResourceManager]() helper to retrieve the correct translation resource for the current active [CultureInfo](/dotnet/api/system.globalization.cultureinfo).
+The TranslateExtension allows users to handle multi-language support at runtime. It uses the built-in [LocalizationResourceManager]() helper to retrieve the correct translation resource for the current active [CultureInfo](xref:System.Globalization.Cultureinfo).
 
 ## Syntax
 
