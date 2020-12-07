@@ -8,7 +8,7 @@ ms.date: 12/07/2020
 
 # Xamarin Community Toolkit C# Markup
 
-[![Download Sample](media/shared/download.png) Download Xamarin.CommunityToolkit.MarkupSample](https://github.com/xamarin/XamarinCommunityToolkit)
+[![Download Sample](~/images/download.png) Download Xamarin.CommunityToolkit.MarkupSample](https://github.com/xamarin/XamarinCommunityToolkit)
 
 C# Markup is a set of fluent helper methods and classes to simplify the process of building declarative Xamarin.Forms user interfaces in C#. The fluent API provided by C# Markup is available in the `Xamarin.CommunityToolkit.Markup` namespace.
 
@@ -56,7 +56,7 @@ This example creates a [`Grid`](xref:Xamarin.Forms.Grid) object, with child [`La
 C# Markup enables this code to be re-written using its fluent API:
 
 ```csharp
-Content = new Grid { Children = 
+Content = new Grid { Children =
 {
     new Label { Text = "Code:" }
                .Row (BodyRow.CodeHeader) .Column (BodyCol.Header),
@@ -96,7 +96,7 @@ C# Markup includes a `Bind` extension method, along with overloads, that creates
 
 ```csharp
 DefaultBindableProperties.Register(
-  HoverButton.CommandProperty, 
+  HoverButton.CommandProperty,
   RadialGauge.ValueProperty
 );
 ```
@@ -554,7 +554,7 @@ new Entry { }
 ```
 
 In the `convertBack` function you return the same `ValueTuple` that you receive in the `convert` function.
- 
+
 You can specify more than 4 bindings by passing in a multi-value converter:
 
 ```CSharp
@@ -581,7 +581,7 @@ There are also type-safe generic overloads for `FuncMultiConverter` that take 2,
 The `EmptyView`, `EmptyViewTemplate`, `ItemsSource`, `ItemTemplate` and `ItemTemplateSelector` helpers offer support for [bindable layouts](/xamarin/xamarin-forms/user-interface/layouts/bindable-layouts) on all `Layout<View>` types:
 
 ```CSharp
-new StackLayout { } 
+new StackLayout { }
     .ItemTemplate (() =>
         new Label { }
             .Bind (nameof(Item.Name))

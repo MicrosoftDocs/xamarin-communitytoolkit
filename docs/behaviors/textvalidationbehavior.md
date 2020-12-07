@@ -8,7 +8,7 @@ ms.date: 10/09/2020
 
 # Xamarin Community Toolkit TextValidationBehavior
 
-<!-- Describe your control -->
+The `TextValidationBehavior` allows the user to validate a given text depending on specified parameters.
 
 ## Syntax
 
@@ -16,17 +16,7 @@ ms.date: 10/09/2020
 
 ```
 
-```csharp
-
-```
-
-## Sample output
-
-<!-- Image/Text can show the output of the control/helper -->
-
 ## Properties
-
-<!-- Explain all properties in a table format -->
 
 | Property | Type | Description |
 | -- | -- | -- |
@@ -60,10 +50,6 @@ ms.date: 10/09/2020
 | OnRegexPropertyChanged(BindableObject, object, object) | *Description* |
 <!--| OnRegexPropertyChanged() | *Description* |-->
 
-## Examples
-
-<!-- All control/helper must at least have an example to show the use of Properties and Methods in your control/helper with the output -->
-
 ## Sample project
 
 <!-- Link to the sample page in the Xamarin community toolkit sample app -->
@@ -72,10 +58,3 @@ ms.date: 10/09/2020
 ## API
 
 - [TextValidationBehavior](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkit/Behaviors/Validators/TextValidationBehavior.shared.cs)
-
-## Related links
-
-<!-- Optional -->
-
-<!--- [Topic 1](link) -->
-<!--- [Topic 2](link) -->

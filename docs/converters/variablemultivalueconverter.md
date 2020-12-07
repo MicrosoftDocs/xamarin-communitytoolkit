@@ -8,7 +8,7 @@ ms.date: 12/03/2020
 
 # Xamarin Community Toolkit VariableMultiValueConverter
 
-The VariableMultiValueConverter is a converter that allows users to convert multiple `boolean` value bindings to a single `boolean`. It does this by enabling them to specify whether `All`, `Any`, `None` or a specific number of values are `true`. This is useful when combined with the [MultiBinding](/xamarin/xamarin-forms/app-fundamentals/data-binding/multibinding) introduced in Xamarin.Forms.
+The VariableMultiValueConverter is a converter that allows users to convert multiple `boolean` value bindings to a single `boolean`. It does this by enabling them to specify whether `All`, `Any`, `None` or a specific number of values are `true`. This is useful when combined with the [MultiBinding](/xamarin/xamarin-forms/app-fundamentals/data-binding/multibinding) included in Xamarin.Forms.
 
 ## Syntax
 

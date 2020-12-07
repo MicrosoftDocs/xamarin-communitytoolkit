@@ -8,7 +8,7 @@ ms.date: 10/09/2020
 
 # Xamarin Community Toolkit EmailValidationBehavior
 
-<!-- Describe your control -->
+The `EmailValidationBehavior` enables users to determine whether or not a given text is a valid e-mail address.
 
 ## Syntax
 
@@ -19,12 +19,6 @@ ms.date: 10/09/2020
     </Entry.Behaviors>
 </Entry>
 ```
-
-```csharp
-
-```
-
-## Sample output
 
 ## Properties
 
@@ -37,10 +31,6 @@ ms.date: 10/09/2020
 | Methods | Return Type | Description |
 | -- | -- | -- |
 | DecorateValue | object  | *Description* |
-
-## Examples
-
-<!-- All control/helper must at least have an example to show the use of Properties and Methods in your control/helper with the output -->
 
 ## Sample project
 

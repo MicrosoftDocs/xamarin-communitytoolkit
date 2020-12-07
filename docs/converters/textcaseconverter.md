@@ -41,7 +41,7 @@ The TextCaseConverter is a converter that allows users to convert the casing of 
 
 ## TextCaseType
 
-The following options are available for `TextCaseType`:
+The `TextCaseType` enumeration defines the following members:
 
 - `None` - Applies no specific formatting to the string.
 - `Upper` - Applies upper case formatting to the string.

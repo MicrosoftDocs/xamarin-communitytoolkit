@@ -34,7 +34,7 @@ The `SafeArea` property is of type `SafeArea`. This structure takes up to 4 `boo
 
 ## Code-behind support
 
-This effect can be also be used from code-behind.
+This effect can be also be used from code-behind:
 
 ```csharp
 public partial class MainPage : ContentPage

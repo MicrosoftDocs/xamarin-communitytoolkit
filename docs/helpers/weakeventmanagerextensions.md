@@ -2,7 +2,7 @@
 title: "Xamarin Community Toolkit WeakEventManagerExtensions"
 author: brminnick
 ms.author: bramin
-description: "Extension methods for Xamarin.Forms.WeakEventManager"
+description: "Extension methods for Xamarin.Forms.WeakEventManager."
 ms.date: 11/20/2020
 ---
 
@@ -32,11 +32,11 @@ void OnEvent() => weakEventManager.RaiseEvent(this, EventArgs.Empty, nameof(MyEv
 
 ## Sample project
 
-[BaseCommand](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit.Sample/ObjectModel/BaseCommand.shared.cs). 
+[BaseCommand](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit.Sample/ObjectModel/BaseCommand.shared.cs).
 
 You can see this element in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit/tree/main/XamarinCommunityToolkitSample).
 
-## API 
+## API
 
 - [WeakEventManagerExtensions](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Helpers/WeakEventManager.shared.cs)
 

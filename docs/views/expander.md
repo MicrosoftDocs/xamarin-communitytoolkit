@@ -1,13 +1,13 @@
 ---
-title: "Expander"
+title: "Xamarin Community Toolkit Expander"
 description: "The Xamarin Community Toolkit Expander control provides an expandable container to host any content. The content is shown or hidden by tapping the Expander header."
 author: jfversluis
 ms.author: joverslu
 ---
 
-# Expander
+# Xamarin Community Toolkit Expander
 
-[![Download Sample](~/media/shared/download.png) Download the sample](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-expanderdemos/)
+[![Download Sample](~/images/download.png) Download the sample](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-expanderdemos/)
 
 The Xamarin.CommunityToolkit `Expander` control provides an expandable container to host any content. The control has a header and content, and the content is shown or hidden by tapping the `Expander` header. When only the `Expander` header is shown, the `Expander` is *collapsed*. When the `Expander` content is visible the `Expander` is *expanded*.
 
@@ -15,8 +15,8 @@ The following screenshots show an `Expander` in its collapsed and expanded state
 
 ![Screenshot of an Expander in collapsed and expanded states, on iOS and Android](expander-images/expander.png "Expander on iOS and Android")
 
->
-> In addition, the `Expander` control is fully implemented in the `Xamarin.Forms` namespace. Therefore, it's available on all platforms supported by Xamarin.Forms.
+> [!NOTE]
+> The `Expander` control is fully implemented in cross-platform code. Therefore, it's available on all platforms supported by Xamarin.Forms.
 
 The `Expander` control defines the following properties:
 

@@ -8,7 +8,7 @@ ms.date: 10/09/2020
 
 # Xamarin Community Toolkit ImageResourceExtension
 
-The `ImageResourceExtension` is an extension that can be used to display an image from an embedded resource. By providing the resource ID of the embedded resource to this extension, we can bind the embedded resource to the `Source` property of an [Image](/xamarin/xamarin-forms/user-interface/images) control.
+The `ImageResourceExtension` is an extension that can be used to display an image from an embedded resource. By providing the resource ID of the embedded resource to this extension, you can bind the embedded resource to the `Source` property of an [Image](/xamarin/xamarin-forms/user-interface/images) control.
 
 ## Syntax
 

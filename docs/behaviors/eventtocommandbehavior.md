@@ -8,6 +8,8 @@ ms.date: 10/09/2020
 
 # Xamarin Community Toolkit EventToCommandBehavior
 
+The `EventToCommandBehavior` enables the user to invoke a `Commmand` through an event.
+
 ## Syntax
 
 ```xaml
@@ -33,14 +35,6 @@ ms.date: 10/09/2020
                                       EventArgsConverter="{StaticResource ItemTappedEventArgsConverter}" />
 </ListView.Behaviors>
 ```
-
-```csharp
-
-```
-
-## Sample output
-
-<!-- Image/Text can show the output of the control/helper -->
 
 ## Properties
 
@@ -71,10 +65,6 @@ ms.date: 10/09/2020
 | RegisterEvent() | void | *Description* |
 | UnregisterEvent() | void | *Description* |
 | OnTriggerHandled(object, object) | void | *Description* |
-
-## Examples
-
-<!-- All control/helper must at least have an example to show the use of Properties and Methods in your control/helper with the output -->
 
 ## Sample project
 
