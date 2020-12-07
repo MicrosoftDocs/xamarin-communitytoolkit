@@ -2,7 +2,7 @@
 title: "Xamarin Community Toolkit ItemTappedEventArgsConverter"
 author: sthewissen
 ms.author: joverslu
-description: "The ItemTappedEventArgsConverter allows users to convert ItemSelectedEventArgs to the item that was actually selected."
+description: "The ItemTappedEventArgsConverter allows users to convert ItemTappedEventArgs to the item that was selected."
 ms.date: 10/09/2020
 ---
 

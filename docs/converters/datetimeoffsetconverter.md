@@ -8,7 +8,7 @@ ms.date: 10/09/2020
 
 # Xamarin Community Toolkit DateTimeOffsetConverter
 
-The DateTimeOffsetConverter is a converter that allows users to convert a `DateTimeOffset` to a `DateTime`. Often times a datetime value is stored with the offset on a backend to allow for storing the timezone in which a `DateTime` originated from. Controls like the `DatePicker` in Xamarin.Forms will only work with `DateTime`. This converter can be used in those scenarios.
+The DateTimeOffsetConverter is a converter that allows users to convert a `DateTimeOffset` to a `DateTime`. Sometimes a datetime value is stored with the offset on a backend to allow for storing the timezone in which a `DateTime` originated from. Controls like the `DatePicker` in Xamarin.Forms will only work with `DateTime`. This converter can be used in those scenarios.
 
 ## Syntax
 

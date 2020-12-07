@@ -2,7 +2,7 @@
 title: "Xamarin Community Toolkit ItemSelectedEventArgsConverter"
 author: sthewissen
 ms.author: joverslu
-description: "The ItemSelectedEventArgsConverter allows users to offset elements on-screen based on the current active safe area."
+description: "The ItemSelectedEventArgsConverter allows users to convert ItemSelectedEventArgs to the item that was selected."
 ms.date: 10/09/2020
 ---
 
