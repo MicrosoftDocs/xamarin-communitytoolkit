@@ -14,6 +14,8 @@
       href: behaviors/numericvalidationbehavior.md
     - name: TextValidationBehavior
       href: behaviors/textvalidationbehavior.md
+    - name: ImpliedOrderGridBehavior
+      href: behaviors/ImpliedOrderGridBehavior.md
 - name: "Converters"
   items:
     - name: BoolToObjectConverter
