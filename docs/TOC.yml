@@ -52,6 +52,8 @@
       href: converters/notequalconverter.md
     - name: TextCaseConverter
       href: converters/textcaseconverter.md
+    - name: VariableMultiValueConverter
+      href: converters/variablemultivalueconverter.md
 - name: "Effects"
   items:
     - name: "SafeAreaEffect"
@@ -63,12 +65,26 @@
     - name: "TranslateExtension"
       href: extensions/translateextension.md
 - name: "Helpers"
-  href: helpers.md
+  items:
+    - name: "DelegateWeakEventManager"
+      href: helpers/delegateweakeventmanager.md
+    - name: "WeakEventManager<T>"
+      href: helpers/weakeventmanagert.md
+    - name: "WeakEventManagerExtensions"
+      href: helpers/weakeventmanagerextensions.md
+- name: "ObjectModel"
+  items:
+    - name: "AsyncCommand"
+      href: objectmodel/asynccommand.md
+    - name: "AsyncValueCommand"
+      href: objectmodel/asyncvaluecommand.md
 - name: "Markup"
   href: markup.md
 - name: "Views"
   items:
     - name: "AvatarView"
       href: views/avatarview.md
+    - name: "CameraView"
+      href: views/cameraview.md
 - name: "Troubleshooting"
   href: troubleshooting.md
