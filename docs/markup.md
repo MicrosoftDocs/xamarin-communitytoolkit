@@ -3,6 +3,7 @@ title: "Xamarin Community Toolkit C# Markup"
 author: VincentH-Net
 description: "C# Markup is a set of fluent helper methods and classes to simplify the process of building declarative Xamarin.Forms user interfaces in C#."
 ms.author: joverslu
+ms.date: 12/07/2020
 ---
 
 # Xamarin Community Toolkit C# Markup
