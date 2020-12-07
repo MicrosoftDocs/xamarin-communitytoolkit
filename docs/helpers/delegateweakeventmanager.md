@@ -10,7 +10,7 @@ ms.date: 11/20/2020
 
 An `event Delegate` implementation that enables the [garbage collector to collect an object without needing to unsubscribe event handlers](http://paulstovell.com/blog/weakevents).
 
-Inspired by [Xamarin.Forms.WeakEventManager](https://github.com/xamarin/Xamarin.Forms/blob/master/Xamarin.Forms.Core/WeakEventManager.cs), expanding functionality of Xamarin.Forms.WeakEventManager to support `Delegate` events.
+Inspired by [Xamarin.Forms.WeakEventManager](https://github.com/xamarin/Xamarin.Forms/blob/master/Xamarin.Forms.Core/WeakEventManager.cs), expanding the functionality of Xamarin.Forms.WeakEventManager to support `Delegate` events.
 
 ## Syntax
 
@@ -22,17 +22,18 @@ public DelegateWeakEventManager()
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
-| AddEventHandler(Delegate, string eventName) | void | Adds the event handler |
-| RemoveEventHandler(Delegate, string eventName) | void | Removes the event handler |
-| HandleEvent(object, object, string | void | Invokes the event EventHandler |
-| HandleEvent(string | void | Invokes the event Action |
-| RaiseEvent(object, object, string | void | Invokes the event EventHandler |
-| RaiseEvent(string | void | Invokes the event Action |
-
+| AddEventHandler(Delegate, string eventName) | void | Adds the event handler. |
+| RemoveEventHandler(Delegate, string eventName) | void | Removes the event handler. |
+| HandleEvent(object, object, string | void | Invokes the event EventHandler. |
+| HandleEvent(string | void | Invokes the event Action. |
+| RaiseEvent(object, object, string | void | Invokes the event EventHandler. |
+| RaiseEvent(string | void | Invokes the event Action. |
 
 ## Examples
 
-### Using `EventHandler`
+The following sections show how to use this type.
+
+### Using EventHandler
 
 ```csharp
 readonly WeakEventManager _canExecuteChangedEventManager = new WeakEventManager();
@@ -46,7 +47,7 @@ public event EventHandler CanExecuteChanged
 void OnCanExecuteChanged() => _canExecuteChangedEventManager.RaiseEvent(this, EventArgs.Empty, nameof(CanExecuteChanged));
 ```
 
-### Using `Delegate`
+### Using Delegate
 
 ```csharp
 readonly WeakEventManager _propertyChangedEventManager = new WeakEventManager();
@@ -60,7 +61,7 @@ public event PropertyChangedEventHandler? PropertyChanged
 void OnPropertyChanged([CallerMemberName]string propertyName = "") => _propertyChangedEventManager.RaiseEvent(this, new PropertyChangedEventArgs(propertyName), nameof(PropertyChanged));
 ```
 
-### Using `Action`
+### Using Action
 
 ```csharp
 readonly WeakEventManager _weakActionEventManager = new WeakEventManager();
