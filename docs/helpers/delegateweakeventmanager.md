@@ -85,6 +85,6 @@ You can see this element in action in the [Xamarin community toolkit sample app]
 
 - [DelegateWeakEventManager](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Helpers/DelegateWeakEventManager.shared.cs)
 
-## Related Links
+## Related links
 
 - [WeakEventManager<T>](weakeventmanagert.md)
