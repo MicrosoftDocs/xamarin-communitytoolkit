@@ -2,13 +2,13 @@
 title: "Xamarin Community Toolkit VariableMultiValueConverter"
 author: sthewissen
 ms.author: joverslu
-description: "The VariableMultiValueConverter allows users to check whether or not multiple boolean binding values are true."
+description: "The VariableMultiValueConverter enables users to check whether or not multiple boolean binding values are true."
 ms.date: 12/03/2020
 ---
 
 # Xamarin Community Toolkit VariableMultiValueConverter
 
-The VariableMultiValueConverter is a converter that allows users to convert multiple `boolean` value bindings to a single `boolean`. It does this by allowing them to specify whether `All`, `Any`, `None` or a specific amount of values are true. This pairs up with the [MultiBinding](/xamarin/xamarin-forms/app-fundamentals/data-binding/multibinding) introduced in Xamarin.Forms.
+The VariableMultiValueConverter is a converter that allows users to convert multiple `boolean` value bindings to a single `boolean`. It does this by enabling them to specify whether `All`, `Any`, `None` or a specific number of values are `true`. This is useful when combined with the [MultiBinding](/xamarin/xamarin-forms/app-fundamentals/data-binding/multibinding) introduced in Xamarin.Forms.
 
 ## Syntax
 
@@ -44,7 +44,7 @@ The VariableMultiValueConverter is a converter that allows users to convert mult
 |Property  |Type  |Description  |
 |---------|---------|---------|
 | ConditionType | MultiBindingCondition | Indicates how many values should be true out of the provided boolean values in the MultiBinding. Supports the following values: `All`, `None`, `Any`, `GreaterThan`, `LessThan`. |
-| Count | int | The amount of values that should be true when using ConditionType `GreaterThan`, `LessThan` or `Exact`. |
+| Count | int | The number of values that should be true when using ConditionType `GreaterThan`, `LessThan` or `Exact`. |
 
 ## Sample
 
