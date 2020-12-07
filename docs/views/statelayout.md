@@ -29,7 +29,6 @@ The `LayoutState` enumeration supports one of the following values:
 ### Syntax
 
 ```xaml
-<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:xct="clr-namespace:Xamarin.CommunityToolkit.Views;assembly=Xamarin.CommunityToolkit"
@@ -61,7 +60,6 @@ Besides the built-in states StateLayout also supports a `Custom` state. By setti
 ### Syntax
 
 ```xaml
-<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:xct="clr-namespace:Xamarin.CommunityToolkit.Views;assembly=Xamarin.CommunityToolkit"
@@ -89,8 +87,7 @@ When loading multiple items of the same type it could be beneficial to repeat a 
 
 ### Syntax
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
+```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:xct="clr-namespace:Xamarin.CommunityToolkit.Views;assembly=Xamarin.CommunityToolkit"

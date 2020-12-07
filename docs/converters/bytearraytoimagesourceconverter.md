@@ -12,8 +12,7 @@ The ByteArrayToImageSourceConverter is a converter that allows the user to conve
 
 ## Syntax
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
+```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:xct="clr-namespace:Xamarin.CommunityToolkit.Converters;assembly=Xamarin.CommunityToolkit"
