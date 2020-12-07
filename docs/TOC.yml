@@ -52,6 +52,8 @@
       href: converters/notequalconverter.md
     - name: TextCaseConverter
       href: converters/textcaseconverter.md
+    - name: VariableMultiValueConverter
+      href: converters/variablemultivalueconverter.md
 - name: "Effects"
   items:
     - name: "SafeAreaEffect"
@@ -80,5 +82,7 @@
   items:
     - name: "AvatarView"
       href: views/avatarview.md
+    - name: "CameraView"
+      href: views/cameraview.md
 - name: "Troubleshooting"
   href: troubleshooting.md
