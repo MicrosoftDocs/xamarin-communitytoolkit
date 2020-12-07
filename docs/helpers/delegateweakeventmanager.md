@@ -31,7 +31,7 @@ public DelegateWeakEventManager()
 
 ## Examples
 
-The following sections show how to use this type.
+This section shows how to use this type.
 
 ### Using EventHandler
 
