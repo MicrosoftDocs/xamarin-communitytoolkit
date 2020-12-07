@@ -69,5 +69,7 @@
   items:
     - name: "AvatarView"
       href: views/avatarview.md
+    - name: "CameraView"
+      href: views/cameraview.md
 - name: "Troubleshooting"
   href: troubleshooting.md
