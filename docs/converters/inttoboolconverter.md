@@ -13,7 +13,6 @@ The IntToBoolConverter is a converter that allows users to convert an incoming `
 ## Syntax
 
 ```xaml
-<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:xct="clr-namespace:Xamarin.CommunityToolkit.Converters;assembly=Xamarin.CommunityToolkit"
