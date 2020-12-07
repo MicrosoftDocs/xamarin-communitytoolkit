@@ -51,10 +51,10 @@ When using this behavior with selection or tap events exposed by `ListView` an a
 
 |Property  |Type  |Description  |
 |---------|---------|---------|
-| EventName | string | *Description* |
-| Command | [ICommand](xref:System.Windows.Input.ICommand) | Description |
-| CommandParameter | object | *Description* |
-| EventArgsConverter | [IValueConverter](xref:Xamarin.Forms.IValueConverter) | *Description* |
+| EventName | string | The name of the event that should be converted to a `Command`. |
+| Command | [ICommand](xref:System.Windows.Input.ICommand) | The `Command` that should be executed. |
+| CommandParameter | object | An optional parameter to forward to the `Command`. |
+| EventArgsConverter | [IValueConverter](xref:Xamarin.Forms.IValueConverter) | An optional `IValueConverter` that can be used to convert `EventArgs` values to values passed into the `Command`. |
 
 ## Sample
 
