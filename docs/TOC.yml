@@ -86,6 +86,8 @@
   items:
     - name: "AvatarView"
       href: views/avatarview.md
+    - name: "BadgeView"
+      href: views/badgeview.md
     - name: "CameraView"
       href: views/cameraview.md
     - name: "Expander"
