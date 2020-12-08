@@ -74,10 +74,10 @@ The RangeSlider control enables the user to select a range of values through a s
 | ValueChanged | EventHandler | Occurs when the value changes. |
 | LowerValueChanged | EventHandler | Occurs when the lower value of the range changes. |
 | UpperValueChanged | EventHandler | Occurs when the upper value of the range changes. |
-| DragStarted | EventHandler | Occurs when a drag action is started on both the lower or the upper thumb. |
+| DragStarted | EventHandler | Occurs when a drag action is started on the lower or upper thumb. |
 | LowerDragStarted | EventHandler | Occurs when a drag action is started with the lower thumb. |
 | UpperDragStarted | EventHandler | Occurs when a drag action is started with the upper thumb. |
-| DragCompleted | EventHandler | Occurs when a drag action is completed on both the lower or the upper thumb. |
+| DragCompleted | EventHandler | Occurs when a drag action is completed on the lower or upper thumb. |
 | LowerDragCompleted | EventHandler | Occurs when a drag action is completed on the lower thumb. |
 | UpperDragCompleted | EventHandler | occurs when a drag action is completed on the upper thumb. |
 
