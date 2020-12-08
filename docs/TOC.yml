@@ -96,6 +96,8 @@
       href: views/mediaelement.md
     - name: "RangeSlider"
       href: views/rangeslider.md
+    - name: "Shield"
+      href: views/shield.md
     - name: "StateLayout"
       href: views/statelayout.md
 - name: "Troubleshooting"
