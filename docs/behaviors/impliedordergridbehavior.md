@@ -80,7 +80,7 @@ By default the behavior will log warnings for the following conditions:
 
 ## Sample
 
-[ImpliedOrderGridBehavior sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkitSample/Pages/Behaviors/ImpliedOrderGridBehaviorPage.xaml)
+- [ImpliedOrderGridBehavior sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkitSample/Pages/Behaviors/ImpliedOrderGridBehaviorPage.xaml)
 
 You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
 
