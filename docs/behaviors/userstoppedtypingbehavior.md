@@ -3,7 +3,7 @@ title: "Xamarin Community Toolkit UserStoppedTypingBehavior"
 author: sthewissen
 ms.author: joverslu
 description: "The UserStoppedTypingBehavior allows the user to trigger an action when a user has stopped the input of data into an Entry."
-ms.date: 12/07/2020
+ms.date: 12/08/2020
 ---
 
 # Xamarin Community Toolkit UserStoppedTypingBehavior

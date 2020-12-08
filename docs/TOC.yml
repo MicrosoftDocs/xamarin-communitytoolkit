@@ -16,6 +16,8 @@
       href: behaviors/ImpliedOrderGridBehavior.md
     - name: MaskedBehavior
       href: behaviors/maskedbehavior.md
+    - name: MaxLengthReachedBehavior
+      href: behaviors/maxlengthreachedbehavior.md
     - name: MultiValidationBehavior
       href: behaviors/multivalidationbehavior.md
     - name: NumericValidationBehavior
