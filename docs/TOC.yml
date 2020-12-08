@@ -12,14 +12,22 @@
       href: behaviors/emailvalidationbehavior.md
     - name: EventToCommandBehavior
       href: behaviors/eventtocommandbehavior.md
-    - name: NumericValidationBehavior
-      href: behaviors/numericvalidationbehavior.md
-    - name: TextValidationBehavior
-      href: behaviors/textvalidationbehavior.md
     - name: ImpliedOrderGridBehavior
       href: behaviors/ImpliedOrderGridBehavior.md
+    - name: MaskedBehavior
+      href: behaviors/maskedbehavior.md
+    - name: MultiValidationBehavior
+      href: behaviors/multivalidationbehavior.md
+    - name: NumericValidationBehavior
+      href: behaviors/numericvalidationbehavior.md
+    - name: RequiredStringValidationBehavior
+      href: behaviors/requiredstringvalidationbehavior.md
+    - name: TextValidationBehavior
+      href: behaviors/textvalidationbehavior.md
     - name: UriValidationBehavior
       href: behaviors/urivalidationbehavior.md
+    - name: UserStoppedTypingBehavior
+      href: behaviors/userstoppedtypingbehavior.md
     - name: ValidationBehavior
       href: behaviors/validationbehavior.md
 - name: "Converters"
