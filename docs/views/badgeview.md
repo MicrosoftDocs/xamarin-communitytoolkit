@@ -8,7 +8,7 @@ ms.date: 12/08/2020
 
 # Xamarin Community Toolkit BadgeView
 
-The `BadgeView` allows the user to show a badge with a string value on top of any control. By wrapping a control in a `BadgeView` control, the user can now show a badge value on top of it. This is very much alike the badges you see on the app icons on iOS and Android.
+The `BadgeView` allows the user to show a badge with a string value on top of any control. By wrapping a control in a `BadgeView` control, you can show a badge value on top of it. This is very much like the badges you see on the app icons on iOS and Android.
 
 ## Syntax
 
@@ -41,7 +41,7 @@ The `BadgeView` allows the user to show a badge with a string value on top of an
 |---------|---------|---------|
 | AutoHide | bool | Gets or sets if the badge should be hidden automatically when the value is `"0"`. This is a bindable property. |
 | BackgroundColor | [`Color`](xref:Xamarin.Forms.Color) | Gets or sets the background color for the badge. This is a bindable property. |
-| BadgeAnimation | IBadgeAnimation | Gets or sets the animation that should be used when the badge is shown or hidden. Only works if `IsAnimated` is set to `true`. This is a bindable property. |
+| BadgeAnimation | IBadgeAnimation | Gets or sets the animation that should be used when the badge is shown or hidden. The animation only occurs if `IsAnimated` is set to `true`. This is a bindable property. |
 | BadgePosition | BadgePosition | Gets or sets the position where the badge will be shown relative to the `Content`. This is a bindable property. |
 | BorderColor | [`Color`](xref:Xamarin.Forms.Color) | Gets or sets the border color for the badge. This is a bindable property. |
 | Content | [`View`](xref:Xamarin.Forms.View) | Gets or sets the `View` on top of which the `BadgeView` will be shown. This is a bindable property. |
