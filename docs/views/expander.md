@@ -11,6 +11,9 @@ ms.author: joverslu
 
 The Xamarin.CommunityToolkit `Expander` control provides an expandable container to host any content. The control has a header and content, and the content is shown or hidden by tapping the `Expander` header. When only the `Expander` header is shown, the `Expander` is *collapsed*. When the `Expander` content is visible the `Expander` is *expanded*.
 
+> [!NOTE]
+> The `Expander` control is known to show unwanted behavior when used in a `ListView` or `CollectionView`. At this time we recommend not using a `Expander` in one of these controls.
+
 The following screenshots show an `Expander` in its collapsed and expanded states, with red boxes indicating the header and the content:
 
 ![Screenshot of an Expander in collapsed and expanded states, on iOS and Android](expander-images/expander.png "Expander on iOS and Android")
