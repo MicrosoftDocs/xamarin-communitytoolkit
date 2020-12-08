@@ -38,4 +38,4 @@ You can see this in action in the [Xamarin Community Toolkit Sample App](https:/
 
 ## API
 
-* [RequiredStringValidationBehavior source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Behaviors/RequiredStringValidationBehavior.shared.cs)
+* [RequiredStringValidationBehavior source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Behaviors/Validators/RequiredStringValidationBehavior.shared.cs)
