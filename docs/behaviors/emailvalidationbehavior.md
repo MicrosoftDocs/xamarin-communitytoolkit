@@ -2,13 +2,13 @@
 title: "Xamarin Community Toolkit EmailValidationBehavior"
 author: sthewissen
 ms.author: joverslu
-description: "The EmailValidationBehavior allows users to determine whether or not a given text is a valid e-mail address."
+description: "The EmailValidationBehavior allows users to determine whether or not text input is a valid e-mail address."
 ms.date: 12/07/2020
 ---
 
 # Xamarin Community Toolkit EmailValidationBehavior
 
-The EmailValidationBehavior is a behavior that allows users to determine whether or not a given text value is a valid e-mail address. By adding this behavior to an `Entry` control it can be styled differently depending on whether a valid or an invalid e-mail address is provided. The validation is done through a regular expression which is used to verify whether or not the given value is a valid e-mail address. It can be overridden by the user to customize the validation through the properties it inherits from [ValidationBehavior](/xamarin-communitytoolkit/behaviors/validationbehavior).
+The EmailValidationBehavior is a behavior that allows users to determine whether or not text input is a valid e-mail address. For example, an `Entry` control can be styled differently depending on whether a valid or an invalid e-mail address is provided. The validation is achieved through a regular expression that is used to verify whether or not the text input is a valid e-mail address. It can be overridden to customize the validation through the properties it inherits from [ValidationBehavior](/xamarin-communitytoolkit/behaviors/validationbehavior).
 
 ## Syntax
 
@@ -27,8 +27,7 @@ The EmailValidationBehavior is a behavior that allows users to determine whether
 
 |Property  |Type  |Description  |
 |---------|---------|---------|
-| DefaultRegexPattern | string  | The regular expression used to verify whether or not the given value is a valid e-mail address. |
-
+| DefaultRegexPattern | string  | The regular expression used to verify whether or not the text input is a valid e-mail address. |
 
 ## Sample
 
