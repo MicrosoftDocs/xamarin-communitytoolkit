@@ -6,7 +6,7 @@ ms.author: joverslu
 ms.date: 12/08/2020
 ---
 
-# Xamarin Community Toolkit BadgeView
+# Xamarin Community Toolkit UniformGrid
 
 The `UniformGrid` is just like the [`Grid`](xref:Xamarin.Forms.Grid), with the possibility of multiple rows and columns, but with one important difference: all rows and columns will have the same size. That size is determined by the biggest width and height of all the child elements. The child element with the biggest width does not necessarily have to be the child element with the biggest height.
 
