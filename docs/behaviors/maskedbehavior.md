@@ -8,7 +8,7 @@ ms.date: 12/07/2020
 
 # Xamarin Community Toolkit MaskedBehavior
 
-The MaskedBehavior is a behavior that allows the user to define an input mask for data entry. By adding this behavior to an `Entry` control it will force the user to only input values matching a given mask. Popular examples of its usage include input of a credit card number or a phone number.
+The MaskedBehavior is a behavior that allows the user to define an input mask for data entry. Adding this behavior to an `Entry` control will force the user to only input values matching a given mask. Examples of its usage include input of a credit card number or a phone number.
 
 ## Syntax
 
