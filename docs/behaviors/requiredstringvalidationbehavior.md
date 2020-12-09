@@ -2,13 +2,13 @@
 title: "Xamarin Community Toolkit RequiredStringValidationBehavior"
 author: sthewissen
 ms.author: joverslu
-description: "The RequiredStringValidationBehavior allows the user to determine if a given text is equal to a specific text."
+description: "The RequiredStringValidationBehavior allows the user to determine if text input is equal to specific text."
 ms.date: 12/08/2020
 ---
 
 # Xamarin Community Toolkit RequiredStringValidationBehavior
 
-allows the user to determine if a given text is equal to a specific text. By adding this behavior to an `Entry` control it can be styled differently depending on whether a valid or an invalid text value is provided. Additional properties handling validation are inherited from [ValidationBehavior](/xamarin-communitytoolkit/behaviors/validationbehavior).
+The RequiredStringValidationBehavior is a behavior that allows the user to determine if text input is equal to specific text. For example, an `Entry` control can be styled differently depending on whether a valid or an invalid text input is provided. Additional properties handling validation are inherited from [ValidationBehavior](/xamarin-communitytoolkit/behaviors/validationbehavior).
 
 ## Syntax
 
