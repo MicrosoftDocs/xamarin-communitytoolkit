@@ -1,6 +1,6 @@
 ---
 title: "Xamarin Community Toolkit Shield"
-description: "The Shield is a type of badge that has two colored parts and strings."
+description: "The Shield is a type of badge that has two colored sections that contain text."
 author: jfversluis
 ms.author: joverslu
 ms.date: 12/08/2020
@@ -8,7 +8,7 @@ ms.date: 12/08/2020
 
 # Xamarin Community Toolkit Shield
 
-The Shield is a type of badge that has two colored parts and strings, which are used a lot .... an example can be seen below.
+The Shield is a type of badge that has two colored sections that contain text:
 
 ![Shields example](shield-images/example-shields.png)
 
