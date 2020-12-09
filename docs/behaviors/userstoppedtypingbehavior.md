@@ -2,13 +2,13 @@
 title: "Xamarin Community Toolkit UserStoppedTypingBehavior"
 author: sthewissen
 ms.author: joverslu
-description: "The UserStoppedTypingBehavior allows the user to trigger an action when a user has stopped the input of data into an Entry."
+description: "The UserStoppedTypingBehavior allows the user to trigger an action when a user has stopped data input into an Entry."
 ms.date: 12/08/2020
 ---
 
 # Xamarin Community Toolkit UserStoppedTypingBehavior
 
-The UserStoppedTypingBehavior is a behavior that allows the user to trigger an action when a user has stopped the input of data into an `Entry`. Popular examples of its usage include triggering a search when a user has stopped putting in his search query.
+The UserStoppedTypingBehavior is a behavior that allows the user to trigger an action when a user has stopped data input an `Entry`. Examples of its usage include triggering a search when a user has stopped entering their search query.
 
 ## Syntax
 
@@ -32,7 +32,6 @@ The UserStoppedTypingBehavior is a behavior that allows the user to trigger an a
 | MinimumLengthThreshold | int | The minimum length of the input value required before the command will be executed. |
 | ShouldDismissKeyboardAutomatically | int | Indicates whether or not the keyboard should be dismissed automatically. |
 | StoppedTypingTimeThreshold | bool | The time of inactivity in milliseconds after which the command will be executed. |
-
 
 ## Sample
 
