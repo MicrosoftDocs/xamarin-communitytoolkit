@@ -24,7 +24,7 @@ The ValidationBehavior allows users to create custom validation behaviors. All o
 
 ## Sample
 
-> [!NOTE]
+> [!WARNING]
 > This class should not be used without inheriting from it. Therefore, there is no sample available.
 
 ## API
