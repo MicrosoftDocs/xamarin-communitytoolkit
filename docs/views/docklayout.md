@@ -14,7 +14,7 @@ This makes it a great choice in many situations, where you want to divide the sc
 
 The actual dock position on the child elements are set through an attached property.
 
-Inspired by [WPF DockPanel](xref:system.windows.controls.dockpanel).
+Inspired by [WPF DockPanel](xref:System.Windows.Controls.DockPanel).
 
 ## Syntax
 
