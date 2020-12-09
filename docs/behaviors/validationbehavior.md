@@ -8,7 +8,7 @@ ms.date: 12/07/2020
 
 # Xamarin Community Toolkit ValidationBehavior
 
-The ValidationBehavior allows users to create custom validation behaviors. All of the validation related behaviors in the Xamarin Community Toolkit inherit from this behavior to expose a number of shared properties. Users can inherit from this class to create a custom validation behavior currently not supported through the Xamarin Community Toolkit.
+The ValidationBehavior allows users to create custom validation behaviors. All of the validation behaviors in the Xamarin Community Toolkit inherit from this behavior, to expose a number of shared properties. Users can inherit from this class to create a custom validation behavior currently not supported through the Xamarin Community Toolkit.
 
 ## Properties
 
@@ -21,7 +21,6 @@ The ValidationBehavior allows users to create custom validation behaviors. All o
 | ValidStyle | [Style](xref:Xamarin.Forms.Style) | |
 | Value | object | |
 | ValuePropertyName | string | |
-
 
 ## Sample
 
