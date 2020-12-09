@@ -2,13 +2,13 @@
 title: "Xamarin Community Toolkit MultiValidationBehavior"
 author: sthewissen
 ms.author: joverslu
-description: "The MultiValidationBehavior allows the user to combine multiple validators validating a given text depending on specified parameters."
+description: "The MultiValidationBehavior allows the user to combine multiple validators to validate text input depending on specified parameters."
 ms.date: 12/07/2020
 ---
 
 # Xamarin Community Toolkit MultiValidationBehavior
 
-The MultiValidationBehavior is a behavior that allows the user to combine multiple validators validating a given text depending on specified parameters. By adding this behavior to an `Entry` control it can be styled differently depending on whether a valid or an invalid text value is provided. By allowing the user to chain multiple existing validators together, it offers a high degree of customizability when it comes to validation. Additional properties handling validation are inherited from [ValidationBehavior](/xamarin-communitytoolkit/behaviors/validationbehavior).
+The MultiValidationBehavior is a behavior that allows the user to combine multiple validators to validate text input depending on specified parameters. For example, an `Entry` control can be styled differently depending on whether a valid or an invalid text input is provided. By allowing the user to chain multiple existing validators together, it offers a high degree of customizability when it comes to validation. Additional properties handling validation are inherited from [ValidationBehavior](/xamarin-communitytoolkit/behaviors/validationbehavior).
 
 ## Syntax
 
