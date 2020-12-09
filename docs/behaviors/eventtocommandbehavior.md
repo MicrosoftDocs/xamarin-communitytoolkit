@@ -8,7 +8,7 @@ ms.date: 12/07/2020
 
 # Xamarin Community Toolkit EventToCommandBehavior
 
-The EventToCommandBehavior is a behavior that allows the user to invoke a Command through an event.It is designed to associate Commands to events exposed by controls that were not designed with Commands in mind. It allows you to map any arbitrary event on a control to a Command.
+The EventToCommandBehavior is a behavior that allows the user to invoke a Command through an event. It is designed to associate Commands to events exposed by controls that were not designed to support Commands. It allows you to map any arbitrary event on a control to a Command.
 
 ## Syntax
 
@@ -51,7 +51,7 @@ When using this behavior with selection or tap events exposed by `ListView` an a
 
 |Property  |Type  |Description  |
 |---------|---------|---------|
-| EventName | string | The name of the event that should be converted to a `Command`. |
+| EventName | string | The name of the event that should be associated with a `Command`. |
 | Command | [ICommand](xref:System.Windows.Input.ICommand) | The `Command` that should be executed. |
 | CommandParameter | object | An optional parameter to forward to the `Command`. |
 | EventArgsConverter | [IValueConverter](xref:Xamarin.Forms.IValueConverter) | An optional `IValueConverter` that can be used to convert `EventArgs` values to values passed into the `Command`. |
