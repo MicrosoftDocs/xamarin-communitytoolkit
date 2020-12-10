@@ -12,7 +12,7 @@ The DockLayout makes it easy to dock content in all four directions (top, bottom
 
 This makes it a great choice in many situations, where you want to divide the screen into specific areas. By default, the last element inside the DockLayout will automatically fill the rest of the space (center), unless this feature is specifically disabled.
 
-The actual dock position on the child elements are set through an attached property.
+The dock position on the child elements are set through an attached property.
 
 Inspired by [WPF DockPanel](xref:System.Windows.Controls.DockPanel).
 
