@@ -1,44 +1,45 @@
 ---
 title: "Xamarin Community Toolkit NumericValidationBehavior"
-author: AlexHedley
-description: "The NumericValidationBehavior allows the user to determine if a given text is a valid numeric value."
+author: sthewissen
 ms.author: joverslu
-ms.date: 10/09/2020
+description: "The NumericValidationBehavior allows the user to determine if text input is a valid numeric value."
+ms.date: 12/07/2020
 ---
 
 # Xamarin Community Toolkit NumericValidationBehavior
 
-The `NumericValidationBehavior` enables the user to determine if a given text is a valid numeric value.
+The NumericValidationBehavior is a behavior that allows the user to determine if text input is a valid numeric value. For example, an `Entry` control can be styled differently depending on whether a valid or an invalid numeric input is provided. Additional properties handling validation are inherited from [ValidationBehavior](/xamarin-communitytoolkit/behaviors/validationbehavior).
 
 ## Syntax
 
-```xaml
-<Entry.Behaviors>
-    <behaviors:NumericValidationBehavior InvalidStyle="{StaticResource InvalidEntryStyle}"
-                                         MinimumValue="1.0"
-                                         MaximumValue="100.0"/>
-</Entry.Behaviors>
+```xml
+<Entry>
+    <Entry.Behaviors>
+        <xct:NumericValidationBehavior 
+            InvalidStyle="{StaticResource InvalidEntryStyle}"
+            MinimumValue="1.0"
+            MaximumValue="100.0"
+        />
+    </Entry.Behaviors>
+</Entry>
 ```
 
 ## Properties
 
-| Property | Type | Description |
-| -- | -- | -- |
-| MinimumValue | double | *Description* |
-| MaximumValue | double | *Description* |
-
-## Methods
-
-| Methods | Return Type | Description |
-| -- | -- | -- |
-| Validate(object) | bool | *Description* |
-| B(float, string) | int | Description |
+|Property  |Type  |Description  |
+|---------|---------|---------|
+| MaximumDecimalPlaces | int | The maximum number of decimal places that will be allowed. |
+| MaximumValue | double | The maximum numeric value that will be allowed. |
+| MinimumDecimalPlaces | int | The minimum number of decimal places that will be allowed. |
+| MinimumValue | double | The minimum numeric value that will be allowed. |
 
 
-## Sample project
+## Sample
 
-[NumericValidationBehaviorPage](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkitSample/Pages/Behaviors/NumericValidationBehaviorPage.xaml). You can see this element in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit/tree/main/XamarinCommunityToolkitSample).
+- [NumericValidationBehavior sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit.Sample/Pages/Behaviors/NumericValidationBehaviorPage.xaml)
+
+You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
 
 ## API
 
-- [NumericValidationBehavior](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkit/Behaviors/NumericValidationBehavior.shared.cs)
+* [NumericValidationBehavior source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Behaviors/Validators/NumericValidationBehavior.shared.cs)

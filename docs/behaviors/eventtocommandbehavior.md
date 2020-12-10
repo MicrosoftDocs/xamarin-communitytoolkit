@@ -1,79 +1,67 @@
 ---
 title: "Xamarin Community Toolkit EventToCommandBehavior"
-author: AlexHedley
-description: "The EventToCommandBehavior allows the user to invoke a Commmand through an event."
+author: sthewissen
 ms.author: joverslu
-ms.date: 10/09/2020
+description: "The EventToCommandBehavior allows the user to invoke a Command through an event."
+ms.date: 12/07/2020
 ---
 
 # Xamarin Community Toolkit EventToCommandBehavior
 
-The `EventToCommandBehavior` enables the user to invoke a `Commmand` through an event.
+The EventToCommandBehavior is a behavior that allows the user to invoke a Command through an event. It is designed to associate Commands to events exposed by controls that were not designed to support Commands. It allows you to map any arbitrary event on a control to a Command.
 
 ## Syntax
 
-```xaml
+This behavior can be used on any control that exposes events, such as a `Button`:
+
+```xml
 <Button.Behaviors>
-    <behaviors:EventToCommandBehavior
+    <xct:EventToCommandBehavior
         EventName="Clicked"
-        Command="{Binding IncrementCommand}" />
+        Command="{Binding MyCustomCommand}" />
 </Button.Behaviors>
 ```
 
-```xaml
+When using this behavior with selection or tap events exposed by `ListView` an additional converter is required. This converter converts the event arguments to a command parameter which is then passed onto the Command. They are also available in the Xamarin Community Toolkit:
+
+- [ItemSelectedEventArgsConverter](/xamarin-communitytoolkit/converters/itemselectedeventargsconverter)
+- [ItemTappedEventArgsConverter](/xamarin-communitytoolkit/converters/itemtappedeventargsconverter)
+
+```xml
 <ListView.Behaviors>
-    <behaviors:EventToCommandBehavior EventName="ItemSelected"
-                                      Command="{Binding ItemSelectedCommand}"
-                                      EventArgsConverter="{StaticResource ItemSelectedEventArgsConverter}" />
+    <behaviors:EventToCommandBehavior 
+        EventName="ItemSelected"
+        Command="{Binding ItemSelectedCommand}"
+        EventArgsConverter="{StaticResource ItemSelectedEventArgsConverter}"
+    />
 </ListView.Behaviors>
 ```
 
-```xaml
+```xml
 <ListView.Behaviors>
-    <behaviors:EventToCommandBehavior EventName="ItemTapped"
-                                      Command="{Binding ItemTappedCommand}"
-                                      EventArgsConverter="{StaticResource ItemTappedEventArgsConverter}" />
+    <behaviors:EventToCommandBehavior 
+        EventName="ItemTapped"
+        Command="{Binding ItemTappedCommand}"
+        EventArgsConverter="{StaticResource ItemTappedEventArgsConverter}"
+     />
 </ListView.Behaviors>
 ```
 
 ## Properties
 
-| Property | Type | Description |
-| -- | -- | -- |
-| EventNameProperty | BindableProperty | *Description* |
-| CommandProperty | BindableProperty | Description |
-| CommandParameterProperty | BindableProperty | *Description* |
-| eventHandler | Delegate | *Description* |
-| eventInfo | EventInfo | *Description* |
-| EventName | string | *Description* |
-| Command | ICommand | *Description* |
-| CommandParameter | object | *Description* |
+|Property  |Type  |Description  |
+|---------|---------|---------|
+| EventName | string | The name of the event that should be associated with a `Command`. |
+| Command | [ICommand](xref:System.Windows.Input.ICommand) | The `Command` that should be executed. |
+| CommandParameter | object | An optional parameter to forward to the `Command`. |
+| EventArgsConverter | [IValueConverter](xref:Xamarin.Forms.IValueConverter) | An optional `IValueConverter` that can be used to convert `EventArgs` values to values passed into the `Command`. |
 
-## Methods
+## Sample
 
-| Methods | Return Type | Description |
-| -- | -- | -- |
-| OnAttachedTo(View) | void | *Description* |
-| OnDetachingFrom(View) | void | *Description* |
+- [EventToCommandBehavior sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit.Sample/Pages/Behaviors/EventToCommandBehaviorPage.xaml)
 
-
-## Events
-
-| Events | Description |
-| -- | -- |
-| OnEventNamePropertyChanged(BindableObject, object, object) | void | *Description* |
-| RegisterEvent() | void | *Description* |
-| UnregisterEvent() | void | *Description* |
-| OnTriggerHandled(object, object) | void | *Description* |
-
-## Sample project
-
-- [EventToCommandBehaviorPage](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkitSample/Pages/Behaviors/EventToCommandBehaviorPage.xaml)
-- [ItemSelectedEventArgsPage](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkitSample/Pages/Converters/ItemSelectedEventArgsPage.xaml)
-- [ItemTappedEventArgsPage](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkitSample/Pages/Converters/ItemTappedEventArgsPage.xaml)
-
-You can see this element in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit/tree/main/XamarinCommunityToolkitSample).
+You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
 
 ## API
 
-- [EventToCommandBehavior](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkit/Behaviors/EventToCommandBehavior.shared.cs)
+* [EventToCommandBehavior source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Behaviors/EventToCommandBehavior.shared.cs)

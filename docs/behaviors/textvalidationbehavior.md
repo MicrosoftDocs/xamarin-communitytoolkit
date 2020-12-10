@@ -1,60 +1,45 @@
 ---
 title: "Xamarin Community Toolkit TextValidationBehavior"
-author: AlexHedley
-description: "The TextValidationBehavior allows the user to validate a given text depending on specified parameters."
+author: sthewissen
 ms.author: joverslu
-ms.date: 10/09/2020
+description: "The TextValidationBehavior allows the user to validate a given text depending on specified parameters."
+ms.date: 12/07/2020
 ---
 
 # Xamarin Community Toolkit TextValidationBehavior
 
-The `TextValidationBehavior` allows the user to validate a given text depending on specified parameters.
+The TextValidationBehavior is a behavior that allows the user to validate a given text depending on specified parameters. By adding this behavior to an `Entry` control it can be styled differently depending on whether a valid or an invalid text value is provided. It offers various built-in checks such as checking for a certain length or whether or not the input value matches a specific regular expression. Additional properties handling validation are inherited from [ValidationBehavior](/xamarin-communitytoolkit/behaviors/validationbehavior).
 
 ## Syntax
 
-```xaml
-
+```xml
+<Entry>
+    <Entry.Behaviors>
+        <xct:TextValidationBehavior 
+            InvalidStyle="{StaticResource InvalidEntryStyle}"
+            MinimumLength="1"
+            MaximumLength="10"
+        />
+    </Entry.Behaviors>
+</Entry>
 ```
 
 ## Properties
 
-| Property | Type | Description |
-| -- | -- | -- |
-| MinimumLengthProperty | BindableProperty | *Description* |
-| MaximumLengthProperty | BindableProperty | *Description* |
-| DecorationFlagsProperty | BindableProperty | *Description* |
-| RegexPatternProperty | BindableProperty | *Description* |
-| RegexOptionsProperty | BindableProperty | *Description* |
-| MinimumLength | int | *Description* |
-| MaximumLength | int | *Description* |
-| RegexPattern | string | *Description* |
-| RegexOptions | RegexOptions | *Description* |
-| DefaultRegexPattern | string | *Description* |
-| DefaultRegexOptions | RegexOptions | *Description* |
+|Property  |Type  |Description  |
+|---------|---------|---------|
+| DecorationFlags | TextDecorationFlags | Provides enumerated value to use to set how to handle white spaces. |
+| MaximumLength | int | The maximum length of the value that will be allowed. |
+| MinimumLength | int | The minimum length of the value that will be allowed. |
+| RegexOptions | [RegexOptions](xref:System.Text.RegularExpressions.RegexOptions) | Provides enumerated values to use to set regular expression options. |
+| RegexPattern | string | The regular expression pattern which the value will have to match before it will be allowed. |
 
-## Methods
+## Sample
 
-| Methods | Return Type | Description |
-| -- | -- | -- |
-| DecorateValue() | object | *Description* |
-| Validate(object) | bool | *Description* |
-| GetDefaultRegexPattern(BindableObject) | object | *Description* |
-| GetDefaultRegexOptions(BindableObject) | object | *Description* |
-<!--| ReduceWhiteSpaces(string) | *Description* |-->
+- [TextValidationBehavior sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit.Sample/Pages/Behaviors/TextValidationBehaviorPage.xaml)
 
-## Events
-
-| Events | Description |
-| -- | -- |
-| OnAttachedTo(View) | *Description* |
-| OnRegexPropertyChanged(BindableObject, object, object) | *Description* |
-<!--| OnRegexPropertyChanged() | *Description* |-->
-
-## Sample project
-
-<!-- Link to the sample page in the Xamarin community toolkit sample app -->
-<!-- [control/helper name sample page Source](sample-page-link). You can see this element in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit/tree/main/XamarinCommunityToolkitSample). -->
+You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
 
 ## API
 
-- [TextValidationBehavior](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkit/Behaviors/Validators/TextValidationBehavior.shared.cs)
+* [TextValidationBehavior source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Behaviors/Validators/TextValidationBehavior.shared.cs)
