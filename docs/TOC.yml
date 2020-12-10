@@ -106,6 +106,8 @@
       href: views/badgeview.md
     - name: "CameraView"
       href: views/cameraview.md
+    - name: "DockLayout"
+      href: views/docklayout.md
     - name: "Expander"
       href: views/expander.md
     - name: "MediaElement"
