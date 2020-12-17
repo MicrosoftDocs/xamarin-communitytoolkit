@@ -68,48 +68,47 @@ The following properties are available on the `TabView` object:
 
 |Property  |Type  |Description  |
 |---------|---------|---------|
-| TabItemsSource |  IEnumerable | A collection used to generate the TabView's tab items.   |
-| TabViewItemDataTemplate |  DataTemplate | the template the Tab View uses to generate tab items' header.   |
-| TabContentDataTemplate |  DataTemplate | The template the Tab View uses to generate tab items' content.  |
-| SelectedIndex |  Int | Gets or sets the currently selected tab. Default is 0.   |
-| TabStripPlacement |    TabStripPlacement   |  The TabStrip placement (top or bottom).  |
-| TabStripBackground | Brush | The TabStrip background.  |
-| TabIndicatorBrush | Brush | The TabIndicator background.  |
+| IsSwipeEnabled | bool | Enable or disable the swipe gesture.   |
+| IsTabTransitionEnabled | bool | Enable or disable the transition between tabs.  |
+| SelectedIndex |  int | Gets or sets the currently selected tab. Default is 0.   |
+| TabContentBackground | [`Brush`](xref:Xamarin.Forms.Brush) | The tab content background.  |
+| TabContentDataTemplate | [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) | The template the Tab View uses to generate tab items' content.  |
+| TabContentHeight | double | The tab content height.  |
+| TabIndicatorBrush | [`Brush`](xref:Xamarin.Forms.Brush) | The TabIndicator background.  |
 | TabIndicatorHeight | double | The TabIndicator height.  |
-| TabIndicatorWidth | double | The TabIndicator width.  |
 | TabIndicatorPlacement | TabIndicatorPlacement |   |
-| TabIndicatorView | View |  The TabIndicator content. |
-| TabContentBackground | Brush | The tab content background.  |
-| TabContentHeight | Double | The tab content height.  |
-| TabStripHeight | Double | The TabStrip height.  |
-| TabContentHeight | Double | The tab content height.  |
-| IsTabTransitionEnabled | Bool | Enable or disable the transition between tabs.  |
-| IsSwipeEnabled | Bool | Enable or disable the swipe gesture.   |
+| TabIndicatorView | [`View`](xref:Xamarin.Forms.View) |  The TabIndicator content. |
+| TabIndicatorWidth | double | The TabIndicator width.  |
+| TabItemsSource |  IEnumerable | A collection used to generate the TabView's tab items.   |
+| TabStripPlacement |  TabStripPlacement |  The TabStrip placement (top or bottom).  |
+| TabStripBackground | [`Brush`](xref:Xamarin.Forms.Brush) | The TabStrip background.  |
+| TabStripHeight | double | The TabStrip height.  |
+| TabViewItemDataTemplate |  [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) | the template the Tab View uses to generate tab items' header. |
 
 The following properties are available on the `TabViewItem` object:
 
 |Property  |Type  |Description  |
 |---------|---------|---------|
-| Text |  string | The text of the tab.   |
-| TextColor | [`Color`](xref:Xamarin.Forms.Color) | The text color of the tab.   |
-| TextColorSelected | [`Color`](xref:Xamarin.Forms.Color) | The text color of the selected tab.   |
-| FontSize | FontSize |  The font size used in the tab text. |
-| FontSizeSelected | FontSize | The font size used in the selected tab.   |
-| FontFamily | string | The font family  used in the tab.  |
-| FontFamilySelected | string | The font family used in the selected tab.  |
-| FontAttributes | [`FontAttributes`](xref:Xamarin.Forms.FontAttributes) | The font attributes used in the tab.  |
-| FontAttributesSelected | [`FontAttributes`](xref:Xamarin.Forms.FontAttributes) | The font attributes used in the selected tab.   |
-| Icon | [`ImageSource`](xref:Xamarin.Forms.ImageSource) | The icon of the tab.   |
-| IconSelected | [`ImageSource`](xref:Xamarin.Forms.ImageSource) | The ImageSource used as icon in the selected tab.   |
-| Content | View | The content of the tab. Is View, can use anything as content.   |
+| BadgeBackgroundColor | [`Color`](xref:Xamarin.Forms.Color) | The badge color used in the tab.   |
+| BadgeBackgroundColorSelected | [`Color`](xref:Xamarin.Forms.Color) | The badge color used in the selected tab.   |
 | BadgeText | bool | The badge text used in the tab.  |
 | BadgeTextColor | [`Color`](xref:Xamarin.Forms.Color) | The badge text color used in the tab.   |
 | BadgeTextColorSelected | [`Color`](xref:Xamarin.Forms.Color) | The badge text color used in the selected tab.   |
-| BadgeBackgroundColor | [`Color`](xref:Xamarin.Forms.Color) | The badge color used in the tab.   |
-| BadgeBackgroundColorSelected | [`Color`](xref:Xamarin.Forms.Color) | The badge color used in the selected tab.   |
+| Content | [`View`](xref:Xamarin.Forms.View) | The content of the tab. Is View, can use anything as content.   |
+| FontAttributes | [`FontAttributes`](xref:Xamarin.Forms.FontAttributes) | The font attributes used in the tab.  |
+| FontAttributesSelected | [`FontAttributes`](xref:Xamarin.Forms.FontAttributes) | The font attributes used in the selected tab.   |
+| FontFamily | string | The font family  used in the tab.  |
+| FontFamilySelected | string | The font family used in the selected tab.  |
+| FontSize | [`FontSize`](xref:Xamarin.Forms.FontSize) |  The font size used in the tab text. |
+| FontSizeSelected | [`FontSize`](xref:Xamarin.Forms.FontSize) | The font size used in the selected tab. |
+| Icon | [`ImageSource`](xref:Xamarin.Forms.ImageSource) | The icon of the tab.   |
+| IconSelected | [`ImageSource`](xref:Xamarin.Forms.ImageSource) | The ImageSource used as icon in the selected tab.   |
 | IsSelected | bool | a bool that indicate if the tab is selected or not.  |
 | TapCommand | [`ICommand`](xref:System.Windows.Input.ICommand) | Command that is executed when the user tap a tab.   |
 | TapCommandParameter | object | The tap command parameter.   |
+| Text |  string | The text of the tab.   |
+| TextColor | [`Color`](xref:Xamarin.Forms.Color) | The text color of the tab.   |
+| TextColorSelected | [`Color`](xref:Xamarin.Forms.Color) | The text color of the selected tab. |
 
 ## Events
 
@@ -117,14 +116,14 @@ The following event are available on the `TabView` object:
 
 | Event  |Type  |Description  |
 |---------|---------|---------|
-| SelectionChanged | EventHandler | Event that is raised when the selected tab changed.   |
-| Scrolled | EventHandler | Event that is raised when is swiping between tabs.  |
+| SelectionChanged | TabSelectionChangedEventHandler | Event that is raised when the selected tab changed.   |
+| Scrolled | TabViewScrolledEventHandler | Event that is raised when is swiping between tabs.  |
 
 The following event are available on the `TabViewItem` object:
 
 | Event  |Type  |Description  |
 |---------|---------|---------|
-| TabTapped | EventHandler | Event that is raised when the user tap a tab.   |
+| TabTapped | TabTappedEventHandler | Event that is raised when the user tap a tab.   |
 
 ## Sample
 
