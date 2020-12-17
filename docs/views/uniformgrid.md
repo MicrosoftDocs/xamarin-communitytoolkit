@@ -10,7 +10,7 @@ ms.date: 12/08/2020
 
 The `UniformGrid` is like the [`Grid`](xref:Xamarin.Forms.Grid), with the possibility of multiple rows and columns, but with one important difference: all rows and columns have the same size. That size is determined by the largest width and height of all the child elements. The child element with the largest width does not necessarily have to be the child element with the largest height.
 
-Use the `UnifordGrid` when you need the `Grid` behavior without the need to specify different sizes for the rows and columns.
+Use the `UniformGrid` when you need the `Grid` behavior without the need to specify different sizes for the rows and columns.
 
 [![Screenshot of UniformGrid](uniformgrid-images/uniformgrid-example.png "UniformGrid in an app")](uniformgrid-images/uniformgrid-example-large.png#lightbox "UniformGrid in an app")
 

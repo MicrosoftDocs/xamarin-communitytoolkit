@@ -31,7 +31,7 @@ The `LayoutState` enumeration supports one of the following values:
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:xct="clr-namespace:Xamarin.CommunityToolkit.Views;assembly=Xamarin.CommunityToolkit"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              x:Class="MyLittleApp.MainPage">
 
      <Grid xct:StateLayout.CurrentState="{Binding CurrentState}">
