@@ -35,7 +35,7 @@ ms.date: 10/20/2020
 - `IsLooping`, of type `bool`, describes whether the currently loaded media source should resume playback from the start after reaching its end. The default value of this property is `false`.
 - `KeepScreenOn`, of type `bool`, determines whether the device screen should stay on during media playback. The default value of this property is `false`.
 - `Position`, of type `TimeSpan`, describes the current progress through the media's playback time. The default value of this property is `TimeSpan.Zero`.
-- `ShowsPlaybackControls`, of type `bool`, determines whether the platforms playback controls are displayed. The default value of this property is `false`.
+- `ShowsPlaybackControls`, of type `bool`, determines whether the platforms playback controls are displayed. The default value of this property is `false`. Note that on iOS the controls are only shown for a brief period after interacting with the screen. There is no way of keeping the controls visible at all times.
 - `Source`, of type `MediaSource`, indicates the source of the media loaded into the control.
 - `VideoHeight`, of type `int`, indicates the height of the control. This is a read-only property.
 - `VideoWidth`, of type `int`, indicates the width of the control. This is a read-only property.
