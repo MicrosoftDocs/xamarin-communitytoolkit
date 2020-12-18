@@ -76,7 +76,7 @@ The following properties are available on the `TabView` object:
 | TabContentHeight | double | The tab content height.  |
 | TabIndicatorColor | [`Color`](xref:Xamarin.Forms.Color) | The TabIndicator background.  |
 | TabIndicatorHeight | double | The TabIndicator height.  |
-| TabIndicatorPlacement | TabIndicatorPlacement |   |
+| TabIndicatorPlacement | TabIndicatorPlacement | The selected tab indicator placement (top, center or bottom). |
 | TabIndicatorView | [`View`](xref:Xamarin.Forms.View) |  The TabIndicator content. |
 | TabIndicatorWidth | double | The TabIndicator width.  |
 | TabItems | ObservableCollection&lt;TabViewItem&gt; | Property that reflects the current tab items. |
