@@ -86,8 +86,7 @@ Besides the built-in states StateLayout also supports a `Custom` state. By setti
 When loading multiple items of the same type it could be beneficial to repeat a piece of XAML without having to copy paste it multiple times. This is where the `RepeatCount` property should be used. By defining a `Template` it's possible to repeat the same piece of XAML while only defining it once.
 
 > [!NOTE]
-> When using a RepeatCount that is greater than 1 you have to use Template to provide your content. Providing Content to a StateView while providing a RepeatCount greater than 1 will result in an Exception.
-
+> When using a `RepeatCount` that is greater than 1 you have to use the `Template` property to provide your content. Providing `Content` to a `StateView` while providing a `RepeatCount` greater than 1 will result in an exception.
 
 ### Syntax
 
