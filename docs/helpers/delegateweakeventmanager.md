@@ -77,7 +77,7 @@ void OnActionEvent(string message) => _weakActionEventManager.RaiseEvent(message
 
 ## Sample project
 
-[ObservableObject](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit.Sample/ObjectModel/ObservableObject.shared.cs).
+[ObservableObject](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/ObjectModel/ObservableObject.shared.cs).
 
 You can see this element in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit/tree/main/XamarinCommunityToolkitSample).
 

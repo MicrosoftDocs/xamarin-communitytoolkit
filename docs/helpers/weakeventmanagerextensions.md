@@ -32,7 +32,7 @@ void OnEvent() => weakEventManager.RaiseEvent(this, EventArgs.Empty, nameof(MyEv
 
 ## Sample project
 
-[BaseCommand](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit.Sample/ObjectModel/BaseCommand.shared.cs).
+[BaseCommand](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/ObjectModel/BaseCommand.shared.cs).
 
 You can see this element in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit/tree/main/XamarinCommunityToolkitSample).
 

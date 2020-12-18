@@ -51,7 +51,7 @@ The MaxLengthReachedBehavior is a behavior that allows the user to trigger an ac
 
 ## Sample
 
-- [MaxLengthReachedBehavior sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit.Sample/Pages/Behaviors/MaxLengthReachedBehaviorPage.xaml)
+- [MaxLengthReachedBehavior sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Behaviors/MaxLengthReachedBehaviorPage.xaml)
 
 You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
 

@@ -34,7 +34,7 @@ The CharactersValidationBehavior is a behavior that allows the user to validate 
 
 ## Sample
 
-- [CharactersValidationBehavior sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit.Sample/Pages/Behaviors/CharactersValidationBehaviorPage.xaml)
+- [CharactersValidationBehavior sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Behaviors/CharactersValidationBehaviorPage.xaml)
 
 You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
 

@@ -55,7 +55,7 @@ The `BadgeView` allows the user to show a badge with a string value on top of an
 
 ## Sample
 
-[BadgeView sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit.Sample/Pages/Views/BadgeViewPage.xaml)
+[BadgeView sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Views/BadgeViewPage.xaml)
 
 You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
 

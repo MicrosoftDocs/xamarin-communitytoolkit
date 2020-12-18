@@ -137,7 +137,7 @@ The following properties are available on the `StateView` object:
 
 ## Sample
 
-[StateLayout sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkitSample/Pages/Views/StateLayoutPage.xaml)
+[StateLayout sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Views/StateLayoutPage.xaml)
 
 You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
 

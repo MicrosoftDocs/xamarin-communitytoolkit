@@ -33,7 +33,7 @@ The ByteArrayToImageSourceConverter is a converter that allows the user to conve
 
 ## Sample
 
-[ByteArrayToImageSourceConverter sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkitSample/Pages/Converters/ByteArrayToImageSourcePage.xaml)
+[ByteArrayToImageSourceConverter sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Converters/ByteArrayToImageSourcePage.xaml)
 
 You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
 

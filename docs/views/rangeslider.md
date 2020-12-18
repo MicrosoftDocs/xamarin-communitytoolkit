@@ -83,7 +83,7 @@ The RangeSlider control enables the user to select a range of values through a s
 
 ## Sample
 
-[RangeSlider sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit.Sample/Pages/Views/RangeSliderPage.xaml)
+[RangeSlider sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Views/RangeSliderPage.xaml)
 
 You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
 

@@ -48,7 +48,7 @@ The VariableMultiValueConverter is a converter that allows users to convert mult
 
 ## Sample
 
-[VariableMultiValueConverter sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkitSample/Pages/Converters/VariableMultiValueConverterPage.xaml)
+[VariableMultiValueConverter sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Converters/VariableMultiValueConverterPage.xaml)
 
 You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
 

@@ -43,7 +43,7 @@ Use the `UnifordGrid` when you need the `Grid` behavior without the need to spec
 
 ## Sample
 
-[UniformGrid sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit.Sample/Pages/Views/UniformGridPage.xaml)
+[UniformGrid sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Views/UniformGridPage.xaml)
 
 You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
 

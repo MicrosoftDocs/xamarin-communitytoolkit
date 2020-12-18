@@ -44,7 +44,7 @@ The AvatarView control allows the user to display an avatar or the user's initia
 
 ## Sample
 
-[AvatarView sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkitSample/Pages/Views/AvatarViewPage.xaml)
+[AvatarView sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Views/AvatarViewPage.xaml)
 
 You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
 
