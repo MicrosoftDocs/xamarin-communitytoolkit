@@ -83,7 +83,10 @@ Besides the built-in states StateLayout also supports a `Custom` state. By setti
 
 ## Use repeating states
 
-When loading multiple items of the same type it could be beneficial to repeat a piece of XAML without having to copy paste it multiple times. This is where the `RepeatCount` property should be used. By defining a `RepeatTemplate` it's possible to repeat the same piece of XAML while only defining it once.
+When loading multiple items of the same type it could be beneficial to repeat a piece of XAML without having to copy paste it multiple times. This is where the `RepeatCount` property should be used. By defining a `Template` it's possible to repeat the same piece of XAML while only defining it once.
+
+> [!NOTE]
+> When using a `RepeatCount` that is greater than 1 you have to use the `Template` property to provide your content. Providing `Content` to a `StateView` while providing a `RepeatCount` greater than 1 will result in an exception.
 
 ### Syntax
 
@@ -96,14 +99,14 @@ When loading multiple items of the same type it could be beneficial to repeat a 
     <StackLayout xct:StateLayout.CurrentState="{Binding CurrentState}">
         <xct:StateLayout.StateViews>
             <xct:StateView StateKey="Loading" RepeatCount="3">
-                <xct:StateView.RepeatTemplate>
+                <xct:StateView.Template>
                     <DataTemplate>
                         <StackLayout Spacing="8">
                             <BoxView CornerRadius="8" HeightRequest="40" BackgroundColor="#CCCCCC" WidthRequest="120" />
                             <BoxView CornerRadius="8" HeightRequest="40" BackgroundColor="#CCCCCC" WidthRequest="200" />
                         </StackLayout>
                     </DataTemplate>
-                </xct:StateView.RepeatTemplate>
+                </xct:StateView.Template>
             </xct:StateView>
         </xct:StateLayout.StateViews>
 
@@ -128,8 +131,8 @@ The following properties are available on the `StateView` object:
 |Property  |Type  |Description  |
 |---------|---------|---------|
 | CustomStateKey | string | Defines the current state of the layout and which template to show. |
-| RepeatCount | int | Defines the current state of the layout and which template to show. |
-| RepeatTemplate | [`DataTemplate`](xref:Xamarin.Forms.DataTemplate)  | Defines the current state of the layout and which template to show. |
+| RepeatCount | int | The amount of times the Template should be repeated. |
+| Template | [`DataTemplate`](xref:Xamarin.Forms.DataTemplate)  | Defines a template to show for this state. |
 | State | `LayoutState` | Defines the current state of the layout and which template to show. |
 
 ## Sample
