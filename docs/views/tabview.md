@@ -1,6 +1,6 @@
 ---
 title: "Xamarin Community Toolkit TabView"
-description: "The TabView control allows the user to display a set of tabs and their respective content."
+description: "The TabView control allows the user to display a set of tabs and their content."
 author: jfversluis
 ms.author: joverslu
 ms.date: 12/17/2020
@@ -8,11 +8,11 @@ ms.date: 12/17/2020
 
 # Xamarin Community Toolkit TabView
 
-The `TabView` control allows the user to display a set of tabs and their respective content. Other than the native tab bars, the `TabView` is fully customizable.
+The `TabView` control allows the user to display a set of tabs and their content. The `TabView` is fully customizable, other than the native tab bars.
 
 ## Syntax
 
-Underneath you can see a simple example of a `TabView` implementation.
+The following code shows a simple example of a `TabView` implementation:
 
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -72,7 +72,7 @@ The following properties are available on the `TabView` object:
 | IsTabTransitionEnabled | bool | Enable or disable the transition between tabs.  |
 | SelectedIndex |  int | Gets or sets the currently selected tab. Default is 0.   |
 | TabContentBackgroundColor | [`Color`](xref:Xamarin.Forms.Color) | The tab content background.  |
-| TabContentDataTemplate | [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) | The template the Tab View uses to generate tab items' content.  |
+| TabContentDataTemplate | [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) | The template the TabView uses to generate tab items' content.  |
 | TabContentHeight | double | The tab content height.  |
 | TabIndicatorColor | [`Color`](xref:Xamarin.Forms.Color) | The TabIndicator background.  |
 | TabIndicatorHeight | double | The TabIndicator height.  |
@@ -82,10 +82,10 @@ The following properties are available on the `TabView` object:
 | TabItems | ObservableCollection&lt;TabViewItem&gt; | Property that reflects the current tab items. |
 | TabItemsSource |  `IList` | A collection used to generate the TabView's tab items.   |
 | TabStripPlacement |  TabStripPlacement |  The TabStrip placement (top or bottom).  |
-| TabStripBackgroundColor | [`Color`](xref:Xamarin.Forms.Color) | The TabStrip background a Color. Can't be used together with `TabStripBackgroundView`. |
-| TabStripBackgroundView | [`View`](xref:Xamarin.Forms.View) | The TabStrip background as a view. Can't be used together with `TabStripBackgroundColor`. |
+| TabStripBackgroundColor | [`Color`](xref:Xamarin.Forms.Color) | The `Color` of the TabStrip background. This can't be used with `TabStripBackgroundView`. |
+| TabStripBackgroundView | [`View`](xref:Xamarin.Forms.View) | The `View` representing the TabStrip background. This can't be used with `TabStripBackgroundColor`. |
 | TabStripHeight | double | The TabStrip height.  |
-| TabViewItemDataTemplate |  [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) | The template the Tab View uses to generate tab items' header. |
+| TabViewItemDataTemplate |  [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) | The template the TabView uses to generate tab items' header. |
 
 The following properties are available on the `TabViewItem` object:
 
@@ -98,7 +98,7 @@ The following properties are available on the `TabViewItem` object:
 | BadgeText | bool | The badge text used in the tab.  |
 | BadgeTextColor | [`Color`](xref:Xamarin.Forms.Color) | The badge text color used in the tab.   |
 | BadgeTextColorSelected | [`Color`](xref:Xamarin.Forms.Color) | The badge text color used in the selected tab.   |
-| Content | [`View`](xref:Xamarin.Forms.View) | The content of the tab. As this is a `View`, you can use anything as content.   |
+| Content | [`View`](xref:Xamarin.Forms.View) | The content of the tab. Anything can be used as content.   |
 | CurrentBadgeBackgroundColor | [`Color`](xref:Xamarin.Forms.Color) | Read-only property that reflects the currently used `BadgeBackgroundColor` |
 | CurrentBadgeBorderColor | [`Color`](xref:Xamarin.Forms.Color) | Read-only property that reflects the currently used `BadgeBorderColor` |
 | CurrentContent | [`View`](xref:Xamarin.Forms.View) | Read-only property that reflects the currently used `Content` |
@@ -109,31 +109,31 @@ The following properties are available on the `TabViewItem` object:
 | CurrentTextColor | [`Color`](xref:Xamarin.Forms.Color) | Read-only property that reflects the currently used `TextColor` |
 | FontAttributes | [`FontAttributes`](xref:Xamarin.Forms.FontAttributes) | The font attributes used in the tab.  |
 | FontAttributesSelected | [`FontAttributes`](xref:Xamarin.Forms.FontAttributes) | The font attributes used in the selected tab.   |
-| FontFamily | string | The font family  used in the tab.  |
+| FontFamily | string | The font family used in the tab.  |
 | FontFamilySelected | string | The font family used in the selected tab.  |
 | FontSize | double |  The font size used in the tab text. |
 | FontSizeSelected | double | The font size used in the selected tab. |
 | Icon | [`ImageSource`](xref:Xamarin.Forms.ImageSource) | The icon of the tab.   |
 | IconSelected | [`ImageSource`](xref:Xamarin.Forms.ImageSource) | The ImageSource used as icon in the selected tab.   |
-| IsSelected | bool | a bool that indicate if the tab is selected or not.  |
+| IsSelected | bool | A bool that indicates if the tab is selected or not.  |
 | TabAnimation | ITabViewItemAnimation | The transition animation of a tab. |
 | TabWidth | double | The width of a tab item |
-| TapCommand | [`ICommand`](xref:System.Windows.Input.ICommand) | Command that is executed when the user tap a tab.   |
+| TapCommand | [`ICommand`](xref:System.Windows.Input.ICommand) | Command that is executed when the user taps a tab.   |
 | TapCommandParameter | object | The tap command parameter.   |
-| Text | string | The text of the tab. |
+| Text | string | The tab text. |
 | TextColor | [`Color`](xref:Xamarin.Forms.Color) | The text color of the tab.   |
 | TextColorSelected | [`Color`](xref:Xamarin.Forms.Color) | The text color of the selected tab. |
 
 ## Events
 
-The following event are available on the `TabView` object:
+The following events are available on the `TabView` object:
 
 | Event  |Type  |Description  |
 |---------|---------|---------|
 | SelectionChanged | TabSelectionChangedEventHandler | Event that is raised when the selected tab changed.   |
-| Scrolled | TabViewScrolledEventHandler | Event that is raised when is swiping between tabs.  |
+| Scrolled | TabViewScrolledEventHandler | Event that is raised when swiping between tabs.  |
 
-The following event are available on the `TabViewItem` object:
+The following events are available on the `TabViewItem` object:
 
 | Event  |Type  |Description  |
 |---------|---------|---------|
