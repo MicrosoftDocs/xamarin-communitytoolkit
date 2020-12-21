@@ -65,7 +65,7 @@ void OnActionEvent(string message) => _weakActionEventManager.RaiseEvent(message
 
 ## Sample project
 
-[MaxLengthReachedBehavior](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit.Sample/Behaviors/MaxLengthReachedBehavior.shared.cs).
+[MaxLengthReachedBehavior](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Behaviors/MaxLengthReachedBehavior.shared.cs).
 
 You can see this element in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit/tree/main/XamarinCommunityToolkitSample).
 

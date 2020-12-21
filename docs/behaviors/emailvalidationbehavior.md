@@ -31,7 +31,7 @@ The EmailValidationBehavior is a behavior that allows users to determine whether
 
 ## Sample
 
-- [EmailValidationBehavior sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit.Sample/Pages/Behaviors/EmailValidationBehaviorPage.xaml)
+- [EmailValidationBehavior sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Behaviors/EmailValidationBehaviorPage.xaml)
 
 You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
 

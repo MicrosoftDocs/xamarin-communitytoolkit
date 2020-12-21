@@ -39,7 +39,7 @@ The ItemSelectedEventArgsConverter is a converter that allows users to extract t
 
 ## Sample
 
-[ItemSelectedEventArgsConverter sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkitSample/Pages/Converters/ItemSelectedEventArgsPage.xaml)
+[ItemSelectedEventArgsConverter sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Converters/ItemSelectedEventArgsPage.xaml)
 
 You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
 

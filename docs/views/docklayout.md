@@ -50,7 +50,7 @@ Inspired by [WPF DockPanel](xref:System.Windows.Controls.DockPanel).
 
 ## Sample
 
-[DockLayout sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit.Sample/Pages/Views/DockLayoutPage.xaml)
+[DockLayout sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Views/DockLayoutPage.xaml)
 
 You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
 

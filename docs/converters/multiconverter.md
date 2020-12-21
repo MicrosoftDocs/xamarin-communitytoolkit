@@ -45,7 +45,7 @@ Due to the nature of how converters work it is not possible to pass parameters t
 
 ## Sample
 
-[MultiConverter sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkitSample/Pages/Converters/MultiConverterPage.xaml)
+[MultiConverter sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Converters/MultiConverterPage.xaml)
 
 You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
 

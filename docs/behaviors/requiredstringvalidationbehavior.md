@@ -32,7 +32,7 @@ The RequiredStringValidationBehavior is a behavior that allows the user to deter
 
 ## Sample
 
-- [RequiredStringValidationBehavior sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit.Sample/Pages/Behaviors/RequiredStringValidationBehaviorPage.xaml)
+- [RequiredStringValidationBehavior sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Behaviors/RequiredStringValidationBehaviorPage.xaml)
 
 You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
 

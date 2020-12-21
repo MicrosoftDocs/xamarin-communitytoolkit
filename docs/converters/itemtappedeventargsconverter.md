@@ -39,7 +39,7 @@ The ItemTappedEventArgsConverter is a converter that allows users to extract the
 
 ## Sample
 
-[ItemTappedEventArgsConverter sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkitSample/Pages/Converters/ItemTappedEventArgsPage.xaml)
+[ItemTappedEventArgsConverter sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Converters/ItemTappedEventArgsPage.xaml)
 
 You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
 

@@ -32,7 +32,7 @@ The UriValidationBehavior is a behavior that allows users to determine whether o
 
 ## Sample
 
-- [UriValidationBehavior sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit.Sample/Pages/Behaviors/UriValidationBehaviorPage.xaml)
+- [UriValidationBehavior sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Behaviors/UriValidationBehaviorPage.xaml)
 
 You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
 

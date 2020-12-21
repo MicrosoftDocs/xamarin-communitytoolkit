@@ -58,7 +58,7 @@ When using this behavior with selection or tap events exposed by `ListView` an a
 
 ## Sample
 
-- [EventToCommandBehavior sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit.Sample/Pages/Behaviors/EventToCommandBehaviorPage.xaml)
+- [EventToCommandBehavior sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Behaviors/EventToCommandBehaviorPage.xaml)
 
 You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
 

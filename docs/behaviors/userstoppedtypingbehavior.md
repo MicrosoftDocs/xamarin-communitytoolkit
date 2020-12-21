@@ -35,7 +35,7 @@ The UserStoppedTypingBehavior is a behavior that allows the user to trigger an a
 
 ## Sample
 
-- [UserStoppedTypingBehavior sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit.Sample/Pages/Behaviors/UserStoppedTypingBehaviorPage.xaml)
+- [UserStoppedTypingBehavior sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Behaviors/UserStoppedTypingBehaviorPage.xaml)
 
 You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
 

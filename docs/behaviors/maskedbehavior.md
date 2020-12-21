@@ -33,7 +33,7 @@ The MaskedBehavior is a behavior that allows the user to define an input mask fo
 
 ## Sample
 
-- [MaskedBehavior sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit.Sample/Pages/Behaviors/MaskedBehaviorPage.xaml)
+- [MaskedBehavior sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Behaviors/MaskedBehaviorPage.xaml)
 
 You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
 

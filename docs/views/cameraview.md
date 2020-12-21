@@ -59,7 +59,7 @@ The CameraView control enables the user to display a preview of the camera outpu
 
 ## Sample
 
-[CameraView sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit.Sample/Pages/Views/CameraViewPage.xaml)
+[CameraView sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Views/CameraViewPage.xaml)
 
 You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
 

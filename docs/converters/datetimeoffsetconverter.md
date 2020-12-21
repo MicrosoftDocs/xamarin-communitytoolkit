@@ -33,7 +33,7 @@ The DateTimeOffsetConverter is a converter that allows users to convert a `DateT
 
 ## Sample
 
-[DateTimeOffsetConverter sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkitSample/Pages/Converters/DateTimeOffsetConverterPage.xaml)
+[DateTimeOffsetConverter sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Converters/DateTimeOffsetConverterPage.xaml)
 
 You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
 
