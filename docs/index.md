@@ -18,35 +18,33 @@ You can also preview the capabilities of the toolkit by running the sample app a
 
 Feel free to browse the documentation using the table of contents on the left side of this page.
 
+## [Get started with Xamarin.CommunityToolkit](get-started.md)
+
+Follow the [Getting started guide](get-started.md) to install the **Xamarin.CommunityToolkit** NuGet package into your existing or new Xamarin.Forms, Android, iOS, or UWP projects.
+
 ## Open source
 
 [Xamarin Community Toolkit Source Code](https://github.com/xamarin/XamarinCommunityToolkit)
 
 The Xamarin Community Toolkit is built as an open source project hosted on GitHub by the community.
 
+## [Troubleshooting](troubleshooting.md)
+
+Find help if you are running into issues.
+
 <!--
-## [Get started with Xamarin.CommunityToolkit](get-started.md)
-
-Follow the [Getting started guide](get-started.md) to install the **Xamarin.CommunityToolkit** NuGet package into your existing or new Xamarin.Forms, Android, iOS, or UWP projects.
-
 ## Feature guides
 
 Follow the guides to integrate these Xamarin.CommunityToolkit features into your applications:
 
-* [Behaviors](behaviors.md) – *Add description*.
-* [Converters](converters.md) - *Add description*.
-* [Effects](effects.md) - *Add description*.
-* [Extensions](extensions.md) - *Add description*.
-* [Helpers](helpers.md) - *Add description*.
-* [Markup](markup.md) - A set of fluent helper methods and classes to simplify the process of building declarative Xamarin.Forms user interfaces in C#.
-* [Views](views.md) - *Add description*.
+- [Behaviors](behaviors.md) – *Add description*.
+- [Converters](converters.md) - *Add description*.
+- [Effects](effects.md) - *Add description*.
+- [Extensions](extensions.md) - *Add description*.
+- [Helpers](helpers.md) - *Add description*.
+- [Markup](markup.md) - A set of fluent helper methods and classes to simplify the process of building declarative Xamarin.Forms user interfaces in C#.
+- [Views](views.md) - *Add description*.
 
-## [Troubleshooting](troubleshooting.md)
-
-Find help if you are running into issues.
--->
-
-<!--
 ## [Release Notes](/xamarin/communitytoolkit/release-notes/)
 
 Find full release notes for each release of Xamarin.CommunityToolkit.

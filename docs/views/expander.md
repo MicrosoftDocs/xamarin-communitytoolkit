@@ -3,6 +3,7 @@ title: "Xamarin Community Toolkit Expander"
 description: "The Xamarin Community Toolkit Expander control provides an expandable container to host any content. The content is shown or hidden by tapping the Expander header."
 author: jfversluis
 ms.author: joverslu
+ms.date: 01/14/2021
 ---
 
 # Xamarin Community Toolkit Expander
