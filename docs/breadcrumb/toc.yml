@@ -4,8 +4,8 @@
   items:
   - name: Xamarin
     tocHref: /xamarin/
-    topicHref: /xamarin
+    topicHref: /xamarin/
     items:
     - name: Xamarin Community Toolkit
-      tocHref: /xamarin/communitytoolkit/
-      topicHref: /xamarin/communitytoolkit
+      tocHref: /xamarin/community-toolkit/
+      topicHref: /xamarin/community-toolkit/
