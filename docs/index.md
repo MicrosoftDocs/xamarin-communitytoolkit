@@ -18,7 +18,7 @@ You can also preview the capabilities of the toolkit by running the sample app a
 
 Feel free to browse the documentation using the table of contents on the left side of this page.
 
-## [Get started with Xamarin.CommunityToolkit](get-started.md)
+## [Get started](get-started.md)
 
 Follow the [Getting started guide](get-started.md) to install the **Xamarin.CommunityToolkit** NuGet package into your existing or new Xamarin.Forms, Android, iOS, or UWP projects.
 
