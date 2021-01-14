@@ -24,7 +24,10 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.jpeg",
+          "**/*.gif",
+          "**/*.svg"
         ],
         "exclude": [
           "**/obj/**",
@@ -39,9 +42,14 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "uhfHeaderId":"MSDocsHeader-Xamarin",
       "breadcrumb_path": "/xamarin/communitytoolkit/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None"
+      "audience": "developer",
+      "ms.topic": "conceptual",
+      "ms.technology": "xamarin-community-toolkit",
+      "ms.prod": "xamarin",
+      "searchScope": ["Xamarin"]
     },
     "fileMetadata": {},
     "template": [],

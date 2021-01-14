@@ -1,0 +1,126 @@
+- name: "Xamarin Community Toolkit Documentation"
+  href: index.md
+- name: "Setup"
+  items:
+    - name: "Getting Started with the Xamarin Community Toolkit"
+      href: get-started.md
+- name: "Behaviors"
+  items:
+    - name: CharactersValidationBehavior
+      href: behaviors/charactersvalidationbehavior.md
+    - name: EmailValidationBehavior
+      href: behaviors/emailvalidationbehavior.md
+    - name: EventToCommandBehavior
+      href: behaviors/eventtocommandbehavior.md
+    - name: ImpliedOrderGridBehavior
+      href: behaviors/ImpliedOrderGridBehavior.md
+    - name: MaskedBehavior
+      href: behaviors/maskedbehavior.md
+    - name: MaxLengthReachedBehavior
+      href: behaviors/maxlengthreachedbehavior.md
+    - name: MultiValidationBehavior
+      href: behaviors/multivalidationbehavior.md
+    - name: NumericValidationBehavior
+      href: behaviors/numericvalidationbehavior.md
+    - name: RequiredStringValidationBehavior
+      href: behaviors/requiredstringvalidationbehavior.md
+    - name: TextValidationBehavior
+      href: behaviors/textvalidationbehavior.md
+    - name: UriValidationBehavior
+      href: behaviors/urivalidationbehavior.md
+    - name: UserStoppedTypingBehavior
+      href: behaviors/userstoppedtypingbehavior.md
+    - name: ValidationBehavior
+      href: behaviors/validationbehavior.md
+- name: "Converters"
+  items:
+    - name: BoolToObjectConverter
+      href: converters/booltoobjectconverter.md
+    - name: ByteArrayToImageSourceConverter
+      href: converters/bytearraytoimagesourceconverter.md
+    - name: DateTimeOffsetConverter
+      href: converters/datetimeoffsetconverter.md
+    - name: DoubleToIntConverter
+      href: converters/doubletointconverter.md
+    - name: EqualConverter
+      href: converters/equalconverter.md
+    - name: IndexToArrayItemConverter
+      href: converters/indextoarrayitemconverter.md
+    - name: IntToBoolConverter
+      href: converters/inttoboolconverter.md
+    - name: InvertedBoolConverter
+      href: converters/invertedboolconverter.md
+    - name: IsNotNullOrEmptyConverter
+      href: converters/isnotnulloremptyconverter.md
+    - name: IsNullOrEmptyConverter
+      href: converters/isnulloremptyconverter.md
+    - name: ItemSelectedEventArgsConverter
+      href: converters/itemselectedeventargsconverter.md
+    - name: ItemTappedEventArgsConverter
+      href: converters/itemtappedeventargsconverter.md
+    - name: ListIsNotNullOrEmptyConverter
+      href: converters/listisnotnulloremptyconverter.md
+    - name: ListIsNullOrEmptyConverter
+      href: converters/listisnulloremptyconverter.md
+    - name: ListToStringConverter
+      href: converters/listtostringconverter.md
+    - name: MultiConverter
+      href: converters/multiconverter.md
+    - name: NotEqualConverter
+      href: converters/notequalconverter.md
+    - name: TextCaseConverter
+      href: converters/textcaseconverter.md
+    - name: VariableMultiValueConverter
+      href: converters/variablemultivalueconverter.md
+- name: "Effects"
+  items:
+    - name: "SafeAreaEffect"
+      href: effects/safeareaeffect.md
+- name: "Extensions"
+  items:
+    - name: "ImageResourceExtension"
+      href: extensions/imageresourceextension.md
+    - name: "TranslateExtension"
+      href: extensions/translateextension.md
+- name: "Helpers"
+  items:
+    - name: "DelegateWeakEventManager"
+      href: helpers/delegateweakeventmanager.md
+    - name: "WeakEventManager<T>"
+      href: helpers/weakeventmanagert.md
+    - name: "WeakEventManagerExtensions"
+      href: helpers/weakeventmanagerextensions.md
+- name: "ObjectModel"
+  items:
+    - name: "AsyncCommand"
+      href: objectmodel/asynccommand.md
+    - name: "AsyncValueCommand"
+      href: objectmodel/asyncvaluecommand.md
+- name: "Markup"
+  href: markup.md
+- name: "Views"
+  items:
+    - name: "AvatarView"
+      href: views/avatarview.md
+    - name: "BadgeView"
+      href: views/badgeview.md
+    - name: "CameraView"
+      href: views/cameraview.md
+    - name: "DockLayout"
+      href: views/docklayout.md
+    - name: "Expander"
+      href: views/expander.md
+    - name: "MediaElement"
+      href: views/mediaelement.md
+    - name: "RangeSlider"
+      href: views/rangeslider.md
+    - name: "Shield"
+      href: views/shield.md
+    - name: "StateLayout"
+      href: views/statelayout.md
+    - name: "TabView"
+      href: views/tabview.md
+    - name: "UniformGrid"
+      href: views/uniformgrid.md
+- name: "Troubleshooting"
+  href: troubleshooting.md

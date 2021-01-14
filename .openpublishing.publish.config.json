@@ -2,11 +2,15 @@
   "docsets_to_publish": [
     {
       "docset_name": "xamarin-communitytoolkit",
-      "build_source_folder": "xamarin-communitytoolkit",
+      "build_source_folder": "docs",
       "build_output_subfolder": "xamarin-communitytoolkit",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
+      "xref_query_tags": [
+        "/dotnet",
+        "/uwp/api"
+      ],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
@@ -40,7 +44,6 @@
   "branch_target_mapping": {
     "live": [
       "Publish",
-      "Intellisense",
       "Pdf"
     ]
   },
