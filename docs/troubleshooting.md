@@ -3,6 +3,7 @@ title: "Xamarin Community Toolkit: Troubleshooting"
 description: "This document describes how to troubleshoot issues encountered when developing with the Xamarin Community Toolkit library."
 author: alexhedley
 ms.author: joverslu
+ms.date: 01/14/2021
 ---
 
 # Xamarin Community Toolkit: Troubleshooting
