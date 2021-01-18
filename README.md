@@ -12,8 +12,8 @@ We will periodically merge updates from the live branch to master to keep master
 
 ## Documentation Links
 
-- [Staging review from 'master' branch](https://review.docs.microsoft.com/en-us/xamarin/communitytoolkit/?branch=master) - *this link is currently only available for Microsoft employees.*
-- [Live site from 'live' branch](https://docs.microsoft.com/xamarin/communitytoolkit/)
+- [Staging review from 'master' branch](https://review.docs.microsoft.com/en-us/xamarin/community-toolkit/?branch=master) - *this link is currently only available for Microsoft employees.*
+- [Live site from 'live' branch](https://docs.microsoft.com/xamarin/community-toolkit/)
 
 ## Microsoft Open Source Code of Conduct
 
