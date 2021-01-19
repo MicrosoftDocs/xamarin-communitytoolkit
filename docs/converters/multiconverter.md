@@ -8,7 +8,7 @@ ms.date: 10/09/2020
 
 # Xamarin Community Toolkit MultiConverter
 
-The ListToStringConverter is a converter that allows users to chain multiple converters together. The initial binding value is passed through to the first converter and, depending on what these converters return, that value is subsequently passed through to the next converter.
+The MultiConverter is a converter that allows users to chain multiple converters together. The initial binding value is passed through to the first converter and, depending on what these converters return, that value is subsequently passed through to the next converter.
 
 ## Syntax
 
