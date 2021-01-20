@@ -41,7 +41,7 @@ public AsyncCommand(
     Action<Exception> onException = null,
     bool continueOnCapturedContext = false,
     bool allowsMultipleExecutions = true)
-    : this(execute, _ => canExecute()), onException, continueOnCapturedContext, allowsMultipleExecutions)
+    : this(execute, _ => canExecute(), onException, continueOnCapturedContext, allowsMultipleExecutions)
 ```
 
 ### `AsyncCommand : IAsyncCommand`
@@ -62,7 +62,7 @@ public AsyncCommand(
     Action<Exception> onException = null,
     bool continueOnCapturedContext = false,
     bool allowsMultipleExecutions = true)
-    : this(execute, _ => canExecute()), onException, continueOnCapturedContext, allowsMultipleExecutions)
+    : this(execute, _ => canExecute(), onException, continueOnCapturedContext, allowsMultipleExecutions)
 ```
 
 ### `IAsyncCommand<TExecute, TCanExecute>`
@@ -87,9 +87,9 @@ interface IAsyncCommand : ICommand
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
-| ExecuteAsync(TExecute) | Task | Executes the Command as a Task. |
-| ExecuteAsync(T) | Task | Executes the Command as a Task. |
 | ExecuteAsync() | Task | Executes the Command as a Task. |
+| ExecuteAsync(T) | Task | Executes the Command as a Task. |
+| ExecuteAsync(TExecute) | Task | Executes the Command as a Task. |
 
 ## Examples
 
@@ -139,7 +139,7 @@ class MyViewModel
         ButtonCommand = new AsyncCommand<int>(buttonClicks => ExecuteButtonCommand(buttonClicks), _ => !IsBusy);
     }
 
-    public IAsyncCommand ButtonCommand { get; }
+    public IAsyncCommand<int> ButtonCommand { get; }
 
     public bool IsBusy
     {
@@ -172,7 +172,7 @@ class MyViewModel
         ButtonCommand = new AsyncCommand<int, bool>(buttonClicks => ExecuteButtonCommand(buttonClicks), isBusy => !isBusy);
     }
 
-    public IAsyncCommand ButtonCommand { get; } 
+    public IAsyncCommand<int, bool> ButtonCommand { get; } 
     
 
     async Task ExecuteButtonCommand(int buttonClicks)
