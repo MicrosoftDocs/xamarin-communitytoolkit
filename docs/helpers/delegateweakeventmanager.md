@@ -33,20 +33,6 @@ public DelegateWeakEventManager()
 
 This section shows how to use this type.
 
-### Use EventHandler
-
-```csharp
-readonly DelegateWeakEventManager _canExecuteChangedEventManager = new DelegateWeakEventManager();
-
-public event EventHandler CanExecuteChanged
-{
-    add => _canExecuteChangedEventManager.AddEventHandler(value);
-    remove => _canExecuteChangedEventManager.RemoveEventHandler(value);
-}
-
-void OnCanExecuteChanged() => _canExecuteChangedEventManager.RaiseEvent(this, EventArgs.Empty, nameof(CanExecuteChanged));
-```
-
 ### Use Delegate
 
 ```csharp
@@ -59,6 +45,20 @@ public event PropertyChangedEventHandler? PropertyChanged
 }
 
 void OnPropertyChanged([CallerMemberName]string propertyName = "") => _propertyChangedEventManager.RaiseEvent(this, new PropertyChangedEventArgs(propertyName), nameof(PropertyChanged));
+```
+
+### Use EventHandler
+
+```csharp
+readonly DelegateWeakEventManager _canExecuteChangedEventManager = new DelegateWeakEventManager();
+
+public event EventHandler CanExecuteChanged
+{
+    add => _canExecuteChangedEventManager.AddEventHandler(value);
+    remove => _canExecuteChangedEventManager.RemoveEventHandler(value);
+}
+
+void OnCanExecuteChanged() => _canExecuteChangedEventManager.RaiseEvent(this, EventArgs.Empty, nameof(CanExecuteChanged));
 ```
 
 ### Use Action
