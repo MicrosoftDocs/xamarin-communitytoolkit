@@ -36,7 +36,7 @@ This section shows how to use this type.
 ### Use EventHandler
 
 ```csharp
-readonly WeakEventManager _canExecuteChangedEventManager = new WeakEventManager();
+readonly DelegateWeakEventManager _canExecuteChangedEventManager = new DelegateWeakEventManager();
 
 public event EventHandler CanExecuteChanged
 {
@@ -50,7 +50,7 @@ void OnCanExecuteChanged() => _canExecuteChangedEventManager.RaiseEvent(this, Ev
 ### Use Delegate
 
 ```csharp
-readonly WeakEventManager _propertyChangedEventManager = new WeakEventManager();
+readonly DelegateWeakEventManager _propertyChangedEventManager = new DelegateWeakEventManager();
 
 public event PropertyChangedEventHandler? PropertyChanged
 {
@@ -64,7 +64,7 @@ void OnPropertyChanged([CallerMemberName]string propertyName = "") => _propertyC
 ### Use Action
 
 ```csharp
-readonly WeakEventManager _weakActionEventManager = new WeakEventManager();
+readonly DelegateWeakEventManager _weakActionEventManager = new DelegateWeakEventManager();
 
 public event Action ActionEvent
 {
