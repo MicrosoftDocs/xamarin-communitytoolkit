@@ -3,7 +3,7 @@ title: "Xamarin Community Toolkit MediaElement"
 description: "This article explains how to use MediaElement to play video and audio in a Xamarin.Forms application."
 author: jfversluis
 ms.author: joverslu
-ms.date: 10/20/2020
+ms.date: 10/21/2020
 ---
 
 # Xamarin Community Toolkit MediaElement
@@ -203,7 +203,7 @@ public static async Task CopyVideoIfNotExists(string filename)
 ```
 
 > [!NOTE]
-> The code example above uses the `FileSystem` class included in Xamarin.Essentials. For more information, see [Xamarin.Essentials: File System Helpers](/xamarin/essentials/file-system-helpers.md?context=xamarin%2Fxamarin-forms&tabs=android).
+> The code example above uses the `FileSystem` class included in Xamarin.Essentials. For more information, see [Xamarin.Essentials: File System Helpers](/xamarin/essentials/file-system-helpers?context=xamarin%2Fxamarin-forms&tabs=android).
 
 ### Play media from the device library
 
@@ -211,7 +211,7 @@ Most modern mobile devices and desktop computers have the ability to record vide
 
 Each of the platforms includes a facility that allows the user to select media from the device's library. In Xamarin.Forms, platform projects can invoke this functionality, and it can be called by the [`DependencyService`](xref:Xamarin.Forms.DependencyService) class.
 
-The video picking dependency service used in the sample application is very similar to one defined in [Picking a Photo from the Picture Library](/xamarin/xamarin-forms/app-fundamentals/dependency-service/photo-picker.md), except that the picker returns a filename rather than a `Stream` object. The shared code project defines an interface named `IVideoPicker`, that defines a single method named `GetVideoFileAsync`. Each platform then implements this interface in a `VideoPicker` class.
+The video picking dependency service used in the sample application is very similar to one defined in [Picking a Photo from the Picture Library](/xamarin/xamarin-forms/app-fundamentals/dependency-service/photo-picker), except that the picker returns a filename rather than a `Stream` object. The shared code project defines an interface named `IVideoPicker`, that defines a single method named `GetVideoFileAsync`. Each platform then implements this interface in a `VideoPicker` class.
 
 The following code example shows how to retrieve a media file from the device library:
 
@@ -358,7 +358,7 @@ The following XAML example shows a page that contains a `MediaElement` and custo
 </ContentPage>
 ```
 
-In this example, the custom transport controls are defined as [`Button`](xref:Xamarin.Forms.Button) objects. However, there are only two `Button` objects, with the first `Button` representing **Play** and **Pause**, and the second `Button` representing **Stop**. [`DataTrigger`](xref:Xamarin.Forms.DataTrigger) objects are used to enable and disable the buttons, and to switch the first button between **Play** and **Pause**. For more information about data triggers, see [Xamarin.Forms Triggers](/xamarin/xamarin-forms/app-fundamentals/triggers.md).
+In this example, the custom transport controls are defined as [`Button`](xref:Xamarin.Forms.Button) objects. However, there are only two `Button` objects, with the first `Button` representing **Play** and **Pause**, and the second `Button` representing **Stop**. [`DataTrigger`](xref:Xamarin.Forms.DataTrigger) objects are used to enable and disable the buttons, and to switch the first button between **Play** and **Pause**. For more information about data triggers, see [Xamarin.Forms Triggers](/xamarin/xamarin-forms/app-fundamentals/triggers).
 
 The code-behind file has the handlers for the [`Clicked`](xref:Xamarin.Forms.Button.Clicked) events:
 
@@ -466,7 +466,7 @@ public class PositionSlider : Slider
 
 The `PositionSlider` class defines its own `Duration` and `Position` bindable properties, and a `TimeToEnd` bindable property. All three properties are of type `TimeSpan`. The property-changed handler for the `Duration` property sets the `Maximum` property of the [`Slider`](xref:Xamarin.Forms.Slider) to the `TotalSeconds` property of the `TimeSpan` value. The `TimeToEnd` property is calculated based on changes to the `Duration` and `Position` properties, and begins at the media's duration and decreases down to zero as playback proceeds.
 
-The `PositionSlider` is updated from the underlying [`Slider`](xref:Xamarin.Forms.Slider) when the `Slider` is moved to indicate that the media should be advanced or reversed to a new position. This is detected in the `PropertyChanged` handler in the `PositionSlider` constructor. The handler checks for a change in the `Value` property, and if it's different from the `Position` property, then the `Position` property is set from the `Value` property. For more information about using a [`Slider`](xref:Xamarin.Forms.Slider) see, [Xamarin.Forms Slider](/xamarin/xamarin-forms/user-interface/slider.md)
+The `PositionSlider` is updated from the underlying [`Slider`](xref:Xamarin.Forms.Slider) when the `Slider` is moved to indicate that the media should be advanced or reversed to a new position. This is detected in the `PropertyChanged` handler in the `PositionSlider` constructor. The handler checks for a change in the `Value` property, and if it's different from the `Position` property, then the `Position` property is set from the `Value` property. For more information about using a [`Slider`](xref:Xamarin.Forms.Slider) see, [Xamarin.Forms Slider](/xamarin/xamarin-forms/user-interface/slider)
 
 > [!NOTE]
 > On Android, the [`Slider`](xref:Xamarin.Forms.Slider) only has 1000 discrete steps, regardless of the `Minimum` and `Maximum` settings. If the media length is greater than 1000 seconds, then two different `Position` values would correspond to the same `Value` of the `Slider`. This is why the code above checks that the new position and existing position are greater than one-hundredth of the overall duration.
@@ -492,7 +492,7 @@ In this example, the `Duration` property of the `PositionSlider` is data-bound t
 
 [![Screenshot of a MediaElement with a custom position bar, on iOS and Android](mediaelement-images/custom-position-bar.png "MediaElement with a custom position bar")](mediaelement-images/custom-position-bar-large.png#lightbox "MediaElement with a custom position bar")
 
-In addition, a [`DataTrigger`](xref:Xamarin.Forms.DataTrigger) object is used to disable the `PositionSlider` when the media is buffering. For more information about data triggers, see [Xamarin.Forms Triggers](/xamarin/xamarin-forms/app-fundamentals/triggers.md).
+In addition, a [`DataTrigger`](xref:Xamarin.Forms.DataTrigger) object is used to disable the `PositionSlider` when the media is buffering. For more information about data triggers, see [Xamarin.Forms Triggers](/xamarin/xamarin-forms/app-fundamentals/triggers).
 
 ## Implement a custom volume control
 
@@ -517,13 +517,13 @@ In this example, the [`Slider`](xref:Xamarin.Forms.Slider) data binds its `Value
 > [!NOTE]
 > The `Volume` property has a validation callback that ensures that its value is greater than or equal to 0.0, and less than or equal to 1.0.
 
-For more information about using a [`Slider`](xref:Xamarin.Forms.Slider) see, [Xamarin.Forms Slider](/xamarin/xamarin-forms/user-interface/slider.md)
+For more information about using a [`Slider`](xref:Xamarin.Forms.Slider) see, [Xamarin.Forms Slider](/xamarin/xamarin-forms/user-interface/slider)
 
 ## Related links
 
 - [MediaElementDemos (sample)](/samples/xamarin/xamarin-forms-samples/userinterface-mediaelementdemos/)
 - [URI schemes](/windows/uwp/app-resources/uri-schemes)
-- [Xamarin.Forms Triggers](/xamarin/xamarin-forms/app-fundamentals/triggers.md)
-- [Xamarin.Forms Slider](/xamarin/xamarin-forms/user-interface/slider.md)
+- [Xamarin.Forms Triggers](/xamarin/xamarin-forms/app-fundamentals/triggers)
+- [Xamarin.Forms Slider](/xamarin/xamarin-forms/user-interface/slider)
 - [Android: Supported media formats](https://developer.android.com/guide/topics/media/media-formats)
 - [UWP: Supported codecs](/windows/uwp/audio-video-camera/supported-codecs)

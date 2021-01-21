@@ -8,14 +8,14 @@ ms.date: 12/07/2020
 
 # Xamarin Community Toolkit UriValidationBehavior
 
-The UriValidationBehavior is a behavior that allows users to determine whether or not text input is a valid URI. For example, an `Entry` control can be styled differently depending on whether a valid or an invalid URI is provided. Additional properties handling validation are inherited from [ValidationBehavior](/xamarin-communitytoolkit/behaviors/validationbehavior).
+The UriValidationBehavior is a behavior that allows users to determine whether or not text input is a valid URI. For example, an `Entry` control can be styled differently depending on whether a valid or an invalid URI is provided. Additional properties handling validation are inherited from [ValidationBehavior](validationbehavior.md).
 
 ## Syntax
 
 ```xml
 <Entry>
     <Entry.Behaviors>
-        <xct:UriValidationBehavior 
+        <xct:UriValidationBehavior
             UriKind="Absolute"
             InvalidStyle="{StaticResource InvalidEntryStyle}"
         />

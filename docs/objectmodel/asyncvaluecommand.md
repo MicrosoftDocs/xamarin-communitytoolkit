@@ -15,136 +15,172 @@ For more information about the `ValueTask` type, see [Understanding the Whys, Wh
 
 ## Syntax
 
+### `AsyncValueCommand<TExecute, TCanExecute> : IAsyncValueCommand<TExecute, TCanExecute>`
+
 ```csharp
-public AsyncValueCommand(Func<TExecute, ValueTask> execute,
-                            Func<TCanExecute, bool>? canExecute = null,
-                            Action<Exception>? onException = null,
-                            bool continueOnCapturedContext = false) : IAsyncValueCommand<TExecute, ValueTask>
+public AsyncValueCommand(
+    Func<TExecute, ValueTask> execute,
+    Func<TCanExecute, bool> canExecute = null,
+    Action<Exception> onException = null,
+    bool continueOnCapturedContext = false,
+    bool allowsMultipleExecutions = true)
+```
+
+### `AsyncValueCommand<T> : IAsyncValueCommand<T>`
+
+```csharp
+public AsyncValueCommand(
+    Func<T, ValueTask> execute,
+    Func<object, bool> canExecute = null,
+    Action<Exception> onException = null,
+    bool continueOnCapturedContext = false,
+    bool allowsMultipleExecutions = true)
 ```
 
 ```csharp
-public AsyncValueCommand(Func<T, ValueTask> execute,
-                            Func<object?, bool>? canExecute = null,
-                            Action<Exception>? onException = null,
-                            bool continueOnCapturedContext = false) : IAsyncValueCommand<T>
+public AsyncValueCommand(
+    Func<T, ValueTask> execute,
+    Func<bool> canExecute,
+    Action<Exception> onException = null,
+    bool continueOnCapturedContext = false,
+    bool allowsMultipleExecutions = true)
+    : this(execute, _ => canExecute(), onException, continueOnCapturedContext, allowsMultipleExecutions)
+```
+
+### `AsyncValueCommand : IAsyncValueCommand`
+
+```csharp
+public AsyncValueCommand(
+    Func<Task> execute,
+    Func<object, bool> canExecute = null,
+    Action<Exception> onException = null,
+    bool continueOnCapturedContext = false,
+    bool allowsMultipleExecutions = true)
 ```
 
 ```csharp
-public AsyncValueCommand(Func<ValueTask> execute,
-                            Func<object?, bool>? canExecute = null,
-                            Action<Exception>? onException = null,
-                            bool continueOnCapturedContext = false) : IAsyncValueCommand
+public AsyncValueCommand(
+    Func<Task> execute,
+    Func<bool> canExecute,
+    Action<Exception> onException = null,
+    bool continueOnCapturedContext = false,
+    bool allowsMultipleExecutions = true)
+    : this(execute, _ => canExecute(), onException, continueOnCapturedContext, allowsMultipleExecutions)
 ```
+
+### `IAsyncValueCommand<TExecute, TCanExecute>`
 
 ```csharp
 interface IAsyncValueCommand<TExecute, TCanExecute> : IAsyncValueCommand<TExecute>
 ```
 
+### `IAsyncValueCommand<T>`
+
 ```csharp
 interface IAsyncValueCommand<T> : ICommand
 ```
 
+### `IAsyncValueCommand`
+
 ```csharp
-interface IAsyncValueCommand : ICommand`
+interface IAsyncValueCommand : ICommand
 ```
 
 ## Methods
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
-| ExecuteAsync(TExecute) | ValueTask | Executes the Command as a ValueTask. |
-| ExecuteAsync(T) | ValueTask | Executes the Command as a ValueTask. |
 | ExecuteAsync() | ValueTask | Executes the Command as a ValueTask. |
+| ExecuteAsync(T) | ValueTask | Executes the Command as a ValueTask. |
+| ExecuteAsync(TExecute) | ValueTask | Executes the Command as a ValueTask. |
 
 ## Examples
 
+### `AsyncValueCommand`
+
 ```csharp
-public class ExampleClass
+class MyViewModel
 {
     bool _isBusy;
 
-    public ExampleClass()
+    public MyViewModel()
     {
-        ExampleValueTaskCommand = new AsyncValueCommand(ExampleValueTaskMethod);
-        ExampleValueTaskIntCommand = new AsyncValueCommand<int>(ExampleValueTaskMethodWithIntParameter);
-        ExampleValueTaskIntCommandWithCanExecute = new AsyncValueCommand<int, int>(ExampleValueTaskMethodWithIntParameter, CanExecuteInt);
-        ExampleValueTaskExceptionCommand = new AsyncValueCommand(ExampleValueTaskMethodWithException, onException: ex => Debug.WriteLine(ex.ToString()));
-        ExampleValueTaskCommandWithCanExecuteChanged = new AsyncValueCommand(ExampleValueTaskMethod, _ => !IsBusy);
-        ExampleValueTaskCommandReturningToTheCallingThread = new AsyncValueCommand(ExampleValueTaskMethod, continueOnCapturedContext: true);
+        ButtonCommand = new AsyncValueCommand(() => ExecuteButtonCommand(), _ => !IsBusy);
     }
 
-    public IAsyncValueCommand ExampleValueTaskCommand { get; }
-    public IAsyncValueCommand<int> ExampleValueTaskIntCommand { get; }
-    public IAsyncCommand<int, int> ExampleValueTaskIntCommandWithCanExecute { get; }
-    public IAsyncValueCommand ExampleValueTaskExceptionCommand { get; }
-    public IAsyncValueCommand ExampleValueTaskCommandWithCanExecuteChanged { get; }
-    public IAsyncValueCommand ExampleValueTaskCommandReturningToTheCallingThread { get; }
+    public IAsyncValueCommand ButtonCommand { get; }
 
     public bool IsBusy
     {
         get => _isBusy;
         set
         {
-            if (_isBusy != value)
+            if(_isBusy != value)
             {
                 _isBusy = value;
-                ExampleValueTaskCommandWithCanExecuteChanged.RaiseCanExecuteChanged();
+                ButtonCommand.RaiseCanExecuteChanged();
             }
         }
+    }    
+
+    async ValueTask ExecuteButtonCommand()
+    {
+        // ...
+    }
+}
+```
+
+### `AsyncValueCommand<T>`
+
+```csharp
+class MyViewModel
+{
+    bool _isBusy;
+
+    public MyViewModel()
+    {
+        ButtonCommand = new AsyncValueCommand<int>(buttonClicks => ExecuteButtonCommand(buttonClicks), _ => !IsBusy);
     }
 
-    async ValueTask ExampleValueTaskMethod()
+    public IAsyncValueCommand<int> ButtonCommand { get; }
+
+    public bool IsBusy
     {
-        var random = new Random();
-        if (random.Next(10) > 9)
-            await Task.Delay(1000);
-    }
-
-    async ValueTask ExampleValueTaskMethodWithIntParameter(int parameter)
-    {
-        var random = new Random();
-        if (random.Next(10) > 9)
-            await Task.Delay(parameter);
-    }
-
-    async ValueTask ExampleValueTaskMethodWithException()
-    {
-        var random = new Random();
-        if (random.Next(10) > 9)
-            await Task.Delay(1000);
-
-        throw new Exception();
-    }
-
-    bool CanExecuteInt(int count)
-    {
-        if(count > 2)
-            return true;
-        
-        return false;
-    }
-
-    void ExecuteCommands()
-    {
-        _isBusy = true;
-
-        try
+        get => _isBusy;
+        set
         {
-            ExampleValueTaskCommand.Execute(null);
-            ExampleValueTaskIntCommand.Execute(1000);
-            ExampleValueTaskExceptionCommand.Execute(null);
-            ExampleValueTaskCommandReturningToTheCallingThread.Execute(null);
-
-            if (ExampleValueTaskCommandWithCanExecuteChanged.CanExecute(null))
-                ExampleValueTaskCommandWithCanExecuteChanged.Execute(null);
-
-            if(ExampleValueTaskIntCommandWithCanExecute.CanExecute(2))
-                ExampleValueTaskIntCommandWithCanExecute.Execute(2);
+            if(_isBusy != value)
+            {
+                _isBusy = value;
+                ButtonCommand.RaiseCanExecuteChanged();
+            }
         }
-        finally
-        {
-            _isBusy = false;
-        }
+    }   
+    
+
+    async ValueTask ExecuteButtonCommand(int buttonClicks)
+    {
+        // ...
+    }
+}
+```
+
+### `AsyncValueCommand<TExecute, TCanExecute>`
+
+```csharp
+class MyViewModel
+{
+    public MyViewModel()
+    {
+        ButtonCommand = new AsyncValueCommand<int, bool>(buttonClicks => ExecuteButtonCommand(buttonClicks), isBusy => !isBusy);
+    }
+
+    public IAsyncValueCommand<int, bool> ButtonCommand { get; } 
+    
+
+    async ValueTask ExecuteButtonCommand(int buttonClicks)
+    {
+        // ...
     }
 }
 ```
@@ -159,4 +195,4 @@ You can see this element in action in the [Xamarin community toolkit sample app]
 
 ## Related links
 
-- [AsyncCommand](asynccommand.md)
+- [AsyncValueCommand](AsyncValueCommand.md)

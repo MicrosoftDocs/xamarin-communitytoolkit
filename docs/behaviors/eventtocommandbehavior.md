@@ -24,12 +24,12 @@ This behavior can be used on any control that exposes events, such as a `Button`
 
 When using this behavior with selection or tap events exposed by `ListView` an additional converter is required. This converter converts the event arguments to a command parameter which is then passed onto the Command. They are also available in the Xamarin Community Toolkit:
 
-- [ItemSelectedEventArgsConverter](/xamarin-communitytoolkit/converters/itemselectedeventargsconverter)
-- [ItemTappedEventArgsConverter](/xamarin-communitytoolkit/converters/itemtappedeventargsconverter)
+- [ItemSelectedEventArgsConverter](~/converters/itemselectedeventargsconverter.md)
+- [ItemTappedEventArgsConverter](~/converters/itemtappedeventargsconverter.md)
 
 ```xml
 <ListView.Behaviors>
-    <behaviors:EventToCommandBehavior 
+    <behaviors:EventToCommandBehavior
         EventName="ItemSelected"
         Command="{Binding ItemSelectedCommand}"
         EventArgsConverter="{StaticResource ItemSelectedEventArgsConverter}"
@@ -39,7 +39,7 @@ When using this behavior with selection or tap events exposed by `ListView` an a
 
 ```xml
 <ListView.Behaviors>
-    <behaviors:EventToCommandBehavior 
+    <behaviors:EventToCommandBehavior
         EventName="ItemTapped"
         Command="{Binding ItemTappedCommand}"
         EventArgsConverter="{StaticResource ItemTappedEventArgsConverter}"
