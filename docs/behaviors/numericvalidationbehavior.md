@@ -8,14 +8,14 @@ ms.date: 12/07/2020
 
 # Xamarin Community Toolkit NumericValidationBehavior
 
-The NumericValidationBehavior is a behavior that allows the user to determine if text input is a valid numeric value. For example, an `Entry` control can be styled differently depending on whether a valid or an invalid numeric input is provided. Additional properties handling validation are inherited from [ValidationBehavior](/xamarin-communitytoolkit/behaviors/validationbehavior).
+The NumericValidationBehavior is a behavior that allows the user to determine if text input is a valid numeric value. For example, an `Entry` control can be styled differently depending on whether a valid or an invalid numeric input is provided. Additional properties handling validation are inherited from [ValidationBehavior](validationbehavior.md).
 
 ## Syntax
 
 ```xml
 <Entry>
     <Entry.Behaviors>
-        <xct:NumericValidationBehavior 
+        <xct:NumericValidationBehavior
             InvalidStyle="{StaticResource InvalidEntryStyle}"
             MinimumValue="1.0"
             MaximumValue="100.0"

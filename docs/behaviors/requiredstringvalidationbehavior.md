@@ -8,14 +8,14 @@ ms.date: 12/08/2020
 
 # Xamarin Community Toolkit RequiredStringValidationBehavior
 
-The RequiredStringValidationBehavior is a behavior that allows the user to determine if text input is equal to specific text. For example, an `Entry` control can be styled differently depending on whether a valid or an invalid text input is provided. Additional properties handling validation are inherited from [ValidationBehavior](/xamarin-communitytoolkit/behaviors/validationbehavior).
+The RequiredStringValidationBehavior is a behavior that allows the user to determine if text input is equal to specific text. For example, an `Entry` control can be styled differently depending on whether a valid or an invalid text input is provided. Additional properties handling validation are inherited from [ValidationBehavior](validationbehavior.md).
 
 ## Syntax
 
 ```xml
 <Entry>
     <Entry.Behaviors>
-        <xct:RequiredStringValidationBehavior 
+        <xct:RequiredStringValidationBehavior
             InvalidStyle="{StaticResource InvalidEntryStyle}"
             RequiredString="OK"
         />
