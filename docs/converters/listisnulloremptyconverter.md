@@ -15,7 +15,7 @@ The ListIsNullOrEmptyConverter is a converter that allows users to convert an in
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:xct="clr-namespace:Xamarin.CommunityToolkit.Converters;assembly=Xamarin.CommunityToolkit"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              x:Class="MyLittleApp.MainPage">
 
     <ContentPage.Resources>
@@ -34,13 +34,10 @@ The ListIsNullOrEmptyConverter is a converter that allows users to convert an in
 
 ## Sample
 
-> [!NOTE]
-> Currently there's no sample available for this feature yet. Want to add one? We are open to [community contributions](https://github.com/xamarin/XamarinCommunityToolkit).
+[ListIsNullOrEmptyConverter sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Converters/ListIsNullOrEmptyPage.xaml)
 
-<!-- [ListIsNullOrEmptyConverter sample page Source](https://github.com/xamarin/XamarinCommunityToolkit)
-
-You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit). -->
+You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
 
 ## API
 
-* [ListIsNullOrEmptyConverter source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkit/Converters/ListIsNullOrEmptyConverter.shared.cs)
+* [ListIsNullOrEmptyConverter source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Converters/ListIsNullOrEmptyConverter.shared.cs)

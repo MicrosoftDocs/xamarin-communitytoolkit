@@ -75,12 +75,6 @@ public event Action ActionEvent
 void OnActionEvent(string message) => _weakActionEventManager.RaiseEvent(message, nameof(ActionEvent));
 ```
 
-## Sample project
-
-[ObservableObject](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/ObjectModel/ObservableObject.shared.cs).
-
-You can see this element in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit/tree/main/XamarinCommunityToolkitSample).
-
 ## API
 
 - [DelegateWeakEventManager](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Helpers/DelegateWeakEventManager.shared.cs)

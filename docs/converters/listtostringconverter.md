@@ -33,6 +33,7 @@ The ListToStringConverter is a converter that allows users to convert an incomin
 ```
 
 ## Properties
+
 |Property  |Type  |Description  |
 |---------|---------|---------|
 | Separator | string | The separator that will be used to join the items in the list. |
@@ -40,7 +41,7 @@ The ListToStringConverter is a converter that allows users to convert an incomin
 ## Sample
 
 > [!NOTE]
->  Currently there's no sample available for this feature yet. Want to add one? We are open to [community contributions](https://github.com/xamarin/XamarinCommunityToolkit).
+> Currently there's no sample available for this feature yet. Want to add one? We are open to [community contributions](https://github.com/xamarin/XamarinCommunityToolkit).
 
 <!-- [ListToStringConverter sample page Source](https://github.com/xamarin/XamarinCommunityToolkit)
 
@@ -48,4 +49,4 @@ You can see this in action in the [Xamarin Community Toolkit Sample App](https:/
 
 ## API
 
-* [ListToStringConverter source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkit/Converters/ListToStringConverter.shared.cs)
+* [ListToStringConverter source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Converters/ListToStringConverter.shared.cs)

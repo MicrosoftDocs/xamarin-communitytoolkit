@@ -184,9 +184,9 @@ class MyViewModel
 
 ## Sample project
 
-[AboutViewModel](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/ViewModels/AboutViewModel.cs). 
+[AboutViewModel](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/ViewModels/AboutViewModel.cs).
 
-You can see this element in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit/tree/main/XamarinCommunityToolkitSample).
+You can see this element in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit).
 
 ## API
 
