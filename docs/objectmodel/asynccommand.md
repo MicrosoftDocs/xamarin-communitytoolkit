@@ -12,38 +12,72 @@ Enables the `Task` type to safely be used asynchronously with an `ICommand`.
 
 ## Syntax
 
+### `AsyncCommand<TExecute, TCanExecute> : IAsyncCommand<TExecute, TCanExecute>`
+
 ```csharp
-public AsyncCommand(Func<TExecute, Task> execute,
-                     Func<TCanExecute, bool>? canExecute = null,
-                     Action<Exception>? onException = null,
-                     bool continueOnCapturedContext = false) : IAsyncCommand<TExecute, TCanExecute>
+public AsyncCommand(
+    Func<TExecute, Task> execute,
+    Func<TCanExecute, bool> canExecute = null,
+    Action<Exception> onException = null,
+    bool continueOnCapturedContext = false,
+    bool allowsMultipleExecutions = true)
+```
+
+### `AsyncCommand<T> : IAsyncCommand<T>`
+
+```csharp
+public AsyncCommand(
+    Func<T, Task> execute,
+    Func<object, bool> canExecute = null,
+    Action<Exception> onException = null,
+    bool continueOnCapturedContext = false,
+    bool allowsMultipleExecutions = true)
 ```
 
 ```csharp
-public AsyncCommand(Func<T, Task> execute,
-                     Func<object?, bool>? canExecute = null,
-                     Action<Exception>? onException = null,
-                     bool continueOnCapturedContext = false) : IAsyncCommand<T>`
+public AsyncCommand(
+    Func<T, Task> execute,
+    Func<bool> canExecute,
+    Action<Exception> onException = null,
+    bool continueOnCapturedContext = false,
+    bool allowsMultipleExecutions = true)
+    : this(execute, _ => canExecute(), onException, continueOnCapturedContext, allowsMultipleExecutions)
+```
+
+### `AsyncCommand : IAsyncCommand`
+
+```csharp
+public AsyncCommand(
+    Func<Task> execute,
+    Func<object, bool> canExecute = null,
+    Action<Exception> onException = null,
+    bool continueOnCapturedContext = false,
+    bool allowsMultipleExecutions = true)
 ```
 
 ```csharp
-public AsyncCommand(Func<Task> execute,
-                     Func<object?, bool>? canExecute = null,
-                     Action<Exception>? onException = null,
-                     bool continueOnCapturedContext = false) : IAsyncCommand
+public AsyncCommand(
+    Func<Task> execute,
+    Func<bool> canExecute,
+    Action<Exception> onException = null,
+    bool continueOnCapturedContext = false,
+    bool allowsMultipleExecutions = true)
+    : this(execute, _ => canExecute(), onException, continueOnCapturedContext, allowsMultipleExecutions)
 ```
+
+### `IAsyncCommand<TExecute, TCanExecute>`
 
 ```csharp
 interface IAsyncCommand<TExecute, TCanExecute> : IAsyncCommand<TExecute>
 ```
 
+### `IAsyncCommand<T>`
+
 ```csharp
 interface IAsyncCommand<T> : ICommand
 ```
 
-```csharp
-interface IAsyncCommand : ICommand
-```
+### `IAsyncCommand`
 
 ```csharp
 interface IAsyncCommand : ICommand
@@ -53,92 +87,97 @@ interface IAsyncCommand : ICommand
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
-| ExecuteAsync(TExecute) | Task | Executes the Command as a Task. |
-| ExecuteAsync(T) | Task | Executes the Command as a Task. |
 | ExecuteAsync() | Task | Executes the Command as a Task. |
+| ExecuteAsync(T) | Task | Executes the Command as a Task. |
+| ExecuteAsync(TExecute) | Task | Executes the Command as a Task. |
 
 ## Examples
 
+### `AsyncCommand`
+
 ```csharp
-public class ExampleClass
+class MyViewModel
 {
     bool _isBusy;
 
-    public ExampleClass()
+    public MyViewModel()
     {
-        ExampleAsyncCommand = new AsyncCommand(ExampleAsyncMethod);
-        ExampleAsyncIntCommand = new AsyncCommand<int>(ExampleAsyncMethodWithIntParameter);
-        ExampleAsyncIntCommandWithCanExecute = new AsyncCommand<int, int>(ExampleAsyncMethodWithIntParameter, CanExecuteInt);
-        ExampleAsyncExceptionCommand = new AsyncCommand(ExampleAsyncMethodWithException, onException: ex => Console.WriteLine(ex.ToString()));
-        ExampleAsyncCommandWithCanExecuteChanged = new AsyncCommand(ExampleAsyncMethod, _ => !IsBusy);
-        ExampleAsyncCommandReturningToTheCallingThread = new AsyncCommand(ExampleAsyncMethod, continueOnCapturedContext: true);
+        ButtonCommand = new AsyncCommand(() => ExecuteButtonCommand(), _ => !IsBusy);
     }
 
-    public IAsyncCommand ExampleAsyncCommand { get; }
-    public IAsyncCommand<int> ExampleAsyncIntCommand { get; }
-    public IAsyncCommand<int, int> ExampleAsyncIntCommandWithCanExecute { get; }
-    public IAsyncCommand ExampleAsyncExceptionCommand { get; }
-    public IAsyncCommand ExampleAsyncCommandWithCanExecuteChanged { get; }
-    public IAsyncCommand ExampleAsyncCommandReturningToTheCallingThread { get; }
-    
+    public IAsyncCommand ButtonCommand { get; }
+
     public bool IsBusy
     {
         get => _isBusy;
         set
         {
-            if (_isBusy != value)
+            if(_isBusy != value)
             {
                 _isBusy = value;
-                ExampleAsyncCommandWithCanExecuteChanged.RaiseCanExecuteChanged();
+                ButtonCommand.RaiseCanExecuteChanged();
             }
         }
+    }    
+
+    async Task ExecuteButtonCommand()
+    {
+        // ...
+    }
+}
+```
+
+### `AsyncCommand<T>`
+
+```csharp
+class MyViewModel
+{
+    bool _isBusy;
+
+    public MyViewModel()
+    {
+        ButtonCommand = new AsyncCommand<int>(buttonClicks => ExecuteButtonCommand(buttonClicks), _ => !IsBusy);
     }
 
-    async Task ExampleAsyncMethod()
-    {
-        await Task.Delay(1000);
-    }
-  
-    async Task ExampleAsyncMethodWithIntParameter(int parameter)
-    {
-        await Task.Delay(parameter);
-    }
+    public IAsyncCommand<int> ButtonCommand { get; }
 
-    async Task ExampleAsyncMethodWithException()
+    public bool IsBusy
     {
-        await Task.Delay(1000);
-        throw new Exception();
-    }
-
-    bool CanExecuteInt(int count)
-    {
-        if(count > 2)
-            return true;
-        
-        return false;
-    }
-
-    void ExecuteCommands()
-    {
-        _isBusy = true;
+        get => _isBusy;
+        set
+        {
+            if(_isBusy != value)
+            {
+                _isBusy = value;
+                ButtonCommand.RaiseCanExecuteChanged();
+            }
+        }
+    }   
     
-        try
-        {
-            ExampleAsyncCommand.Execute(null);
-            ExampleAsyncIntCommand.Execute(1000);
-            ExampleAsyncExceptionCommand.Execute(null);
-            ExampleAsyncCommandReturningToTheCallingThread.Execute(null);
-            
-            if(ExampleAsyncCommandWithCanExecuteChanged.CanExecute(null))
-                ExampleAsyncCommandWithCanExecuteChanged.Execute(null);
-            
-            if(ExampleAsyncIntCommandWithCanExecute.CanExecute(1))
-                ExampleAsyncIntCommandWithCanExecute.Execute(1);
-        }
-        finally
-        {
-            _isBusy = false;
-        }
+
+    async Task ExecuteButtonCommand(int buttonClicks)
+    {
+        // ...
+    }
+}
+```
+
+### `AsyncCommand<TExecute, TCanExecute>`
+
+```csharp
+class MyViewModel
+{
+    public MyViewModel()
+    {
+        ButtonCommand = new AsyncCommand<int, bool>(buttonClicks => ExecuteButtonCommand(buttonClicks), isBusy => !isBusy);
+    }
+
+    public IAsyncCommand<int, bool> ButtonCommand { get; } 
+    
+
+    async Task ExecuteButtonCommand(int buttonClicks)
+    {
+        // ...
     }
 }
 ```
