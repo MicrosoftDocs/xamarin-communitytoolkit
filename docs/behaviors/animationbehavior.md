@@ -8,7 +8,7 @@ ms.date: 12/08/2020
 
 # Xamarin Community Toolkit AnimationBehavior
 
-The AnimationBehavior is a behavior that allows the user to add an animation when an event is raised. It offers various built-in animations such as fade, flip and scale. These are exposed through an instance of the `AnimationBase` class. Additional properties handling an event are inherited from [EventToCommandBehavior](/xamarin-communitytoolkit/behaviors/eventtocommandBehavior).
+The AnimationBehavior is a behavior that allows the user to add an animation when an event is raised. It offers various built-in animations such as fade, flip and scale. These are exposed through an instance of the `AnimationBase` class. Additional properties handling an event are inherited from [EventToCommandBehavior](eventtocommandbehavior.md).
 
 ## Syntax
 
@@ -17,7 +17,7 @@ The AnimationBehavior is a behavior that allows the user to add an animation whe
     <Button.Behaviors>
         <xct:AnimationBehavior EventName="Clicked">
             <xct:AnimationBehavior.AnimationType>
-                <xct:FadeAnimation 
+                <xct:FadeAnimation
                     Easing="{x:Static Easing.Linear}"
                     Duration="100"
                 />

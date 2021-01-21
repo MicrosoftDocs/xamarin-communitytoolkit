@@ -8,14 +8,14 @@ ms.date: 12/07/2020
 
 # Xamarin Community Toolkit TextValidationBehavior
 
-The TextValidationBehavior is a behavior that allows the user to validate a given text depending on specified parameters. By adding this behavior to an `Entry` control it can be styled differently depending on whether a valid or an invalid text value is provided. It offers various built-in checks such as checking for a certain length or whether or not the input value matches a specific regular expression. Additional properties handling validation are inherited from [ValidationBehavior](/xamarin-communitytoolkit/behaviors/validationbehavior).
+The TextValidationBehavior is a behavior that allows the user to validate a given text depending on specified parameters. By adding this behavior to an `Entry` control it can be styled differently depending on whether a valid or an invalid text value is provided. It offers various built-in checks such as checking for a certain length or whether or not the input value matches a specific regular expression. Additional properties handling validation are inherited from [ValidationBehavior](validationbehavior.md).
 
 ## Syntax
 
 ```xml
 <Entry>
     <Entry.Behaviors>
-        <xct:TextValidationBehavior 
+        <xct:TextValidationBehavior
             InvalidStyle="{StaticResource InvalidEntryStyle}"
             MinimumLength="1"
             MaximumLength="10"

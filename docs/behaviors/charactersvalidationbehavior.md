@@ -8,14 +8,14 @@ ms.date: 12/07/2020
 
 # Xamarin Community Toolkit CharactersValidationBehavior
 
-The CharactersValidationBehavior is a behavior that allows the user to validate text input depending on specified parameters. For example, an `Entry` control can be styled differently depending on whether a valid or an invalid text value is provided. This behavior includes built-in checks such as checking for a certain number of digits or alphanumeric characters. Additional properties handling validation are inherited from [ValidationBehavior](/xamarin-communitytoolkit/behaviors/validationbehavior).
+The CharactersValidationBehavior is a behavior that allows the user to validate text input depending on specified parameters. For example, an `Entry` control can be styled differently depending on whether a valid or an invalid text value is provided. This behavior includes built-in checks such as checking for a certain number of digits or alphanumeric characters. Additional properties handling validation are inherited from [ValidationBehavior](validationbehavior.md).
 
 ## Syntax
 
 ```xml
 <Entry>
     <Entry.Behaviors>
-        <xct:CharactersValidationBehavior 
+        <xct:CharactersValidationBehavior
             InvalidStyle="{StaticResource InvalidEntryStyle}"
             CharacterType="Digit"
             MaximumCharacterCount="10"

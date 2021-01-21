@@ -8,27 +8,27 @@ ms.date: 12/07/2020
 
 # Xamarin Community Toolkit MultiValidationBehavior
 
-The MultiValidationBehavior is a behavior that allows the user to combine multiple validators to validate text input depending on specified parameters. For example, an `Entry` control can be styled differently depending on whether a valid or an invalid text input is provided. By allowing the user to chain multiple existing validators together, it offers a high degree of customizability when it comes to validation. Additional properties handling validation are inherited from [ValidationBehavior](/xamarin-communitytoolkit/behaviors/validationbehavior).
+The MultiValidationBehavior is a behavior that allows the user to combine multiple validators to validate text input depending on specified parameters. For example, an `Entry` control can be styled differently depending on whether a valid or an invalid text input is provided. By allowing the user to chain multiple existing validators together, it offers a high degree of customizability when it comes to validation. Additional properties handling validation are inherited from [ValidationBehavior](validationbehavior.md).
 
 ## Syntax
 
 ```xml
 <Entry>
     <Entry.Behaviors>
-        <xct:MultiValidationBehavior 
+        <xct:MultiValidationBehavior
             x:Name="MultiValidation"
             InvalidStyle="{StaticResource InvalidEntryStyle}">
 
-            <xct:NumericValidationBehavior 
-                xct:MultiValidationBehavior.Error="NaN" 
+            <xct:NumericValidationBehavior
+                xct:MultiValidationBehavior.Error="NaN"
             />
-            <xct:NumericValidationBehavior 
+            <xct:NumericValidationBehavior
                 MinimumValue="-10"
-                xct:MultiValidationBehavior.Error="Min: -10" 
+                xct:MultiValidationBehavior.Error="Min: -10"
             />
-            <xct:NumericValidationBehavior 
+            <xct:NumericValidationBehavior
                 MaximumValue="5"
-                xct:MultiValidationBehavior.Error="Max: 5" 
+                xct:MultiValidationBehavior.Error="Max: 5"
             />
 
         </xct:MultiValidationBehavior>
