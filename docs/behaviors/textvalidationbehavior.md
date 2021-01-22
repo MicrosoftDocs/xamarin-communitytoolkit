@@ -36,10 +36,9 @@ The TextValidationBehavior is a behavior that allows the user to validate a give
 
 ## Sample
 
-- [TextValidationBehavior sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Behaviors/TextValidationBehaviorPage.xaml)
-
-You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
+> [!NOTE]
+> Currently there's no sample available for this feature yet. Want to add one? We are open to [community contributions](https://github.com/xamarin/XamarinCommunityToolkit).
 
 ## API
 
-* [TextValidationBehavior source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Behaviors/Validators/TextValidationBehavior.shared.cs)
+- [TextValidationBehavior source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Behaviors/Validators/TextValidationBehavior.shared.cs)

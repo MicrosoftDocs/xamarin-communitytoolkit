@@ -22,10 +22,10 @@ public WeakEventManager<TEventArgs>()
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
-| AddEventHandler(EventHandler<TEventArgs>, string eventName) | void | Adds the event handler. |
-| AddEventHandler(Action<TEventArgs>, string eventName) | void | Adds the event handler. |
-| RemoveEventHandler(EventHandler<TEventArgs>, string eventName) | void | Removes the event handler. |
-| RemoveEventHandler(Action<TEventArgs>, string eventName) | void | Removes the event handler. |
+| AddEventHandler(EventHandler&lt;TEventArgs&gt;, string eventName) | void | Adds the event handler. |
+| AddEventHandler(Action&lt;TEventArgs&gt;, string eventName) | void | Adds the event handler. |
+| RemoveEventHandler(EventHandler&lt;TEventArgs&gt;, string eventName) | void | Removes the event handler. |
+| RemoveEventHandler(Action&lt;TEventArgs&gt;, string eventName) | void | Removes the event handler. |
 | HandleEvent(object, TEventArgs, string | void | Invokes the event EventHandler. |
 | HandleEvent(TEventArgs, string | void | Invokes the event Action. |
 | RaiseEvent(object, TEventArgs, string | void | Invokes the event EventHandler. |
@@ -35,7 +35,7 @@ public WeakEventManager<TEventArgs>()
 
 This section shows how to use this type.
 
-### Use EventHandler<T>
+### Use EventHandler&lt;T&gt;
 
 ```csharp
 readonly WeakEventManager<string> _errorOcurredEventManager = new WeakEventManager<string>();
@@ -49,7 +49,7 @@ public event EventHandler<string> ErrorOcurred
 void OnErrorOcurred(string message) => _errorOcurredEventManager.RaiseEvent(this, message, nameof(ErrorOcurred));
 ```
 
-### Use Action<T>
+### Use Action&lt;T&gt;
 
 ```csharp
 readonly WeakEventManager<string> _weakActionEventManager = new WeakEventManager<string>();
@@ -63,15 +63,9 @@ public event Action<string> ActionEvent
 void OnActionEvent(string message) => _weakActionEventManager.RaiseEvent(message, nameof(ActionEvent));
 ```
 
-## Sample project
-
-[MaxLengthReachedBehavior](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Behaviors/MaxLengthReachedBehavior.shared.cs).
-
-You can see this element in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit/tree/main/XamarinCommunityToolkitSample).
-
 ## API
 
-- [WeakEventManager<T>](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Helpers/WeakEventManager.shared.cs)
+- [WeakEventManager&lt;T&gt;](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Helpers/WeakEventManager.shared.cs)
 
 ## Related links
 

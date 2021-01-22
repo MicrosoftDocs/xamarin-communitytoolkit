@@ -15,7 +15,7 @@ The TranslateExtension allows users to handle multi-language support at runtime.
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:xct="clr-namespace:Xamarin.CommunityToolkit.Extensions;assembly=Xamarin.CommunityToolkit"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              x:Class="MyLittleApp.MainPage">
 
     <StackLayout>
@@ -37,8 +37,10 @@ The TranslateExtension allows users to handle multi-language support at runtime.
 
 ## Sample
 
-You can see this in action throughout the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
+[Settings sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/SettingPage.xaml)
+
+You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
 
 ## API
 
-* [TranslateExtension source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkit/Extensions/TranslateExtension.shared.cs)
+* [TranslateExtension source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Extensions/TranslateExtension.shared.cs)

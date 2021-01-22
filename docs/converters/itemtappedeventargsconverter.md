@@ -15,20 +15,19 @@ The ItemTappedEventArgsConverter is a converter that allows users to extract the
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:converters="clr-namespace:Xamarin.CommunityToolkit.Converters;assembly=Xamarin.CommunityToolkit"
-             xmlns:behaviors="clr-namespace:Xamarin.CommunityToolkit.Behaviors;assembly=Xamarin.CommunityToolkit"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              x:Class="MyLittleApp.MainPage">
 
     <ContentPage.Resources>
         <ResourceDictionary>
-            <converters:ItemTappedEventArgsConverter x:Key="ItemTappedEventArgsConverter" />
+            <xct:ItemTappedEventArgsConverter x:Key="ItemTappedEventArgsConverter" />
         </ResourceDictionary>
     </ContentPage.Resources>
 
     <ListView ItemsSource="{Binding Items}" HasUnevenRows="True">
 
         <ListView.Behaviors>
-            <behaviors:EventToCommandBehavior EventName="ItemTapped"
+            <xct:EventToCommandBehavior EventName="ItemTapped"
                                               Command="{Binding ItemTappedCommand}"
                                               EventArgsConverter="{StaticResource ItemTappedEventArgsConverter}" />
         </ListView.Behaviors>
@@ -45,4 +44,4 @@ You can see this in action in the [Xamarin Community Toolkit Sample App](https:/
 
 ## API
 
-* [ItemTappedEventArgsConverter source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkit/Converters/ItemTappedEventArgsConverter.shared.cs)
+* [ItemTappedEventArgsConverter source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Converters/ItemTappedEventArgsConverter.shared.cs)
