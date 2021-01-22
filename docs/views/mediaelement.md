@@ -8,7 +8,7 @@ ms.date: 10/21/2020
 
 # Xamarin Community Toolkit MediaElement
 
-[![Download Sample](~/images/download.png) Download the sample](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-mediaelementdemos/)
+[![Download Sample](~/images/download.png) Download the sample](/samples/xamarin/xamarin-forms-samples/userinterface-mediaelementdemos/)
 
 `MediaElement` is a view for playing video and audio. Media that's supported by the underlying platform can be played from the following sources:
 
