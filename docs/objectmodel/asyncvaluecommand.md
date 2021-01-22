@@ -8,7 +8,7 @@ ms.date: 11/20/2020
 
 # Xamarin Community Toolkit AsyncValueCommand
 
-Enables the `ValueTask` type to safely be used asynchronously with an `ICommand`. 
+Enables the `ValueTask` type to safely be used asynchronously with an `ICommand`.
 
 For more information about the `ValueTask` type, see [Understanding the Whys, Whats, and Whens of ValueTask
 ](https://blogs.msdn.microsoft.com/dotnet/2018/11/07/understanding-the-whys-whats-and-whens-of-valuetask?WT.mc_id=mobile-0000-bramin).
@@ -187,7 +187,7 @@ class MyViewModel
 
 ## Sample project
 
-You can see this element in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit/tree/main/XamarinCommunityToolkitSample).
+You can see this element in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit).
 
 ## API
 

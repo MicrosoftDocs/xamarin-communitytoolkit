@@ -27,7 +27,7 @@ By default the behavior will log warnings for the following conditions:
 ```xaml
 <Grid x:Name="TestGrid" Margin="30" BackgroundColor="Gray">
     <Grid.Behaviors>
-	<autoLayoutGrid:ImpliedOrderGridBehavior />
+    <autoLayoutGrid:ImpliedOrderGridBehavior />
     </Grid.Behaviors>
 
     <Grid.RowDefinitions>
@@ -83,4 +83,4 @@ You can see this in action in the [Xamarin Community Toolkit Sample App](https:/
 
 ## API
 
-* [ImpliedOrderGridBehavior source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkit/Behaviors/ImpliedOrderGridBehavior.shared.cs)
+- [ImpliedOrderGridBehavior source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Behaviors/ImpliedOrderGridBehavior.shared.cs)

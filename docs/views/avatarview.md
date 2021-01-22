@@ -6,7 +6,7 @@ ms.author: joverslu
 ms.date: 10/09/2020
 ---
 
-# Xamarin Community Toolkit  AvatarView
+# Xamarin Community Toolkit AvatarView
 
 The AvatarView control allows the user to display an avatar or the user's initials if no avatar is available. By binding the `Source` property the user can assign an image to the AvatarView. Simultaneously binding the `Text` property will allow the user to also set the initials to be shown if no valid image is provided.
 
@@ -15,7 +15,7 @@ The AvatarView control allows the user to display an avatar or the user's initia
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:xct="clr-namespace:Xamarin.CommunityToolkit.Converters;assembly=Xamarin.CommunityToolkit"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              x:Class="MyLittleApp.MainPage">
 
      <StackLayout>
@@ -50,4 +50,4 @@ You can see this in action in the [Xamarin Community Toolkit Sample App](https:/
 
 ## API
 
-* [AvatarView source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkit/Views/AvatarView.shared.cs)
+* [AvatarView source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Views/AvatarView/AvatarView.shared.cs)

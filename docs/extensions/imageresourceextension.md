@@ -15,7 +15,7 @@ The `ImageResourceExtension` is an extension that can be used to display an imag
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:xct="clr-namespace:Xamarin.CommunityToolkit.Extensions;assembly=Xamarin.CommunityToolkit"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              x:Class="MyLittleApp.MainPage">
 
     <StackLayout>
@@ -37,4 +37,4 @@ You can see this in action in the [Xamarin Community Toolkit Sample App](https:/
 
 ## API
 
-* [ImageResourceExtension source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/XamarinCommunityToolkit/Extensions/ImageResourceExtension.shared.cs)
+* [ImageResourceExtension source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Extensions/ImageResourceExtension.shared.cs)

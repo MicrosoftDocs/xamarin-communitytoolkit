@@ -30,12 +30,6 @@ public event EventHandler MyEvent
 void OnEvent() => weakEventManager.RaiseEvent(this, EventArgs.Empty, nameof(MyEvent));
 ```
 
-## Sample project
-
-[BaseCommand](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/ObjectModel/BaseCommand.shared.cs).
-
-You can see this element in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit/tree/main/XamarinCommunityToolkitSample).
-
 ## API
 
 - [WeakEventManagerExtensions](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Helpers/WeakEventManager.shared.cs)
@@ -43,4 +37,4 @@ You can see this element in action in the [Xamarin community toolkit sample app]
 ## Related links
 
 - [DelegateWeakEventManager](delegateweakeventmanager.md)
-- [WeakEventManager<T>](weakeventmanagert.md)
+- [WeakEventManager&lt;T&gt;](weakeventmanagert.md)
