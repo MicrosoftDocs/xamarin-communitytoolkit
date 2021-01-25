@@ -214,7 +214,7 @@ The `IsExpanded` property becomes `true` when the `Expander` header is tapped, w
 
 ![Screenshot of an Expander icon in expand state, on iOS and Android](expander-images/icon-collapse.png "Expand icon on iOS and Android")
 
-For more information about triggers, see [Xamarin.Forms Triggers](/xamarin/xamarin-forms/app-fundamentals/triggers.md).
+For more information about triggers, see [Xamarin.Forms Triggers](/xamarin/xamarin-forms/app-fundamentals/triggers).
 
 ## Embed an Expander in an Expander
 
