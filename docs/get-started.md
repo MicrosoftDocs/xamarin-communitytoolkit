@@ -16,15 +16,15 @@ The toolkit is available as a NuGet package that can be added to any existing or
 
     ![NuGet Package](~/images/managenuget.png "Manage NuGet Package Image")
 
-3. To add the namespace to the toolkit
+3. To add the namespace to the toolkit:
 
-    * in your C# page, add:
+    * In your C# page, add:
 
         ```c#
         using Xamarin.CommunityToolkit;
         ```
         
-    * in your XAML page, add the namespace attribute:
+    * In your XAML page, add the namespace attribute:
     
         ```xaml
         xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
