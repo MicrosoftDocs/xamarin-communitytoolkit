@@ -30,7 +30,7 @@ The CharactersValidationBehavior is a behavior that allows the user to validate 
 |---------|---------|---------|
 | CharacterType | CharacterType | Provides an enumerated value to use to set how to handle comparisons. |
 | MaximumCharacterCount | int | The maximum length of the text input that's allowed. |
-| MinimumCharacterCount | int | The maximum length of the text input that's allowed. |
+| MinimumCharacterCount | int | The minimum length of the text input that's allowed. |
 
 ## Sample
 
