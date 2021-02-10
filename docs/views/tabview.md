@@ -151,6 +151,6 @@ You can see this in action in the [Xamarin Community Toolkit Sample App](https:/
 
 - [TabViewItem source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Views/TabView/TabViewItem.shared.cs)
 
-## Related Video
+## Related video
 
 > [!Video https://channel9.msdn.com/Shows/XamarinShow/Xamarin-Community-Toolkit-TabView/player]
