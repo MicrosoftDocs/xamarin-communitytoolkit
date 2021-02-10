@@ -32,7 +32,7 @@ The toolkit is available as a NuGet package that can be added to any existing or
 
 4. Check out the rest of the documentation to learn more about implementing specific features.
 
-## Xamarin Show: Xamarin Community Toolkit Introduction Video
+## Xamarin Show: Xamarin Community Toolkit introduction video
 
 > [!Video https://channel9.msdn.com/Shows/XamarinShow/Introducing-the-Xamarin-Community-Toolkit/player]
 
