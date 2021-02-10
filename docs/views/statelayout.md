@@ -143,4 +143,8 @@ You can see this in action in the [Xamarin Community Toolkit Sample App](https:/
 
 ## API
 
-* [StateLayout source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Views/StateLayout/StateLayout.shared.cs)
+- [StateLayout source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Views/StateLayout/StateLayout.shared.cs)
+
+## Related video
+
+> [!Video https://channel9.msdn.com/Shows/XamarinShow/Xamarin-Community-Toolkit-StateLayout/player]
