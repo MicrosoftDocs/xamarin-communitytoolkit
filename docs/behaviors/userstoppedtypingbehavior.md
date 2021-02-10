@@ -30,8 +30,8 @@ The UserStoppedTypingBehavior is a behavior that allows the user to trigger an a
 |---------|---------|---------|
 | Command | [ICommand](xref:System.Windows.Input.ICommand) | The command to execute when the user has stopped providing input. |
 | MinimumLengthThreshold | int | The minimum length of the input value required before the command will be executed. |
-| ShouldDismissKeyboardAutomatically | int | Indicates whether or not the keyboard should be dismissed automatically. |
-| StoppedTypingTimeThreshold | bool | The time of inactivity in milliseconds after which the command will be executed. |
+| ShouldDismissKeyboardAutomatically | bool | Indicates whether or not the keyboard should be dismissed automatically. |
+| StoppedTypingTimeThreshold | int | The time of inactivity in milliseconds after which the command will be executed. |
 
 ## Sample
 
