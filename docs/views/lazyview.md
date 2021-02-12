@@ -1,6 +1,6 @@
 ---
 title: "Xamarin Community Toolkit LazyView"
-description: "This article explains how to use LazyView."
+description: "This article explains how to use LazyView, which lets you delay the initialization of a View."
 author: pedro
 ms.author: joverslu
 ms.date: 02/11/2021
@@ -8,7 +8,7 @@ ms.date: 02/11/2021
 
 # Xamarin Community Toolkit LazyView
 
-The LazyView control allows you to delay the initialization of a `View`. You need to provide the type of the `View`, using the `x:TypeArguments` XAML's parameter, that you want to be rendered and handle the initialization using the `LoadViewAsync` method. You can look to the `IsLoaded` property to know when the LazyView is Loaded.
+The LazyView control allows you to delay the initialization of a `View`. You need to provide the type of the `View` that you want to be rendered, using the `x:TypeArguments` XAML namespace attribute, and handle its initialization using the `LoadViewAsync` method. The `IsLoaded` property can be examined to determine when the `LazyView` is loaded.
 
 ## Syntax
 
@@ -21,7 +21,7 @@ The LazyView control allows you to delay the initialization of a `View`. You nee
 
      <StackLayout>
 
-        <xct:LazyView x:TypeArguments="local:LazyTestView" IsLoaded = "{Binding IsLoaded}"/>
+        <xct:LazyView x:TypeArguments="local:LazyTestView" IsLoaded = "{Binding IsLoaded}" />
 
     </StackLayout>
 
@@ -32,17 +32,17 @@ The LazyView control allows you to delay the initialization of a `View`. You nee
 
 |Property  |Type  |Description  |
 |---------|---------|---------|
-| IsLoaded | bool| Gets loaded status of the LazyView. |
+| IsLoaded | bool| Gets the loaded status of the `LazyView`. |
 
 ## Methods
 
 |Property  |Return Type  |Description  |
 |---------|---------|---------|
 | LoadViewAsync | ValueTask| Initialize the view. |
-| Dispose | void | Cleans up the View if needed |
+| Dispose | void | Cleans up the View if required. |
 
 ## Sample
 
-[LazyView sample page Source](https://github1s.com/xamarin/XamarinCommunityToolkit/blob/develop/samples/XCT.Sample/Pages/Views/TabView/LazyTabPage.xaml)
+[LazyView sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/develop/samples/XCT.Sample/Pages/Views/TabView/LazyTabPage.xaml)
 
 You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
