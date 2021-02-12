@@ -11,7 +11,7 @@
 Please check if your PR fulfills the following requirements:
 
 - [ ] For new pages, used the [provided template](https://github.com/MicrosoftDocs/xamarin-communitytoolkit/blob/master/docs/.template.md).
-- [ ] For new features, added an entry in the [Table of Contents](https://github.com/MicrosoftDocs/xamarin-communitytoolkit/blob/master/docs/toc.yml).
+- [ ] For new features, added an entry in the [Table of Contents](https://github.com/MicrosoftDocs/xamarin-communitytoolkit/blob/master/docs/TOC.yml).
 - [ ] Ran against a spell and grammar checker.
 - [ ] Contains **NO** breaking changes.
 
