@@ -122,5 +122,7 @@
       href: views/tabview.md
     - name: "UniformGrid"
       href: views/uniformgrid.md
+    - name: CharactersValidationBehavior
+      href: behaviors/charactersvalidationbehavior.md
 - name: "Troubleshooting"
   href: troubleshooting.md
