@@ -17,7 +17,7 @@ The ValidationBehavior allows users to create custom validation behaviors. All o
 | ForceValidateCommand | [ICommand](xref:System.Windows.Input.ICommand) | Allows the user to provide a custom ICommand that handles forcing validation. This is a bindable property. |
 | Flags | ValidationFlags | Provides an enumerated value that specifies how to handle validation. This is a bindable property. |
 | InvalidStyle | [Style](xref:Xamarin.Forms.Style) | The Style to apply to the element when validation fails. This is a bindable property. |
-| IsInvalid | bool  | Indicates whether or not the current value is considered invalid. This is a bindable property. |
+| IsNotValid | bool  | Indicates whether or not the current value is considered invalid. This is a bindable property. |
 | IsValid | bool  | Indicates whether or not the current value is considered valid. This is a bindable property. |
 | ValidStyle | [Style](xref:Xamarin.Forms.Style) | The Style to apply to the element when validation is successful.  |
 | Value | object | The value to validate. This is a bindable property. |
