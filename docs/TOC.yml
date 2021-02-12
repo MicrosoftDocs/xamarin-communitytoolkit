@@ -110,6 +110,8 @@
       href: views/docklayout.md
     - name: "Expander"
       href: views/expander.md
+    - name: "LazyView"
+      href: views/lazyview.md      
     - name: "MediaElement"
       href: views/mediaelement.md
     - name: "RangeSlider"
