@@ -51,8 +51,8 @@ The Shield is a type of badge that has two colored sections that contain text:
 | SubjectTextColor | [`Color`](xref:Xamarin.Forms.Color) | Gets or sets the text color for the left (`Subject`) part of the `Shield`. This is a bindable property. |
 
 > [!NOTE]
-> `TextColor` is deprecated. Please use `StatusTextColor` instead.
-> `Color` is deprecated. Please use `StatusBackgroundColor` instead"
+> `TextColor` is deprecated since v1.1. Please use `StatusTextColor` instead.
+> `Color` is deprecated since v1.1. Please use `StatusBackgroundColor` instead"
 
 ## Events
 
