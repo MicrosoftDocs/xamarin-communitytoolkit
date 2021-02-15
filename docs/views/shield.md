@@ -52,7 +52,7 @@ The Shield is a type of badge that has two colored sections that contain text:
 
 > [!NOTE]
 > `TextColor` is deprecated since v1.1. Please use `StatusTextColor` instead.
-> `Color` is deprecated since v1.1. Please use `StatusBackgroundColor` instead"
+> `Color` is deprecated since v1.1. Please use `StatusBackgroundColor` instead.
 
 ## Events
 
