@@ -10,6 +10,11 @@ ms.date: 2/20/2021
 
 Provides unified way of creating new instances of `Command`, `AsyncCommand` and `AsyncValueCommand`
 
+## Syntax
+
+```csharp
+public static CommandFactory.Create()
+```
 
 ## Examples
 
@@ -53,6 +58,11 @@ async Task ExecuteCommandAsync(string commandParameter)
 | Create&lt;TExecute&gt;(Func&lt;TExecute, ValueTask&gt; execute, Func&lt;object, bool&gt; canExecute = null, Action&lt;Exception&gt; onException = null, bool continueOnCapturedContext = false, bool allowsMultipleExecutions = true) | IAsyncValueCommand&lt;TExecute&gt; | Initializes a new instance of IAsyncValueCommand&lt;TExecute&gt;. |
 | Create&lt;TExecute&gt;(Func&lt;TExecute, ValueTask&gt; execute, Func&lt;bool&gt; canExecute, Action&lt;Exception&gt; onException = null, bool continueOnCapturedContext = false, bool allowsMultipleExecutions = true) | IAsyncValueCommand&lt;TExecute&gt; | Initializes a new instance of IAsyncValueCommand&lt;TExecute&gt;. |
 | Create&lt;TExecute, TCanExecute&gt;(Func&lt;TExecute, ValueTask&gt; execute, Func&lt;TCanExecute, bool&gt; canExecute = null, Action&lt;Exception&gt; onException = null, bool continueOnCapturedContext = false, bool allowsMultipleExecutions = true) | IAsyncValueCommand&lt;TExecute, TCanExecute&gt; | Initializes a new instance of IAsyncValueCommand&lt;TExecute, TCanExecute&gt;. |
+
+## Sample project
+
+You can see this element in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit/tree/main/XamarinCommunityToolkitSample).
+Every command is created in this way there. Here's a [BasePage](https://github.com/xamarin/XamarinCommunityToolkit/blob/develop/samples/XCT.Sample/Pages/Base/BasePage.cs#L12) as an example. 
 
 ## API
 
