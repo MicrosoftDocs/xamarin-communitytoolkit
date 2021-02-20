@@ -90,6 +90,8 @@
       href: helpers/weakeventmanagert.md
     - name: "WeakEventManagerExtensions"
       href: helpers/weakeventmanagerextensions.md
+    - name: "LocalizedString"
+      href: helpers/localizedstring.md
 - name: "ObjectModel"
   items:
     - name: "AsyncCommand"
