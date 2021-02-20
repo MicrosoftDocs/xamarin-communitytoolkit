@@ -58,7 +58,7 @@ LocalizationResourceManager.Current.SetCulture(newCulture);
 [App class Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/App.xaml.cs)
 [Settings sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/ViewModels/SettingViewModel.cs)
 
-You can see this element in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit/tree/main/XamarinCommunityToolkitSample).
+You can see this element in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit/tree/main/samples/XCT.Sample).
 
 ## API
 
