@@ -1,12 +1,12 @@
 ---
-title: "Xamarin Community Toolkit CommandFactory"
+title: "Xamarin Community Toolkit LocalizationResourceManager"
 author: maxkoshevoi
 ms.author: v-makkos
 description: "Helper class to help user handle multi-language support at runtime."
 ms.date: 2/20/2021
 ---
 
-# Xamarin Community Toolkit CommandFactory
+# Xamarin Community Toolkit LocalizationResourceManager
 
 Helper class to help user handle multi-language support at runtime.
 Intended to be used by [TranslateExtension](../extensions/translateextension.md)<!--"Uncomment when this class is released" and [LocalizedString](localizedstring.md)-->.
