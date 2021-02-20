@@ -61,7 +61,7 @@ async Task ExecuteCommandAsync(string commandParameter)
 
 ## Sample project
 
-You can see this element in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit/tree/main/XamarinCommunityToolkitSample).
+You can see this element in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit/tree/main/samples/XCT.Sample).
 Every command is created in this way there. Here's a [BasePage Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/develop/samples/XCT.Sample/Pages/Base/BasePage.cs) as an example. 
 
 ## API
