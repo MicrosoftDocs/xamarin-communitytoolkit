@@ -44,3 +44,7 @@ You can see this in action in the [Xamarin Community Toolkit Sample App](https:/
 ## API
 
 * [TranslateExtension source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Extensions/TranslateExtension.shared.cs)
+
+## Related links
+
+- [LocalizationResourceManager](../helpers/localizationresourcemanager.md)
