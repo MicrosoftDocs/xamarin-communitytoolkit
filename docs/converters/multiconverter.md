@@ -52,3 +52,7 @@ You can see this in action in the [Xamarin Community Toolkit Sample App](https:/
 ## API
 
 * [MultiConverter source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Converters/MultiConverter.shared.cs)
+
+## Related video
+
+> [!Video https://channel9.msdn.com/Shows/XamarinShow/Xamarin-Community-Toolkit-MultiConverter--VariableMultiValueConverter/player]
