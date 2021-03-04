@@ -82,3 +82,7 @@ void OnActionEvent(string message) => _weakActionEventManager.RaiseEvent(message
 ## Related links
 
 - [WeakEventManager<T>](weakeventmanagert.md)
+
+## Related video
+
+> [!Video https://channel9.msdn.com/Shows/XamarinShow/Xamarin-Community-Toolkit-WeakEventManager-To-Stop-Memory-Leaks/player]

@@ -195,3 +195,7 @@ You can see this element in action in the [Xamarin community toolkit sample app]
 ## Related links
 
 - [AsyncValueCommand](asyncvaluecommand.md)
+
+## Related video
+
+> [!Video https://channel9.msdn.com/Shows/XamarinShow/Xamarin-Community-Toolkit-Awesome-AsyncCommand--AsyncValueCommand/player]
