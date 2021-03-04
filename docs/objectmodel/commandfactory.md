@@ -1,14 +1,16 @@
 ---
 title: "Xamarin Community Toolkit CommandFactory"
 author: maxkoshevoi
-ms.author: v-makkos
-description: "Unify creation of Command, AsyncCommand and AsyncValueCommand."
+ms.author: joverslu
+description: "The CommandFactory class provides a unified approach to creating new Command, AsyncCommand, and AsyncValueCommand objects."
 ms.date: 2/20/2021
 ---
 
 # Xamarin Community Toolkit CommandFactory
 
-Provides unified way of creating new instances of `Command`, `AsyncCommand` and `AsyncValueCommand`
+![Pre-release API](~/images/pre-release.png)
+
+The `CommandFactory` class provides a unified approach to creating new `Command`, `AsyncCommand,` and `AsyncValueCommand` objects.
 
 ## Syntax
 
@@ -18,7 +20,7 @@ public static CommandFactory.Create()
 
 ## Examples
 
-To use it just replace `new Command`, `new AsyncCommand` and `new AsyncValueCommand` with `CommandFactory.Create`
+To consume the `CommandFactory` class, replace `new Command`, `new AsyncCommand` and `new AsyncValueCommand` with the `CommandFactory.Create` method:
 
 ```csharp
 Command command = CommandFactory.Create(() => Debug.WriteLine("Command executed"));
@@ -62,7 +64,7 @@ async Task ExecuteCommandAsync(string commandParameter)
 ## Sample project
 
 You can see this element in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit/tree/main/samples/XCT.Sample).
-Every command is created in this way there. Here's a [BasePage Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/develop/samples/XCT.Sample/Pages/Base/BasePage.cs) as an example. 
+In the sample app, every command is created using this approach. For more information, see [BasePage Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/develop/samples/XCT.Sample/Pages/Base/BasePage.cs) as an example. 
 
 ## API
 
