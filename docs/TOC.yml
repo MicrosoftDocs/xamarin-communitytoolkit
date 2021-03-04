@@ -92,12 +92,12 @@
       href: helpers/weakeventmanagerextensions.md
 - name: "ObjectModel"
   items:
-    - name: "CommandFactory"
-      href: objectmodel/commandfactory.md
     - name: "AsyncCommand"
       href: objectmodel/asynccommand.md
     - name: "AsyncValueCommand"
       href: objectmodel/asyncvaluecommand.md
+    - name: "CommandFactory"
+      href: objectmodel/commandfactory.md
 - name: "Markup"
   href: markup.md
 - name: "Views"
