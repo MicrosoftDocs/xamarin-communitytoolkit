@@ -86,6 +86,8 @@
   items:
     - name: "DelegateWeakEventManager"
       href: helpers/delegateweakeventmanager.md
+    - name: "LocalizationResourceManager"
+      href: helpers/localizationresourcemanager.md         
     - name: "WeakEventManager<T>"
       href: helpers/weakeventmanagert.md
     - name: "WeakEventManagerExtensions"
@@ -111,7 +113,7 @@
     - name: "Expander"
       href: views/expander.md
     - name: "LazyView"
-      href: views/lazyview.md      
+      href: views/lazyview.md
     - name: "MediaElement"
       href: views/mediaelement.md
     - name: "RangeSlider"
