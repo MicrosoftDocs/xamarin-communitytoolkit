@@ -42,6 +42,8 @@
       href: converters/datetimeoffsetconverter.md
     - name: DoubleToIntConverter
       href: converters/doubletointconverter.md
+    - name: EnumToBoolConverter
+      href: converters/enumtoboolconverter.md
     - name: EqualConverter
       href: converters/equalconverter.md
     - name: IndexToArrayItemConverter
@@ -111,7 +113,7 @@
     - name: "Expander"
       href: views/expander.md
     - name: "LazyView"
-      href: views/lazyview.md      
+      href: views/lazyview.md
     - name: "MediaElement"
       href: views/mediaelement.md
     - name: "RangeSlider"
