@@ -86,8 +86,6 @@
   items:
     - name: "DelegateWeakEventManager"
       href: helpers/delegateweakeventmanager.md
-    - name: "LocalizationResourceManager"
-      href: helpers/localizationresourcemanager.md      
     - name: "WeakEventManager<T>"
       href: helpers/weakeventmanagert.md
     - name: "WeakEventManagerExtensions"
