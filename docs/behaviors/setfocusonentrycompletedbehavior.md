@@ -21,8 +21,7 @@ The SetFocusedOnEntryCompletedBehavior is a behavior that gives focus to a speci
     <Entry x:Name="Entry2"
            Placeholder="Entry 2"
            xct:SetFocusOnEntryCompletedBehavior.NextElement="{x:Reference Entry3}"
-           >
-    </Entry>
+           />
     <Entry x:Name="Entry3"
            Placeholder="Entry 3 (no next entry this time)"
            />
