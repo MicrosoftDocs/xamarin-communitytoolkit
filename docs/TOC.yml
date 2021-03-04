@@ -87,13 +87,13 @@
     - name: "DelegateWeakEventManager"
       href: helpers/delegateweakeventmanager.md
     - name: "LocalizationResourceManager"
-      href: helpers/localizationresourcemanager.md      
+      href: helpers/localizationresourcemanager.md
+    - name: "LocalizedString"
+      href: helpers/localizedstring.md      
     - name: "WeakEventManager<T>"
       href: helpers/weakeventmanagert.md
     - name: "WeakEventManagerExtensions"
       href: helpers/weakeventmanagerextensions.md
-    - name: "LocalizedString"
-      href: helpers/localizedstring.md
 - name: "ObjectModel"
   items:
     - name: "AsyncCommand"
