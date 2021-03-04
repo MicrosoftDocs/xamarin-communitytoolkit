@@ -42,7 +42,7 @@ Version: 1.0.0
 
 | Property | Type | Description |
 | -- | -- | -- |
-| Localized | string | Returns a locazlied string using the current culture. |
+| Localized | string | Returns a localized string using the current culture. |
 
 ## Events
 
