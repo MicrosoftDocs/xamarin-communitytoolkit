@@ -12,6 +12,8 @@ The `LocalizationResourceManager` class is a helper class that enables users to 
 
 ## Examples
 
+The following sections show examples of how to use the `LocalizationResourceManager` class.
+
 ### Initializing
 
 Call the `Init` method in your `App` class constructor, and pass your resource manager to it:
