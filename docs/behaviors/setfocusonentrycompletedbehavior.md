@@ -1,7 +1,8 @@
 ---
 title: "Xamarin Community Toolkit SetFocusedOnEntryCompletedBehavior"
-authors: jmegner, adenearnshaw
-description: "The SetFocusedOnEntryCompletedBehavior allows a visual element to automatically gain focus once an entry has been completed."
+author: jmegner
+ms.author: joverslu
+description: "The SetFocusedOnEntryCompletedBehavior gives focus to a specific visual element when an entry is completed."
 ms.date: 03/03/2021
 ---
 

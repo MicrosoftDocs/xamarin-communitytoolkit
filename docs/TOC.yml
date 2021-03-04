@@ -24,6 +24,8 @@
       href: behaviors/numericvalidationbehavior.md
     - name: RequiredStringValidationBehavior
       href: behaviors/requiredstringvalidationbehavior.md
+    - name: SetFocusOnEntryCompletedBehavior
+      href: behaviors/setfocusonentrycompletedbehavior.md
     - name: TextValidationBehavior
       href: behaviors/textvalidationbehavior.md
     - name: UriValidationBehavior
