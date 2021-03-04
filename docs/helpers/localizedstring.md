@@ -1,19 +1,20 @@
 ---
 title: "Xamarin Community Toolkit LocalizedString"
 author: maxkoshevoi
-ms.author: v-makkos
-description: "Allows users to handle multi-language support in C# code at runtime."
+ms.author: joverslu
+description: "The LocalizedString class enables users to respond to system culture changes in C# code at runtime."
 ms.date: 2/20/2021
 ---
 
 # Xamarin Community Toolkit LocalizedString
 
-The LocalizedString allows users to handle multi-language support in C# code at runtime. It uses the built-in [LocalizationResourceManager](../helpers/localizationresourcemanager.md) helper to react on current active [CultureInfo](xref:System.Globalization.CultureInfo) change.
+![Pre-release API](~/images/pre-release.png)
+
+The `LocalizedString` class enables users to respond to system culture changes in C# code at runtime. It uses the built-in [LocalizationResourceManager](../helpers/localizationresourcemanager.md) helper class to react to changes in the active [CultureInfo](xref:System.Globalization.CultureInfo).
 
 ## Examples
 
-The following property raises `PropertyChanged` event and regenerates string using function provided in constructor, when `LocalizationResourceManager.Current.PropertyChanged` is triggered. 
-As a result page will be updated with the value localized using new culture.
+The following code raises the `PropertyChanged` event and regenerates the string using function provided in constructor, when the `LocalizationResourceManager.Current.PropertyChanged` event is raised. As a result, the page will be updated with the localized value using the new culture.
 
 ViewModel:
 ```csharp
@@ -31,8 +32,8 @@ Version: 1.0.0
 ```
 
 > [!NOTE]
-> For this example to work, you also need to update `AppResources.Culture` when `LocalizationResourceManager.Current.CurrentCulture` is changed. 
-> Add this line above `LocalizationResourceManager.Current.Init()` call to do that.
+> For this example to work, you also need to update `AppResources.Culture` when `LocalizationResourceManager.Current.CurrentCulture` changes. 
+> To do this, add the following code above the `LocalizationResourceManager.Current.Init()` call:
 > ```csharp
 > LocalizationResourceManager.Current.PropertyChanged += (_, _) => AppResources.Culture >= LocalizationResourceManager.Current.CurrentCulture;
 > ```
@@ -41,19 +42,19 @@ Version: 1.0.0
 
 | Property | Type | Description |
 | -- | -- | -- |
-| Localized | string | Returns string localized using current culture. |
+| Localized | string | Returns a locazlied string using the current culture. |
 
 ## Events
 
 | Events | Description |
 | -- | -- |
-| PropertyChanged | Notifies of culture change. |
+| PropertyChanged | Provides notification of a culture change. |
 
 ## Sample project
 
 [Settings sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/ViewModels/SettingViewModel.cs)
 
-You can see this element in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit/tree/main/samples/XCT.Sample).
+You can see this class in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit/tree/main/samples/XCT.Sample).
 
 ## API
 
