@@ -12,7 +12,7 @@ The SetFocusedOnEntryCompletedBehavior is a behavior that gives focus to a speci
 
 ## Syntax
 
-```xml
+```xaml
 <StackLayout>
     <Entry x:Name="Entry1"
            Placeholder="Entry 1"
@@ -32,7 +32,7 @@ The SetFocusedOnEntryCompletedBehavior is a behavior that gives focus to a speci
 
 |Property  |Type  |Description  |
 |---------|---------|---------|
-| NextElement | VisualElement | The `VisualElement` that should gain focus once the Entry is completed. |
+| NextElement | VisualElement | The `VisualElement` that should gain focus once the `Entry` is completed. |
 
 ## Sample
 
