@@ -8,6 +8,8 @@ ms.date: 02/11/2021
 
 # Xamarin Community Toolkit LazyView
 
+![Pre-release API](~/images/pre-release.png)
+
 The `LazyView` control allows you to delay the initialization of a `View`. You need to provide the type of the `View` that you want to be rendered, using the `x:TypeArguments` XAML namespace attribute, and handle its initialization using the `LoadViewAsync` method. The `IsLoaded` property can be examined to determine when the `LazyView` is loaded.
 
 ## Syntax
