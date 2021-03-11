@@ -8,6 +8,8 @@ ms.date: 03/03/2021
 
 # Xamarin Community Toolkit SetFocusedOnEntryCompletedBehavior
 
+![Pre-release API](~/images/pre-release.png)
+
 The SetFocusedOnEntryCompletedBehavior is a behavior that gives focus to a specified visual element when an entry is completed.  For example, a page might have several entries in sequence, and it would be convenient to the user if completing an entry automatically switched focus to the next entry.
 
 ## Syntax
