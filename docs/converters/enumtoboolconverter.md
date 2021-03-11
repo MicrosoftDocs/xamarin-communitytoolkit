@@ -8,6 +8,8 @@ ms.date: 02/17/2021
 
 # Xamarin Community Toolkit EnumToBoolConverter
 
+![Pre-release API](~/images/pre-release.png)
+
 The EnumToBoolConverter is a converter that allows users to convert a `Enum` value binding to a `bool` value. The `Enum` value can be compared against the `TrueList` or against the `ConverterParameter`.
 
 ## Syntax
