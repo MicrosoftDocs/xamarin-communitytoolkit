@@ -1,6 +1,6 @@
 ## Fixes # <!-- Link to a relevant issue # in this docs repository (if any, otherwise remove this line) -->
 
-## Docs for Toolkit PR [#](https://github.com/xamarin/XamarinCommunityToolkit/pulls/#) <!-- Link to relevant issue or Feature PR # of the Xamarin community toolkit repo which will create a reference to the associated issue and PR once it is created, remove if not tied to an issue or feature -->
+## Docs for Toolkit PR [#](https://github.com/xamarin/XamarinCommunityToolkit/pull/#) <!-- Link to relevant issue or Feature PR # of the Xamarin community toolkit repo which will create a reference to the associated issue and PR once it is created, remove if not tied to an issue or feature -->
 
 ## What changes to the docs does this PR provide?
 
