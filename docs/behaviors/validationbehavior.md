@@ -24,7 +24,8 @@ The ValidationBehavior allows users to create custom validation behaviors. All o
 | ValuePropertyName | string | Allows the user to override the property that will be used as the value to validate. This is a bindable property. |
 
 ## Visual States
-`ValidationBehavior` defines two visual states "**Valid**" and "**Invalid**" that could be used with [Visual State Manager](https://docs.microsoft.com/xamarin/xamarin-forms/user-interface/visual-state-manager), instead of `InvalidStyle` and `ValidStyle` properties.
+
+`ValidationBehavior` defines two visual states "**Valid**" and "**Invalid**" that could be used with [Visual State Manager](/xamarin/xamarin-forms/user-interface/visual-state-manager), instead of `InvalidStyle` and `ValidStyle` properties.
 
 Usage sample:
 ```
