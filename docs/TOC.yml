@@ -76,6 +76,8 @@
       href: converters/variablemultivalueconverter.md
 - name: "Effects"
   items:
+    - name: "LifecycleEffect"
+      href: effects/lifecycleeffect.md
     - name: "SafeAreaEffect"
       href: effects/safeareaeffect.md
 - name: "Extensions"
