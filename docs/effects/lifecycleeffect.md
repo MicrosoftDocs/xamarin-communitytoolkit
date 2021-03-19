@@ -1,6 +1,6 @@
 ---
 title: "Xamarin Community Toolkit LifecycleEffect"
-description: "This article explains how to use LazyView, which lets you delay the initialization of a View."
+description: "This article explains how to use the LifecycleEffect, to know when a VisualElement is loaded and unloaded from the memory."
 author: pedro
 ms.author: joverslu
 ms.date: 03/11/2021
