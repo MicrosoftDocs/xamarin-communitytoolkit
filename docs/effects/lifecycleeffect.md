@@ -1,6 +1,6 @@
 ---
 title: "Xamarin Community Toolkit LifecycleEffect"
-description: "This article explains how to use the LifecycleEffect, to know when a VisualElement is loaded and unloaded from the memory."
+description: "This article explains how to use the LifecycleEffect, to determine when a VisualElement is loaded and unloaded from memory."
 author: pedro
 ms.author: joverslu
 ms.date: 03/11/2021
@@ -10,7 +10,7 @@ ms.date: 03/11/2021
 
 ![Pre-release API](~/images/pre-release.png)
 
-The `LifecycleEffect` allows the dev to know when a `VisualElement` has his renderer allocated in the memory by the Platform.
+The `LifecycleEffect` allows you to determine when a `VisualElement` has its renderer allocated by the platform.
 
 ## Syntax
 
@@ -54,6 +54,8 @@ The `LifecycleEffect` allows the dev to know when a `VisualElement` has his rend
 </ContentPage>
 ```
 
+The `LifeCycleEffect` event handlers are shown below:
+
 ```csharp
         void LifeCycleEffect_Loaded(object? sender, EventArgs e)
         {
@@ -67,25 +69,25 @@ The `LifecycleEffect` allows the dev to know when a `VisualElement` has his rend
                 Console.WriteLine("StackLayout loaded");
         }
 
-		void LifeCycleEffect_Unloaded(object? sender, EventArgs e)
-		{
-			if (sender is Button)
-				Console.WriteLine("Button unloaded");
-			if (sender is Image)
-				Console.WriteLine("Image unloaded");
-			if (sender is Label)
-				Console.WriteLine("Label unloaded");
-			if (sender is StackLayout)
-				Console.WriteLine("StackLayout unloaded");
-		}
+	void LifeCycleEffect_Unloaded(object? sender, EventArgs e)
+	{
+		if (sender is Button)
+			Console.WriteLine("Button unloaded");
+		if (sender is Image)
+			Console.WriteLine("Image unloaded");
+		if (sender is Label)
+			Console.WriteLine("Label unloaded");
+		if (sender is StackLayout)
+			Console.WriteLine("StackLayout unloaded");
+	}
 ```
 
 ## Properties
 
 |Property  |Type  |Description  |
 |---------|---------|---------|
-| Loaded | event| Triggers when the `VisualElement`'s renderer is allocated in the memory.|
-| Unloaded | event| Triggers when the `VisualElement`'s renderer is unallocated in the memory. |
+| Loaded | event| Triggers when the renderer for the `VisualElement` is allocated.|
+| Unloaded | event| Triggers when the renderer for the `VisualElement` is unallocated. |
 
 ## Sample
 
