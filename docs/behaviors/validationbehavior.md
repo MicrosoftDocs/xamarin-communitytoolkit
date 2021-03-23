@@ -25,7 +25,7 @@ The ValidationBehavior allows users to create custom validation behaviors. All o
 
 ## Visual States
 
-`ValidationBehavior` defines two visual states, "**Valid**" and "**Invalid**", that can be used with the [Visual State Manager](/xamarin/xamarin-forms/user-interface/visual-state-manager), instead of the `InvalidStyle` and `ValidStyle` properties.
+`ValidationBehavior` defines two visual states, `Valid` and `Invalid`, that can be used with the [Visual State Manager](/xamarin/xamarin-forms/user-interface/visual-state-manager), instead of the `InvalidStyle` and `ValidStyle` properties.
 
 Usage sample:
 ```
