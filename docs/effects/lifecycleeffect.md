@@ -8,8 +8,6 @@ ms.date: 03/11/2021
 
 # Xamarin Community Toolkit Lifecycle Effect
 
-![Pre-release API](~/images/pre-release.png)
-
 The `LifecycleEffect` allows you to determine when a `VisualElement` has its renderer allocated by the platform.
 
 ## Syntax
