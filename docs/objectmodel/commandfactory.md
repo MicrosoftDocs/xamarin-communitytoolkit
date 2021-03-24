@@ -8,8 +8,6 @@ ms.date: 2/20/2021
 
 # Xamarin Community Toolkit CommandFactory
 
-![Pre-release API](~/images/pre-release.png)
-
 The `CommandFactory` class provides a unified approach to creating new `Command`, `AsyncCommand,` and `AsyncValueCommand` objects.
 
 ## Syntax
@@ -64,13 +62,13 @@ async Task ExecuteCommandAsync(string commandParameter)
 ## Sample project
 
 You can see this element in action in the [Xamarin community toolkit sample app](https://github.com/xamarin/XamarinCommunityToolkit/tree/main/samples/XCT.Sample).
-In the sample app, every command is created using this approach. For more information, see [BasePage Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/develop/samples/XCT.Sample/Pages/Base/BasePage.cs) as an example. 
+In the sample app, every command is created using this approach. For more information, see [BasePage Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Base/BasePage.cs) as an example.
 
 ## API
 
-- [CommandFactory.Command](https://github.com/xamarin/XamarinCommunityToolkit/blob/develop/src/CommunityToolkit/Xamarin.CommunityToolkit/ObjectModel/CommandFactory.Command.shared.cs)
-- [CommandFactory.IAsyncCommand](https://github.com/xamarin/XamarinCommunityToolkit/blob/develop/src/CommunityToolkit/Xamarin.CommunityToolkit/ObjectModel/CommandFactory.IAsyncCommand.shared.cs)
-- [CommandFactory.IAsyncValueCommand](https://github.com/xamarin/XamarinCommunityToolkit/blob/develop/src/CommunityToolkit/Xamarin.CommunityToolkit/ObjectModel/CommandFactory.IAsyncValueCommand.shared.cs)
+- [CommandFactory.Command](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/ObjectModel/CommandFactory.Command.shared.cs)
+- [CommandFactory.IAsyncCommand](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/ObjectModel/CommandFactory.IAsyncCommand.shared.cs)
+- [CommandFactory.IAsyncValueCommand](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/ObjectModel/CommandFactory.IAsyncValueCommand.shared.cs)
 
 ## Related links
 
