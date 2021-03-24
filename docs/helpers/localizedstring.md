@@ -8,8 +8,6 @@ ms.date: 2/20/2021
 
 # Xamarin Community Toolkit LocalizedString
 
-![Pre-release API](~/images/pre-release.png)
-
 The `LocalizedString` class enables users to respond to system culture changes in C# code at runtime. It uses the built-in [LocalizationResourceManager](../helpers/localizationresourcemanager.md) helper class to react to changes in the active [CultureInfo](xref:System.Globalization.CultureInfo).
 
 ## Examples
