@@ -8,7 +8,7 @@ ms.date: 2/20/2021
 
 # Xamarin Community Toolkit LocalizationResourceManager
 
-The `LocalizationResourceManager` class is a helper class that enables users to respond to culture changes at runtime. This class is typically used by the [TranslateExtension](../extensions/translateextension.md) class<!--"Uncomment when this class is released" and [LocalizedString](localizedstring.md)-->.
+The `LocalizationResourceManager` class is a helper class that enables users to respond to culture changes at runtime. This class is typically used by the [TranslateExtension](../extensions/translateextension.md) class and [LocalizedString](localizedstring.md).
 
 ## Examples
 
@@ -69,4 +69,4 @@ You can see this class in action in the [Xamarin community toolkit sample app](h
 ## Related links
 
 - [TranslateExtension](../extensions/translateextension.md)
-<!-- Uncomment when this class is released - [LocalizedString](localizedstring.md)-->
+- [LocalizedString](localizedstring.md)
