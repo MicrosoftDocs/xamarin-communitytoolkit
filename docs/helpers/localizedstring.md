@@ -15,25 +15,29 @@ The `LocalizedString` class enables users to respond to system culture changes i
 The following code raises the `PropertyChanged` event and regenerates the string using function provided in constructor, when the `LocalizationResourceManager.Current.PropertyChanged` event is raised. As a result, the page will be updated with the localized value using the new culture.
 
 ViewModel:
+
 ```csharp
 public LocalizedString AppVersion { get; } = new(() => string.Format(AppResources.Version, AppInfo.VersionString));
 ```
 
 Page:
+
 ```xaml
 <Label Text="{Binding AppVersion.Localized}"/>
 ```
 
 Output:
+
 ```
 Version: 1.0.0
 ```
 
 > [!NOTE]
-> For this example to work, you also need to update `AppResources.Culture` when `LocalizationResourceManager.Current.CurrentCulture` changes. 
+> For this example to work, you also need to update `AppResources.Culture` when `LocalizationResourceManager.Current.CurrentCulture` changes.
 > To do this, add the following code above the `LocalizationResourceManager.Current.Init()` call:
+>
 > ```csharp
-> LocalizationResourceManager.Current.PropertyChanged += (_, _) => AppResources.Culture >= LocalizationResourceManager.Current.CurrentCulture;
+> LocalizationResourceManager.Current.PropertyChanged += (_, _) => AppResources.Culture = LocalizationResourceManager.Current.CurrentCulture;
 > ```
 
 ## Properties
@@ -56,7 +60,7 @@ You can see this class in action in the [Xamarin community toolkit sample app](h
 
 ## API
 
-- [LocalizedString](https://github.com/xamarin/XamarinCommunityToolkit/blob/develop/src/CommunityToolkit/Xamarin.CommunityToolkit/Helpers/LocalizedString.shared.cs)
+- [LocalizedString](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Helpers/LocalizedString.shared.cs)
 
 ## Related links
 
