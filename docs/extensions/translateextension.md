@@ -47,3 +47,4 @@ You can see this in action in the [Xamarin Community Toolkit Sample App](https:/
 ## Related links
 
 - [LocalizationResourceManager](../helpers/localizationresourcemanager.md)
+- [LocalizedString](localizedstring.md)
