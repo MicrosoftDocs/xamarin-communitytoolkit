@@ -27,10 +27,10 @@ You can also subscribe to the `PropertyChanged` event to ensure that your app re
 
 ### Changing Culture
 
-Use the `SetCulture` method to change the culture:
+Use the `CurrentCulture` property to change the culture:
 
 ```csharp
-LocalizationResourceManager.Current.SetCulture(newCulture);
+LocalizationResourceManager.Current.CurrentCulture = newCulture;
 ```
 
 ## Properties
@@ -45,9 +45,7 @@ LocalizationResourceManager.Current.SetCulture(newCulture);
 | -- | -- | -- |
 | Init(ResourceManager) | void | Initializes a LocalizationResourceManager. |
 | Init(ResourceManager, CultureInfo) | void | Initializes a LocalizationResourceManager. |
-| SetCulture(CultureInfo) | void | Sets the new culture. |
 | GetValue(string) | string | Retrieves the localized resource value based on `CurrentCulture`. |
-| Invalidate() | void | Raises the `PropertyChanged` event. |
 
 ## Events
 
