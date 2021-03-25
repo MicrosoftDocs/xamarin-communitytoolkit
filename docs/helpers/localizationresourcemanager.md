@@ -8,13 +8,13 @@ ms.date: 2/20/2021
 
 # Xamarin Community Toolkit LocalizationResourceManager
 
-The `LocalizationResourceManager` class is a helper class that enables users to respond to culture changes at runtime. This class is typically used by the [TranslateExtension](../extensions/translateextension.md) class and [LocalizedString](localizedstring.md).
+The `LocalizationResourceManager` class is a helper class that enables users to respond to culture changes at runtime. This class is typically used by the [`TranslateExtension`](../extensions/translateextension.md) class and [`LocalizedString`](localizedstring.md).
 
 ## Examples
 
 The following sections show examples of how to use the `LocalizationResourceManager` class.
 
-### Initializing
+### Initialization
 
 Call the `Init` method in your `App` class constructor, and pass your resource manager to it:
 
@@ -25,7 +25,7 @@ LocalizationResourceManager.Current.Init(AppResources.ResourceManager);
 
 You can also subscribe to the `PropertyChanged` event to ensure that your app responds to system culture changes.
 
-### Changing Culture
+### Change culture
 
 Use the `CurrentCulture` property to change the culture:
 
