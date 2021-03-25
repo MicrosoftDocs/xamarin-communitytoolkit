@@ -2,13 +2,13 @@
 title: "Xamarin Community Toolkit TranslateExtension"
 author: sthewissen
 ms.author: joverslu
-description: "The TranslateExtension allows users to handle multi-language support at runtime."
+description: "The TranslateExtension allows users to handle multi-language support in XAML at runtime."
 ms.date: 10/09/2020
 ---
 
 # Xamarin Community Toolkit TranslateExtension
 
-The TranslateExtension allows users to handle multi-language support at runtime. It uses the built-in `LocalizationResourceManager` helper to retrieve the correct translation resource for the current active [CultureInfo](xref:System.Globalization.CultureInfo).
+The TranslateExtension allows users to handle multi-language support in XAML at runtime. It uses the built-in `LocalizationResourceManager` helper to retrieve the correct translation resource for the current active [CultureInfo](xref:System.Globalization.CultureInfo).
 
 ## Syntax
 
@@ -43,4 +43,8 @@ You can see this in action in the [Xamarin Community Toolkit Sample App](https:/
 
 ## API
 
-* [TranslateExtension source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Extensions/TranslateExtension.shared.cs)
+- [TranslateExtension source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Extensions/TranslateExtension.shared.cs)
+
+## Related links
+
+- [LocalizedString](../helpers/localizedstring.md)
