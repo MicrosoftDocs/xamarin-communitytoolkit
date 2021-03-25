@@ -36,10 +36,10 @@ The `SetFocusedOnEntryCompletedBehavior` is a behavior that gives focus to a spe
 
 ## Sample
 
-- [SetFocusedOnEntryCompletedBehavior sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Behaviors/SetFocusedOnEntryCompletedBehaviorPage.xaml)
+- [SetFocusedOnEntryCompletedBehavior sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Behaviors/SetFocusOnEntryCompletedBehaviorPage.xaml)
 
 You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
 
 ## API
 
-* [SetFocusedOnEntryCompletedBehavior source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Behaviors/AttachedBehaviors/SetFocusedOnEntryCompletedBehavior.shared.cs)
+* [SetFocusedOnEntryCompletedBehavior source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Behaviors/AttachedBehaviors/SetFocusOnEntryCompletedBehavior.shared.cs)
