@@ -23,6 +23,38 @@ The ValidationBehavior allows users to create custom validation behaviors. All o
 | Value | object | The value to validate. This is a bindable property. |
 | ValuePropertyName | string | Allows the user to override the property that will be used as the value to validate. This is a bindable property. |
 
+## Visual States
+
+`ValidationBehavior` defines two visual states, `Valid` and `Invalid`, that can be used with the [Visual State Manager](/xamarin/xamarin-forms/user-interface/visual-state-manager), instead of the `InvalidStyle` and `ValidStyle` properties.
+
+Usage sample:
+```
+<Entry Placeholder="Type characters...">
+	<Entry.Behaviors>
+		<xct:CharactersValidationBehavior
+				Flags="ValidateOnValueChanging"
+				CharacterType="{Binding SelectedItem, Source={x:Reference CharacterTypePicker}}"
+				MaximumCharacterCount="{Binding Text, Source={x:Reference MaximumCharacterCountEntry}}"
+				MinimumCharacterCount="{Binding Text, Source={x:Reference MinimumCharacterCountEntry}}"/>
+	</Entry.Behaviors>
+
+	<VisualStateManager.VisualStateGroups>
+		<VisualStateGroup x:Name="CommonStates">
+			<VisualState x:Name="Valid">
+				<VisualState.Setters>
+					<Setter Property="TextColor" Value="Green"/>
+				</VisualState.Setters>
+			</VisualState>
+			<VisualState x:Name="Invalid">
+				<VisualState.Setters>
+					<Setter Property="TextColor" Value="IndianRed"/>
+				</VisualState.Setters>
+			</VisualState>
+		</VisualStateGroup>
+	</VisualStateManager.VisualStateGroups>
+</Entry>
+```
+
 ## Sample
 
 > [!WARNING]

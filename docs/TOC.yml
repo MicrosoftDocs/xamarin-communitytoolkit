@@ -24,6 +24,8 @@
       href: behaviors/numericvalidationbehavior.md
     - name: RequiredStringValidationBehavior
       href: behaviors/requiredstringvalidationbehavior.md
+    - name: SetFocusOnEntryCompletedBehavior
+      href: behaviors/setfocusonentrycompletedbehavior.md
     - name: TextValidationBehavior
       href: behaviors/textvalidationbehavior.md
     - name: UriValidationBehavior
@@ -42,6 +44,8 @@
       href: converters/datetimeoffsetconverter.md
     - name: DoubleToIntConverter
       href: converters/doubletointconverter.md
+    - name: EnumToBoolConverter
+      href: converters/enumtoboolconverter.md
     - name: EqualConverter
       href: converters/equalconverter.md
     - name: IndexToArrayItemConverter
@@ -74,6 +78,8 @@
       href: converters/variablemultivalueconverter.md
 - name: "Effects"
   items:
+    - name: "LifecycleEffect"
+      href: effects/lifecycleeffect.md
     - name: "SafeAreaEffect"
       href: effects/safeareaeffect.md
 - name: "Extensions"
@@ -88,6 +94,8 @@
       href: helpers/delegateweakeventmanager.md
     - name: "LocalizationResourceManager"
       href: helpers/localizationresourcemanager.md         
+    - name: "LocalizedString"
+      href: helpers/localizedstring.md 
     - name: "WeakEventManager<T>"
       href: helpers/weakeventmanagert.md
     - name: "WeakEventManagerExtensions"
@@ -98,6 +106,8 @@
       href: objectmodel/asynccommand.md
     - name: "AsyncValueCommand"
       href: objectmodel/asyncvaluecommand.md
+    - name: "CommandFactory"
+      href: objectmodel/commandfactory.md
 - name: "Markup"
   href: markup.md
 - name: "Views"
