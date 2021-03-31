@@ -67,7 +67,7 @@ The StringToListConverter is a converter that allows the users to retrieve conve
 | Property | Type | Description |
 | -- | -- | -- |
 | Separator | string | The string that delimits the substrings in this string. |
-| Separators | IList<string> | The strings that delimits the substrings in this string. |
+| Separators | IList\<string\> | The strings that delimits the substrings in this string. |
 | SplitOptions | StringSplitOptions | A bitwise combination of the enumeration values that specifies whether to trim substrings and include empty substrings. |
 
 ## Sample project
