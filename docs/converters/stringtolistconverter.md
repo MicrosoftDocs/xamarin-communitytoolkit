@@ -1,6 +1,6 @@
 ---
 title: "Xamarin Community Toolkit StringToListConverter"
-author: guoldev
+author: [guoldev](https://github.com/GUOLDEV)
 ms.author: joverslu
 description: "The StringToListConverter allows the users to retrieve convert a string value into a string array that contains the substrings in this string that are delimited by Separator value or Separators."
 ms.date: 01/04/2021
