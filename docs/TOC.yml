@@ -68,6 +68,8 @@
       href: converters/listisnulloremptyconverter.md
     - name: ListToStringConverter
       href: converters/listtostringconverter.md
+    - name: MathExpressionConverter
+      href: converters/mathexpressionconverter.md
     - name: MultiConverter
       href: converters/multiconverter.md
     - name: NotEqualConverter
