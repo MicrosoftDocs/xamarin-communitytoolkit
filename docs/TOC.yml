@@ -40,6 +40,8 @@
       href: converters/booltoobjectconverter.md
     - name: ByteArrayToImageSourceConverter
       href: converters/bytearraytoimagesourceconverter.md
+    - name: CompareConverter
+      href: converters/compareconverter.md
     - name: DateTimeOffsetConverter
       href: converters/datetimeoffsetconverter.md
     - name: DoubleToIntConverter
