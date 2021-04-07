@@ -46,3 +46,7 @@ The `LazyView` control allows you to delay the initialization of a `View`. You n
 [LazyView sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/develop/samples/XCT.Sample/Pages/Views/TabView/LazyTabPage.xaml)
 
 You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
+
+## Related video
+
+> [!Video https://channel9.msdn.com/Shows/XamarinShow/Xamarin-Community-Toolkit-Optimize-App-Loading-with-LazyView/player]
