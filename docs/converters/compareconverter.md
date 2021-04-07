@@ -45,8 +45,17 @@ The `CompareConverter` is a converter that converts an object of a type implemen
 |---------|---------|---------|
 | TrueObject | object | The object that will be returned when the binding value is `true`. |
 | FalseObject | object | The object that will be returned when the binding value is `false`. |
-| ComparisonOperator | CompareConverter.Operator | The comparison operator. |
+| ComparisonOperator | OperatorType | The comparison operator. |
 | ComparingValue | IComparable | The object that the bound `value` will be compared to. |
+
+## OperatorType
+The `OperatorType` enumeration defines the following members:
+- Greater
+- GreaterOrEqual
+- Equal
+- SmallerOrEqual
+- Smaller
+- NotEqual
 
 ## Sample
 
