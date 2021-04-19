@@ -66,3 +66,7 @@ You can see this class in action in the [Xamarin community toolkit sample app](h
 
 - [LocalizationResourceManager](../helpers/localizationresourcemanager.md)
 - [TranslateExtension](../extensions/translateextension.md)
+
+## Related video
+
+> [!Video https://channel9.msdn.com/Shows/XamarinShow/App-Localization-Xamarin-Community-Toolkit/player]
