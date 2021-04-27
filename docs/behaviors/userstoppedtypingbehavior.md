@@ -42,3 +42,7 @@ You can see this in action in the [Xamarin Community Toolkit Sample App](https:/
 ## API
 
 * [UserStoppedTypingBehavior source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Behaviors/UserStoppedTypingBehavior.shared.cs)
+
+## Related video
+
+> [!Video https://channel9.msdn.com/Shows/XamarinShow/User-Stopped-Typing-Behavior-Xamarin-Community-Toolkit/player]
