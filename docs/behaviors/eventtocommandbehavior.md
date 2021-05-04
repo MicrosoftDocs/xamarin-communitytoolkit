@@ -27,26 +27,6 @@ When using this behavior with selection or tap events exposed by `ListView` an a
 - [ItemSelectedEventArgsConverter](~/converters/itemselectedeventargsconverter.md)
 - [ItemTappedEventArgsConverter](~/converters/itemtappedeventargsconverter.md)
 
-```xml
-<ListView.Behaviors>
-    <behaviors:EventToCommandBehavior
-        EventName="ItemSelected"
-        Command="{Binding ItemSelectedCommand}"
-        EventArgsConverter="{StaticResource ItemSelectedEventArgsConverter}"
-    />
-</ListView.Behaviors>
-```
-
-```xml
-<ListView.Behaviors>
-    <behaviors:EventToCommandBehavior
-        EventName="ItemTapped"
-        Command="{Binding ItemTappedCommand}"
-        EventArgsConverter="{StaticResource ItemTappedEventArgsConverter}"
-     />
-</ListView.Behaviors>
-```
-
 ## Properties
 
 |Property  |Type  |Description  |
