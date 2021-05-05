@@ -22,7 +22,7 @@ await MyVisualElement.DisplayToastAsync(message, duration);
 ```	
 where `message` is your text, and `duration` is the timespan of toast (an optional parameter). Default duration = 3000 milliseconds;	
 
-![Toast1](https://vladislavantonyuk.sirv.com/vladislavantonyuk/articles/toast1.png)
+![Toast WPF](visualelementextension-images/toast1.png)
 
 2. With advanced settings you can customise Message options and Toast options:	
 ```csharp	
@@ -42,7 +42,7 @@ where `message` is your text, and `duration` is the timespan of toast (an option
     await this.DisplayToastAsync(options);	
 ```	
 
-![Toast2](https://vladislavantonyuk.sirv.com/vladislavantonyuk/articles/toast2.png)
+![Toast GTK](visualelementextension-images/toast2.png)
 
 ### Snackbar ###
 
@@ -58,7 +58,7 @@ where `message` is your text, `actionButtonText` is the text for the button, `ac
 
 The result is `Boolean`. `True` - if Snackbar is closed by the user. `False` - if Snackbar is closed by timeout.
 
-![Snackbar1](https://user-images.githubusercontent.com/33021114/100662125-245d4700-335d-11eb-9bd7-346a780e316b.png)
+![Snackbar iOS](visualelementextension-images/snackbar1.png)
 
 2. With advanced settings you have a full control for all `MessageOptions`, `SnackBarActionOptions` and `SnackBarOptions`:
 ```csharp	
@@ -106,7 +106,7 @@ The result is `Boolean`. `True` - if Snackbar is closed by the user. `False` - i
     var result = await this.DisplaySnackbarAsync(options);	
 ```
 
-![Snackbar2](https://user-images.githubusercontent.com/33021114/95628884-97e28680-0a87-11eb-80a6-06e490dbda04.png)
+![Snackbar UWP](visualelementextension-images/snackbar2.png)
 
 ## Details of implementation and limitation for different platforms ##
 
