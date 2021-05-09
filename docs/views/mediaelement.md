@@ -262,11 +262,28 @@ The property change notification for the `Position` bindable property fire at 20
             ShowsPlaybackControls="True"
             HorizontalOptions="Fill"
             SeekCompleted="OnSeekCompleted" />
-        <Slider Grid.Row="1" BindingContext="{x:Reference mediaElement}" Value="{Binding Position, Converter={StaticResource TimeSpanConverter}}" Maximum="{Binding Duration, Converter={StaticResource TimeSpanConverter}}"/>
+        <Slider Grid.Row="1" BindingContext="{x:Reference mediaElement}" Value="{Binding Position, Converter={StaticResource TimeSpanConverter}}" Maximum="{Binding Duration, Converter={StaticResource TimeSpanConverter}}">
+            <Slider.Triggers>
+                <DataTrigger TargetType="Slider"
+                     Binding="{Binding CurrentState}"
+                     Value="{x:Static MediaElementState.Buffering}">
+                    <Setter Property="IsEnabled" Value="False" />
+                </DataTrigger>
+            </Slider.Triggers>
+        </Slider>
         <Button Grid.Row="2" Text="Reset Source (Set Null)" Clicked="OnResetClicked" />
     </Grid>
 </pages:BasePage>
 ```
+
+In this example, the `Maximum` property of the `Slider` is data-bound to the `Duration` property of the `MediaElement` and the [`Value`](xref:Xamarin.Forms.Slider.Value) property of the [`Slider`](xref:Xamarin.Forms.Slider) is data-bound to the `Position` property of the `MediaElement`. Therefore, dragging the `Slider` results in the media playback position changing:
+
+[![Screenshot of a MediaElement with a position bar, on iOS and Android](mediaelement-images/custom-position-bar.png "MediaElement with a position bar")](mediaelement-images/custom-position-bar-large.png#lightbox "MediaElement with a position bar")
+
+In addition, a [`DataTrigger`](xref:Xamarin.Forms.DataTrigger) object is used to disable the `Slider` when the media is buffering. For more information about data triggers, see [Xamarin.Forms Triggers](/xamarin/xamarin-forms/app-fundamentals/triggers).
+
+> [!NOTE]
+> On Android, the [`Slider`](xref:Xamarin.Forms.Slider) only has 1000 discrete steps, regardless of the `Minimum` and `Maximum` settings. If the media length is greater than 1000 seconds, then two different `Position` values would correspond to the same `Value` of the `Slider`. This is why the code above checks that the new position and existing position are greater than one-hundredth of the overall duration.
 
 ## Understand MediaSource types
 
@@ -391,108 +408,6 @@ Pressing the **Pause** button results in playback pausing:
 [![Screenshot of a MediaElement with playback paused, on iOS and Android](mediaelement-images/custom-transport-paused.png "MediaElement with a paused video")](mediaelement-images/custom-transport-paused-large.png#lightbox "MediaElement with a paused video")
 
 Pressing the **Stop** button stops playback and returns the position of the media file to the beginning.
-
-## Implement a custom position bar
-
-The transport controls implemented by each platform include a position bar. This bar resembles a slider and shows the current location of the media within its total duration. In addition, you can manipulate the position bar to move forwards or backwards to a new position in the video.
-
-Implementing a custom position bar requires knowing the duration of the media, and the current playback position. This data is available in the `Duration` and `Position` properties.
-
-> [!IMPORTANT]
-> The `Position` must be polled to obtain accurate position data. For more information, see [Poll for Position data](#poll-for-position-data).
-
-A custom position bar can be implemented using a [`Slider`](xref:Xamarin.Forms.Slider), as shown in the following example:
-
-```csharp
-public class PositionSlider : Slider
-{
-    public static readonly BindableProperty DurationProperty =
-        BindableProperty.Create(nameof(Duration), typeof(TimeSpan), typeof(PositionSlider), new TimeSpan(1),
-                                propertyChanged: (bindable, oldValue, newValue) =>
-                                {
-                                    ((PositionSlider)bindable).SetTimeToEnd();
-                                    double seconds = ((TimeSpan)newValue).TotalSeconds;
-                                    ((Slider)bindable).Maximum = seconds <= 0 ? 1 : seconds;
-                                });
-
-    public TimeSpan Duration
-    {
-        get { return (TimeSpan)GetValue(DurationProperty); }
-        set { SetValue(DurationProperty, value); }
-    }
-
-    public static readonly BindableProperty PositionProperty =
-        BindableProperty.Create(nameof(Position), typeof(TimeSpan), typeof(PositionSlider), new TimeSpan(0),
-                                propertyChanged: (bindable, oldValue, newValue) => ((PositionSlider)bindable).SetTimeToEnd());
-
-    public TimeSpan Position
-    {
-        get { return (TimeSpan)GetValue(PositionProperty); }
-        set { SetValue(PositionProperty, value); }
-    }
-
-    static readonly BindablePropertyKey TimeToEndPropertyKey =
-        BindableProperty.CreateReadOnly(nameof(TimeToEnd), typeof(TimeSpan), typeof(PositionSlider), new TimeSpan());
-
-    public static readonly BindableProperty TimeToEndProperty = TimeToEndPropertyKey.BindableProperty;
-
-    public TimeSpan TimeToEnd
-    {
-        get { return (TimeSpan)GetValue(TimeToEndProperty); }
-        private set { SetValue(TimeToEndPropertyKey, value); }
-    }
-
-    public PositionSlider()
-    {
-        PropertyChanged += (sender, args) =>
-        {
-            if (args.PropertyName == "Value")
-            {
-                TimeSpan newPosition = TimeSpan.FromSeconds(Value);
-                if (Math.Abs(newPosition.TotalSeconds - Position.TotalSeconds) / Duration.TotalSeconds > 0.01)
-                {
-                    Position = newPosition;
-                }
-            }
-        };
-    }
-
-    void SetTimeToEnd()
-    {
-        TimeToEnd = Duration - Position;
-    }
-}
-```
-
-The `PositionSlider` class defines its own `Duration` and `Position` bindable properties, and a `TimeToEnd` bindable property. All three properties are of type `TimeSpan`. The property-changed handler for the `Duration` property sets the `Maximum` property of the [`Slider`](xref:Xamarin.Forms.Slider) to the `TotalSeconds` property of the `TimeSpan` value. The `TimeToEnd` property is calculated based on changes to the `Duration` and `Position` properties, and begins at the media's duration and decreases down to zero as playback proceeds.
-
-The `PositionSlider` is updated from the underlying [`Slider`](xref:Xamarin.Forms.Slider) when the `Slider` is moved to indicate that the media should be advanced or reversed to a new position. This is detected in the `PropertyChanged` handler in the `PositionSlider` constructor. The handler checks for a change in the `Value` property, and if it's different from the `Position` property, then the `Position` property is set from the `Value` property. For more information about using a [`Slider`](xref:Xamarin.Forms.Slider) see, [Xamarin.Forms Slider](/xamarin/xamarin-forms/user-interface/slider)
-
-> [!NOTE]
-> On Android, the [`Slider`](xref:Xamarin.Forms.Slider) only has 1000 discrete steps, regardless of the `Minimum` and `Maximum` settings. If the media length is greater than 1000 seconds, then two different `Position` values would correspond to the same `Value` of the `Slider`. This is why the code above checks that the new position and existing position are greater than one-hundredth of the overall duration.
-
-The following example shows the `PositionSlider` being consumed on a page:
-
-```xaml
-<controls:PositionSlider x:Name="positionSlider"
-                         BindingContext="{x:Reference mediaElement}"
-                         Duration="{Binding Duration}"
-                         ValueChanged="OnPositionSliderValueChanged">
-    <controls:PositionSlider.Triggers>
-        <DataTrigger TargetType="controls:PositionSlider"
-                     Binding="{Binding CurrentState}"
-                     Value="{x:Static MediaElementState.Buffering}">
-            <Setter Property="IsEnabled" Value="False" />
-        </DataTrigger>
-    </controls:PositionSlider.Triggers>
-</controls:PositionSlider>
-```
-
-In this example, the `Duration` property of the `PositionSlider` is data-bound to the `Duration` property of the `MediaElement`. When the [`Value`](xref:Xamarin.Forms.Slider.Value) property of the [`Slider`](xref:Xamarin.Forms.Slider) changes, the `ValueChanged` event fires and the `OnPositionSliderValueChanged` handler is executed. This handler sets the `MediaElement.Position` property to the value of the `PositionSlider.Position` property. Therefore, dragging the `Slider` results in the media playback position changing:
-
-[![Screenshot of a MediaElement with a custom position bar, on iOS and Android](mediaelement-images/custom-position-bar.png "MediaElement with a custom position bar")](mediaelement-images/custom-position-bar-large.png#lightbox "MediaElement with a custom position bar")
-
-In addition, a [`DataTrigger`](xref:Xamarin.Forms.DataTrigger) object is used to disable the `PositionSlider` when the media is buffering. For more information about data triggers, see [Xamarin.Forms Triggers](/xamarin/xamarin-forms/app-fundamentals/triggers).
 
 ## Implement a custom volume control
 
