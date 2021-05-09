@@ -34,8 +34,8 @@ ms.date: 10/21/2020
 - `Duration`, of type `TimeSpan?`, indicates the duration of the currently opened media. This is a read-only property whose default value is `null`.
 - `IsLooping`, of type `bool`, describes whether the currently loaded media source should resume playback from the start after reaching its end. The default value of this property is `false`.
 - `KeepScreenOn`, of type `bool`, determines whether the device screen should stay on during media playback. The default value of this property is `false`.
-- `Position`, of type `TimeSpan`, describes the current progress through the media's playback time. The default value of this property is `TimeSpan.Zero`.
-- `ShowsPlaybackControls`, of type `bool`, determines whether the platforms playback controls are displayed. The default value of this property is `false`. Note that on iOS the controls are only shown for a brief period after interacting with the screen. There is no way of keeping the controls visible at all times.
+- `Position`, of type `TimeSpan`, describes the current progress through the media's playback time. This property uses a `TwoWay` binding, and its default value is `TimeSpan.Zero`.
+- `ShowsPlaybackControls`, of type `bool`, determines whether the platforms playback controls are displayed. The default value of this property is `false`. Note that on iOS the controls are only shown for a brief period after interacting with the screen. There is no way of keeping the controls visible at all times. On WPF no system controls are supported so this property has no effect.
 - `Source`, of type `MediaSource`, indicates the source of the media loaded into the control.
 - `VideoHeight`, of type `int`, indicates the height of the control. This is a read-only property.
 - `VideoWidth`, of type `int`, indicates the width of the control. This is a read-only property.
@@ -65,7 +65,7 @@ A `MediaElement` can play remote media files using the HTTP and HTTPS URI scheme
 
 By default, the media that is defined by the `Source` property plays immediately after the media is opened. To suppress automatic media playback, set the `AutoPlay` property to `false`.
 
-Media playback controls are disabled by default, and are enabled by setting the `ShowsPlaybackControls` property to `true`. `MediaElement` will then use the platform playback controls.
+Media playback controls are disabled by default, and are enabled by setting the `ShowsPlaybackControls` property to `true`. `MediaElement` will then use the platform playback controls where available.
 
 ## Play local media
 
@@ -236,37 +236,37 @@ The `Aspect` property determines how video media will be scaled to fit the displ
 - `AspectFill` indicates that the video will be clipped so that it fills the display area, while preserving the aspect ratio.
 - `Fill` indicates that the video will be stretched to fill the display area.
 
-## Poll for Position data
+## Binding to the Position property
 
-The property change notification for the `Position` bindable property only fires at key moments such as playback beginning and ending, and pause occurring. Therefore, data binding to the `Position` property will not yield accurate position data. Instead, you must setup a timer and poll the property.
+The property change notification for the `Position` bindable property fire at 200ms intervals while playing. Therefore the property can be data-bound to a `Slider` control (or similar) to show progress through the media. The CommunityToolkit also provides a [`TimeSpanToDoubleConverter`](xref:Xamarin.CommunityToolkit.Converters.TimeSpanToDoubleConverter) which converts a [`TimeSpan`](xref:System.TimeSpan) into a floating point value representing total seconds elapsed. In this way you can set the Slider `Maximum` to the `Duration` of the media and the `Value` to the `Position` to provide accurate progress.
 
-A good place to do this is in the `OnAppearing` override for the page that requires the position data as media is played:
-
-```csharp
-bool polling = true;
-
-protected override void OnAppearing()
-{
-    base.OnAppearing();
-
-    Device.StartTimer(TimeSpan.FromMilliseconds(1000), () =>
-    {
-        Device.BeginInvokeOnMainThread(() =>
-        {
-            positionLabel.Text = mediaElement.Position.ToString("hh\\:mm\\:ss");
-        });
-        return polling;
-    });
-}
-
-protected override void OnDisappearing()
-{
-    base.OnDisappearing();
-    polling = false;
-}
+```xaml
+<?xml version="1.0" encoding="UTF-8"?>
+<pages:BasePage xmlns="http://xamarin.com/schemas/2014/forms"
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+                xmlns:pages="clr-namespace:Xamarin.CommunityToolkit.Sample.Pages"
+                x:Class="Xamarin.CommunityToolkit.Sample.Pages.Views.MediaElementPage">
+    <pages:BasePage.Resources>
+        <xct:TimeSpanToDoubleConverter x:Key="TimeSpanConverter"/>
+    </pages:BasePage.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <xct:MediaElement
+            x:Name="mediaElement"
+            Source="https://sec.ch9.ms/ch9/5d93/a1eab4bf-3288-4faf-81c4-294402a85d93/XamarinShow_mid.mp4"
+            ShowsPlaybackControls="True"
+            HorizontalOptions="Fill"
+            SeekCompleted="OnSeekCompleted" />
+        <Slider Grid.Row="1" BindingContext="{x:Reference mediaElement}" Value="{Binding Position, Converter={StaticResource TimeSpanConverter}}" Maximum="{Binding Duration, Converter={StaticResource TimeSpanConverter}}"/>
+        <Button Grid.Row="2" Text="Reset Source (Set Null)" Clicked="OnResetClicked" />
+    </Grid>
+</pages:BasePage>
 ```
-
-In this example, the `OnAppearing` override starts a timer that updates `positionLabel` with the `Position` value every second. The timer callback is invoked every second, until the callback returns `false`. When page navigation occurs the `OnDisappearing` override is executed, which stops the timer callback being invoked.
 
 ## Understand MediaSource types
 
