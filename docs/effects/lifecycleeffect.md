@@ -92,3 +92,7 @@ The `LifeCycleEffect` event handlers are shown below:
 [LifecycleEffect sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/develop/samples/XCT.Sample/Pages/Effects/LifeCycleEffectPage.xaml)
 
 You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
+
+## Related video
+
+> [!Video https://channel9.msdn.com/Shows/XamarinShow/Lifecycle-Events-Xamarin-Community-Toolkit/player]
