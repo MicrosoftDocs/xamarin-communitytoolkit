@@ -26,7 +26,7 @@ The TextCaseConverter is a converter that allows users to convert the casing of 
 
     <StackLayout>
 
-        <Label IsVisible="{Binding MyString, Converter={StaticResource TextCaseConverter}}" />
+        <Label Text="{Binding MyString, Converter={StaticResource TextCaseConverter}}" />
 
     </StackLayout>
 </ContentPage>
