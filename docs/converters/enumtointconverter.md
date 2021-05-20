@@ -10,6 +10,7 @@ ms.date: 05/20/2021
 
 The EnumToIntConverter is a converter that allows you to convert a standard `Enum` (extending `int`) to its underlying primitive `int` type.
 It is useful when binding a collection of values representing an enumeration type with default numbering to a control such as a [Picker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.picker).
+
 For localization purposes or due to other requirements, the enum values often need to be converted to a human-readable string.
 In this case, when the user selects a value, the resulting [SelectedIndex](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.picker.selectedindex) 
 can easily be converted to the underlying `enum` value without requiring additional work in the associated Viewmodel.
@@ -38,8 +39,8 @@ can easily be converted to the underlying `enum` value without requiring additio
 
 ## Sample
 
-[EnumToIntConverter sample page source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Converters/EnumToIntConverterPage.xaml)
-[EnumToIntConverter sample viewmodel source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/ViewModels/Converters/EnumToIntConverterViewModel.cs)
+- [EnumToIntConverter sample page source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Converters/EnumToIntConverterPage.xaml)
+- [EnumToIntConverter sample viewmodel source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/ViewModels/Converters/EnumToIntConverterViewModel.cs)
 
 You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
 
