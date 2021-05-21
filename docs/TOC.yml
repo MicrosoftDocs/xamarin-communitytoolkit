@@ -80,6 +80,8 @@
       href: converters/textcaseconverter.md
     - name: VariableMultiValueConverter
       href: converters/variablemultivalueconverter.md
+    - name: StringToListConverter
+      href: converters/stringtolistconverter.md
 - name: "Effects"
   items:
     - name: "LifecycleEffect"
