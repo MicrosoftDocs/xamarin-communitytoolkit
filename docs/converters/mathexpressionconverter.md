@@ -74,7 +74,7 @@ The `MathExpressionConverter`is a converter that allows users to calculate an ex
 | cosh | cosh(x) | [Math.Cosh](xref:System.Math.Cosh*) |
 | exp | exp(x) | [Math.Exp](xref:System.Math.Exp*) |
 | floor | floor(x) | [Math.Floor](xref:System.Math.Floor*) |
-| ieeeremainder | ieeeremainder(x, 16) | [Math.IEEERemainder](xref:System.Math.Ieeeremainder*) |
+| ieeeremainder | ieeeremainder(x, 16) | [Math.IEEERemainder](xref:System.Math.IEEERemainder*) |
 | log | log(x, 17) | [Math.Log](xref:System.Math.Log*) |
 | max | max(x, 18) | [Math.Max](xref:System.Math.Max*) |
 | min | min(x, 19) | [Math.Min](xref:System.Math.Min*) |
@@ -93,7 +93,7 @@ The `MathExpressionConverter`is a converter that allows users to calculate an ex
 | Constant | Equivalent |
 | -- | -- |
 | e | [Math.E](xref:System.Math.E) |
-| pi | [Math.PI](xref:System.Math.Pi) |
+| pi | [Math.PI](xref:System.Math.PI) |
 
 ## Sample
 
