@@ -46,6 +46,8 @@
       href: converters/doubletointconverter.md
     - name: EnumToBoolConverter
       href: converters/enumtoboolconverter.md
+    - name: EnumToIntConverter
+      href: converters/enumtointconverter.md
     - name: EqualConverter
       href: converters/equalconverter.md
     - name: IndexToArrayItemConverter
