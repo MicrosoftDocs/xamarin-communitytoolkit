@@ -63,34 +63,34 @@ The MathExpressionConverter is a converter that allows users to calculate an exp
 | / | x / 4 | — |
 | ^ | x ^ 5 | [Math.Pow](/dotnet/api/system.math.pow) |
 | abs | abs(x) | [Math.Abs](/dotnet/api/system.math.abs#System_Math_Abs_System_Double_) |
-| acos | acos(x) | [Math.Acos](https://docs.microsoft.com/dotnet/api/system.math.acos) |
-| asin | asin(x) | [Math.Asin](https://docs.microsoft.com/dotnet/api/system.math.asin) |
-| atan | atan(x) | [Math.Atan](https://docs.microsoft.com/dotnet/api/system.math.atan) |
-| atan2 | atan2(x, 10) | [Math.Atan2](https://docs.microsoft.com/dotnet/api/system.math.atan2) |
-| ceiling | ceiling(x) | [Math.Ceiling](https://docs.microsoft.com/dotnet/api/system.math.ceiling#System_Math_Ceiling_System_Double_) |
-| cos | cos(x) | [Math.Cos](https://docs.microsoft.com/dotnet/api/system.math.cos) |
-| cosh | cosh(x) | [Math.Cosh](https://docs.microsoft.com/dotnet/api/system.math.cosh) |
-| exp | exp(x) | [Math.Exp](https://docs.microsoft.com/dotnet/api/system.math.exp) |
-| floor | floor(x) | [Math.Floor](https://docs.microsoft.com/dotnet/api/system.math.floor#System_Math_Floor_System_Double_) |
-| ieeeremainder | ieeeremainder(x, 16) | [Math.IEEERemainder](https://docs.microsoft.com/dotnet/api/system.math.ieeeremainder) |
-| log | log(x, 17) | [Math.Log](https://docs.microsoft.com/dotnet/api/system.math.log#System_Math_Log_System_Double_System_Double_) |
-| max | max(x, 18) | [Math.Max](https://docs.microsoft.com/dotnet/api/system.math.max#System_Math_Max_System_Double_System_Double_) |
-| min | min(x, 19) | [Math.Min](https://docs.microsoft.com/dotnet/api/system.math.min#System_Math_Min_System_Double_System_Double_) |
-| pow | round(x, 2) | [Math.Pow](https://docs.microsoft.com/dotnet/api/system.math.pow) |
-| round | round(x, 1) | [Math.Round](https://docs.microsoft.com/dotnet/api/system.math.round#System_Math_Round_System_Double_System_Int32_) |
-| sign | sign(x) | [Math.Sign](https://docs.microsoft.com/dotnet/api/system.math.sign#System_Math_Sign_System_Double_) |
-| sin | sin(x) | [Math.Sin](https://docs.microsoft.com/dotnet/api/system.math.sin) |
-| sinh | sinh(x) | [Math.Sinh](https://docs.microsoft.com/dotnet/api/system.math.sinh) |
-| sqrt | sqrt(x) | [Math.Sqrt](https://docs.microsoft.com/dotnet/api/system.math.sqrt) |
-| tan | tan(x) | [Math.Tan](https://docs.microsoft.com/dotnet/api/system.math.tan) |
-| tanh | tanh(x) | [Math.Tanh](https://docs.microsoft.com/dotnet/api/system.math.tanh) |
-| truncate | truncate(x) | [Math.Truncate](https://docs.microsoft.com/dotnet/api/system.math.truncate#System_Math_Truncate_System_Double_) |
+| acos | acos(x) | [Math.Acos](/dotnet/api/system.math.acos) |
+| asin | asin(x) | [Math.Asin](/dotnet/api/system.math.asin) |
+| atan | atan(x) | [Math.Atan](/dotnet/api/system.math.atan) |
+| atan2 | atan2(x, 10) | [Math.Atan2](/dotnet/api/system.math.atan2) |
+| ceiling | ceiling(x) | [Math.Ceiling](/dotnet/api/system.math.ceiling#System_Math_Ceiling_System_Double_) |
+| cos | cos(x) | [Math.Cos](/dotnet/api/system.math.cos) |
+| cosh | cosh(x) | [Math.Cosh](/dotnet/api/system.math.cosh) |
+| exp | exp(x) | [Math.Exp](/dotnet/api/system.math.exp) |
+| floor | floor(x) | [Math.Floor](/dotnet/api/system.math.floor#System_Math_Floor_System_Double_) |
+| ieeeremainder | ieeeremainder(x, 16) | [Math.IEEERemainder](/dotnet/api/system.math.ieeeremainder) |
+| log | log(x, 17) | [Math.Log](/dotnet/api/system.math.log#System_Math_Log_System_Double_System_Double_) |
+| max | max(x, 18) | [Math.Max](/dotnet/api/system.math.max#System_Math_Max_System_Double_System_Double_) |
+| min | min(x, 19) | [Math.Min](/dotnet/api/system.math.min#System_Math_Min_System_Double_System_Double_) |
+| pow | round(x, 2) | [Math.Pow](/dotnet/api/system.math.pow) |
+| round | round(x, 1) | [Math.Round](/dotnet/api/system.math.round#System_Math_Round_System_Double_System_Int32_) |
+| sign | sign(x) | [Math.Sign](/dotnet/api/system.math.sign#System_Math_Sign_System_Double_) |
+| sin | sin(x) | [Math.Sin](/dotnet/api/system.math.sin) |
+| sinh | sinh(x) | [Math.Sinh](/dotnet/api/system.math.sinh) |
+| sqrt | sqrt(x) | [Math.Sqrt](/dotnet/api/system.math.sqrt) |
+| tan | tan(x) | [Math.Tan](/dotnet/api/system.math.tan) |
+| tanh | tanh(x) | [Math.Tanh](/dotnet/api/system.math.tanh) |
+| truncate | truncate(x) | [Math.Truncate](/dotnet/api/system.math.truncate#System_Math_Truncate_System_Double_) |
 
 ## Constants
 | Constant | Equivalent |
 | -- | -- |
-| e | [Math.E](https://docs.microsoft.com/dotnet/api/system.math.e) |
-| pi | [Math.PI](https://docs.microsoft.com/dotnet/api/system.math.pi) |
+| e | [Math.E](/dotnet/api/system.math.e) |
+| pi | [Math.PI](/dotnet/api/system.math.pi) |
 
 ## Sample
 
