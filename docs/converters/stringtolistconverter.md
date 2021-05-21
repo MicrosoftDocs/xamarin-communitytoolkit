@@ -2,18 +2,19 @@
 title: "Xamarin Community Toolkit StringToListConverter"
 author: guoldev
 ms.author: joverslu
-description: "The StringToListConverter allows the users to retrieve convert a string value into a string array that contains the substrings in this string that are delimited by Separator value or Separators."
+description: "The StringToListConverter allows the users to convert a string value into a string array that contains the substrings in the string that are delimited by one or more separators."
 ms.date: 01/04/2021
 ---
 
 # Xamarin Community Toolkit StringToListConverter
+
 ![Pre-release API](~/images/pre-release.png)
 
-The StringToListConverter is a converter that allows the users to retrieve convert a `string` value into a string array that contains the substrings in this string that are delimited by the `Separator` or `Separators` or `ConverterParameter`.
+The `StringToListConverter` is a converter that allows the users to convert a `string` value into a string array that contains the substrings in this string that are delimited by the `Separator`, `Separators`, or `ConverterParameter` property.
 
 ## Syntax
 
-```
+```xaml
 <?xml version="1.0" encoding="UTF-8" ?>
 <pages:BasePage
     x:Class="Xamarin.CommunityToolkit.Sample.Pages.Converters.StringToListConverterPage"
@@ -66,7 +67,7 @@ The StringToListConverter is a converter that allows the users to retrieve conve
 | Property | Type | Description |
 | -- | -- | -- |
 | Separator | string | The string that delimits the substrings in this string. |
-| Separators | IList\<string\> | The strings that delimits the substrings in this string. |
+| Separators | IList\<string\> | The strings that delimit the substrings in this string. |
 | SplitOptions | StringSplitOptions | A bitwise combination of the enumeration values that specifies whether to trim substrings and include empty substrings. |
 
 ## Sample project
