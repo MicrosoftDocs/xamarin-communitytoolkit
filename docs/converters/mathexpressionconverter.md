@@ -61,7 +61,7 @@ The MathExpressionConverter is a converter that allows users to calculate an exp
 | - | x - 2 | — |
 | * | x * -3 | — |
 | / | x / 4 | — |
-| ^ | x ^ 5 | [Math.Pow](https://docs.microsoft.com/dotnet/api/system.math.pow) |
+| ^ | x ^ 5 | [Math.Pow](xref:system.math.pow) |
 | abs | abs(x) | [Math.Abs](https://docs.microsoft.com/dotnet/api/system.math.abs#System_Math_Abs_System_Double_) |
 | acos | acos(x) | [Math.Acos](https://docs.microsoft.com/dotnet/api/system.math.acos) |
 | asin | asin(x) | [Math.Asin](https://docs.microsoft.com/dotnet/api/system.math.asin) |
