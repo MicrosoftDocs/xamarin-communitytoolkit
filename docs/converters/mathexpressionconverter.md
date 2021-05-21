@@ -9,14 +9,15 @@ ms.date: 04/01/2021
 # Xamarin Community Toolkit MathExpressionConverter
 ![Pre-release API](~/images/pre-release.png)
 
-The MathExpressionConverter is a converter that allows users to calculate an expression at runtime. All of binded arguments have notice: 
+The `MathExpressionConverter`is a converter that allows users to calculate an expression at runtime. All of the binded arguments have notice: 
+
 - **x** or **x0** — The first argument
 - **x1** — The second argument
 - ...
 - **xN-1** — The N argument
 
 > [!WARNING]
-> Don't use the negative operations, constants or variables like "-cos(30)", "-x" or "-pi". This will return the error. Use multiplication by -1 instead.
+> Avoid negative operations, constants or variables such as "-cos(30)", "-x" or "-pi", which will return an error. Instead, use multiplication by -1.
 
 ## Syntax
 
