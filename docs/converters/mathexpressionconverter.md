@@ -63,30 +63,30 @@ The `MathExpressionConverter`is a converter that allows users to calculate an ex
 | - | x - 2 | — |
 | * | x * -3 | — |
 | / | x / 4 | — |
-| ^ | x ^ 5 | [Math.Pow](xref:System.Math.Pow) |
-| abs | abs(x) | [Math.Abs](xref:System.Math.abs#System_Math_Abs_System_Double_) |
-| acos | acos(x) | [Math.Acos](xref:System.Math.Acos) |
-| asin | asin(x) | [Math.Asin](xref:System.Math.Asin) |
-| atan | atan(x) | [Math.Atan](xref:System.Math.Atan) |
-| atan2 | atan2(x, 10) | [Math.Atan2](xref:System.Math.Atan2) |
-| ceiling | ceiling(x) | [Math.Ceiling](xref:System.Math.Ceiling#System_Math_Ceiling_System_Double_) |
-| cos | cos(x) | [Math.Cos](xref:System.Math.Cos) |
-| cosh | cosh(x) | [Math.Cosh](xref:System.Math.Cosh) |
-| exp | exp(x) | [Math.Exp](xref:System.Math.Exp) |
-| floor | floor(x) | [Math.Floor](xref:System.Math.Floor#System_Math_Floor_System_Double_) |
-| ieeeremainder | ieeeremainder(x, 16) | [Math.IEEERemainder](xref:System.Math.ieeeremainder) |
-| log | log(x, 17) | [Math.Log](xref:System.Math.Log#System_Math_Log_System_Double_System_Double_) |
-| max | max(x, 18) | [Math.Max](xref:System.Math.Max#System_Math_Max_System_Double_System_Double_) |
-| min | min(x, 19) | [Math.Min](xref:System.Math.Min#System_Math_Min_System_Double_System_Double_) |
-| pow | round(x, 2) | [Math.Pow](xref:System.Math.Pow) |
-| round | round(x, 1) | [Math.Round](xref:System.Math.Round#System_Math_Round_System_Double_System_Int32_) |
-| sign | sign(x) | [Math.Sign](xref:System.Math.Sign#System_Math_Sign_System_Double_) |
-| sin | sin(x) | [Math.Sin](xref:System.Math.Sin) |
-| sinh | sinh(x) | [Math.Sinh](xref:System.Math.Sinh) |
-| sqrt | sqrt(x) | [Math.Sqrt](xref:System.Math.Sqrt) |
-| tan | tan(x) | [Math.Tan](xref:System.Math.Tan) |
-| tanh | tanh(x) | [Math.Tanh](xref:System.Math.Tanh) |
-| truncate | truncate(x) | [Math.Truncate](xref:System.Math.Truncate#System_Math_Truncate_System_Double_) |
+| ^ | x ^ 5 | [Math.Pow](xref:System.Math.Pow*) |
+| abs | abs(x) | [Math.Abs](xref:System.Math.Abs*) |
+| acos | acos(x) | [Math.Acos](xref:System.Math.Acos*) |
+| asin | asin(x) | [Math.Asin](xref:System.Math.Asin*) |
+| atan | atan(x) | [Math.Atan](xref:System.Math.Atan*) |
+| atan2 | atan2(x, 10) | [Math.Atan2](xref:System.Math.Atan2*) |
+| ceiling | ceiling(x) | [Math.Ceiling](xref:System.Math.Ceiling*) |
+| cos | cos(x) | [Math.Cos](xref:System.Math.Cos*) |
+| cosh | cosh(x) | [Math.Cosh](xref:System.Math.Cosh*) |
+| exp | exp(x) | [Math.Exp](xref:System.Math.Exp*) |
+| floor | floor(x) | [Math.Floor](xref:System.Math.Floor*) |
+| ieeeremainder | ieeeremainder(x, 16) | [Math.IEEERemainder](xref:System.Math.Ieeeremainder*) |
+| log | log(x, 17) | [Math.Log](xref:System.Math.Log*) |
+| max | max(x, 18) | [Math.Max](xref:System.Math.Max*) |
+| min | min(x, 19) | [Math.Min](xref:System.Math.Min*) |
+| pow | round(x, 2) | [Math.Pow](xref:System.Math.Pow*) |
+| round | round(x, 1) | [Math.Round](xref:System.Math.Round*) |
+| sign | sign(x) | [Math.Sign](xref:System.Math.Sign*) |
+| sin | sin(x) | [Math.Sin](xref:System.Math.Sin*) |
+| sinh | sinh(x) | [Math.Sinh](xref:System.Math.Sinh*) |
+| sqrt | sqrt(x) | [Math.Sqrt](xref:System.Math.Sqrt*) |
+| tan | tan(x) | [Math.Tan](xref:System.Math.Tan*) |
+| tanh | tanh(x) | [Math.Tanh](xref:System.Math.Tanh*) |
+| truncate | truncate(x) | [Math.Truncate](xref:System.Math.Truncate*) |
 
 ## Constants
 
