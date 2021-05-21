@@ -7,9 +7,10 @@ ms.date: 04/01/2021
 ---
 
 # Xamarin Community Toolkit MathExpressionConverter
+
 ![Pre-release API](~/images/pre-release.png)
 
-The `MathExpressionConverter`is a converter that allows users to calculate an expression at runtime. All of the binded arguments have notice: 
+The `MathExpressionConverter`is a converter that allows users to calculate an expression at runtime from supplied arguments:
 
 - **x** or **x0** — The first argument
 - **x1** — The second argument
@@ -34,12 +35,12 @@ The `MathExpressionConverter`is a converter that allows users to calculate an ex
     </ContentPage.Resources>
 
     <StackLayout>
-    
+
         <Frame
            x:Name="CalculatedFrame"
            HeightRequest="120"
            CornerRadius="{Binding Source={x:Reference CalculatedFrame}, Path=HeightRequest, Converter={StaticResource MathExpressionConverter}, ConverterParameter='x/2'}">
-    
+
         <Label TextColor="Black">
             <Label.Text>
                 <MultiBinding Converter="{StaticResource MultiMathExpressionConverter}"
@@ -50,7 +51,7 @@ The `MathExpressionConverter`is a converter that allows users to calculate an ex
                 </MultiBinding>
             </Label.Text>
         </Label>
-      
+
     </StackLayout>
 </ContentPage>
 ```
