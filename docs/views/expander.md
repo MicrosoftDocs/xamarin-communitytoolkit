@@ -24,18 +24,21 @@ The following screenshots show an `Expander` in its collapsed and expanded state
 
 The `Expander` control defines the following properties:
 
+- `AnimationEasing`, of type [`Easing`](xref:Xamarin.Forms.Easing), which represents the easing function to be applied to the `Expander` content when it's expanding/collapsing if ExpandAnimationEasing/CollapseAnimationEasing is not set.
+- `AnimationLength`, of type `uint`, which defines the duration of the animation when the `Expander` is expanding/collapsing. The default value of this property is 250ms.
 - `CollapseAnimationEasing`, of type [`Easing`](xref:Xamarin.Forms.Easing), which represents the easing function to be applied to the `Expander` content when it's collapsing.
-- `CollapseAnimationLength`, of type `uint`, which defines the duration of the animation when the `Expander` is collapsing. The default value of this property is 250ms.
+- `CollapseAnimationLength`, of type `uint`, which defines the duration of the animation when the `Expander` is collapsing. If this property is not set, then AnimationLength value will be applied.
 - `Command`, of type `ICommand`, which is executed when the `Expander` header is tapped.
 - `CommandParameter`, of type `object`, which is the parameter that's passed to the `Command`.
 - `Content`, of type [`View`](xref:Xamarin.Forms.View), which defines the content to be displayed when the `Expander` expands.
 - `ContentTemplate`, of type [`DataTemplate`](xref:Xamarin.Forms.DataTemplate), which is the template used to dynamically inflate the content of the `Expander`.
 - `ExpandAnimationEasing`, of type [`Easing`](xref:Xamarin.Forms.Easing), which represents the easing function to be applied to the `Expander` content during expansion.
-- `ExpandAnimationLength`, of type `uint`, which defines the duration of the animation when the `Expander` expands. The default value of this property is 250ms.
+- `ExpandAnimationLength`, of type `uint`, which defines the duration of the animation when the `Expander` expands. If this property is not set, then AnimationLength value will be applied.
 - `ForceUpdateSizeCommand`, of type `ICommand`, which defines the command that's executed when the size of the `Expander` is force updated. This property uses the `OneWayToSource` binding mode.
 - `Header`, of type [`View`](xref:Xamarin.Forms.View), which defines the header content.
 - `IsExpanded`, of type `bool`, which determines if the `Expander` is expanded . This property uses the `TwoWay` binding mode, and has a default value of `false`.
 - `State`, of type `ExpandState`, which represents the state of the `Expander`. This property uses the `OneWayToSource` binding mode.
+- `TouchCaptureView`, of type [`View`](xref:Xamarin.Forms.View), which holds the view responsible for triggering expansion/collapsing animation by tap.
 
 These properties are backed by [`BindableProperty`](xref:Xamarin.Forms.BindableProperty) objects, which means that they can be targets of data bindings, and styled.
 
