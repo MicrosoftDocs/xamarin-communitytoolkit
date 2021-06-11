@@ -22,12 +22,11 @@ The CameraView control enables the user to display a preview of the camera outpu
 
         <xct:CameraView
                 x:Name="cameraView"
-                CaptureOptions="Video"
+                CaptureMode="Video"
                 FlashMode="On"
                 HorizontalOptions="FillAndExpand"
                 MediaCaptured="CameraView_MediaCaptured"
                 OnAvailable="CameraView_OnAvailable"
-                SavePhotoToFile="True"
                 VerticalOptions="FillAndExpand" />
 
     </StackLayout>
