@@ -1,16 +1,14 @@
 ---
-title: "Xamarin Community Toolkit VisualElementExtension"
+title: "Xamarin Community Toolkit Toast/Snackbar"
 author: VladislavAntonyuk
 ms.author: joverslu
-description: "The VisualElementExtension allows users to an snackbar or toast anchored to any visual element."
+description: "The Toast/Snackbar allows users to display small notification anchored to any visual element."
 ms.date: 10/09/2020
 ---
 
-# Xamarin Community Toolkit VisualElementExtension
+# Xamarin Community Toolkit Toast/Snackbar
 
-The `VisualElementExtension` is an extension that can be used to display an snackbar or toast anchored to any visual element.
-
-### Toast ###
+## Toast ##
 
 A toast provides simple feedback about an operation in a small popup.
 
@@ -22,9 +20,9 @@ await MyVisualElement.DisplayToastAsync(message, duration);
 ```	
 where `message` is your text, and `duration` is the timespan of toast (an optional parameter). Default duration = 3000 milliseconds;	
 
-![Toast WPF](visualelementextension-images/toast1.png)
+![Toast WPF](toast-snackbar-images/toast1.png)
 
-2. With advanced settings you can customise Message options and Toast options:	
+1. With advanced settings you can customise Message options and Toast options:	
 ```csharp	
     var messageOptions = new MessageOptions	
     {	
@@ -42,9 +40,9 @@ where `message` is your text, and `duration` is the timespan of toast (an option
     await this.DisplayToastAsync(options);	
 ```	
 
-![Toast GTK](visualelementextension-images/toast2.png)
+![Toast GTK](toast-snackbar-images/toast2.png)
 
-### Snackbar ###
+## Snackbar ##
 
 Snackbars inform users of a process that an app has performed or will perform. They appear temporarily, towards the bottom of the screen
 
@@ -58,9 +56,9 @@ where `message` is your text, `actionButtonText` is the text for the button, `ac
 
 The result is `Boolean`. `True` - if Snackbar is closed by the user. `False` - if Snackbar is closed by timeout.
 
-![Snackbar iOS](visualelementextension-images/snackbar1.png)
+![Snackbar iOS](toast-snackbar-images/snackbar1.png)
 
-2. With advanced settings you have a full control for all `MessageOptions`, `SnackBarActionOptions` and `SnackBarOptions`:
+1. With advanced settings you have a full control for all `MessageOptions`, `SnackBarActionOptions` and `SnackBarOptions`:
 ```csharp	
     var messageOptions = new MessageOptions	
     {	
@@ -106,7 +104,7 @@ The result is `Boolean`. `True` - if Snackbar is closed by the user. `False` - i
     var result = await this.DisplaySnackbarAsync(options);	
 ```
 
-![Snackbar UWP](visualelementextension-images/snackbar2.png)
+![Snackbar UWP](toast-snackbar-images/snackbar2.png)
 
 ## Details of implementation and limitation for different platforms ##
 
@@ -114,7 +112,7 @@ The result is `Boolean`. `True` - if Snackbar is closed by the user. `False` - i
 Both Toast and Snackbar work on all platforms: Android, iOS, macOS, UWP, WPF, GTK, Tizen.
 
 ### II ###
-Both Toast and Snackbar by default uses native colors and automatically change them depends on the system theme.
+Both Toast and Snackbar by default use native colors and automatically change them depends on the system theme.
 
 ### III ###
 "Native" Toast and Snackbar available only on Android and created by Google.
@@ -128,4 +126,5 @@ Android uses snackbar for both `DisplayToastAsync` and `DisplaySnackbarAsync`. T
 
 ## API
 
-* [VisualElementExtension source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Extensions/VisualElementExtension.shared.cs)
+* [Toast/Snackbar Source code](https://github.com/xamarin/XamarinCommunityToolkit/tree/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Views/Snackbar)
+* [VisualElementExtension Source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Extensions/VisualElement/VisualElementExtension.shared.cs)

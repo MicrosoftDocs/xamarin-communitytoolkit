@@ -134,6 +134,8 @@
       href: views/statelayout.md
     - name: "TabView"
       href: views/tabview.md
+    - name: "Toast/SnackBar"
+      href: views/toast-snackbar.md
     - name: "UniformGrid"
       href: views/uniformgrid.md
 - name: "Troubleshooting"
