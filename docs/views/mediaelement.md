@@ -405,7 +405,7 @@ The **Play** button can be pressed, once it becomes enabled, to begin playback:
 
 Pressing the **Pause** button results in playback pausing:
 
-[![Screenshot of a MediaElement with playback paused, on iOS and Android](mediaelement-images/custom-transport-paused.png "MediaElement with a paused video."](mediaelement-images/custom-transport-paused-large.png#lightbox "MediaElement with a paused video")
+[![Screenshot of a MediaElement with playback paused, on iOS and Android.](mediaelement-images/custom-transport-paused.png](mediaelement-images/custom-transport-paused-large.png#lightbox)
 
 Pressing the **Stop** button stops playback and returns the position of the media file to the beginning.
 
