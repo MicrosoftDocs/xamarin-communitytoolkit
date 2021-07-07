@@ -12,7 +12,7 @@ The `UniformGrid` is like the [`Grid`](xref:Xamarin.Forms.Grid), with the possib
 
 Use the `UniformGrid` when you need the `Grid` behavior without the need to specify different sizes for the rows and columns.
 
-[![Screenshot of UniformGrid](uniformgrid-images/uniformgrid-example.png "UniformGrid in an app")](uniformgrid-images/uniformgrid-example-large.png#lightbox "UniformGrid in an app")
+[![Screenshot of UniformGrid.](uniformgrid-images/uniformgrid-example.png](uniformgrid-images/uniformgrid-example-large.png#lightbox)
 
 ## Syntax
 

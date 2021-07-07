@@ -8,7 +8,7 @@ ms.date: 10/21/2020
 
 # Xamarin Community Toolkit MediaElement
 
-[![Download Sample](~/images/download.png) Download the sample](/samples/xamarin/xamarin-forms-samples/userinterface-mediaelementdemos/)
+[![Download Sample.](~/images/download.png) Download the sample](/samples/xamarin/xamarin-forms-samples/userinterface-mediaelementdemos/)
 
 `MediaElement` is a view for playing video and audio. Media that's supported by the underlying platform can be played from the following sources:
 
@@ -19,7 +19,7 @@ ms.date: 10/21/2020
 
 `MediaElement` can use the platform playback controls, which are referred to as transport controls. However, they are disabled by default and can be replaced with your own transport controls. The following screenshots show `MediaElement` playing a video with the platform transport controls:
 
-[![Screenshot of a MediaElement playing a video, on iOS and Android](mediaelement-images/playback-controls.png "MediaElement playing a video")](mediaelement-images/playback-controls-large.png#lightbox "MediaElement playing a video")
+[![Screenshot of a MediaElement playing a video, on iOS and Android.](mediaelement-images/playback-controls.png](mediaelement-images/playback-controls-large.png#lightbox)
 
 > [!NOTE]
 > `MediaElement` is available on iOS, Android, the Universal Windows Platform (UWP), macOS, Windows Presentation Foundation, and Tizen.
@@ -278,7 +278,7 @@ The property change notification for the `Position` bindable property fire at 20
 
 In this example, the `Maximum` property of the `Slider` is data-bound to the `Duration` property of the `MediaElement` and the [`Value`](xref:Xamarin.Forms.Slider.Value) property of the [`Slider`](xref:Xamarin.Forms.Slider) is data-bound to the `Position` property of the `MediaElement`. Therefore, dragging the `Slider` results in the media playback position changing:
 
-[![Screenshot of a MediaElement with a position bar, on iOS and Android](mediaelement-images/custom-position-bar.png "MediaElement with a position bar")](mediaelement-images/custom-position-bar-large.png#lightbox "MediaElement with a position bar")
+[![Screenshot of a MediaElement with a position bar, on iOS and Android.](mediaelement-images/custom-position-bar.png](mediaelement-images/custom-position-bar-large.png#lightbox)
 
 In addition, a [`DataTrigger`](xref:Xamarin.Forms.DataTrigger) object is used to disable the `Slider` when the media is buffering. For more information about data triggers, see [Xamarin.Forms Triggers](/xamarin/xamarin-forms/app-fundamentals/triggers).
 
@@ -401,11 +401,11 @@ void OnStopButtonClicked(object sender, EventArgs args)
 
 The **Play** button can be pressed, once it becomes enabled, to begin playback:
 
-[![Screenshot of a MediaElement with custom transport controls, on iOS and Android](mediaelement-images/custom-transport-playback.png "MediaElement playing a video")](mediaelement-images/custom-transport-playback-large.png#lightbox "MediaElement playing a video")
+[![Screenshot of a MediaElement with custom transport controls, on iOS and Android.](mediaelement-images/custom-transport-playback.png](mediaelement-images/custom-transport-playback-large.png#lightbox)
 
 Pressing the **Pause** button results in playback pausing:
 
-[![Screenshot of a MediaElement with playback paused, on iOS and Android](mediaelement-images/custom-transport-paused.png "MediaElement with a paused video")](mediaelement-images/custom-transport-paused-large.png#lightbox "MediaElement with a paused video")
+[![Screenshot of a MediaElement with playback paused, on iOS and Android.](mediaelement-images/custom-transport-paused.png](mediaelement-images/custom-transport-paused-large.png#lightbox)
 
 Pressing the **Stop** button stops playback and returns the position of the media file to the beginning.
 
