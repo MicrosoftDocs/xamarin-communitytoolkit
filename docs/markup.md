@@ -8,7 +8,7 @@ ms.date: 12/07/2020
 
 # Xamarin Community Toolkit C# Markup
 
-[![Download Sample](~/images/download.png) Download Xamarin.CommunityToolkit.MarkupSample](https://github.com/xamarin/XamarinCommunityToolkit)
+[![Download Sample.](~/images/download.png) Download Xamarin.CommunityToolkit.MarkupSample](https://github.com/xamarin/XamarinCommunityToolkit)
 
 C# Markup is a set of fluent helper methods and classes to simplify the process of building declarative Xamarin.Forms user interfaces in C#. The fluent API provided by C# Markup is available in the `Xamarin.CommunityToolkit.Markup` namespace.
 

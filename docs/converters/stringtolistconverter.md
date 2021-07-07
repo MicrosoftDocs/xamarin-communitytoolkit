@@ -8,7 +8,7 @@ ms.date: 01/04/2021
 
 # Xamarin Community Toolkit StringToListConverter
 
-![Pre-release API](~/images/pre-release.png)
+![Pre-release API.](~/images/pre-release.png)
 
 The `StringToListConverter` is a converter that allows the users to convert a `string` value into a string array that contains the substrings in this string that are delimited by the `Separator`, `Separators`, or `ConverterParameter` property.
 

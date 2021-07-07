@@ -10,7 +10,7 @@ ms.date: 12/08/2020
 
 The Shield is a type of badge that has two colored sections that contain text:
 
-![Shields example](shield-images/example-shields.png)
+![Shields example.](shield-images/example-shields.png)
 
 ## Syntax
 
