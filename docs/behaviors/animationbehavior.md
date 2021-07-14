@@ -44,6 +44,7 @@ These can all be hooked up to be triggered by an event by attaching this behavio
 |Property  |Type  |Description  |
 |---------|---------|---------|
 | AnimationType | AnimationBase | Provides an animation definition for the behavior to execute. |
+| AnimateCommand | [`ICommand`](xref:System.Windows.Input.ICommand) | Provides a mechanism to trigger the animation by executing a command. This property uses the `OneWayToSource` binding mode. |
 
 ## Sample
 
