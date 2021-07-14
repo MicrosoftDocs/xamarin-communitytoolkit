@@ -82,6 +82,8 @@
       href: converters/variablemultivalueconverter.md
     - name: StringToListConverter
       href: converters/stringtolistconverter.md
+    - name: IsInRangeConverter
+      href: converters/isinrangeconverter.md
 - name: "Effects"
   items:
     - name: "LifecycleEffect"
