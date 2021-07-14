@@ -8,8 +8,8 @@ ms.date: 05/04/2021
 
 # Xamarin Community Toolkit CompareConverter
 
-The `CompareConverter` is a converter that converts an object of a type implementing `IComparable`, and returns the comparaison
-`[value] [ComparisonOperator] [ComparingValue]` result (boolean) if no objects were specified (`TrueObject`, `FalseObject`), otherwise it returns the respective object assigned.
+The `CompareConverter` is a converter that converts an object of a type implementing `IComparable`, and returns the comparison
+`[value] [ComparisonOperator] [ComparingValue]` result as a boolean if no objects were specified through the `TrueObject` and/or `FalseObject` properties. If values are assigned to the `TrueObject` and/or `FalseObject` properties the `CompareConverter` returns the respective object assigned.
 
 ## Syntax
 
@@ -60,7 +60,7 @@ The `OperatorType` enumeration defines the following members:
 ## Sample
 
 > [!NOTE]
-You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
+You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Converters/CompareConverterPage.xaml).
 
 ## API
 
