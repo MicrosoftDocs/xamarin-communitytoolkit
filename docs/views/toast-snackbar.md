@@ -28,13 +28,15 @@ where `message` is your text, and `duration` is the timespan of toast (an option
     {	
         Foreground = Color.Black,	
         Font = Font.SystemFontOfSize(16),
-        Message = "My text"	
+        Message = "My text",
+        Padding = new Thickness(10, 10, 10, 10),
     };	
     var options = new ToastOptions	
     {	
         MessageOptions = messageOptions,	
         Duration = TimeSpan.FromMilliseconds(3000),	
-        BackgroundColor = Color.Default,	
+        BackgroundColor = Color.Default,
+        CornerRadius = new Thickness(10, 10, 10, 10),
         IsRtl = false
     };	
     await this.DisplayToastAsync(options);	
@@ -64,6 +66,7 @@ The result is `Boolean`. `True` - if Snackbar is closed by the user. `False` - i
     {	
         Foreground = Color.Black,	
         Font = Font.SystemFontOfSize(16),
+        Padding = new Thickness(10, 10, 10, 10),
         Message = "My text"	
     };	
     var actionOptions = new List<SnackBarActionOptions>	
@@ -73,6 +76,7 @@ The result is `Boolean`. `True` - if Snackbar is closed by the user. `False` - i
             ForegroundColor = Color.Black,	
             BackgroundColor = Color.White,	
             FontFamily = Font.SystemFontOfSize(14),	
+            Padding = new Thickness(10, 10, 10, 10),
             Text = "Action 1",	
             Action = () => // null by default	
             {	
@@ -85,6 +89,7 @@ The result is `Boolean`. `True` - if Snackbar is closed by the user. `False` - i
             ForegroundColor = Color.Black,	
             BackgroundColor = Color.White,	
             FontFamily = Font.SystemFontOfSize(16),
+            Padding = new Thickness(0, 0, 0, 0),
             Text = "Action 2",	
             Action = () => // null by default	
             {	
@@ -97,7 +102,8 @@ The result is `Boolean`. `True` - if Snackbar is closed by the user. `False` - i
     {	
         MessageOptions = messageOptions,	
         Duration = TimeSpan.FromMilliseconds(3000),
-        BackgroundColor = Color.Default,	
+        BackgroundColor = Color.Default,	        
+        CornerRadius = new Thickness(10, 10, 10, 10),
         IsRtl = false,	
         Actions = actionOptions	
     };	
