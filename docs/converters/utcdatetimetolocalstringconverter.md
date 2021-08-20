@@ -3,10 +3,12 @@ title: "Xamarin Community Toolkit UtcDateTimeToLocalStringConverter"
 author: leojharris
 ms.author: joverslu
 description: The UtcDateTimeToLocalStringConverter allows users to convert an incoming DateTime or DateTimeOffset value to a local string, using the provided datetime format.
-ms.date: 20/08/2021
+ms.date: 08/20/2021
 ---
 
 # Xamarin Community Toolkit UtcDateTimeToLocalStringConverter
+
+![Pre-release API](~/images/pre-release.png)
 
 The UtcDateTimeToLocalStringConverter is a converter that allows users to convert an incoming `DateTime` or `DateTimeOffset` value to a local `string`. An optional date/time pattern can be provided, otherwise the general date/time pattern (short time) will be used.
 
