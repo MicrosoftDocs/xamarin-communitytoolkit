@@ -32,7 +32,7 @@ async Task ExecuteCommandAsync()
     // ...
 }
 
-async Task ExecuteCommandAsync(string commandParameter)
+async Task ExecuteCommandAsync(int commandParameter)
 {
     // ...
 }
