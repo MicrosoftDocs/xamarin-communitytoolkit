@@ -95,7 +95,7 @@ The following properties are available on the `TabViewItem` object:
 | BadgeBackgroundColorSelected | [`Color`](xref:Xamarin.Forms.Color) | The badge color used in the selected tab.   |
 | BadgeBorderColor | [`Color`](xref:Xamarin.Forms.Color) | The badge border color used in the tab.   |
 | BadgeBorderColorSelected | [`Color`](xref:Xamarin.Forms.Color) | The badge border color used in the selected tab.   |
-| BadgeText | bool | The badge text used in the tab.  |
+| BadgeText | string | The badge text used in the tab.  |
 | BadgeTextColor | [`Color`](xref:Xamarin.Forms.Color) | The badge text color used in the tab.   |
 | BadgeTextColorSelected | [`Color`](xref:Xamarin.Forms.Color) | The badge text color used in the selected tab.   |
 | Content | [`View`](xref:Xamarin.Forms.View) | The content of the tab. Anything can be used as content.   |
