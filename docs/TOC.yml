@@ -86,6 +86,8 @@
       href: converters/stringtolistconverter.md
     - name: IsInRangeConverter
       href: converters/isinrangeconverter.md
+    - name: UtcDateTimeToLocalStringConverter
+      href: converters/utcdatetimetolocalstringconverter.md
 - name: "Effects"
   items:
     - name: "LifecycleEffect"
