@@ -1,9 +1,9 @@
 ---
 title: "Xamarin Community Toolkit AnimationTypes"
 author: bijington
-ms.author: 
+ms.author: joverslu
 description: "The AnimationType allows the user to perform an animation."
-ms.date: 28/10/2021
+ms.date: 10/28/2021
 ---
 
 # Xamarin Community Toolkit AnimationTypes
