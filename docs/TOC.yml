@@ -6,6 +6,8 @@
       href: get-started.md
 - name: "Behaviors"
   items:
+    - name: AnimationBehavior
+      href: behaviors/animationbehavior.md
     - name: CharactersValidationBehavior
       href: behaviors/charactersvalidationbehavior.md
     - name: EmailValidationBehavior
@@ -58,6 +60,8 @@
       href: converters/inttoboolconverter.md
     - name: InvertedBoolConverter
       href: converters/invertedboolconverter.md
+    - name: IsInRangeConverter
+      href: converters/isinrangeconverter.md
     - name: IsNotNullOrEmptyConverter
       href: converters/isnotnulloremptyconverter.md
     - name: IsNullOrEmptyConverter
@@ -78,14 +82,12 @@
       href: converters/multiconverter.md
     - name: NotEqualConverter
       href: converters/notequalconverter.md
+    - name: StringToListConverter
+      href: converters/stringtolistconverter.md
     - name: TextCaseConverter
       href: converters/textcaseconverter.md
     - name: VariableMultiValueConverter
       href: converters/variablemultivalueconverter.md
-    - name: StringToListConverter
-      href: converters/stringtolistconverter.md
-    - name: IsInRangeConverter
-      href: converters/isinrangeconverter.md
 - name: "Effects"
   items:
     - name: "LifecycleEffect"
