@@ -138,6 +138,8 @@
       href: views/lazyview.md
     - name: "MediaElement"
       href: views/mediaelement.md
+    - name: "Popup"
+      href: views/popup.md
     - name: "RangeSlider"
       href: views/rangeslider.md
     - name: "Shield"
