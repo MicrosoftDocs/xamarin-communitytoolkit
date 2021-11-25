@@ -6,7 +6,7 @@ description: The Popup
 ms.date: 11/23/2021
 ---
 
-# Title
+# Xamarin Community Toolkit Popup
 
 The `Popup` control allows developers to create and display popups within their applications. The `Popup` can be extended to return data to the invocation code. There are 2 main classes for a developer to use based on what they wish to achieve:
 
@@ -15,7 +15,7 @@ The `Popup` control allows developers to create and display popups within their 
 
 ## Syntax
 
-You can use Popups just like you do a `ContentView` or `ContentPage` below are some basic examples of using a popup in XAML and C#.
+A Popup can be used just like a `ContentView` or `ContentPage` is used, below are some basic examples of using a popup in XAML and C#.
 
 ### Creating a simple `Popup`
 
@@ -37,6 +37,8 @@ You can use Popups just like you do a `ContentView` or `ContentPage` below are s
 #### C#
 
 ```csharp
+using Xamarin.CommunityToolkit.UI.Views;
+
 var popup = new Popup
 {
     Content = new StackLayout
@@ -54,9 +56,11 @@ var popup = new Popup
 
 ### Showing the Popup
 
-With the Popup defined you will display it by using the `INavigation` extension methods. At the most basic level you can access this on any `ContentPage` in Xamarin.Forms via the following code:
+With the Popup defined it can be displayed by using the `INavigation` extension methods also provided by the toolkit located under the namespace `Xamarin.CommunityToolkit.Extensions`. At the most basic level you can access this on any `ContentPage` in Xamarin.Forms via the following code:
 
 ```csharp
+using Xamarin.CommunityToolkit.Extensions;
+
 App.Current.MainPage.Navigation.ShowPopup(popup);
 ```
 
@@ -140,10 +144,6 @@ To take the example above a step further we can also await for a result to be re
 var result = await App.Current.MainPage.Navigation.ShowPopupAsync(popup);
 Console.WriteLine(result);
 ```
-
-## Sample output
-
-<!-- Image/Text can show the output of the control/helper -->
 
 ## Properties
 
