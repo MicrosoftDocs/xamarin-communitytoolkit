@@ -15,7 +15,7 @@ The BoolToObjectConverter is a converter that allows users to convert a `bool` v
 ```xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:xct="clr-namespace:Xamarin.CommunityToolkit.Converters;assembly=Xamarin.CommunityToolkit"
              x:Class="MyLittleApp.MainPage">
 
     <ContentPage.Resources>
