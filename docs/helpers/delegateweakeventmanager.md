@@ -4,6 +4,8 @@ author: brminnick
 ms.author: bramin
 description: "A Delegate event implementation that enables the garbage collector to collect an object without needing to unsubscribe event handlers."
 ms.date: 11/20/2020
+ms.custom: team=cloud_advocates
+ms.contributors: bramin-03042021
 ---
 
 # Xamarin Community Toolkit DelegateWeakEventManager
