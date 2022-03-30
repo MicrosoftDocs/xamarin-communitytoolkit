@@ -4,6 +4,8 @@ author: brminnick
 ms.author: bramin
 description: "Extension methods for Xamarin.Forms.WeakEventManager."
 ms.date: 11/20/2020
+ms.custom: team=cloud_advocates
+ms.contributors: bramin-01142021
 ---
 
 # Xamarin Community Toolkit WeakEventManagerExtensions

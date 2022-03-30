@@ -4,6 +4,8 @@ author: brminnick
 ms.author: bramin
 description: "Enables the Task type to safely be used asynchronously with an ICommand."
 ms.date: 11/20/2020
+ms.custom: team=cloud_advocates
+ms.contributors: bramin-03042021
 ---
 
 # Xamarin Community Toolkit AsyncCommand
