@@ -98,7 +98,7 @@ We can further enhance a Popup to return a result. This example involves adding 
     <StackLayout>
         <Label Text="Hello Simple Popup" />
         <Button Text="Dismiss"
-                Clicked="Button_Clicked">
+                Clicked="Button_Clicked" />
     </StackLayout>
     
 </xct:Popup>
