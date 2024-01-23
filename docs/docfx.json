@@ -42,13 +42,13 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "ms.subservice": "xamarin-community-toolkit",
+      "ms.service": "xamarin",
       "uhfHeaderId":"MSDocsHeader-Xamarin",
       "breadcrumb_path": "/xamarin/community-toolkit/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "audience": "developer",
       "ms.topic": "conceptual",
-      "ms.technology": "xamarin-community-toolkit",
-      "ms.prod": "xamarin",
       "searchScope": ["Xamarin"]
     },
     "fileMetadata": {},
