@@ -1,8 +1,8 @@
 ---
 title: "Xamarin Community Toolkit Documentation"
 description: "The Xamarin Community Toolkit is a collection of reusable elements for mobile development with Xamarin.Forms, including animations, behaviors, converters, effects, and helpers."
-ms.prod: xamarin
-ms.technology: xamarin-forms
+ms.service: xamarin
+ms.subservice: xamarin-forms
 author: davidbritch
 ms.author: dabritch
 ms.date: 07/08/2020
