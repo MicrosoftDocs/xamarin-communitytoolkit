@@ -54,13 +54,10 @@ The EnumToBoolConverter is a converter that allows users to convert a `Enum` val
 
 ## Sample
 
-> [!NOTE]
-> Currently there's no sample available for this feature yet. Want to add one? We are open to [community contributions](https://github.com/xamarin/XamarinCommunityToolkit).
+[EnumToBoolConverter sample page source](https://github.com/CommunityToolkit/Maui/blob/main/samples/CommunityToolkit.Maui.Sample/Pages/Converters/EnumToBoolConverterPage.xaml)
 
-<!-- [IndexToArrayItemConverter sample page Source](https://github.com/xamarin/XamarinCommunityToolkit)
-
-You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit). -->
+You can see this in action in the [Xamarin Community Toolkit Sample App](https://github.com/xamarin/XamarinCommunityToolkit).
 
 ## API
 
-* [IndexToArrayItemConverter source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Converters/EnumToBoolConverter.shared.cs)
+* [EnumToBoolConverter source code](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/src/CommunityToolkit/Xamarin.CommunityToolkit/Converters/EnumToBoolConverter.shared.cs)
