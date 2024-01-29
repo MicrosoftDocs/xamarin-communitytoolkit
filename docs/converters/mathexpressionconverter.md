@@ -96,6 +96,12 @@ The `MathExpressionConverter`is a converter that allows users to calculate an ex
 | e | [Math.E](xref:System.Math.E) |
 | pi | [Math.PI](xref:System.Math.PI) |
 
+## Properties
+
+|Property  |Type  |Description  |
+|---------|---------|---------|
+| Expression | string | The expression to calculate. |
+
 ## Sample
 
 [MathExpressionConverter sample page Source](https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Converters/MathExpressionConverterPage.xaml)
