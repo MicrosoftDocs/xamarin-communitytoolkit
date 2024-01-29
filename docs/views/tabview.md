@@ -86,6 +86,7 @@ The following properties are available on the `TabView` object:
 | TabStripBackgroundView | [`View`](xref:Xamarin.Forms.View) | The `View` representing the TabStrip background. This can't be used with `TabStripBackgroundColor`. |
 | TabStripHeight | double | The TabStrip height.  |
 | TabViewItemDataTemplate |  [`DataTemplate`](xref:Xamarin.Forms.DataTemplate) | The template the TabView uses to generate tab items' header. |
+| TabViewItemGridLength | [`LayoutOptions`](xref:Xamarin.Forms.LayoutOptions) | The grid length the tab strip uses when sizing TabViewItems. Default is GridLength.Star for a uniform TabViewItem width
 
 The following properties are available on the `TabViewItem` object:
 
