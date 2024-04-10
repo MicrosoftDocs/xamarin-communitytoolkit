@@ -45,11 +45,15 @@
       "ms.subservice": "xamarin-community-toolkit",
       "ms.service": "xamarin",
       "uhfHeaderId":"MSDocsHeader-Xamarin",
-      "breadcrumb_path": "/xamarin/community-toolkit/breadcrumb/toc.json",
+      "breadcrumb_path": "/previous-versions/xamarin/community-toolkit/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "audience": "developer",
       "ms.topic": "conceptual",
-      "searchScope": ["Xamarin"]
+      "searchScope": ["Xamarin"],
+      "ROBOTS": "NOINDEX,NOFOLLOW",
+      "is_retired": true,
+      "feedback_system": "None",
+      "learn_archive": "manual"
     },
     "fileMetadata": {},
     "template": [],
