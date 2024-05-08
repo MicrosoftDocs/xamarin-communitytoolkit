@@ -1,8 +1,6 @@
 {
   "docsets_to_publish": [],
-  "notification_subscribers": [
-    "dabritch@microsoft.com"
-  ],
+  "notification_subscribers": [],
   "sync_notification_subscribers": [],
   "branches_to_filter": [],
   "need_preview_pull_request": true,
@@ -12,20 +10,9 @@
       "url": "https://github.com/Microsoft/templates.docs.msft",
       "branch": "main",
       "branch_mapping": {}
-    },
-    {
-      "path_to_root": "_themes.pdf",
-      "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
-      "branch": "main",
-      "branch_mapping": {}
     }
   ],
-  "branch_target_mapping": {
-    "live": [
-      "Publish",
-      "Pdf"
-    ]
-  },
+  "branch_target_mapping": {},
   "targets": {
     "pdf": {
       "template_folder": "_themes.pdf"
