@@ -2,7 +2,7 @@
 
 The Xamarin community toolkit is a collection of reusable elements for mobile development with Xamarin.Forms, including animations, behaviors, converters, effects, and helpers. It simplifies and demonstrates common developer tasks when building iOS, Android, and Universal Windows Platform (UWP) apps using Xamarin.Forms.
 
-Support for Xamarin ended on the 1st May 2024 and so this documentation won't be updated, and any pull requests will be closed. For more information, see [Xamarin Support Policy](https://dotnet.microsoft.com/platform/support/policy/xamarin).
+Support for Xamarin ended on the 1st May 2024 and so this documentation won't be updated. For more information, see [Xamarin Support Policy](https://dotnet.microsoft.com/platform/support/policy/xamarin).
 
 ## Contributing
 
